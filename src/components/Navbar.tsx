@@ -20,6 +20,14 @@ interface BurgerProps {
   invert: boolean;
 }
 
+interface NavHeadingProps {
+  invert: boolean;
+}
+
+interface NavLinkProps {
+  invert: boolean;
+}
+
 const NavbarContainer = styled.nav<NavContainerProps>`
   position: fixed;
   top: 0;
@@ -134,7 +142,7 @@ const NavLinks = styled.div`
   }
 `;
 
-const NavHeading = styled.h3`
+const NavHeading = styled.h3<NavHeadingProps>`
   color: ${({ invert }) => (invert ? colors.background : colors.white)};
   margin: 0;
   margin-right: 1rem;
@@ -148,7 +156,7 @@ const NavHeading = styled.h3`
   }
 `;
 
-const NavLink = styled(Link)`
+const NavLink = styled(Link)<NavLinkProps>`
   color: ${({ invert }) => (invert ? colors.background : colors.white)};
   text-decoration: none;
   transition: color 0.3s ease;
