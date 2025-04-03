@@ -40,7 +40,7 @@ export const ProjectsSection = ({ projects }: Props) => {
 
               {tags && (
                 <Tags>
-                  {tags.map((keyword: string, i) => (
+                  {tags.map((keyword: string, i: number) => (
                     <li key={`keyword-element-${i}`}>{keyword}</li>
                   ))}
                 </Tags>
