@@ -1,5 +1,5 @@
 import * as Hbnb from '../../public/projects/Hbnb/content';
-import * as Onspace from '../../public/projects/Onspace/content';
+import * as onspace from '../../public/projects/onspace/content';
 import * as Amc from '../../public/projects/Amc/content';
 import * as QuickHost from '../../public/projects/QuickHost/content';
 import * as Yala from '../../public/projects/Yala/content';
@@ -23,7 +23,7 @@ export type Content = {
 
 export const content = {
   Hbnb: { ...Hbnb.content },
-  Onspace: { ...Onspace.content },
+  onspace: { ...onspace.content },
   Amc: { ...Amc.content },
   QuickHost: { ...QuickHost.content },
   Yala: { ...Yala.content },

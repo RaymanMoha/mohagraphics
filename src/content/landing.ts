@@ -24,8 +24,8 @@ export const landingPage = {
       body: 'I transformed detailed Figma designs into a responsive, user-friendly platform for both web and mobile. The site features integrated core functionalities—like dynamic form creation, team chat, and data visualization',
       image: 'onspace.png',
       buttonText: 'View project',
-      link: '/projects/Onspace/',
-      ...projectData.Onspace,
+      link: '/projects/onspace/',
+      ...projectData.onspace,
     },
     {
       body: 'I developed a modern, responsive website using Next.js and Tailwind CSS, ensuring a seamless user experience. The platform integrates Sanity CMS for dynamic content management and is optimized for performance and scalability with Vercel deployment.',
