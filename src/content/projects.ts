@@ -1,8 +1,10 @@
-import * as movingday from '../../public/projects/movingday/content';
-import * as refy from '../../public/projects/refy/content';
-import * as gleefactor from '../../public/projects/gleefactor/content';
-import * as ing from '../../public/projects/ing/content';
-import * as wodly from '../../public/projects/wodly/content';
+import * as Hbnb from '../../public/projects/Hbnb/content';
+import * as Onspace from '../../public/projects/Onspace/content';
+import * as Amc from '../../public/projects/Amc/content';
+import * as QuickHost from '../../public/projects/QuickHost/content';
+import * as Yala from '../../public/projects/Yala/content';
+import * as blossom from '../../public/projects/blossom/content';
+import * as convolab from '../../public/projects/convolab/content';
 
 export type Content = {
   title: string;
@@ -20,9 +22,11 @@ export type Content = {
 };
 
 export const content = {
-  movingday: { ...movingday.content },
-  refy: { ...refy.content },
-  gleefactor: { ...gleefactor.content },
-  ing: { ...ing.content },
-  wodly: { ...wodly.content },
+  Hbnb: { ...Hbnb.content },
+  Onspace: { ...Onspace.content },
+  Amc: { ...Amc.content },
+  QuickHost: { ...QuickHost.content },
+  Yala: { ...Yala.content },
+  blossom: { ...blossom.content },
+  convolab: { ...convolab.content },
 };

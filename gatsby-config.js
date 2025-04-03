@@ -1,16 +1,16 @@
 module.exports = {
   siteMetadata: {
-    title: `Alejandro Aspinwall | Software Engineer`,
+    title: `mohammed Abdirahman | Software Engineer`,
     lang: "en-US",
     author: {
-      name: `Alejandro Aspinwall`,
-      summary: `Alejandro Aspinwall loves to build tools to simplify your digital needs`,
+      name: `mohammed Abdirahman`,
+      summary: `mohammed Abdirahman loves to build tools to simplify your digital needs`,
     },
     description: `I am a software engineer specialized in web and cloud solutions. My toolset includes javascript, python, react, html, css and a whole lot of creativity.`,
-    siteUrl: `https://aaspinwall.com/`,
+    siteUrl: `https://aAbdirahman.com/`,
     social: {
-      twitter: `aaspinwall`,
-      email: `contact@aaspinwall.com`,
+      twitter: `aAbdirahman`,
+      email: `contact@aAbdirahman.com`,
     },
   },
   plugins: [
@@ -29,7 +29,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-robots-txt",
       options: {
-        host: "https://aaspinwall.com/",
+        host: "https://aAbdirahman.com/",
         policy: [{ userAgent: "*", allow: "/" }],
       },
     },
@@ -184,8 +184,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Alejandro Aspinwall | Software Engineer`,
-        short_name: `Alejandro Aspinwall Software Engineer`,
+        name: `mohammedAbdirahman | Software Engineer`,
+        short_name: `mohammedspinwall Software Engineer`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#ff715b`,

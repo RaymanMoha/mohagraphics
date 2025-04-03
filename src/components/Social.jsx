@@ -27,19 +27,17 @@ const SocialIcons = styled.div`
 export default function Social({ c = colors.accent, h = 'white', p = null }) {
   return (
     <SocialIcons c={c} h={h} p={p}>
-      <Link href={`https://github.com/aaspinwall`} target="blank">
+      <Link href={`https://github.com/RaymanMoha`} target="blank">
         <FaGithub />
       </Link>
       <Link
-        href={`https://www.linkedin.com/in/alejandroaspinwall/?locale=en_US`}
+        href={`https://www.linkedin.com/in/mohammed-a-1a6b651bb`}
         target="blank"
       >
         <FaLinkedin />
       </Link>
-      <Link href={`https://twitter.com/aaspinwall`} target="blank">
-        <FaTwitter />
-      </Link>
-      <Link href="mailto:contact@aaspinwall.com">
+
+      <Link href="mailto:contact@aAbdulmoharayman@gmail.com">
         <AiFillMail />
       </Link>
     </SocialIcons>

@@ -54,5 +54,5 @@ As creators we have the power to help others with the tools at our disposal. Doi
 
 ### Interested?
 
-If you're interested in collaborating, please send us an email at contact@aaspinwall.com
+If you're interested in collaborating, please send us an email at contact@aAbdirahman.com
 We can't wait to hear from you!

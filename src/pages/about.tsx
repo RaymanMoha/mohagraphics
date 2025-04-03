@@ -28,7 +28,7 @@ const AboutPage = ({
   return (
     <>
       <SEO
-        title={'About Alejandro Aspinwall'}
+        title={'About mohammed Abdirahman'}
         description={''}
         lang={''}
         thumb={''}

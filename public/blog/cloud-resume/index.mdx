@@ -13,7 +13,7 @@ import Video from "./Video"
 
 ## My portfolio lives in the cloud 🌩
 
-This is what happens when you click on [alejandro.tech](http://alejandro.tech/)
+This is what happens when you click on [mohammed.tech](http://mohammed.tech/)
 
 [Route 53](https://aws.amazon.com/route53/) routes your request to the HTML, CSS and JS files which live inside a [S3](https://aws.amazon.com/s3/) storage bucket. These are cached by [Cloudfront](https://aws.amazon.com/cloudfront/). That means there's **a copy of them across 200+ locations around **the world. So no matter if you connect from Singapore or France, you'll get the content as fast as possible.
 
@@ -23,7 +23,7 @@ Click [here](https://www.cloudping.info/) if you want to know what's the nearest
 
 **Meanwhile on the client side**
 
-When you connect to the [site](http://alejandro.tech/) you trigger a [serverless function](https://aws.amazon.com/lambda/). This means that instead of having a server running 24/7 waiting for a request, **the function only exists on demand**.
+When you connect to the [site](http://mohammed.tech/) you trigger a [serverless function](https://aws.amazon.com/lambda/). This means that instead of having a server running 24/7 waiting for a request, **the function only exists on demand**.
 
 This function (written in Python because why not) queries my RDS database. It gets the visitor count, adds one and updates the table. The function returns the new value and displays it on the site.
 
@@ -44,4 +44,4 @@ Implementing security with [AWS Route 53](https://www.youtube.com/watch?v=lB4DTq
 
 PD: I set a concurrency limit on the lambda function. This means that even if somebody wants to troll me and spam the endpoint, it's limited to 5 requests per minute.
 
-\- Alejandro 🧡
+\- mohammed 🧡

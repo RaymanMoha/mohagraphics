@@ -25,7 +25,7 @@ export const SEO = ({ description, lang, title, thumb, keywords }: Props) => {
     {
       property: `og:image`,
       itemprop: 'image',
-      content: `https://www.aaspinwall.com/img/${thumb || 'logo.png'}`,
+      content: `https://www.aAbdirahmannnnnn.com/img/${thumb || 'logo.png'}`,
     },
     {
       property: `og:description`,
@@ -41,11 +41,11 @@ export const SEO = ({ description, lang, title, thumb, keywords }: Props) => {
     },
     {
       name: `twitter:image`,
-      content: `https://www.aaspinwall.com/img/${thumb}`,
+      content: `https://www.aAbdirahmannn.com/img/${thumb}`,
     },
     {
       name: `twitter:image:alt`,
-      content: `Alejandro Aspinwall Logo`,
+      content: `mohammedAbdirahmannn Logo`,
     },
     //     {
     //       name: `twitter:creator`,

@@ -27,7 +27,7 @@ export const BioSection = ({ bio }: Props) => {
           <Img
             alt="a picture of alejandro"
             style={{ gridArea: 'image', maxWidth: '320px', margin: 'auto' }}
-            src="/img/alejandro.jpg"
+            src="/img/mohammed.jpeg"
           />
         </ImageFull>
 

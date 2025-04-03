@@ -1,186 +1,225 @@
-import delay from 'lodash/debounce';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { useEffect, useState } from 'react';
+import { useRouter } from 'next/navigation';
 import { GiHamburgerMenu } from 'react-icons/gi';
+import { IoClose } from 'react-icons/io5';
 import styled from 'styled-components';
 import { colors } from '../styles/components';
-import { useRouter } from 'next/navigation';
 
-const Container = styled.nav<{ invert: boolean }>`
-  * {
-    color: ${(props) => (props.invert ? colors.white : colors.background)};
-  }
-  position: absolute;
-  left: 0;
+interface NavContainerProps {
+  showShadow: boolean;
+  invert: boolean;
+}
+
+interface MenuProps {
+  open: boolean;
+  invert: boolean;
+}
+
+interface BurgerProps {
+  invert: boolean;
+}
+
+const NavbarContainer = styled.nav<NavContainerProps>`
+  position: fixed;
   top: 0;
-  background-color: #121e27;
-  z-index: 999;
-  text-align: center;
+  left: 0;
   width: 100%;
-  padding: 1rem 3rem;
+  padding: 0.75rem 2rem; /* Reduced padding for less height */
+  background-color: ${({ invert }) =>
+    invert ? colors.white : colors.background};
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition:
+    background-color 0.3s ease,
+    box-shadow 0.3s ease;
+  box-shadow: ${({ showShadow }) =>
+    showShadow ? '0 2px 10px rgba(0, 0, 0, 0.15)' : 'none'};
 
-  #burger {
-    color: white;
-    position: absolute;
-    right: 2rem;
-    top: 1rem;
-    font-size: 1.25rem;
+  .logo {
+    font-size: 1.5rem; /* Reduced font size */
+    font-weight: 700;
+    color: ${({ invert }) => (invert ? colors.background : colors.white)};
     cursor: pointer;
-  }
-  .hide {
-    display: none !important;
-  }
-
-  #menu {
-    margin-top: 1rem;
-    display: grid;
-    grid-template-rows: 1fr;
-    gap: 1rem;
-  }
-
-  > div {
-    position: relative;
-  }
-
-  ul {
-    transition: 0.4s ease-in-out display;
-    display: flex;
-    justify-content: space-evenly;
-
-    @media only screen and (max-width: 320px) {
-      justify-content: center;
-      li {
-        margin: 0 1rem;
-      }
-    }
-  }
-
-  li {
-    position: relative;
-    margin: 0;
-    padding: 0;
-    border-bottom: 5px ${colors.accent} solid;
-    transition: border-bottom 0.2s ease-in-out;
-
-    :hover,
-    :focus {
-      border-bottom: 10px ${colors.accent} double;
-      cursor: pointer;
-    }
-  }
-  @media only screen and (min-width: 768px) {
-    > div {
-      display: grid;
-      grid-template-columns: 50% 1fr;
-      text-align: left;
-    }
-    ul {
-      padding: 0;
-      justify-content: space-evenly;
-    }
-  }
-  @media only screen and (min-width: 768px) {
-    .hide {
-      display: flex !important;
-    }
-    #menu {
-      display: flex;
-      margin-top: 0;
-    }
-    #burger {
-      display: none;
-    }
-  }
-  @media only screen and (min-width: 1024px) {
-    > div {
-      display: grid;
-      grid-template-columns: 80% 1fr;
-    }
-  }
-  @keyframes fadeOut {
-    from {
-      opacity: 1;
-    }
-    to {
-      opacity: 0;
-    }
-  }
-  .invisible {
-    animation: fadeOut 0.7s forwards;
+    text-transform: uppercase;
   }
 `;
 
-export default function Navbar({ invert }: { invert?: boolean }) {
-  const [hidenav, setHidenav] = useState(true);
-  const [buffer, setBuffer] = useState(null);
-  const [open, setOpen] = useState(false);
-  const { push } = useRouter();
+const Menu = styled.ul<MenuProps>`
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  margin: 0;
 
-  const delayedFunc = delay(() => {
-    const height = window.pageYOffset;
-    setHidenav(true);
-    //@ts-ignore
-    setBuffer(height);
-  }, 2000);
+  li {
+    position: relative;
+    font-size: 1rem;
+    color: ${({ invert }) => (invert ? colors.background : colors.white)};
+    cursor: pointer;
+    transition: color 0.3s ease;
+    text-transform: capitalize;
 
+    &:hover {
+      color: ${colors.accent};
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      background: ${colors.accent};
+      left: 0;
+      bottom: -4px;
+      transition: width 0.3s ease;
+    }
+
+    &:hover:after {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.95);
+    position: fixed;
+    top: 0;
+    left: ${({ open }) => (open ? '0' : '-100%')};
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    transition: left 0.3s ease;
+  }
+`;
+
+const Burger = styled.div<BurgerProps>`
+  display: none;
+  font-size: 1.75rem; /* Reduced size */
+  color: ${({ invert }) => (invert ? colors.background : colors.white)};
+  cursor: pointer;
+
+  @media (max-width: 768px) {
+    display: block;
+  }
+`;
+
+const CloseButton = styled.div`
+  display: none;
+  position: absolute;
+  top: 1.5rem;
+  right: 2rem;
+  font-size: 1.75rem; /* Reduced size */
+  color: ${colors.white};
+  cursor: pointer;
+
+  @media (max-width: 768px) {
+    display: block;
+  }
+`;
+
+const NavLinks = styled.div`
+  display: flex;
+  flex-direction: row; /* Changed to row for horizontal layout */
+  align-items: center;
+  gap: 1.5rem;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 1rem;
+  }
+`;
+
+const NavHeading = styled.h3`
+  color: ${({ invert }) => (invert ? colors.background : colors.white)};
+  margin: 0;
+  margin-right: 1rem;
+  font-size: 1rem;
+  display: none; /* Hide by default */
+
+  @media (max-width: 768px) {
+    display: block;
+    margin-bottom: 1rem;
+    color: ${colors.white};
+  }
+`;
+
+const NavLink = styled(Link)`
+  color: ${({ invert }) => (invert ? colors.background : colors.white)};
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-size: 0.95rem;
+  position: relative;
+
+  &:hover {
+    color: ${colors.accent};
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: ${colors.accent};
+    left: 0;
+    bottom: -4px;
+    transition: width 0.3s ease;
+  }
+
+  &:hover:after {
+    width: 100%;
+  }
+`;
+
+export default function Navbar({ invert = false }: { invert?: boolean }) {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [showShadow, setShowShadow] = useState(false);
+  const router = useRouter();
+
+  // Add a subtle shadow when scrolling for a more refined feel
   useEffect(() => {
-    let scroller = () => {
-      setHidenav(false);
-      delayedFunc();
+    const handleScroll = () => {
+      setShowShadow(window.scrollY > 10);
     };
-    //@ts-ignore
-    setBuffer(window.pageYOffset);
-
-    window.addEventListener('scroll', scroller);
-
-    return () => window.removeEventListener('scroll', scroller);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const delayedHide = delay(() => setHidenav(true), 1000);
-
-  const hasLeft = () => {
-    delayedHide();
+  const navigateTo = (path: string) => {
+    setMenuOpen(false);
+    router.push(path);
   };
 
-  const Logo = styled.div`
-    display: inline;
-  `;
-
   return (
-    <Container
-      invert={true}
-      onMouseOver={() => setHidenav(false)}
-      onMouseLeave={hasLeft}
-    >
+    <NavbarContainer showShadow={showShadow} invert={invert}>
       <Link href="/">
-        <Logo>Alejandro Aspinwall</Logo>
+        <span className="logo">Moha</span>
       </Link>
-      <div id="burger" onClick={() => setOpen(!open)}>
+      <Burger invert={invert} onClick={() => setMenuOpen(true)}>
         <GiHamburgerMenu />
-      </div>
-      {
-        <ul id="menu" className={`${!open ? 'hide' : ''}`}>
-          {['about' /*  'blog' */].map((node, i) => {
-            return (
-              <Link key={`navlink-${i}`} href={`/${node}`} tabIndex={0}>
-                <li>{node}</li>
-              </Link>
-            );
-          })}
-          {['projects', 'contact'].map((link, i) => (
-            <Link
-              key={`navlink-${i}-2`}
-              tabIndex={0}
-              href={`/#${link}`}
-              onKeyDown={(e) => {
-                if (e.keyCode === 13) push(`/#${link}`);
-              }}
-            >
-              <li>{link}</li>
-            </Link>
-          ))}
-        </ul>
-      }
-    </Container>
+      </Burger>
+      <Menu open={menuOpen} invert={invert}>
+        <CloseButton onClick={() => setMenuOpen(false)}>
+          <IoClose />
+        </CloseButton>
+        <NavHeading invert={invert}>Links</NavHeading>
+        <NavLinks>
+          <NavLink href="/about" invert={invert}>
+            About
+          </NavLink>
+          {/* <NavLink href="/blog" invert={invert}>Blog</NavLink> */}
+          <NavLink href="/#projects" invert={invert}>
+            Projects
+          </NavLink>
+          <NavLink href="/#contact" invert={invert}>
+            Contact
+          </NavLink>
+        </NavLinks>
+      </Menu>
+    </NavbarContainer>
   );
 }

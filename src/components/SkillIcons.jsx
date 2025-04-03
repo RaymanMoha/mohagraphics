@@ -37,23 +37,17 @@ const AllTags = styled(Tags)`
 `;
 
 const skills = [
-  { name: 'Typescript' },
+  { name: 'Typescript', type: 'frontend' },
   { name: 'React', type: 'frontend' },
   { name: 'Node.js', type: 'backend' },
   { name: 'HTML', type: 'frontend' },
   { name: 'CSS', type: 'frontend' },
-  { name: 'AWS', type: 'devOps' },
-  { name: 'Gatsby', type: 'frontend' },
+  { name: 'Flutter', type: 'frontend' },
   { name: 'Next.js', type: 'frontend' },
-  { name: 'MongoDB', type: 'db' },
-  { name: 'GraphQL', type: 'backend' },
-  { name: 'Apollo GraphQL', type: 'backend' },
   { name: 'PostgreSQL', type: 'db' },
-  { name: 'Nexus', type: 'backend' },
-  { name: 'FaunaDB', type: 'db' },
+  { name: 'Mongodb', type: 'db' },
   { name: 'Firebase', type: 'backend' },
   { name: 'Wordpress', type: 'cms' },
-  { name: 'Shopify', type: 'cms' },
 ];
 
 export default function SkillIcons() {

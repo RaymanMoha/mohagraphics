@@ -25,7 +25,7 @@ const Index = ({
   return (
     <>
       <SEO
-        title="Alejandro Aspinwall | Software Engineer"
+        title="mohammed Abdirahmann | Software Engineer"
         description={''}
         lang={''}
         thumb={''}
@@ -49,6 +49,17 @@ const Index = ({
             </div>
           </div>
         </HeroSection>
+        <img
+          src="img\flame.gif"
+          alt="Animated GIF"
+          style={{
+            position: 'absolute',
+            top: '400px',
+            right: '150px',
+            width: '500px', // Adjust as needed
+            height: '500px',
+          }}
+        />
       </div>
 
       <Section id="bio">

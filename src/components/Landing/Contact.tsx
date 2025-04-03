@@ -11,17 +11,20 @@ export const ContactSection = () => {
       <Hero invert={false}>
         {<HighlightedWords title={"Let's have a **chat**"} />}
       </Hero>
-      <CupContainer>
-        <div className="steam">
-          <Steam />
-        </div>
-        <div className="cup">
-          <Cup />
-        </div>
-      </CupContainer>
+      <img
+        src="img\herogifo2.gif"
+        alt="Animated GIF"
+        style={{
+          position: 'absolute',
+          top: '10px',
+          right: '-200px',
+          width: '1000px', // Adjust as needed
+          height: '400px',
+        }}
+      />
 
-      <Email href={'mailto:contact@aaspinwall.com'}>
-        contact@aaspinwall.com
+      <Email href={'mailto:contact@abdulmoharayman@gmail.com'}>
+        abdulmoharayman@gmail.com
       </Email>
 
       <div
@@ -33,7 +36,7 @@ export const ContactSection = () => {
       >
         <SlidingButton
           buttonText={'Get in touch'}
-          link="https://calendly.com/aaspinwall/15"
+          link="https://calendly.com/abdulmoharayman/30min"
         />
       </div>
     </div>
