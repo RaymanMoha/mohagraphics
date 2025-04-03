@@ -8,6 +8,7 @@ export const content: Content = {
   details: {
     type: `Digital Agency`,
     stack: `Javascript PostgreSQL vercel`,
+    code: ` `,
     live: `https://www.conversationlab.com/`,
   },
   keywords: ['Typescript', 'Gsap', 'react', 'mongodb'],
