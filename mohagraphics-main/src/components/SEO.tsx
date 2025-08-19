@@ -29,9 +29,38 @@ export const SEO = ({
   type = 'website',
   canonical
 }: Props) => {
-  const siteName = 'Mohammed Abdirahman - Frontend Developer & UI/UX Designer';
-  const defaultDescription = 'Expert Frontend Developer and UI/UX Designer specializing in React, Next.js, TypeScript, and modern web development. Creating beautiful, performant, and accessible web applications.';
-  const defaultKeywords = ['frontend developer', 'UI/UX designer', 'React developer', 'Next.js developer', 'TypeScript expert', 'web developer', 'freelance developer', 'Kenya developer', 'Nairobi developer', 'remote developer'];
+  const siteName = 'Mohammed Abdirahman - Global Frontend & Mobile App Developer';
+  const defaultDescription = 'Expert Frontend & Mobile App Developer specializing in Flutter, React, and modern web technologies. Building cross-platform mobile apps and responsive web applications for global clients. Offering innovative solutions from Africa to the world. Available for international projects and remote collaboration.';
+  const defaultKeywords = [
+    // Global Role Keywords
+    'mobile app developer', 'Flutter developer', 'frontend developer', 'cross-platform developer',
+    'UI/UX designer', 'remote developer', 'freelance developer', 'software engineer',
+    // Technical Skills
+    'Flutter expert', 'React Native developer', 'iOS developer', 'Android developer',
+    'React expert', 'Next.js specialist', 'TypeScript professional', 'mobile app architect',
+    // Geographic Keywords
+    'international developer', 'African developer', 'global remote developer',
+    'offshore developer', 'Kenya developer', 'East Africa developer',
+    // Industry-specific
+    'ecommerce developer', 'SaaS developer', 'startup developer',
+    'enterprise software developer', 'fintech developer',
+    // Service-specific
+    'frontend consultant', 'UI/UX consultant', 'web development services',
+    'cross-platform development', 'responsive design expert',
+    // Expertise Areas
+    'performance optimization', 'web accessibility expert', 'PWA developer',
+    'mobile-first design', 'cross-browser compatibility',
+    // Platforms & Tools
+    'React Native developer', 'Vue.js developer', 'Angular developer',
+    'WordPress developer', 'Shopify developer',
+    // Soft Skills
+    'agile development', 'remote collaboration', 'team leadership',
+    // Regions
+    'USA developer', 'UK developer', 'EU developer', 'global developer',
+    // Project Types
+    'B2B developer', 'B2C developer', 'enterprise solutions',
+    'startup development', 'MVP development'
+  ];
   
   const schemaOrgWebPage = {
     '@context': 'http://schema.org',
@@ -40,22 +69,66 @@ export const SEO = ({
     url: canonical || 'https://www.mohammedabdirahman.com',
     sameAs: [
       'https://github.com/RaymanMoha',
-      'https://www.linkedin.com/in/mohammed-abdirahman-1a6b651bb/', // Update with your LinkedIn
-      'https://twitter.com/yourtwitter' // Update with your Twitter
+      'https://www.linkedin.com/in/mohammed-abdirahman-1a6b651bb/',
+      'https://twitter.com/yourtwitter'
     ],
-    jobTitle: 'Frontend Developer & UI/UX Designer',
+    jobTitle: 'Global Frontend & Mobile App Developer',
     worksFor: {
       '@type': 'Organization',
-      name: 'Freelance'
+      name: 'International Software Development Consultant',
+      description: 'Delivering expert mobile app development, frontend development, and UI/UX design services to clients worldwide'
     },
     address: {
       '@type': 'PostalAddress',
       addressLocality: 'Nairobi',
-      addressCountry: 'Kenya'
+      addressCountry: 'Kenya',
+      addressRegion: 'East Africa'
     },
     description: description || defaultDescription,
     image: `https://www.mohammedabdirahman.com/img/${thumb || 'logo.png'}`,
-    email: 'mohammedraymanh@gmail.com' // Update with your email
+    email: 'mohammedraymanh@gmail.com',
+    knowsLanguage: ['en', 'sw'],
+    availableLanguage: ['en', 'sw'],
+    hasOccupation: {
+      '@type': 'Occupation',
+      name: 'Frontend Developer',
+      occupationalCategory: 'Software Developer',
+      skills: [
+        'Flutter Development', 'Mobile App Development', 'iOS Development', 'Android Development',
+        'React Native', 'React.js', 'Next.js', 'TypeScript', 'JavaScript',
+        'UI/UX Design', 'Web Development', 'Frontend Architecture',
+        'Cross-platform Development', 'Mobile-first Design', 'App Store Optimization',
+        'Performance Optimization', 'State Management', 'API Integration'
+      ],
+      responsibilities: [
+        'Mobile App Development',
+        'Cross-platform Development',
+        'Frontend Development',
+        'UI/UX Design',
+        'Web Application Development',
+        'Technical Consultation',
+        'Project Management',
+        'App Store Deployment',
+        'Performance Optimization'
+      ]
+    },
+    makesOffer: {
+      '@type': 'Offer',
+      itemOffered: {
+        '@type': 'Service',
+        name: 'Mobile App Development & Frontend Development Services',
+        description: 'Professional Flutter mobile app development, frontend development, and UI/UX design services for global clients. Specializing in cross-platform solutions that work seamlessly on iOS, Android, and web platforms.',
+        areaServed: {
+          '@type': 'GeoCircle',
+          geoMidpoint: {
+            '@type': 'GeoCoordinates',
+            latitude: -1.292066,
+            longitude: 36.821945
+          },
+          geoRadius: '20000 km'
+        }
+      }
+    }
   };
 
   const metaTags: MetaTag[] = [

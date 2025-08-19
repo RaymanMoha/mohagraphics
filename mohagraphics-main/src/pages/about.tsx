@@ -28,33 +28,35 @@ const AboutPage = ({
   return (
     <>
       <SEO
-        title="About Mohammed Abdirahman - Frontend Developer & UI/UX Designer"
-        description="Experienced Frontend Developer and UI/UX Designer with expertise in React, Next.js, and TypeScript. Creating innovative web solutions from Nairobi, Kenya. Available for freelance projects and full-time opportunities."
+        title="About Mohammed Abdirahman - Frontend & Mobile App Developer"
+        description="Experienced Frontend & Mobile App Developer with expertise in Flutter, React, Next.js, and TypeScript. Creating innovative mobile and web solutions from Nairobi, Kenya. Available for global projects and remote opportunities."
         lang="en"
         thumb="mohammed.jpeg"
+        type="website"
+        location="Nairobi, Kenya"
+        canonical="https://www.mohagraphics.tech/about"
         keywords={[
+          'Flutter Developer',
+          'Mobile App Developer',
           'Frontend Developer',
           'UI/UX Designer',
           'React Developer',
           'Next.js Expert',
           'TypeScript Developer',
+          'Cross-platform Developer',
+          'iOS Developer',
+          'Android Developer',
           'Web Developer Nairobi',
-          'Kenyan Developer',
+          'Global Developer',
+          'Remote Developer',
           'Frontend Engineer',
           'JavaScript Expert',
           'Responsive Design',
-          'Web Performance',
-          'User Experience',
-          'User Interface Design',
-          'Frontend Architecture',
-          'Component Development',
+          'Mobile App Architecture',
           'State Management',
           'API Integration',
-          'Modern Web Development',
-          'Progressive Web Apps',
-          'Mobile-First Design'
+          'App Store Optimization'
         ]}
-        canonical="https://www.mohagraphics.tech/about"
       />
       <Section>
         <Hero invert={false}>{'I have always loved tech'}</Hero>
