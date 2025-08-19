@@ -9,13 +9,17 @@ type MetaTag = {
 };
 
 export type Props = {
-  description: string;
-  lang: string;
+  /** The page title */
   title: string;
+  /** Meta description */
+  description: string;
+  /** Language code */
+  lang: string;
+  /** Thumbnail image name */
   thumb: string;
+  /** SEO keywords */
   keywords: string[];
-  location?: string;
-  type?: string;
+  /** Optional canonical URL */
   canonical?: string;
 };
 
@@ -25,10 +29,10 @@ export const SEO = ({
   title, 
   thumb, 
   keywords,
-  location = 'Nairobi, Kenya',
-  type = 'website',
   canonical
 }: Props) => {
+  const defaultLocation = 'Nairobi, Kenya';
+  const pageType = 'website';
   const siteName = 'Mohammed Abdirahman - Global Frontend & Mobile App Developer';
   const defaultDescription = 'Expert Frontend & Mobile App Developer specializing in Flutter, React, and modern web technologies. Building cross-platform mobile apps and responsive web applications for global clients. Offering innovative solutions from Africa to the world. Available for international projects and remote collaboration.';
   const defaultKeywords = [
@@ -139,9 +143,9 @@ export const SEO = ({
     { name: 'keywords', content: [...defaultKeywords, ...keywords].join(', ') },
     { name: 'author', content: 'Mohammed Abdirahman' },
     { name: 'geo.region', content: 'KE-30' },
-    { name: 'geo.placename', content: location },
+    { name: 'geo.placename', content: defaultLocation },
     { property: 'og:locale', content: 'en_US' },
-    { property: 'og:type', content: type },
+    { property: 'og:type', content: pageType },
     { property: 'og:title', content: `${title} | ${siteName}` },
     { property: 'og:description', content: description || defaultDescription },
     { property: 'og:image', content: `https://www.mohammedabdirahman.com/img/${thumb || 'logo.png'}` },
