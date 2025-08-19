@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import React from 'react';
 
 type MetaTag = {
   charset?: string;
@@ -8,7 +9,7 @@ type MetaTag = {
   property?: string;
 };
 
-export type Props = {
+interface SEOProps extends React.ComponentProps<'div'> {
   /** The page title */
   title: string;
   /** Meta description */
@@ -21,7 +22,9 @@ export type Props = {
   keywords: string[];
   /** Canonical URL */
   canonical: string;
-};
+}
+
+export type Props = SEOProps;
 
 export const SEO = ({ 
   description, 
