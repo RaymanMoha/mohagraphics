@@ -9,7 +9,7 @@ type MetaTag = {
   property?: string;
 };
 
-interface SEOProps extends React.ComponentProps<'div'> {
+export interface Props {
   /** The page title */
   title: string;
   /** Meta description */
@@ -21,10 +21,8 @@ interface SEOProps extends React.ComponentProps<'div'> {
   /** SEO keywords */
   keywords: string[];
   /** Canonical URL */
-  canonical: string;
+  canonical?: string;
 }
-
-export type Props = SEOProps;
 
 export const SEO = ({ 
   description, 
@@ -32,7 +30,7 @@ export const SEO = ({
   title, 
   thumb, 
   keywords,
-  canonical
+  canonical = ''
 }: Props): JSX.Element => {
   const defaultLocation = 'Nairobi, Kenya';
   const pageType = 'website';
