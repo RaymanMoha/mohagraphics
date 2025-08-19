@@ -8,7 +8,7 @@ type MetaTag = {
   property?: string;
 };
 
-export type Props = {
+export interface Props {
   /** The page title */
   title: string;
   /** Meta description */
@@ -19,9 +19,9 @@ export type Props = {
   thumb: string;
   /** SEO keywords */
   keywords: string[];
-  /** Optional canonical URL */
+  /** Canonical URL */
   canonical?: string;
-};
+}
 
 export const SEO = ({ 
   description, 
