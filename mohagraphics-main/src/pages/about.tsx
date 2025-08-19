@@ -28,11 +28,33 @@ const AboutPage = ({
   return (
     <>
       <SEO
-        title={'About mohammed Abdirahman'}
-        description={''}
-        lang={''}
-        thumb={''}
-        keywords={[]}
+        title="About Mohammed Abdirahman - Frontend Developer & UI/UX Designer"
+        description="Experienced Frontend Developer and UI/UX Designer with expertise in React, Next.js, and TypeScript. Creating innovative web solutions from Nairobi, Kenya. Available for freelance projects and full-time opportunities."
+        lang="en"
+        thumb="mohammed.jpeg"
+        keywords={[
+          'Frontend Developer',
+          'UI/UX Designer',
+          'React Developer',
+          'Next.js Expert',
+          'TypeScript Developer',
+          'Web Developer Nairobi',
+          'Kenyan Developer',
+          'Frontend Engineer',
+          'JavaScript Expert',
+          'Responsive Design',
+          'Web Performance',
+          'User Experience',
+          'User Interface Design',
+          'Frontend Architecture',
+          'Component Development',
+          'State Management',
+          'API Integration',
+          'Modern Web Development',
+          'Progressive Web Apps',
+          'Mobile-First Design'
+        ]}
+        canonical="https://www.mohagraphics.tech/about"
       />
       <Section>
         <Hero invert={false}>{'I have always loved tech'}</Hero>
