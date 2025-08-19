@@ -32,7 +32,6 @@ const AboutPage = ({
         description="Experienced Frontend & Mobile App Developer with expertise in Flutter, React, Next.js, and TypeScript. Creating innovative mobile and web solutions from Nairobi, Kenya. Available for global projects and remote opportunities."
         lang="en"
         thumb="mohammed.jpeg"
-        type="website"
         location="Nairobi, Kenya"
         canonical="https://www.mohagraphics.tech/about"
         keywords={[
