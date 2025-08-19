@@ -21,8 +21,6 @@ export type Props = {
   keywords: string[];
   /** Canonical URL */
   canonical: string;
-} & {
-  [key: string]: string | string[] | undefined;
 };
 
 export const SEO = ({ 
@@ -31,11 +29,11 @@ export const SEO = ({
   title, 
   thumb, 
   keywords,
-  canonical = ''
-}: Props) => {
+  canonical
+}: Props): JSX.Element => {
   const defaultLocation = 'Nairobi, Kenya';
   const pageType = 'website';
-  const siteName = 'Mohammed Abdirahman - Global Frontend & Mobile App Developer';
+  const siteName = 'Mohammed Abdirahman - Frontend & Mobile App Developer';
   const defaultDescription = 'Expert Frontend & Mobile App Developer specializing in Flutter, React, and modern web technologies. Building cross-platform mobile apps and responsive web applications for global clients. Offering innovative solutions from Africa to the world. Available for international projects and remote collaboration.';
   const defaultKeywords = [
     // Global Role Keywords
