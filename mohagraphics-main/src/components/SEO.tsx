@@ -24,14 +24,14 @@ export interface Props {
   canonical?: string;
 }
 
-export const SEO = ({ 
+export const SEO: React.FC<Props> = ({ 
   description, 
   lang, 
   title, 
   thumb, 
   keywords,
   canonical = ''
-}: Props): JSX.Element => {
+}) => {
   const defaultLocation = 'Nairobi, Kenya';
   const pageType = 'website';
   const siteName = 'Mohammed Abdirahman - Frontend & Mobile App Developer';
