@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import styled from 'styled-components';
+import Image from 'next/image';
 
 export default function Clouds({ roll, top, pulse, size, offset }: any) {
   const thisCloud = useRef();
@@ -22,7 +23,13 @@ export default function Clouds({ roll, top, pulse, size, offset }: any) {
       size={size}
       offset={offset}
     >
-      <img src={cloud} />
+      <Image 
+        src={cloud} 
+        alt="Decorative cloud animation"
+        width={100}
+        height={100}
+        style={{ width: '100%', height: 'auto' }}
+      />
     </SVGcontainer>
   );
 }

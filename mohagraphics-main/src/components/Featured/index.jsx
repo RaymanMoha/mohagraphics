@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Image from 'next/image';
 import Link from 'next/link';
 import { AiOutlineArrowRight } from 'react-icons/ai';
 import { FeaturedProjects, GotoBlog, ProjectImage } from './elements';
@@ -51,10 +51,13 @@ const Featured = () => {
               </div>
 
               <Link href={`/${el.slug}`}>
-                <img
-                  alt="Blog post image"
+                <Image
+                  alt={`Blog post thumbnail for ${el.title}`}
                   src={`/img/${el.thumb ? el.thumb : 'logo.png'}`}
+                  width={800}
+                  height={600}
                   className="imageFluidContainer"
+                  priority={i === 0} // Priority loading for first image
                 />
               </Link>
               <p>{el.description}</p>

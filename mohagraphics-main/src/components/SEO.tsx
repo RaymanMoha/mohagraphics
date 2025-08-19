@@ -8,7 +8,7 @@ type MetaTag = {
   property?: string;
 };
 
-export interface Props {
+export type Props = {
   /** The page title */
   title: string;
   /** Meta description */
@@ -20,8 +20,10 @@ export interface Props {
   /** SEO keywords */
   keywords: string[];
   /** Canonical URL */
-  canonical?: string;
-}
+  canonical: string;
+} & {
+  [key: string]: string | string[] | undefined;
+};
 
 export const SEO = ({ 
   description, 
@@ -29,7 +31,7 @@ export const SEO = ({
   title, 
   thumb, 
   keywords,
-  canonical
+  canonical = ''
 }: Props) => {
   const defaultLocation = 'Nairobi, Kenya';
   const pageType = 'website';
