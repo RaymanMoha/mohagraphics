@@ -9,7 +9,8 @@ type MetaTag = {
   property?: string;
 };
 
-export type SEOProps = {
+// Export the Props type as an interface for better type checking
+export interface SEOProps {
   /** The page title */
   title: string;
   /** Meta description */

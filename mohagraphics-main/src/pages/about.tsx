@@ -1,4 +1,4 @@
-import { SEO, SEOProps } from '@/components/SEO';
+import { SEO } from '@/components/SEO';
 import { Hero, Section } from '@/styles/components';
 import fs from 'fs';
 import matter from 'gray-matter';
