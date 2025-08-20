@@ -1,4 +1,4 @@
----
+﻿---
 name: intro
 title: Prof g
 internal: true
@@ -16,3 +16,4 @@ Fun fact: **it would take an average reader 2.8 hours to go through every messag
 **Meet my ( partner ) => the robot 🤖**
 
 We crunched the numbers and came up with some very interesting results.
+

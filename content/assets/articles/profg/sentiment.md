@@ -1,4 +1,4 @@
----
+﻿---
 name: sentiment
 title: Prof g
 internal: true
@@ -14,3 +14,4 @@ Next, I wanted to **get a feel for the mood of the group.** We ran a sentiment a
 Here is an example of how that would look like:
 
 _"I'm incredibly happy to be sharing this learning experience with everybody here!"_
+

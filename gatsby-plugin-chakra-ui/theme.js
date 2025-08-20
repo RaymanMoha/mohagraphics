@@ -1,4 +1,4 @@
-import { theme as old } from "@chakra-ui/core"
+﻿import { theme as old } from "@chakra-ui/core"
 
 const theme = {
   ...old,
@@ -9,3 +9,4 @@ const theme = {
 }
 
 export default theme
+

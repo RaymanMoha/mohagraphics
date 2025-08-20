@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import { colors as c } from '../styles/components';
 import Sc from '../components/Social';
 import styled from 'styled-components';
@@ -106,3 +106,4 @@ export default function Footer() {
     </Foot>
   );
 }
+

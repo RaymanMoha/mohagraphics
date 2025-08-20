@@ -1,4 +1,4 @@
-import { FaVideo } from 'react-icons/fa';
+﻿import { FaVideo } from 'react-icons/fa';
 import styled from 'styled-components';
 import Button from '../../../components/ui/button';
 import { Hero as H, Section as S, colors } from '../../../styles/components';
@@ -38,3 +38,4 @@ const Soc = (props) => {
 };
 
 export default Soc;
+

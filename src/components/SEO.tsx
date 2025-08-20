@@ -1,4 +1,4 @@
-import Head from 'next/head';
+﻿import Head from 'next/head';
 
 export type Props = {
   description: string;
@@ -101,3 +101,4 @@ export const SEO = ({
     </Head>
   );
 };
+

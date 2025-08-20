@@ -1,4 +1,4 @@
-{
+﻿{
   "name": "developer-portfolio",
   "private": true,
   "description": "Portfolio site for mohammed Abdirahman",
@@ -66,3 +66,4 @@
     "yarn": "1.22.19"
   }
 }
+

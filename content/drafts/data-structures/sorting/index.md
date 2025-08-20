@@ -1,4 +1,4 @@
----
+﻿---
 title: Sorting
 draft: false
 date: 2020-08-03T18:44:42.151Z
@@ -35,3 +35,4 @@ _O(n^2)_ optimized to _O(n log n + 1)_
 _O(n!)_
 
 Going through every permutation.
+

@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 
 import Link from 'next/link';
 import { AiOutlineArrowRight } from 'react-icons/ai';
@@ -74,3 +74,4 @@ const Featured = () => {
 };
 
 export default Featured;
+

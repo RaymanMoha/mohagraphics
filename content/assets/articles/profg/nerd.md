@@ -1,4 +1,4 @@
----
+﻿---
 name: nerd
 title: Prof g
 internal: true
@@ -21,3 +21,4 @@ This approach leaves you with a mid-point of 0 and the upper and lower bounds ar
 
 _(max positive score - number of tokens) / number of tokens
 (5 - 200) / 200 = 5_
+

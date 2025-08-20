@@ -1,4 +1,4 @@
-![Results page](Amc.png "Resources page that shows the available workshops")
+﻿![Results page](Amc.png "Resources page that shows the available workshops")
 
 # Project Purpose and Goal
 
@@ -77,3 +77,4 @@ exports.handler = async function (event, context, callback) {
 # Lessons Learned
 
 I worked with WP for sometime, before I got into modern JavaScript based frameworks. I think the technology works very well for some organizations, especially ones that have a lot of content and not many features. **This project called for a flexible solution that would scale to fit the needs of the company's growth**. Moving the whole site away from WP would've been my choice but the client's requests made me re-evaluate the solutions. In the end, I'm very satisfied with the result!
+

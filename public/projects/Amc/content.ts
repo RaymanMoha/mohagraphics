@@ -1,4 +1,4 @@
-import { Content } from '@/content/projects';
+﻿import { Content } from '@/content/projects';
 
 export const content: Content = {
   title: 'AMC GROUP AFRICA',
@@ -15,3 +15,4 @@ export const content: Content = {
   keywords: ['mysql', 'wordpress', 'Google analytics', 'google ads'],
   role: 'FRONTEND DEVELOPER',
 };
+

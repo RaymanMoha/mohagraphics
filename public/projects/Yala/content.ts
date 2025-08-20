@@ -1,4 +1,4 @@
-import { Content } from '@/content/projects';
+﻿import { Content } from '@/content/projects';
 
 export const content: Content = {
   title: 'Yala Pay: Streamlining Payments in East Africa',
@@ -14,3 +14,4 @@ export const content: Content = {
   keywords: ['payments', 'fintech', 'Yala Pay', 'WordPress', 'Flutter', 'SEO'],
   role: 'Frontend Developer & SEO Specialist',
 };
+

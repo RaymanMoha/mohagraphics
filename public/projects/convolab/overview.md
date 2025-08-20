@@ -1,4 +1,4 @@
-# Project Scope
+﻿# Project Scope
 
 **Objective:**  
 Develop a responsive, user-friendly website for the agency to showcase their portfolio, services, and client testimonials. The goal was to create a visually appealing, functional platform that highlights the agency's expertise and allows for easy navigation.
@@ -36,3 +36,4 @@ Prospective clients looking to learn about the agency’s services and view past
 Focused on delivering an intuitive interface that guides users seamlessly through the site, from discovering services to viewing the portfolio and contacting the agency.
 
 [Visit Website](#)
+

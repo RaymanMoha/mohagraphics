@@ -1,4 +1,4 @@
-import { makeClouds, randomizeValue } from '@/utils/clouds';
+﻿import { makeClouds, randomizeValue } from '@/utils/clouds';
 import React from 'react';
 import Clouds from '../Clouds';
 
@@ -28,3 +28,4 @@ export const MakeClouds = ({
     </>
   );
 };
+

@@ -1,4 +1,4 @@
-import { Content } from '@/content/projects';
+﻿import { Content } from '@/content/projects';
 
 export const content: Content = {
   title: 'Conversation Lab',
@@ -14,3 +14,4 @@ export const content: Content = {
   keywords: ['Typescript', 'Gsap', 'react', 'mongodb'],
   role: `Frontend Developer`,
 };
+

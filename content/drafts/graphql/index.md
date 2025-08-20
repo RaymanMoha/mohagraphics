@@ -1,4 +1,4 @@
----
+﻿---
 title: Getting started with GraphQL and FaunaDB
 draft: false
 date: 2020-12-03T17:55:46.594Z
@@ -20,3 +20,4 @@ The new way:
 Thanks for reading 🧡
 
 \- mohammed
+

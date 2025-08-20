@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+﻿import { useEffect, useState } from 'react';
 
 const useIsDev = () => {
   const [isDev, setisDev] = useState(
@@ -10,3 +10,4 @@ const useIsDev = () => {
   return isDev;
 };
 export default useIsDev;
+

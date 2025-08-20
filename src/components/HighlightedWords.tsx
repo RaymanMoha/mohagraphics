@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import styles from '@/styles/style.module.scss';
 
 export const HighlightedWords = ({ title }: { title: string }) => {
@@ -15,3 +15,4 @@ export const HighlightedWords = ({ title }: { title: string }) => {
     return <div key={`highlightwords-${i}`}>{text}</div>;
   });
 };
+

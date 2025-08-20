@@ -1,4 +1,4 @@
-import { Content } from '@/content/projects';
+﻿import { Content } from '@/content/projects';
 
 export const content: Content = {
   title: 'onspace.',
@@ -14,3 +14,4 @@ export const content: Content = {
   keywords: ['flutter', 'dart', 'react', 'firebase', 'react'],
   role: `Frontend Developer`,
 };
+

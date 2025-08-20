@@ -1,4 +1,4 @@
-# Project Scope
+﻿# Project Scope
 
 **Objective:**  
 Create a user-friendly and accessible insurance platform that allows customers to easily explore and manage various insurance products. The focus was on offering seamless policy management and quick access to quotes and information.
@@ -29,3 +29,4 @@ Blossom Insurance aimed to improve accessibility and ease of use for their insur
 Individuals and businesses seeking simple, accessible insurance solutions.
 
 [Visit Website](https://blossominsurance.co.ke/)
+

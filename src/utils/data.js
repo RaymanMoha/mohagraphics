@@ -1,4 +1,4 @@
-export const positive = [
+﻿export const positive = [
   { text: 'cheers', value: 6 },
   { text: 'adventure', value: 6 },
   { text: 'huge', value: 6 },
@@ -237,3 +237,4 @@ export const all = [
   { text: "excited", value: 130 },
 ]
  */
+

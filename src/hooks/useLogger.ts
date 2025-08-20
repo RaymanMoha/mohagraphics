@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+﻿import { useEffect } from 'react';
 
 export const useLogger = () => {
   useEffect(
@@ -40,3 +40,4 @@ export const useLogger = () => {
     [],
   );
 };
+

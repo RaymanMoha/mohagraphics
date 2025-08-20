@@ -1,4 +1,4 @@
-import * as Hbnb from '../../public/projects/Hbnb/content';
+﻿import * as Hbnb from '../../public/projects/Hbnb/content';
 import * as onspace from '../../public/projects/onspace/content';
 import * as Amc from '../../public/projects/Amc/content';
 import * as QuickHost from '../../public/projects/QuickHost/content';
@@ -30,3 +30,4 @@ export const content = {
   blossom: { ...blossom.content },
   convolab: { ...convolab.content },
 };
+

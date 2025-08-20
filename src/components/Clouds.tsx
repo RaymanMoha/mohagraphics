@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+﻿import React, { useRef } from 'react';
 import styled from 'styled-components';
 
 export default function Clouds({ roll, top, pulse, size, offset }: any) {
@@ -82,3 +82,4 @@ export const SVGcontainer = styled.div<any>`
     }
   }
 `;
+

@@ -1,4 +1,4 @@
-module.exports = {
+﻿module.exports = {
   siteMetadata: {
     title: `mohammed Abdirahman | Software Engineer`,
     lang: "en-US",
@@ -199,3 +199,4 @@ module.exports = {
     // `gatsby-plugin-offline`,
   ],
 }
+

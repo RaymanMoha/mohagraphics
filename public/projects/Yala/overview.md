@@ -1,4 +1,4 @@
-![Yala Pay Website](yalapay/screen.png "Yala Pay Homepage")
+﻿![Yala Pay Website](yalapay/screen.png "Yala Pay Homepage")
 
 # Project Purpose and Goal
 
@@ -38,3 +38,4 @@ The **platform successfully streamlined payment processing**, allowing businesse
 - **Further UX refinements** to optimize user workflows.
 
 [Visit Website](#)
+

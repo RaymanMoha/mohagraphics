@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import styled from 'styled-components';
 
 export default function ReadTime({ text }: { text: string }) {
@@ -13,3 +13,4 @@ export const ReadTimeWrapper = styled.div`
   margin-bottom: 1rem;
   font-weight: 600;
 `;
+

@@ -1,4 +1,4 @@
-const withMDX = require('@next/mdx')();
+﻿const withMDX = require('@next/mdx')();
 const path = require('path');
 
 /** @type {import('next').NextConfig} */
@@ -21,3 +21,4 @@ const nextConfig = {
 };
 
 module.exports = withMDX(nextConfig);
+

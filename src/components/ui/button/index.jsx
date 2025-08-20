@@ -1,4 +1,4 @@
-import { Button as B } from '@chakra-ui/react';
+﻿import { Button as B } from '@chakra-ui/react';
 import { Link } from 'gatsby';
 
 const Button = ({ children, to, ...props }) => {
@@ -17,3 +17,4 @@ const Button = ({ children, to, ...props }) => {
 };
 
 export default Button;
+

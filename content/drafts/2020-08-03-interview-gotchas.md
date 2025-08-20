@@ -1,4 +1,4 @@
----
+﻿---
 title: 100 days of code
 draft: true
 date: 2020-10-17T18:24:09.989Z
@@ -35,3 +35,4 @@ const bigRes1 = add(9007199254740992, 100)
 const bigRes2 = add(9007199254740992, 101)
 console.log(bigRes1 === bigRes2) //false
 ```
+

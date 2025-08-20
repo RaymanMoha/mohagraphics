@@ -1,4 +1,4 @@
-// import SEO from "../components/seo"
+﻿// import SEO from "../components/seo"
 
 import { Section as S } from '../../styles/components';
 
@@ -52,3 +52,4 @@ export const ReadMore = styled.div`
     filter: brightness(0.8);
   }
 `;
+

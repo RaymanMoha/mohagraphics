@@ -1,4 +1,4 @@
-import { Content } from '@/content/projects';
+﻿import { Content } from '@/content/projects';
 
 export const content: Content = {
   title: 'QuickHost: Streamlining Web Hosting Services',
@@ -22,3 +22,4 @@ export const content: Content = {
   ],
   role: 'Frontend Developer & SEO Specialist',
 };
+

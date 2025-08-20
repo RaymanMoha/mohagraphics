@@ -1,4 +1,4 @@
-import { Content } from '@/content/projects';
+﻿import { Content } from '@/content/projects';
 
 export const content: Content = {
   title: 'Blossom Insurance.',
@@ -20,3 +20,4 @@ export const content: Content = {
   ],
   role: `Frontend Developer`,
 };
+

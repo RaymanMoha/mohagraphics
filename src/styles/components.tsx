@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+﻿import styled from 'styled-components';
 
 export const colors = {
   background: '#121e27',
@@ -351,3 +351,4 @@ export const HeroP = styled.p`
   font-size: 1.2rem;
   max-width: 30rem;
 `;
+

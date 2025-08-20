@@ -1,4 +1,4 @@
----
+﻿---
 title: 100 days of code
 draft: true
 date: 2020-10-17T18:24:09.989Z
@@ -86,3 +86,4 @@ I feel like I learned a lot about React thanks to Gatsby but I now must leave th
 I have been practicing my skills but I feel like I have to gulp down new concepts if I don't want to get stuck. I'll power through as much Scrimba and Frontend Masters as possible to strengthen my backend concepts. After that I'll go hard on the data structures and algorithms on books and youtube.
 
 I'm thinking this would keep me busy at least 6 months. Hopefully things turn out better than I'm expecting. I'll be trying my best.
+

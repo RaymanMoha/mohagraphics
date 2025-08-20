@@ -1,4 +1,4 @@
-import { Box } from '@chakra-ui/react';
+﻿import { Box } from '@chakra-ui/react';
 import styled from 'styled-components';
 
 export const FeaturedProjects = styled.div`
@@ -83,3 +83,4 @@ export const ProjectImage = styled.div`
     }
   }
 `;
+

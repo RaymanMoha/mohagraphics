@@ -1,4 +1,4 @@
-import {
+﻿import {
   Header,
   Paragraph,
   Projects,
@@ -68,3 +68,4 @@ export const ProjectsSection = ({ projects }: Props) => {
     </>
   );
 };
+

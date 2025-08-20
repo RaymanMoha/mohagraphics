@@ -1,4 +1,4 @@
-import { FaReact } from 'react-icons/fa';
+﻿import { FaReact } from 'react-icons/fa';
 import styled from 'styled-components';
 
 export default function Icon({
@@ -30,3 +30,4 @@ const Wrapper = styled.div<any>`
     animation: example ${(props) => props.speed} linear infinite;
   }
 `;
+

@@ -1,4 +1,4 @@
-import { content as projectData } from './projects';
+﻿import { content as projectData } from './projects';
 
 export const landingPage = {
   title: 'Landing page title from local markdown',
@@ -83,3 +83,4 @@ export const landingPage = {
     buttonText: 'Get in touch',
   },
 };
+

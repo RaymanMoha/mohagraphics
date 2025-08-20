@@ -1,4 +1,4 @@
-import { Hero, HeroP, colors } from '../styles/components';
+﻿import { Hero, HeroP, colors } from '../styles/components';
 
 import Social from '../components/Social';
 
@@ -92,3 +92,4 @@ export const getStaticProps = (async () => {
 }) satisfies GetStaticProps;
 
 export default Index;
+

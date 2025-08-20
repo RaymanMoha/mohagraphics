@@ -1,4 +1,4 @@
-[![Video](https://img.youtube.com/vi/W72HrS7-3rI/hqdefault.jpg)](https://www.youtube.com/watch?v=W72HrS7-3rI&t=9s)
+﻿[![Video](https://img.youtube.com/vi/W72HrS7-3rI/hqdefault.jpg)](https://www.youtube.com/watch?v=W72HrS7-3rI&t=9s)
 
 # Project Scope
 
@@ -46,3 +46,4 @@ The platform aimed to break down data silos and improve communication within tea
 [Visit Website](#)
 
 ![Profile page](Onspace/profile.jpeg "Profile page showing active applications")
+

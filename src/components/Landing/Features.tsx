@@ -1,4 +1,4 @@
-type Props = { features: { body: string; header: string }[] };
+﻿type Props = { features: { body: string; header: string }[] };
 export const Features = ({ features }: Props) => {
   return features.map((feature, i) => {
     return (
@@ -9,3 +9,4 @@ export const Features = ({ features }: Props) => {
     );
   });
 };
+
