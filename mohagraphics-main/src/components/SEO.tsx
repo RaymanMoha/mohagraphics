@@ -78,10 +78,10 @@ export const SEO = ({
       'https://www.linkedin.com/in/mohammed-abdirahman-1a6b651bb/',
       'https://twitter.com/yourtwitter'
     ],
-    jobTitle: 'Global Frontend & Mobile App Developer',
+    jobTitle: 'Frontend & Mobile App Developer',
     worksFor: {
       '@type': 'Organization',
-      name: 'International Software Development Consultant',
+      name: 'Reon Capital',
       description: 'Delivering expert mobile app development, frontend development, and UI/UX design services to clients worldwide'
     },
     address: {
