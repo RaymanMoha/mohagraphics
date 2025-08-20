@@ -6,9 +6,11 @@ export type Props = {
   title: string;
   thumb: string;
   keywords: string[];
+  /** Optional canonical URL to render as a <link rel="canonical"/> */
+  canonical?: string;
 };
 
-export const SEO = ({ description, lang, title, thumb, keywords }: Props) => {
+export const SEO = ({ description, lang, title, thumb, keywords, canonical }: Props) => {
   const metaTags = [
     {
       name: `description`,
@@ -69,11 +71,12 @@ export const SEO = ({ description, lang, title, thumb, keywords }: Props) => {
     },
   ];
 
-  return metaTags.map(({ name, content }, i) => {
-    return (
-      <Head key={i}>
-        <meta name={name} content={content} />
-      </Head>
-    );
-  });
+  return (
+    <Head>
+      {canonical && <link rel="canonical" href={canonical} />}
+      {metaTags.map(({ name, content }, i) => (
+        <meta key={i} name={name} content={content} />
+      ))}
+    </Head>
+  );
 };

@@ -43,9 +43,9 @@
   "devDependencies": {
     "@types/lodash": "^4.14.202",
     "@types/node": "^20",
-    "@types/react": "^18",
+    "@types/react": "^18.2.46",
     "@types/react-animations": "^1.0.3",
-    "@types/react-dom": "^18",
+    "@types/react-dom": "^18.2.18",
     "@types/typography": "^0.16.7",
     "@typescript-eslint/eslint-plugin": "^6.10.0",
     "@typescript-eslint/parser": "^6.17.0",
