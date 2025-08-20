@@ -12,8 +12,9 @@ export const ContactSection = () => {
         {<HighlightedWords title={"Let's have a **chat**"} />}
       </Hero>
       <img
-        src="img\herogifo2.gif"
-        alt="Animated GIF"
+        src="img/herogifo2.gif"
+        alt="Animated collaboration illustration encouraging contact"
+        loading="lazy"
         style={{
           position: 'absolute',
           top: '10px',

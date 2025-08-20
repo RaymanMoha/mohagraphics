@@ -25,11 +25,51 @@ const Index = ({
   return (
     <>
       <SEO
-        title="mohammed Abdirahmann | Software Engineer"
-        description={''}
-        lang={''}
-        thumb={''}
-        keywords={[]}
+        title="Mohammed Abdirahman | Frontend Developer & Software Engineer"
+        description="Passionate frontend developer specializing in React, Next.js, and modern web technologies. Creating intuitive user interfaces and high-performance web applications."
+        lang="en"
+        thumb="landingImage.jpg"
+        keywords={[
+          'frontend developer',
+          'software engineer',
+          'react developer',
+          'nextjs developer',
+          'web developer',
+          'javascript developer',
+          'ui/ux developer',
+          'responsive design',
+          'web applications',
+          'mohammed abdirahman',
+          'portfolio'
+        ]}
+        canonical="https://www.mohammedabdirahman.com"
+        structuredData={{
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "name": "Mohammed Abdirahman",
+          "jobTitle": "Frontend Developer",
+          "description": "Passionate frontend developer specializing in React, Next.js, and modern web technologies",
+          "url": "https://www.mohammedabdirahman.com",
+          "image": "https://www.mohammedabdirahman.com/img/landingImage.jpg",
+          "sameAs": [
+            "https://github.com/RaymanMoha",
+            "https://linkedin.com/in/mohammed-abdirahman",
+            "https://twitter.com/mohamedabdi__"
+          ],
+          "knowsAbout": [
+            "React",
+            "Next.js",
+            "JavaScript",
+            "TypeScript",
+            "Frontend Development",
+            "Web Development",
+            "UI/UX Design"
+          ],
+          "alumniOf": {
+            "@type": "Organization",
+            "name": "ALX Software Engineering Program"
+          }
+        }}
       />
       <div
         style={{
@@ -50,8 +90,8 @@ const Index = ({
           </div>
         </HeroSection>
         <img
-          src="img\flame.gif"
-          alt="Animated GIF"
+          src="img/flame.gif"
+          alt="Animated flame decoration representing passion for development"
           style={{
             position: 'absolute',
             top: '400px',

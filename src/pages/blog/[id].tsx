@@ -1,3 +1,4 @@
+import { SEO } from '@/components/SEO';
 import Social from '@/components/Social';
 import { Hero, Section, sizing } from '@/styles/components';
 import fs from 'fs';
@@ -28,18 +29,58 @@ const BlogPage = ({
   keywords,
   title,
   notFound,
+  id,
 }: InferGetStaticPropsType<typeof getStaticProps>) => {
   if (!!notFound) {
     return null;
   }
   return (
     <>
-      {/* <SEO
-        title={title}
-        thumb={thumb}
-        keywords={tags}
-        description={description || post.excerpt}
-      /> */}
+      <SEO
+        title={`${title} | Mohammed Abdirahman Blog`}
+        description={description || 'Read this insightful blog post by Mohammed Abdirahman about frontend development, React, and modern web technologies.'}
+        thumb={thumb || 'blog-default.jpg'}
+        keywords={keywords ? keywords.split(',').map(k => k.trim()) : [
+          'frontend development',
+          'react',
+          'javascript',
+          'web development',
+          'programming',
+          'tutorial'
+        ]}
+        lang="en"
+        canonical={`https://www.mohammedabdirahman.com/blog/${id}`}
+        ogType="article"
+        article={{
+          author: 'Mohammed Abdirahman',
+          section: 'Technology',
+          tags: keywords ? keywords.split(',').map(k => k.trim()) : ['Frontend Development', 'Programming'],
+        }}
+        structuredData={{
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          "headline": title,
+          "description": description || 'Blog post by Mohammed Abdirahman',
+          "image": `https://www.mohammedabdirahman.com/img/${thumb || 'blog-default.jpg'}`,
+          "author": {
+            "@type": "Person",
+            "name": "Mohammed Abdirahman",
+            "url": "https://www.mohammedabdirahman.com"
+          },
+          "publisher": {
+            "@type": "Person",
+            "name": "Mohammed Abdirahman",
+            "url": "https://www.mohammedabdirahman.com"
+          },
+          "datePublished": new Date().toISOString(),
+          "dateModified": new Date().toISOString(),
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": `https://www.mohammedabdirahman.com/blog/${id}`
+          },
+          "keywords": keywords || 'frontend development, react, javascript'
+        }}
+      />
 
       <Section>
         <header>
@@ -142,6 +183,7 @@ export const getStaticProps = (async ({ params }) => {
         thumb,
         keywords,
         title,
+        id,
       },
     };
   }

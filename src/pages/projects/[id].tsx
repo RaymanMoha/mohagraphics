@@ -15,6 +15,7 @@ import styled from 'styled-components';
 type PageProps = {
   mdxSource: string;
   content?: Content;
+  projectId?: string;
 };
 
 export const getStaticProps = (async ({ params }) => {
@@ -38,13 +39,14 @@ export const getStaticProps = (async ({ params }) => {
       .process(matterResult.content);
     const mdxSource = processedContent.toString();
 
-    return { props: { mdxSource, content: pageContent } };
+    return { props: { mdxSource, content: pageContent, projectId: id } };
   }
   return {
     props: {
       // redirect to 404
       notFound: true,
       mdxSource: '',
+      projectId: '',
     },
     notFound: true,
   };
@@ -59,7 +61,7 @@ export const getStaticPaths = (async () => {
   };
 }) satisfies GetStaticPaths;
 
-const ProjectPage = ({ mdxSource, content }: PageProps) => {
+const ProjectPage = ({ mdxSource, content, projectId }: PageProps) => {
   const [showMore, setShowMore] = useState(false);
   if (!content) return null;
   const {
@@ -73,11 +75,33 @@ const ProjectPage = ({ mdxSource, content }: PageProps) => {
   return (
     <Section top={true}>
       <SEO
-        title={title}
+        title={`${title} | Mohammed Abdirahman Portfolio`}
         thumb={featuredImage}
         description={seo || description}
-        keywords={keywords}
-        lang={'english'}
+        keywords={keywords || []}
+        lang="en"
+        canonical={`https://www.mohammedabdirahman.com/projects/${projectId}`}
+        structuredData={{
+          "@context": "https://schema.org",
+          "@type": "CreativeWork",
+          "name": title,
+          "description": seo || description,
+          "image": `https://www.mohammedabdirahman.com/img/${featuredImage}`,
+          "author": {
+            "@type": "Person",
+            "name": "Mohammed Abdirahman",
+            "url": "https://www.mohammedabdirahman.com"
+          },
+          "creator": {
+            "@type": "Person", 
+            "name": "Mohammed Abdirahman"
+          },
+          "dateCreated": new Date().toISOString(),
+          "inLanguage": "en",
+          "isAccessibleForFree": true,
+          "keywords": keywords?.join(', ') || '',
+          "programmingLanguage": stack || type
+        }}
       />
       <h1>{title}</h1>
       <ReadTime text={mdxSource} />

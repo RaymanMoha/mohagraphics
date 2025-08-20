@@ -56,8 +56,9 @@ export const ProjectsSection = ({ projects }: Props) => {
                 <Link href={link}>
                   <img
                     className="imageFluidContainer"
-                    alt="project image"
+                    alt={`${title} project screenshot showing the user interface and design`}
                     src={`/img/${image}`}
+                    loading="lazy"
                   />
                 </Link>
               </ProjectImage>
