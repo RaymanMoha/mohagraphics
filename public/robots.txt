@@ -1,2 +1,18 @@
 User-agent: *
-Disallow:
+Allow: /
+
+# Sitemaps
+Sitemap: https://www.mohammedabdirahman.com/sitemap.xml
+
+# Block access to admin areas
+Disallow: /admin/
+Disallow: /private/
+
+# Allow all bots to access images
+User-agent: *
+Allow: /img/
+Allow: /_next/image/
+Allow: /_next/static/
+
+# Crawl delay for better server performance
+Crawl-delay: 1
