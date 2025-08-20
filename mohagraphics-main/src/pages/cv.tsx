@@ -1,24 +1,26 @@
 import { useEffect } from 'react';
-import { useRouter } from 'next/router';
+import Head from 'next/head';
 
 export default function CV() {
-  const router = useRouter();
-
   useEffect(() => {
-    // Use window.location for direct file access
-    window.location.href = '/files/cv.pdf';
+    window.location.href = '/api/cv';
   }, []);
 
-  // Show loading state while redirecting
   return (
-    <div style={{ 
-      display: 'flex', 
-      justifyContent: 'center', 
-      alignItems: 'center', 
-      height: '100vh',
-      fontSize: '1.2rem'
-    }}>
-      Loading CV...
-    </div>
+    <>
+      <Head>
+        <title>Mohammed Abdirahman - CV</title>
+        <meta name="description" content="Mohammed Abdirahman's CV - Frontend & Mobile App Developer" />
+      </Head>
+      <div style={{ 
+        display: 'flex', 
+        justifyContent: 'center', 
+        alignItems: 'center', 
+        height: '100vh',
+        fontSize: '1.2rem'
+      }}>
+        Loading CV...
+      </div>
+    </>
   );
 }

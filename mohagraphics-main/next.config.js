@@ -14,6 +14,19 @@ const nextConfig = {
   images: {
     unoptimized: true
   },
+  async headers() {
+    return [
+      {
+        source: '/api/cv',
+        headers: [
+          {
+            key: 'Content-Type',
+            value: 'application/pdf',
+          },
+        ],
+      },
+    ];
+  },
   webpack(config) {
     config.module.rules.push({
       test: /\.svg$/,
