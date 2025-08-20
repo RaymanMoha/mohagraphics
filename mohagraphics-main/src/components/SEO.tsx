@@ -9,7 +9,7 @@ type MetaTag = {
   property?: string;
 };
 
-type SEOProps = {
+export type SEOProps = {
   /** The page title */
   title: string;
   /** Meta description */
