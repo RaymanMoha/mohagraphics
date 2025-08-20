@@ -10,7 +10,14 @@ export type Props = {
   canonical?: string;
 };
 
-export const SEO = ({ description, lang, title, thumb, keywords, canonical }: Props) => {
+export const SEO = ({
+  description,
+  lang,
+  title,
+  thumb,
+  keywords,
+  canonical,
+}: Props) => {
   const metaTags = [
     {
       name: `description`,
@@ -27,7 +34,7 @@ export const SEO = ({ description, lang, title, thumb, keywords, canonical }: Pr
     {
       property: `og:image`,
       itemprop: 'image',
-      content: `https://www.aAbdirahmannnnnn.com/img/${thumb || 'logo.png'}`,
+      content: `https://www.mohammedabdirahman.com/img/${thumb || 'logo.png'}`,
     },
     {
       property: `og:description`,
@@ -43,11 +50,11 @@ export const SEO = ({ description, lang, title, thumb, keywords, canonical }: Pr
     },
     {
       name: `twitter:image`,
-      content: `https://www.aAbdirahmannn.com/img/${thumb}`,
+      content: `https://www.mohammedabdirahman.com/img/${thumb || 'logo.png'}`,
     },
     {
       name: `twitter:image:alt`,
-      content: `mohammedAbdirahmannn Logo`,
+      content: `mohammed abdirahman logo`,
     },
     //     {
     //       name: `twitter:creator`,
@@ -74,9 +81,11 @@ export const SEO = ({ description, lang, title, thumb, keywords, canonical }: Pr
   return (
     <Head>
       {canonical && <link rel="canonical" href={canonical} />}
-      {metaTags.map(({ name, content }, i) => (
-        <meta key={i} name={name} content={content} />
-      ))}
+      {metaTags.map((tag, i) => {
+        const key = tag.name || tag.property || `meta-${i}`;
+        if (tag.name) return <meta key={key} name={tag.name} content={tag.content} />;
+        return <meta key={key} property={tag.property} content={tag.content} />;
+      })}
     </Head>
   );
 };
