@@ -16,7 +16,7 @@ export default function Document() {
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
               gtag('config', 'G-E7GVNYS50S', {
-                page_path: window.location.pathname,
+                send_page_view: true
               });
             `,
           }}
