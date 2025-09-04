@@ -5,6 +5,7 @@ import { GiHamburgerMenu } from 'react-icons/gi';
 import { IoClose } from 'react-icons/io5';
 import styled from 'styled-components';
 import { colors } from '../styles/components';
+import { useChatContext } from '../contexts/ChatContext';
 
 interface NavContainerProps {
   showShadow: boolean;
@@ -187,6 +188,7 @@ export default function Navbar({ invert = false }: { invert?: boolean }) {
   const [menuOpen, setMenuOpen] = useState(false);
   const [showShadow, setShowShadow] = useState(false);
   const router = useRouter();
+  const { openChat } = useChatContext();
 
   // Add a subtle shadow when scrolling for a more refined feel
   useEffect(() => {
@@ -225,6 +227,9 @@ export default function Navbar({ invert = false }: { invert?: boolean }) {
           </NavLink>
           <NavLink href="/#contact" invert={invert}>
             Contact
+          </NavLink>
+          <NavLink href="#" invert={invert} onClick={(e) => { e.preventDefault(); openChat(); setMenuOpen(false); }}>
+            AI Chat
           </NavLink>
         </NavLinks>
       </Menu>

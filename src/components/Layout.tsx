@@ -2,6 +2,8 @@
 import StyledComponentsRegistry from '../../lib/registry';
 import Footer from './Footer';
 import Navbar from './Navbar';
+import AIAssistant from './AIAssistant';
+import { ChatProvider } from '../contexts/ChatContext';
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   const [isSSR, setIsSSR] = useState(true);
@@ -14,9 +16,12 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
   return (
     <StyledComponentsRegistry>
-      <Navbar invert={true} />
-      {children}
-      <Footer />
+      <ChatProvider>
+        <Navbar invert={true} />
+        {children}
+        <Footer />
+        <AIAssistant />
+      </ChatProvider>
     </StyledComponentsRegistry>
   );
 }

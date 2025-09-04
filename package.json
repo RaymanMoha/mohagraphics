@@ -20,6 +20,7 @@
     "@chakra-ui/react": "^2.8.2",
     "@emotion/react": "^11.11.3",
     "@emotion/styled": "^11.11.0",
+    "@huggingface/inference": "^4.7.1",
     "@mdx-js/loader": "^3.0.0",
     "@mdx-js/react": "^3.0.0",
     "@next/mdx": "^14.0.4",
@@ -66,4 +67,3 @@
     "yarn": "1.22.19"
   }
 }
-

@@ -3,6 +3,7 @@
 export const colors = {
   background: '#121e27',
   accent: '#ff715b',
+  accentHover: '#e55a42', // Darker version of accent for hover states
   green: '#0dab76',
   faded: '#b7b4b9',
   white: '#ffff',
