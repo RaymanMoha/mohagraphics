@@ -428,7 +428,7 @@ const TableOfContents = styled.div`
   }
   
   a {
-    color: ${colors.foreground};
+    color: ${colors.white};
     text-decoration: none;
     
     &:hover {
