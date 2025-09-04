@@ -5,6 +5,7 @@ import * as QuickHost from '../../public/projects/QuickHost/content';
 import * as Yala from '../../public/projects/Yala/content';
 import * as blossom from '../../public/projects/blossom/content';
 import * as convolab from '../../public/projects/convolab/content';
+import * as InsuranceWidget from '../../public/projects/InsuranceWidget/content';
 
 export type Content = {
   title: string;
@@ -29,5 +30,6 @@ export const content = {
   Yala: { ...Yala.content },
   blossom: { ...blossom.content },
   convolab: { ...convolab.content },
+  InsuranceWidget: { ...InsuranceWidget.content },
 };
 

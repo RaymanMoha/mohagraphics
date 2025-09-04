@@ -20,6 +20,7 @@ const portfolioContext = {
     "Strong background in responsive design"
   ],
   projects: [
+    "Insurance widget platform with React and TypeScript",
     "E-commerce platforms with React and Node.js",
     "Real-time chat applications",
     "Portfolio websites and landing pages",

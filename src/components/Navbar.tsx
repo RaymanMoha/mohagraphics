@@ -227,9 +227,9 @@ export default function Navbar({ invert = false }: { invert?: boolean }) {
           <NavLink href="/#contact" invert={invert}>
             Contact
           </NavLink>
-          <NavLink href="/blog" invert={invert}>
+          {/* <NavLink href="/blog" invert={invert}>
             Blog
-          </NavLink>
+          </NavLink> */}
           <NavLink href="#" invert={invert} onClick={(e) => { e.preventDefault(); openChat(); setMenuOpen(false); }}>
             AI Chat
           </NavLink>

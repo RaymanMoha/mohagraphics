@@ -20,6 +20,7 @@ Databases: PostgreSQL, MySQL, MongoDB, Firebase
 Cloud: Digital Ocean, Fly.io, GCP, Vercel, Netlify, Docker
 
 MAJOR PROJECTS:
+- InsuranceWidget: Modern insurance calculator with React, TypeScript, PWA
 - ENEVA utility management platform (Reon Capital)
 - Zuba Botswana Premier League apps (Fan App & Steward App)
 - ENCOFLOW e-commerce (1M+ transactions monthly, 99.9% uptime)

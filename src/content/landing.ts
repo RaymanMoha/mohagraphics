@@ -21,6 +21,14 @@ export const landingPage = {
   },
   projects: [
     {
+      body: 'I built a comprehensive insurance quote calculator and onboarding platform using React and TypeScript. The application features a multi-step onboarding flow, PWA capabilities, Redux state management, and iframe integration for seamless embedding. With modern UI/UX design and responsive architecture, it streamlines the insurance application process.',
+      image: 'insurance-widget.png',
+      buttonText: 'View project',
+      link: '/projects/InsuranceWidget/',
+      ...projectData.InsuranceWidget,
+      title: 'Insurance Widget',
+    },
+    {
       body: 'I transformed detailed Figma designs into a responsive, user-friendly platform for both web and mobile. The site features integrated core functionalities—like dynamic form creation, team chat, and data visualization',
       image: 'onspace.png',
       buttonText: 'View project',

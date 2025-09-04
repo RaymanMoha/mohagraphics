@@ -26,6 +26,7 @@ export const getServerSideProps: GetServerSideProps = async ({ res }) => {
     '/projects/Yala',
     '/projects/blossom',
     '/projects/convolab',
+    '/projects/InsuranceWidget',
   ];
 
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
