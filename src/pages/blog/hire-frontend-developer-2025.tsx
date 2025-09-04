@@ -332,14 +332,18 @@ const HireFrontendDeveloper2025 = () => {
 
           <CallToAction>
             <Hero invert={false}>
-              <HighlightedWords title={"Need help **hiring** developers?"} />
+              <HighlightedWords title={"Looking for a **Frontend Developer** who actually gets it?"} />
             </Hero>
             <HeroP>
-              I've helped 50+ startups and businesses build their development teams. From technical interviews 
-              to team structure, I can guide you through the entire hiring process.
+              Hey there! While I can't help you hire developers (I'm still figuring that out myself 😅), 
+              I AM the developer you've been looking for! I know React, TypeScript, Next.js, and all the modern stuff 
+              that actually matters in 2025. No jQuery dinosaurs here - just clean, performant code that works.
+            </HeroP>
+            <HeroP style={{ fontStyle: 'italic', marginTop: '1rem', fontSize: '0.9rem' }}>
+              💡 <strong>Plot twist:</strong> Instead of helping you hire someone, why not just hire me? I promise I know the difference between <code>let</code> and <code>const</code> 😉
             </HeroP>
             <div style={{ textAlign: 'center', marginTop: '2rem' }}>
-              <SlidingButton buttonText="Get Hiring Consultation" link="https://calendly.com/abdulmoharayman/30min" />
+              <SlidingButton buttonText="Let's Build Something Cool 🚀" link="https://calendly.com/abdulmoharayman/30min" />
             </div>
           </CallToAction>
         </ArticleContent>
@@ -407,29 +411,35 @@ const ArticleContent = styled.div`
 `;
 
 const TableOfContents = styled.div`
-  background: linear-gradient(135deg, ${colors.background}05, ${colors.accent}05);
-  border: 1px solid ${colors.accent}20;
+  background: linear-gradient(135deg, ${colors.background}40, ${colors.accent}15);
+  border: 1px solid ${colors.accent}50;
   border-radius: 10px;
   padding: 2rem;
   margin: 2rem 0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   
   h3 {
     margin-top: 0;
     color: ${colors.accent};
+    font-weight: 600;
   }
   
   ol {
     margin: 1rem 0;
     padding-left: 1.5rem;
+    line-height: 1.6;
   }
   
   li {
-    margin: 0.5rem 0;
+    margin: 0.75rem 0;
+    color: ${colors.white};
   }
   
   a {
     color: ${colors.white};
     text-decoration: none;
+    font-weight: 500;
+    transition: all 0.2s ease;
     
     &:hover {
       color: ${colors.accent};
