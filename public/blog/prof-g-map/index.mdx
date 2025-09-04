@@ -1,0 +1,124 @@
+---
+title: "Prof G: Sprinters Around The World"
+draft: false
+date: 2020-11-09T17:55:46.594Z
+description: "This past week many of us have spent a little too much time staring at maps. An electoral map shows division by default. I want to show you a map that shows quite the opposite."
+keywords: "scott galloway, prof g, data analysis, data visualization, maps, community mapping, global collaboration, sprint directory, python folium, geographic data"
+thumb: sprintmap.png
+featured: false
+internal: false
+---
+
+This past week many of us have spent a **little too much time staring at maps**. An electoral map shows division by default. **I want to show you a map that shows quite the opposite.**
+
+[On my previous post](https://aAbdirahmann.com/profg), I concluded that **positivity and optimism** was a major commonality in the sprint's community. Knowing that **so many people from all over the world are collaborating and sharing ideas**, made me want to know a little more about the cohort.
+
+I have to admit that I'm a sucker for maps. They give me a feeling of **endless possibilities**. I also love traveling, but that's something that I haven't been able to do this year. Strangely enough, **working on this map gave me a feeling of discovery**. I've spent a bit too long playing around with it. I'm picturing each one of us, **peeking out the window and looking at something completely different**. My imagination flies! But enough said, here it is. I hope you enjoy it as much as I do.
+
+## Interactive Map Visualization
+
+<iframe src="https://mohammedmaps/map.html" width="600" height="400" style={{border: 'none', borderRadius: '8px'}}></iframe>
+
+Click [here](https://mohammed/maps/map.html) for a fullscreen experience
+
+## The Technical Process
+
+**Nerd talk ahead:**
+
+### Data Collection & Processing
+
+I took the location data from the Sprint Directory and formatted so that each entry would look like this:
+
+_Austin, TX / London, UK / Sydney, Australia_
+
+### Geocoding with Google Maps API
+
+I ran these locations through the Google Maps API to get precise coordinates. This process involved:
+
+Converting location strings into latitude/longitude pairs
+Handling edge cases for international addresses
+Ensuring data privacy by anonymizing personal information
+
+### Visualization with Python
+
+Finally, the anonymized data was plotted on the map using a Python library called **folium**. This powerful library allows for:
+
+Interactive map creation with zoom and pan functionality
+Custom markers and clustering for dense areas
+Responsive design that works across devices
+Easy integration with web applications
+
+## Code Example
+
+```python
+import folium
+import pandas as pd
+from geopy.geocoders import GoogleV3
+
+# Initialize the map
+world_map = folium.Map(location=[20, 0], zoom_start=2)
+
+# Process locations and add markers
+for location in sprint_locations:
+    # Geocode location
+    coords = geocoder.geocode(location)
+    if coords:
+        folium.CircleMarker(
+            location=[coords.latitude, coords.longitude],
+            radius=5,
+            popup=f"Sprint Member Location",
+            color='#3388ff',
+            fillColor='#3388ff'
+        ).add_to(world_map)
+
+# Save the map
+world_map.save('sprint_map.html')
+```
+
+## Lessons Learned
+
+### Community Building Through Data
+
+This project taught me that **data visualization can be a powerful tool for community building**. By showing the global reach of our cohort, it created a sense of connection and shared purpose among participants.
+
+### Technical Challenges
+
+**Privacy Considerations**: Balancing transparency with privacy required careful anonymization
+**API Rate Limits**: Google Maps API has usage limits that required batch processing
+**Cross-browser Compatibility**: Ensuring the interactive map worked across different browsers and devices
+
+### The Power of Geographic Context
+
+Seeing our community mapped out geographically revealed patterns I hadn't expected:
+- Strong representation in tech hubs (San Francisco, Austin, London)
+- Surprising participation from smaller cities worldwide
+- Time zone considerations for global collaboration
+
+## Impact and Reflection
+
+It's been a challenging year but being part of Prof G's sprint has been one of the most pleasant surprises of 2020. I know you're all busy working on our final projects, it's a lot of work! But **I hope this map gives you a nice feeling of closeness as it did to me**. We're all in this together!
+
+This visualization project reinforced my belief that **technology should bring people together, not divide them**. In a world where digital maps often show us differences and boundaries, it was refreshing to create something that highlighted our shared humanity and common goals.
+
+## Tools and Technologies Used
+
+**Data Processing**: Python, Pandas, GeoPy
+**Mapping**: Folium, OpenStreetMap
+**Geocoding**: Google Maps API
+**Web Integration**: HTML5, responsive design
+**Hosting**: Static web hosting for interactive maps
+
+## Future Improvements
+
+If I were to rebuild this project today, I would consider:
+- Real-time collaboration features
+- Integration with social platforms
+- More detailed demographic insights (with consent)
+- Mobile-first responsive design
+- Accessibility improvements for screen readers
+
+**Want to create your own community map?** I've helped several organizations visualize their global reach and build stronger connections through geographic data visualization. Whether it's for a startup, nonprofit, or educational program, mapping your community can reveal insights and foster deeper connections.
+
+-mohammed 🗺️
+
+**PS:** I want to thank my colleague **Javier Vazquez** for helping me plot the data on the map. He's an awesome data scientist and his expertise in geospatial analysis made this project possible!

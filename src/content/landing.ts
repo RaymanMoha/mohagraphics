@@ -4,7 +4,7 @@ export const landingPage = {
   title: 'Landing page title from local markdown',
   internal: true,
   mainpitch: {
-    title: 'Hi, I’m Mohammed | **Frontend** **Developer**',
+    title: 'Hi, I’m Mohammed | **Frontend** **Engineer**',
     subtitle:
       'I love exploring and creating 🚀 whether it’s crafting intuitive user interfaces 🎨 or diving into the latest frontend technologies 💻. As a lifelong learner 📚, I’m always experimenting with new ways to build responsive, high-performance web applications ⚡ that feel effortless to use.',
     buttonText: 'Book a call',
