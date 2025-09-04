@@ -4,9 +4,45 @@ import Wordpress2016 from 'typography-theme-wordpress-2016';
 
 import Layout from '@/components/Layout';
 import App, { AppContext, AppInitialProps, AppProps } from 'next/app';
+import { useRouter } from 'next/router';
+import { useEffect } from 'react';
 import '../styles/styles.css';
 import styles from '@/styles/style.module.scss';
 import { ChakraBaseProvider } from '@chakra-ui/react';
+
+// Google Analytics helper functions
+declare global {
+  interface Window {
+    gtag: (...args: any[]) => void;
+  }
+}
+
+export const GA_TRACKING_ID = 'G-E7GVNYS50S';
+
+// Track page views
+export const pageview = (url: string) => {
+  if (typeof window !== 'undefined' && window.gtag) {
+    window.gtag('config', GA_TRACKING_ID, {
+      page_path: url,
+    });
+  }
+};
+
+// Track custom events
+export const event = ({ action, category, label, value }: {
+  action: string;
+  category: string;
+  label?: string;
+  value?: number;
+}) => {
+  if (typeof window !== 'undefined' && window.gtag) {
+    window.gtag('event', action, {
+      event_category: category,
+      event_label: label,
+      value: value,
+    });
+  }
+};
 
 type AppOwnProps = { example: string };
 
@@ -33,6 +69,23 @@ export default function MyApp({
   Component,
   pageProps,
 }: AppProps & AppOwnProps) {
+  const router = useRouter();
+
+  // Track page views on route changes
+  useEffect(() => {
+    const handleRouteChange = (url: string) => {
+      pageview(url);
+    };
+
+    router.events.on('routeChangeComplete', handleRouteChange);
+    router.events.on('hashChangeComplete', handleRouteChange);
+
+    return () => {
+      router.events.off('routeChangeComplete', handleRouteChange);
+      router.events.off('hashChangeComplete', handleRouteChange);
+    };
+  }, [router.events]);
+
   return (
     <div className={styles.wrapper}>
       <ChakraBaseProvider>
