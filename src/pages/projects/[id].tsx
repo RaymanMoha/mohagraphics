@@ -7,10 +7,12 @@ import fs from 'fs';
 import matter from 'gray-matter';
 import { GetStaticPaths, GetStaticProps } from 'next';
 import path from 'path';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { remark } from 'remark';
 import html from 'remark-html';
 import styled from 'styled-components';
+import * as gtag from '../../lib/gtag';
+import { useRouter } from 'next/router';
 
 type PageProps = {
   mdxSource: string;
@@ -55,12 +57,21 @@ export const getStaticPaths = (async () => {
     paths: Object.keys(content).map((contentkey) => ({
       params: { id: contentkey },
     })),
-    fallback: true, // false or "blocking"
+    fallback: false, // Change to false to pre-generate all pages
   };
 }) satisfies GetStaticPaths;
 
 const ProjectPage = ({ mdxSource, content }: PageProps) => {
   const [showMore, setShowMore] = useState(false);
+  const router = useRouter();
+
+  // Track page view for dynamic project pages
+  useEffect(() => {
+    if (router.isReady && content) {
+      gtag.pageview(router.asPath);
+    }
+  }, [router.isReady, router.asPath, content]);
+
   if (!content) return null;
   const {
     title,
