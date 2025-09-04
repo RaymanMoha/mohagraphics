@@ -647,7 +647,7 @@ const ReactNativeVsFlutter2025 = () => {
               <HighlightedWords title={"Need help choosing the **right framework**?"} />
             </Hero>
             <HeroP>
-              I've built 20+ mobile apps with both React Native and Flutter. Let me help you choose 
+              I've built 5+ mobile apps with both React and Flutter. Let me help you choose 
               the best framework for your specific project and guide you through the development process.
             </HeroP>
             <div style={{ textAlign: 'center', marginTop: '2rem' }}>
