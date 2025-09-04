@@ -221,18 +221,14 @@ export default function Navbar({ invert = false }: { invert?: boolean }) {
           <NavLink href="/about" invert={invert}>
             About
           </NavLink>
-          <NavLink href="/blog" invert={invert}>
-            Blog
-          </NavLink>
-          {/* <NavLink href="/services" invert={invert}>
-            Services
-          </NavLink> */}
-          {/* <NavLink href="/blog" invert={invert}>Blog</NavLink> */}
           <NavLink href="/#projects" invert={invert}>
             Projects
           </NavLink>
           <NavLink href="/#contact" invert={invert}>
             Contact
+          </NavLink>
+          <NavLink href="/blog" invert={invert}>
+            Blog
           </NavLink>
           <NavLink href="#" invert={invert} onClick={(e) => { e.preventDefault(); openChat(); setMenuOpen(false); }}>
             AI Chat
