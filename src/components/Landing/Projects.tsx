@@ -24,8 +24,9 @@ export const ProjectsSection = ({ projects }: Props) => {
 
       <div>
         {projects.map((project, i) => {
-          const { buttonText, body, link, title, image, keywords } = project;
+          const { buttonText, body, link, title, image } = project;
           const role = 'role' in project ? project.role : undefined;
+          const keywords = 'keywords' in project ? project.keywords : undefined;
 
           const tags = keywords;
 
