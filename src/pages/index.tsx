@@ -139,32 +139,54 @@ export const getStaticProps = (async () => {
 export default Index;
 
 const ResponsiveMainContainer = styled.div`
-  padding: 0 clamp(1rem, 7vw, 200px);
+  padding: 0 1rem;
   background: ${colors.background};
   position: relative;
   overflow-x: hidden;
   
-  @media only screen and (max-width: 768px) {
-    padding: 0 1rem;
+  @media only screen and (min-width: 768px) {
+    padding: 0 clamp(2rem, 5vw, 100px);
+  }
+  
+  @media only screen and (min-width: 1024px) {
+    padding: 0 clamp(2rem, 7vw, 200px);
   }
   
   .marquee {
-    @media only screen and (max-width: 768px) {
-      min-height: 50vh;
-      
+    min-height: 100vh;
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    h1 {
+      margin-top: 0;
+      font-size: 1.8rem;
+      line-height: 1.2;
+    }
+    
+    @media only screen and (min-width: 480px) {
       h1 {
-        margin-top: 15vh;
-        font-size: 2rem !important;
-        line-height: 1.2;
+        margin-top: 0;
+        font-size: 2.2rem;
       }
     }
     
-    @media only screen and (max-width: 480px) {
-      min-height: 40vh;
+    @media only screen and (min-width: 768px) {
+      min-height: 60vh;
       
       h1 {
-        margin-top: 10vh;
-        font-size: 1.5rem !important;
+        margin-top: 15vh;
+        font-size: 3rem;
+      }
+    }
+    
+    @media only screen and (min-width: 1024px) {
+      min-height: 65vh;
+      
+      h1 {
+        margin-top: 25vh;
+        font-size: 4rem;
       }
     }
   }
@@ -172,28 +194,51 @@ const ResponsiveMainContainer = styled.div`
 
 const ResponsiveFlameGif = styled.img`
   position: absolute;
-  top: 400px;
-  right: 150px;
-  width: 500px;
-  height: 500px;
+  right: 10px;
+  width: 200px;
+  height: 200px;
   z-index: 1;
+  opacity: 0.8;
+
+  /* Mobile: Move to bottom of hero section */
+  top: auto;
+  bottom: -100px;
   
-  @media only screen and (max-width: 1024px) {
+  @media only screen and (min-width: 480px) {
+    width: 250px;
+    height: 250px;
+    right: 20px;
+    bottom: -80px;
+  }
+  
+  @media only screen and (min-width: 768px) {
     width: 350px;
     height: 350px;
     right: 50px;
     top: 350px;
+    bottom: auto;
+    opacity: 1;
   }
   
-  @media only screen and (max-width: 768px) {
-    width: 250px;
-    height: 250px;
-    right: 20px;
-    top: 300px;
+  @media only screen and (min-width: 1024px) {
+    width: 450px;
+    height: 450px;
+    right: 100px;
+    top: 380px;
   }
   
-  @media only screen and (max-width: 480px) {
-    display: none;
+  @media only screen and (min-width: 1200px) {
+    width: 500px;
+    height: 500px;
+    right: 150px;
+    top: 400px;
+  }
+  
+  @media only screen and (max-width: 320px) {
+    width: 150px;
+    height: 150px;
+    bottom: -120px;
+    opacity: 0.6;
   }
 `;
 

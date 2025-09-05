@@ -12,13 +12,13 @@ export const ContactSection = () => {
         {<HighlightedWords title={"Let's have a **chat**"} />}
       </Hero>
       <img
-        src="img\herogifo2.gif"
+        src="img/herogifo2.gif"
         alt="Animated GIF"
         style={{
           position: 'absolute',
           top: '10px',
           right: '-200px',
-          width: '1000px', // Adjust as needed
+          width: '1000px',
           height: '400px',
         }}
       />

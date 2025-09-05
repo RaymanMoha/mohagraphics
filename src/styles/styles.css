@@ -1,15 +1,66 @@
 ﻿@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700;900&family=Muli:wght@300;400;700;900&family=Montserrat:wght@300;400;700;900&display=swap');
 
+/* Global mobile-first improvements */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: #121e27;
   background: white;
-  margin: auto;
+  margin: 0;
+  padding: 0;
   overflow-x: hidden;
+  min-height: 100vh;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Mobile-specific improvements */
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+  
+  /* Prevent text from being too small on mobile */
+  p {
+    font-size: 1rem !important;
+    line-height: 1.5;
+  }
+  
+  /* Improve touch targets */
+  button, a, input, select, textarea {
+    min-height: 44px;
+    touch-action: manipulation;
+  }
+  
+  /* Better spacing for mobile */
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* Very small screens */
+@media only screen and (max-width: 320px) {
+  body {
+    font-size: 13px;
+  }
 }
 
 ::-webkit-scrollbar {
   background-color: transparent;
-  width: 11px;
+  width: 8px; /* Smaller scrollbar for mobile */
+}
+
+@media only screen and (min-width: 768px) {
+  ::-webkit-scrollbar {
+    width: 11px;
+  }
 }
 
 ::-webkit-scrollbar-track {
@@ -42,7 +93,17 @@ h2 > div,
 h3 > div,
 h4 > div,
 h5 > div {
-  margin-right: 1rem;
+  margin-right: 0.5rem;
+}
+
+@media only screen and (min-width: 768px) {
+  h1 > div,
+  h2 > div,
+  h3 > div,
+  h4 > div,
+  h5 > div {
+    margin-right: 1rem;
+  }
 }
 
 h1,
@@ -64,8 +125,20 @@ li {
 }
 
 p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 300;
+}
+
+@media only screen and (min-width: 768px) {
+  p {
+    font-size: 1.2rem;
+  }
+}
+
+/* Improve image responsiveness */
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .backend,
@@ -76,64 +149,67 @@ p {
   position: relative;
 }
 
-.backend:hover::after {
-  content: 'Backend';
-  background: #728e39;
-  color: white;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  padding: 0.35rem;
-  animation: fadeIn 0.4s ease-in-out;
-  z-index: 999;
-}
+/* Disable hover effects on touch devices */
+@media (hover: hover) {
+  .backend:hover::after {
+    content: 'Backend';
+    background: #728e39;
+    color: white;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 0.35rem;
+    animation: fadeIn 0.4s ease-in-out;
+    z-index: 999;
+  }
 
-.frontend:hover::after {
-  content: 'Frontend';
-  background: yellow;
-  color: black;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  padding: 0.35rem;
-  animation: fadeIn 0.4s ease-in-out;
-  z-index: 999;
-}
+  .frontend:hover::after {
+    content: 'Frontend';
+    background: yellow;
+    color: black;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 0.35rem;
+    animation: fadeIn 0.4s ease-in-out;
+    z-index: 999;
+  }
 
-.devOps:hover::after {
-  content: 'DevOps';
-  background: #870687;
-  color: white;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  padding: 0.35rem;
-  animation: fadeIn 0.4s ease-in-out;
-  z-index: 999;
-}
+  .devOps:hover::after {
+    content: 'DevOps';
+    background: #870687;
+    color: white;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 0.35rem;
+    animation: fadeIn 0.4s ease-in-out;
+    z-index: 999;
+  }
 
-.db:hover::after {
-  content: 'Database';
-  background: #ff91a4;
-  color: white;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  padding: 0.35rem;
-  animation: fadeIn 0.4s ease-in-out;
-  z-index: 999;
-}
+  .db:hover::after {
+    content: 'Database';
+    background: #ff91a4;
+    color: white;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 0.35rem;
+    animation: fadeIn 0.4s ease-in-out;
+    z-index: 999;
+  }
 
-.cms:hover::after {
-  content: 'CMS';
-  background: #6161ff;
-  color: white;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  padding: 0.35rem;
-  animation: fadeIn 0.4s ease-in-out;
-  z-index: 999;
+  .cms:hover::after {
+    content: 'CMS';
+    background: #6161ff;
+    color: white;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 0.35rem;
+    animation: fadeIn 0.4s ease-in-out;
+    z-index: 999;
+  }
 }
 
 @keyframes fadeIn {
@@ -173,8 +249,15 @@ p {
 }
 
 svg {
-  height: 7rem;
+  height: 5rem;
 }
+
+@media only screen and (min-width: 768px) {
+  svg {
+    height: 7rem;
+  }
+}
+
 .steam {
   animation: float 7s ease-in-out infinite;
 }
@@ -183,7 +266,9 @@ svg {
   transition: transform 0.4s ease-in-out;
 }
 
-.cup:hover {
-  animation: ring 1s ease-in-out alternate infinite;
+@media (hover: hover) {
+  .cup:hover {
+    animation: ring 1s ease-in-out alternate infinite;
+  }
 }
 

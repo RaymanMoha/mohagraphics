@@ -34,7 +34,7 @@ const NavbarContainer = styled.nav<NavContainerProps>`
   top: 0;
   left: 0;
   width: 100%;
-  padding: 0.75rem 2rem; /* Reduced padding for less height */
+  padding: 1rem 1.5rem;
   background-color: ${({ invert }) =>
     invert ? colors.white : colors.background};
   z-index: 1000;
@@ -48,11 +48,20 @@ const NavbarContainer = styled.nav<NavContainerProps>`
     showShadow ? '0 2px 10px rgba(0, 0, 0, 0.15)' : 'none'};
 
   .logo {
-    font-size: 1.5rem; /* Reduced font size */
+    font-size: 1.4rem;
     font-weight: 700;
     color: ${({ invert }) => (invert ? colors.background : colors.white)};
     cursor: pointer;
     text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  @media (min-width: 769px) {
+    padding: 0.75rem 2rem;
+    
+    .logo {
+      font-size: 1.5rem;
+    }
   }
 `;
 
@@ -93,7 +102,8 @@ const Menu = styled.ul<MenuProps>`
 
   @media (max-width: 768px) {
     flex-direction: column;
-    background: rgba(0, 0, 0, 0.95);
+    background: linear-gradient(135deg, rgba(18, 30, 39, 0.98) 0%, rgba(18, 30, 39, 0.95) 100%);
+    backdrop-filter: blur(20px);
     position: fixed;
     top: 0;
     left: ${({ open }) => (open ? '0' : '-100%')};
@@ -102,15 +112,53 @@ const Menu = styled.ul<MenuProps>`
     justify-content: center;
     align-items: center;
     gap: 3rem;
-    transition: left 0.3s ease;
+    transition: left 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 2rem;
+    
+    li {
+      font-size: 1.5rem;
+      color: ${colors.white};
+      text-align: center;
+      font-weight: 600;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: ${({ open }) => open ? 'slideInUp 0.6s ease forwards' : 'none'};
+      
+      &:nth-child(1) { animation-delay: 0.1s; }
+      &:nth-child(2) { animation-delay: 0.2s; }
+      &:nth-child(3) { animation-delay: 0.3s; }
+      &:nth-child(4) { animation-delay: 0.4s; }
+      &:nth-child(5) { animation-delay: 0.5s; }
+      
+      &:after {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+
+  @keyframes slideInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 `;
 
 const Burger = styled.div<BurgerProps>`
   display: none;
-  font-size: 1.75rem; /* Reduced size */
+  font-size: 1.8rem;
   color: ${({ invert }) => (invert ? colors.background : colors.white)};
   cursor: pointer;
+  z-index: 1001;
+  transition: transform 0.3s ease;
+  padding: 0.5rem;
+  border-radius: 8px;
+  
+  &:hover {
+    transform: scale(1.1);
+    background: rgba(255, 113, 91, 0.1);
+  }
 
   @media (max-width: 768px) {
     display: block;
@@ -120,11 +168,21 @@ const Burger = styled.div<BurgerProps>`
 const CloseButton = styled.div`
   display: none;
   position: absolute;
-  top: 1.5rem;
+  top: 2rem;
   right: 2rem;
-  font-size: 1.75rem; /* Reduced size */
+  font-size: 2.5rem;
   color: ${colors.white};
   cursor: pointer;
+  z-index: 1002;
+  transition: transform 0.3s ease, color 0.3s ease;
+  padding: 0.5rem;
+  border-radius: 50%;
+  
+  &:hover {
+    transform: scale(1.1) rotate(90deg);
+    color: ${colors.accent};
+    background: rgba(255, 113, 91, 0.1);
+  }
 
   @media (max-width: 768px) {
     display: block;
@@ -133,13 +191,14 @@ const CloseButton = styled.div`
 
 const NavLinks = styled.div`
   display: flex;
-  flex-direction: row; /* Changed to row for horizontal layout */
+  flex-direction: row;
   align-items: center;
   gap: 1.5rem;
 
   @media (max-width: 768px) {
     flex-direction: column;
-    gap: 1rem;
+    gap: 2.5rem;
+    width: 100%;
   }
 `;
 
@@ -218,16 +277,16 @@ export default function Navbar({ invert = false }: { invert?: boolean }) {
         </CloseButton>
         <NavHeading invert={invert}>Links</NavHeading>
         <NavLinks>
-          <NavLink href="/about" invert={invert}>
+          <NavLink href="/about" invert={invert} onClick={() => setMenuOpen(false)}>
             About
           </NavLink>
-          <NavLink href="/#projects" invert={invert}>
+          <NavLink href="/#projects" invert={invert} onClick={() => setMenuOpen(false)}>
             Projects
           </NavLink>
-          <NavLink href="/#contact" invert={invert}>
+          <NavLink href="/#contact" invert={invert} onClick={() => setMenuOpen(false)}>
             Contact
           </NavLink>
-          {/* <NavLink href="/blog" invert={invert}>
+          {/* <NavLink href="/blog" invert={invert} onClick={() => setMenuOpen(false)}>
             Blog
           </NavLink> */}
           <NavLink href="#" invert={invert} onClick={(e) => { e.preventDefault(); openChat(); setMenuOpen(false); }}>

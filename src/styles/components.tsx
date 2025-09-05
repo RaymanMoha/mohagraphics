@@ -55,27 +55,45 @@ export const Tags = styled.ul`
   justify-content: flex-start;
   grid-area: tags;
   flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
   white-space: nowrap;
 
   li {
     list-style: none;
     background: ${colors.background};
     color: ${colors.white};
-    padding: 0.25rem 0.7rem;
-    margin: 0 0.25rem 1rem 0;
-    font-size: 0.8rem;
-    font-weight: 700;
+    padding: 0.4rem 0.8rem;
+    margin: 0 0.5rem 0.8rem 0;
+    font-size: 0.75rem;
+    font-weight: 600;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 15px;
+    
+    @media only screen and (min-width: 768px) {
+      font-size: 0.8rem;
+      padding: 0.5rem 1rem;
+    }
   }
+  
+  @media only screen and (max-width: 480px) {
+    li {
+      font-size: 0.7rem;
+      padding: 0.3rem 0.6rem;
+      margin: 0 0.3rem 0.6rem 0;
+    }
+  }
+  
   @media only screen and (min-width: 768px) {
-    padding-right: 4rem;
+    padding-right: 2rem;
   }
+  
   @media only screen and (min-width: 1024px) {
     max-width: 80%;
-    display: none;
+    display: flex;
   }
 `;
 export const Space = styled.div`
@@ -194,15 +212,27 @@ export const Section = styled.section<{ invert?: boolean; top?: boolean }>`
   margin: auto;
   background: ${(props) => (props.invert ? colors.background : colors.white)};
   color: ${(props) => (props.invert ? colors.white : colors.background)};
+  padding: ${(props) => (props.top ? '12vh 1rem 22vh' : '3rem 1rem')};
 
-  padding: ${(props) =>
-    props.top ? '12vh 3rem 22vh' : sizing.paddingExterior.base};
+  @media only screen and (min-width: 768px) {
+    padding: ${(props) => (props.top ? '12vh 2rem 22vh' : '4rem 2rem')};
+  }
+
+  @media only screen and (min-width: 1024px) {
+    padding: ${(props) => (props.top ? '12vh 3rem 22vh' : '5rem 3rem')};
+  }
 
   .marquee {
-    min-height: 65vh;
+    min-height: 50vh;
+    
     h1 {
-      margin-top: 25vh;
+      margin-top: 15vh;
+      
+      @media only screen and (min-width: 768px) {
+        margin-top: 25vh;
+      }
     }
+    
     #spinner {
       position: absolute;
       top: 33%;
@@ -217,7 +247,16 @@ export const Section = styled.section<{ invert?: boolean; top?: boolean }>`
     position: relative;
     max-width: 700px;
     margin: auto;
-    padding: auto 2rem;
+    padding: 2rem 1rem;
+    overflow: visible;
+    
+    @media only screen and (min-width: 768px) {
+      padding: 3rem 2rem;
+    }
+    
+    @media only screen and (min-width: 1024px) {
+      padding: 4rem 2rem;
+    }
   }
 `;
 export const CupContainer = styled.div`
@@ -242,22 +281,50 @@ export const CupContainer = styled.div`
 export const Bio = styled.div`
   #bioContainer {
     grid-template-areas:
-      'header '
+      'header'
       'image'
       'text';
     display: grid;
+    gap: 1rem;
+    
     h1 {
       grid-area: header;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      
+      @media only screen and (min-width: 768px) {
+        font-size: 2.5rem;
+      }
     }
   }
+  
   #bioText {
     grid-area: text;
-
     margin: auto;
+    font-size: 1rem;
+    line-height: 1.6;
+    
+    @media only screen and (min-width: 768px) {
+      font-size: 1.1rem;
+    }
   }
+  
   #bioImage {
     padding: 0;
+    display: flex;
+    justify-content: center;
+    
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 15px;
+      
+      @media only screen and (min-width: 768px) {
+        border-radius: 20px;
+      }
+    }
   }
+  
   @media only screen and (min-width: 768px) {
     #bioContainer {
       align-items: center;
@@ -265,11 +332,14 @@ export const Bio = styled.div`
         'header header'
         'image text';
       grid-template-columns: 1fr 2fr;
+      gap: 2rem;
     }
+    
     #bioImage {
-      padding: 0rem 2rem 2rem 0;
+      padding: 0rem 2rem 0rem 0;
     }
   }
+  
   @media only screen and (min-width: 1024px) {
     #bioImage {
       padding: 2rem 2rem 2rem 0;
@@ -282,44 +352,75 @@ export const Projects = styled.div`
   display: flex;
   justify-content: space-between;
   flex-flow: column;
-  margin-bottom: clamp(50px, 20vh, 120px);
+  margin-bottom: clamp(30px, 15vh, 120px);
+  padding: 0 1rem;
 
   p {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-weight: 400;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    
     @media only screen and (min-width: 768px) {
       max-width: 80%;
+      font-size: 1.3rem;
     }
   }
+  
   h1 {
-    font-size: 4rem;
+    font-size: 2.5rem;
     margin: 0 0 1rem 0;
+    line-height: 1.2;
+    
+    @media only screen and (min-width: 768px) {
+      font-size: 4rem;
+    }
   }
 
   .projectImage {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0;
+    margin: 1rem 0;
     padding: 0;
-    border-radius: 40px;
+    border-radius: 20px;
     grid-area: image;
-    max-width: 500px;
-  }
-
-  @media only screen and (max-width: 400px) {
-    h1 {
-      font-size: 2.5rem;
+    max-width: 100%;
+    
+    img {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      border-radius: 20px;
+      object-fit: cover;
     }
   }
+
+  @media only screen and (max-width: 480px) {
+    padding: 0 0.5rem;
+    
+    h1 {
+      font-size: 2rem;
+    }
+    
+    p {
+      font-size: 1rem;
+    }
+  }
+  
   @media only screen and (min-width: 768px) {
+    padding: 0 2rem;
+    
     .projectImage {
       max-width: 500px;
       margin: auto;
-      > img {
+      
+      img {
+        max-width: 500px;
       }
     }
   }
+  
   @media only screen and (min-width: 1024px) {
     display: grid;
     grid-template-columns: 3fr 2fr;
@@ -327,29 +428,61 @@ export const Projects = styled.div`
       'top top'
       'title image'
       'tags image'
-      'button image'
-      'text image';
+      'text image'
+      'button image';
+    gap: 1rem;
+    padding: 0;
+    
     .projectImage {
       margin: auto;
       background: transparent;
+      max-width: 600px;
+      
+      img {
+        max-width: 600px;
+      }
+    }
+    
+    /* Ensure button appears after text */
+    & > div:last-child {
+      grid-area: button;
+      margin-top: 1rem;
     }
   }
 `;
 
 export const Hero = styled.h1<{ invert: boolean }>`
   color: ${(props) => (props.invert ? colors.white : colors.background)};
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   font-weight: normal;
-  max-width: 60rem;
+  max-width: 90%;
+  line-height: 1.3;
+  margin: 0;
+
+  @media only screen and (min-width: 480px) {
+    font-size: 2.2rem;
+  }
 
   @media only screen and (min-width: 768px) {
-    font-size: 4rem !important;
+    font-size: 3rem;
+    max-width: 60rem;
+  }
+
+  @media only screen and (min-width: 1024px) {
+    font-size: 4rem;
   }
 `;
 
 export const HeroP = styled.p`
   color: ${colors.grey};
-  font-size: 1.2rem;
-  max-width: 30rem;
+  font-size: 1rem;
+  max-width: 90%;
+  line-height: 1.5;
+  margin: 1rem 0;
+
+  @media only screen and (min-width: 768px) {
+    font-size: 1.2rem;
+    max-width: 30rem;
+  }
 `;
 

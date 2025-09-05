@@ -30,16 +30,29 @@ export const ProjectImage = styled.div`
   grid-area: image;
 
   * {
-    max-width: 600px;
-    border-radius: 40px;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 20px;
     transition:
       transform 0.3s ease-in-out,
       box-shadow 0.2s ease-in-out;
-    :hover,
-    :focus {
-      transform: translate(0, -2%);
-      box-shadow: 0px 40px 8px -10px#585858;
-      cursor: pointer;
+    object-fit: cover;
+    
+    @media only screen and (min-width: 768px) {
+      max-width: 500px;
+      border-radius: 30px;
+    }
+    
+    @media only screen and (min-width: 1024px) {
+      max-width: 600px;
+      border-radius: 40px;
+      
+      :hover,
+      :focus {
+        transform: translate(0, -2%);
+        box-shadow: 0px 40px 8px -10px #585858;
+        cursor: pointer;
+      }
     }
   }
 `;
