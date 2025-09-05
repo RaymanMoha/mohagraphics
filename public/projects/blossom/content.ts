@@ -8,7 +8,7 @@ export const content: Content = {
   details: {
     type: `Insurance`,
     stack: `WordPress, PostgreSQL, Netlify`,
-    code: ``,
+    code: `Private`,
     live: `https://blossominsurance.co.ke/`,
   },
   keywords: [

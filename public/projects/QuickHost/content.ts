@@ -10,7 +10,7 @@ export const content: Content = {
     type: 'Web Hosting & Domain Services',
     stack: 'WordPress TailwindCSS Figma Google Analytics',
     live: 'https://quickhost.co.ke/',
-    code: 'Private Repository',
+    code: 'Private',
   },
   keywords: [
     'quickhost',

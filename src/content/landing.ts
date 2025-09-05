@@ -21,12 +21,28 @@ export const landingPage = {
   },
   projects: [
     {
-      body: 'I built a comprehensive insurance quote calculator and onboarding platform using React and TypeScript. The application features a multi-step onboarding flow, PWA capabilities, Redux state management, and iframe integration for seamless embedding. With modern UI/UX design and responsive architecture, it streamlines the insurance application process.',
-      image: 'insurance-widget.png',
+      body: 'I built a insurance quote calculator and onboarding platform using React and TypeScript as an interview project for Inclusivity Solutions.',
+      image: 'inclusive-logo.png',
       buttonText: 'View project',
       link: '/projects/InsuranceWidget/',
       ...projectData.InsuranceWidget,
-      title: 'Insurance Widget',
+      title: 'Insurance Widget ',
+    },
+    {
+      body: 'I architected an enterprise-grade Flutter mobile application for utility bill management powered by Google Cloud Platform.',
+      image: 'eneva4.png',
+      buttonText: 'View project',
+      link: '/projects/ENEVA/',
+      ...projectData.ENEVA,
+      title: 'ENEVA -Utility Manager',
+    },
+    {
+      body: 'I developed a comprehensive digital platform for the Botswana Premier League featuring dual mobile applications - a fan engagement app and steward management system.',
+      image: 'bpl 1.png',
+      buttonText: 'View project',
+      link: '/projects/Zuba/',
+      ...projectData.Zuba,
+      title: 'Zuba - BPL Platform',
     },
     {
       body: 'I transformed detailed Figma designs into a responsive, user-friendly platform for both web and mobile. The site features integrated core functionalities—like dynamic form creation, team chat, and data visualization',
@@ -83,6 +99,13 @@ export const landingPage = {
       link: '/projects/Hbnb/',
       ...projectData.Hbnb,
       title: 'Hbnb',
+    },
+    {
+      body: 'I developed the Yala Super Fiber website using WordPress as a complete redesign and rebrand of the original Quick Fiber platform (quickfiber.co.ke). Working with the same team behind Quick Host and Yala Pay, I transformed the internet service provider website into a modern, comprehensive platform. The new design showcases high-speed fiber internet services across Kenya with improved user experience, service packages, coverage maps, customer portals, and streamlined subscription processes.',
+      image: 'yalapay.jpeg',
+      buttonText: 'View Site',
+      link: 'https://yalasuperfiber.co.ke/',
+      title: 'Yala Super Fiber',
     },
   ],
 

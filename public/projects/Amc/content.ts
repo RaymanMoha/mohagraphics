@@ -10,7 +10,7 @@ export const content: Content = {
     type: 'Corporate platform',
     stack: 'Wordpress Express.js cpanel  Netlify',
     live: 'https://amcgroup.africa/',
-    code: ' ',
+    code: 'Private',
   },
   keywords: ['mysql', 'wordpress', 'Google analytics', 'google ads'],
   role: 'FRONTEND DEVELOPER',

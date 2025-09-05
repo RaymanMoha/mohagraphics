@@ -9,7 +9,7 @@ export const content: Content = {
     type: 'Payment Platform',
     stack: 'WordPress Flutter React Node.js PostgreSQL',
     live: 'https://yala.co.ke/',
-    code: 'Private Repository',
+    code: 'Private',
   },
   keywords: ['payments', 'fintech', 'Yala Pay', 'WordPress', 'Flutter', 'SEO'],
   role: 'Frontend Developer & SEO Specialist',

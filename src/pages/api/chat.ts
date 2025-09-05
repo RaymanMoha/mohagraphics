@@ -20,6 +20,7 @@ const portfolioContext = {
     "Strong background in responsive design"
   ],
   projects: [
+    "Zuba BPL platform with React Native and real-time features",
     "Insurance widget platform with React and TypeScript",
     "E-commerce platforms with React and Node.js",
     "Real-time chat applications",

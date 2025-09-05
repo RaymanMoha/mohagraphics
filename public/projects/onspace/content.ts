@@ -8,7 +8,7 @@ export const content: Content = {
   details: {
     type: `Operations Technology`,
     stack: `Flutter Dart React Elixir PostgreSQL Firebase Graphql`,
-    code: ` `,
+    code: `Private`,
     live: `https://getonspace.com/`,
   },
   keywords: ['flutter', 'dart', 'react', 'firebase', 'react'],

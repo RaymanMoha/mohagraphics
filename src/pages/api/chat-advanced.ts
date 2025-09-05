@@ -29,6 +29,11 @@ const portfolioContext = {
   },
   projects: [
     {
+      name: "Zuba BPL Platform",
+      tech: ["React Native", "Flutter", "Node.js", "Firebase", "MongoDB"],
+      description: "Comprehensive Botswana Premier League platform with fan engagement and steward management apps"
+    },
+    {
       name: "Insurance Widget Platform",
       tech: ["React", "TypeScript", "Redux", "PWA", "Vite"],
       description: "Modern insurance quote calculator with multi-step onboarding and iframe integration"

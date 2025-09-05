@@ -6,6 +6,8 @@ import * as Yala from '../../public/projects/Yala/content';
 import * as blossom from '../../public/projects/blossom/content';
 import * as convolab from '../../public/projects/convolab/content';
 import * as InsuranceWidget from '../../public/projects/InsuranceWidget/content';
+import * as Zuba from '../../public/projects/Zuba/content';
+import * as ENEVA from '../../public/projects/ENEVA/content';
 
 export type Content = {
   title: string;
@@ -20,9 +22,17 @@ export type Content = {
   };
   keywords: string[];
   role: string;
+  gallery?: Array<{
+    src: string;
+    alt: string;
+    caption: string;
+  }>;
 };
 
 export const content = {
+  InsuranceWidget: { ...InsuranceWidget.content },
+  Zuba: { ...Zuba.content },
+  ENEVA: { ...ENEVA.content },
   Hbnb: { ...Hbnb.content },
   onspace: { ...onspace.content },
   Amc: { ...Amc.content },
@@ -30,6 +40,5 @@ export const content = {
   Yala: { ...Yala.content },
   blossom: { ...blossom.content },
   convolab: { ...convolab.content },
-  InsuranceWidget: { ...InsuranceWidget.content },
 };
 

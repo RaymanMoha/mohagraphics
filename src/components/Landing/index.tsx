@@ -30,7 +30,7 @@ export const ProjectImage = styled.div`
   grid-area: image;
 
   * {
-    max-width: 500px;
+    max-width: 600px;
     border-radius: 40px;
     transition:
       transform 0.3s ease-in-out,

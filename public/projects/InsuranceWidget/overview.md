@@ -7,7 +7,13 @@ description: 'A comprehensive insurance platform with multi-step onboarding, PWA
 
 ## Project Overview
 
-InsuranceWidget is a cutting-edge insurance quote calculator and onboarding platform designed to streamline the insurance application process. Built with modern web technologies, it provides a seamless user experience across all devices while offering powerful features for insurance companies.
+InsuranceWidget is a cutting-edge insurance quote calculator and onboarding platform developed as an interview project for **Inclusivity Solutions**. This project was designed to demonstrate modern web development capabilities and showcase the ability to create a comprehensive insurance platform that streamlines the application process.
+
+**Special Thanks**: I would like to extend my gratitude to **Erick** and **Chaddy** for providing this interview opportunity and for their guidance throughout the development process.
+
+## About This Project
+
+Built with modern web technologies, InsuranceWidget provides a seamless user experience across all devices while offering powerful features for insurance companies. The platform demonstrates expertise in React, TypeScript, and modern development practices.
 
 ## Key Features
 
@@ -27,14 +33,6 @@ InsuranceWidget is a cutting-edge insurance quote calculator and onboarding plat
 - Installation prompts
 - Service worker integration
 - Fast loading times
-
-### 🔧 **Technical Architecture**
-- **Frontend**: React 18 with TypeScript
-- **Build Tool**: Vite for lightning-fast development
-- **State Management**: Redux Toolkit
-- **Styling**: Styled Components with responsive design
-- **Testing**: Vitest and React Testing Library
-- **Deployment**: Vercel with continuous deployment
 
 ### 🎨 **Modern UI/UX Design**
 - Clean, intuitive interface
@@ -129,22 +127,5 @@ Implemented using Redux Toolkit with:
 - Advanced caching strategies
 
 ## Technology Stack
-
-**Frontend Technologies:**
-- React 18 with Hooks and Context
-- TypeScript for type safety
-- Styled Components for styling
-- Redux Toolkit for state management
-
-**Build & Development:**
-- Vite for fast development and building
-- ESLint and Prettier for code quality
-- Vitest for testing
-- Husky for Git hooks
-
-**Deployment & Infrastructure:**
-- Vercel for hosting and CI/CD
-- GitHub for version control
-- Service Workers for PWA functionality
 
 This project demonstrates modern web development practices, responsive design principles, and user-centered design approach to create a comprehensive insurance platform that serves both end users and business stakeholders effectively.
