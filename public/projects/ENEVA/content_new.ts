@@ -20,6 +20,6 @@ export const content: Content = {
     live: 'https://play.google.com/store/apps/details?id=com.mohagraphics.eneva'
   },
   featuredImage: '/img/eneva-logo.png',
-  role: 'Full Stack Developer & AI Engineer',
+  role: 'Full Stack Mobile Developer & AI Engineer',
   seo: 'ENEVA Enterprise Utility Manager - AI-powered Flutter app with OCR meter reading, Google Cloud Platform, BigQuery analytics, and custom payment systems'
 };

@@ -23,5 +23,5 @@ export const content: Content = {
     'real-time',
     'steward management',
   ],
-  role: 'Lead Mobile Developer & Technical Architect',
+  role: 'Mobile Developer & Frontend Architect',
 };

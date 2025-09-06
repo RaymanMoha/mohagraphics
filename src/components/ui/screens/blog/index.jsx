@@ -13,10 +13,25 @@ export const Section = styled(S)`
     font-family: Montserrat;
   }
   ul {
-    display: grid;
+    margin: 1.5rem 0;
+    padding-left: 1rem;
+    line-height: 1.6;
+    
     li {
       list-style: disc;
-      margin-left: 2rem;
+      margin: 0.8rem 0;
+      padding-left: 0.5rem;
+      line-height: 1.5;
+    }
+    
+    @media only screen and (min-width: 768px) {
+      padding-left: 1.5rem;
+      
+      li {
+        margin: 1rem 0;
+        padding-left: 0.75rem;
+        line-height: 1.6;
+      }
     }
   }
 `;
