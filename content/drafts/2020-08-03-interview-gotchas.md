@@ -2,7 +2,7 @@
 title: 100 days of code
 draft: true
 date: 2020-10-17T18:24:09.989Z
-description: "My experience on the #100daysofcode challenge"
+description: 'My experience on the #100daysofcode challenge'
 internal: true
 ---
 
@@ -12,7 +12,7 @@ Let's face it, job interviews are made so that a company can filter out candidat
 
 You might be a good candidate deep inside, but if you don't play the game and show them what you got, someone else will (and take the job). Let's talk about why this is important.
 
-![rick and morty reference](/img/smwyg.jpg "Show me what you got!")
+![rick and morty reference](/img/smwyg.jpg 'Show me what you got!')
 
 Big ints break
 
@@ -35,4 +35,3 @@ const bigRes1 = add(9007199254740992, 100)
 const bigRes2 = add(9007199254740992, 101)
 console.log(bigRes1 === bigRes2) //false
 ```
-

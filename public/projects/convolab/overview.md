@@ -5,10 +5,10 @@ Develop a responsive, user-friendly website for the agency to showcase their por
 
 # Tools & Technologies Used
 
-- **React.js**  
-- **Next.js**  
-- **CSS**  
-- **Node.js**  
+- **React.js**
+- **Next.js**
+- **CSS**
+- **Node.js**
 
 # Key Responsibilities
 
@@ -36,4 +36,3 @@ Prospective clients looking to learn about the agency’s services and view past
 Focused on delivering an intuitive interface that guides users seamlessly through the site, from discovering services to viewing the portfolio and contacting the agency.
 
 [Visit Website](#)
-

@@ -7,15 +7,9 @@ const Sitemap = () => {
 
 export const getServerSideProps: GetServerSideProps = async ({ res }) => {
   const baseUrl = 'https://www.mohagraphics.tech';
-  
+
   // Static pages
-  const staticPages = [
-    '',
-    '/about',
-    '/blog',
-    '/services',
-    '/test-analytics',
-  ];
+  const staticPages = ['', '/about', '/blog', '/services', '/test-analytics'];
 
   // Project pages
   const projectPages = [

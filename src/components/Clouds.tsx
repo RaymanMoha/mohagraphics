@@ -22,7 +22,7 @@ export default function Clouds({ roll, top, pulse, size, offset }: any) {
       size={size}
       offset={offset}
     >
-  <img src={cloud} alt="" />
+      <img src={cloud} alt="" />
     </SVGcontainer>
   );
 }
@@ -82,4 +82,3 @@ export const SVGcontainer = styled.div<any>`
     }
   }
 `;
-

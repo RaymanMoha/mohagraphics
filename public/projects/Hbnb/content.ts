@@ -19,4 +19,3 @@
   ],
   role: `Personal Project`,
 };
-

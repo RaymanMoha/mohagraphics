@@ -72,13 +72,13 @@ export const Tags = styled.ul`
     justify-content: center;
     align-items: center;
     border-radius: 15px;
-    
+
     @media only screen and (min-width: 768px) {
       font-size: 0.8rem;
       padding: 0.5rem 1rem;
     }
   }
-  
+
   @media only screen and (max-width: 480px) {
     li {
       font-size: 0.7rem;
@@ -86,11 +86,11 @@ export const Tags = styled.ul`
       margin: 0 0.3rem 0.6rem 0;
     }
   }
-  
+
   @media only screen and (min-width: 768px) {
     padding-right: 2rem;
   }
-  
+
   @media only screen and (min-width: 1024px) {
     max-width: 80%;
     display: flex;
@@ -224,15 +224,15 @@ export const Section = styled.section<{ invert?: boolean; top?: boolean }>`
 
   .marquee {
     min-height: 50vh;
-    
+
     h1 {
       margin-top: 15vh;
-      
+
       @media only screen and (min-width: 768px) {
         margin-top: 25vh;
       }
     }
-    
+
     #spinner {
       position: absolute;
       top: 33%;
@@ -249,11 +249,11 @@ export const Section = styled.section<{ invert?: boolean; top?: boolean }>`
     margin: auto;
     padding: 2rem 1rem;
     overflow: visible;
-    
+
     @media only screen and (min-width: 768px) {
       padding: 3rem 2rem;
     }
-    
+
     @media only screen and (min-width: 1024px) {
       padding: 4rem 2rem;
     }
@@ -286,45 +286,45 @@ export const Bio = styled.div`
       'text';
     display: grid;
     gap: 1rem;
-    
+
     h1 {
       grid-area: header;
       font-size: 2rem;
       margin-bottom: 1rem;
-      
+
       @media only screen and (min-width: 768px) {
         font-size: 2.5rem;
       }
     }
   }
-  
+
   #bioText {
     grid-area: text;
     margin: auto;
     font-size: 1rem;
     line-height: 1.6;
-    
+
     @media only screen and (min-width: 768px) {
       font-size: 1.1rem;
     }
   }
-  
+
   #bioImage {
     padding: 0;
     display: flex;
     justify-content: center;
-    
+
     img {
       max-width: 100%;
       height: auto;
       border-radius: 15px;
-      
+
       @media only screen and (min-width: 768px) {
         border-radius: 20px;
       }
     }
   }
-  
+
   @media only screen and (min-width: 768px) {
     #bioContainer {
       align-items: center;
@@ -334,12 +334,12 @@ export const Bio = styled.div`
       grid-template-columns: 1fr 2fr;
       gap: 2rem;
     }
-    
+
     #bioImage {
       padding: 0rem 2rem 0rem 0;
     }
   }
-  
+
   @media only screen and (min-width: 1024px) {
     #bioImage {
       padding: 2rem 2rem 2rem 0;
@@ -360,18 +360,18 @@ export const Projects = styled.div`
     font-weight: 400;
     line-height: 1.6;
     margin-bottom: 1.5rem;
-    
+
     @media only screen and (min-width: 768px) {
       max-width: 80%;
       font-size: 1.3rem;
     }
   }
-  
+
   h1 {
     font-size: 2.5rem;
     margin: 0 0 1rem 0;
     line-height: 1.2;
-    
+
     @media only screen and (min-width: 768px) {
       font-size: 4rem;
     }
@@ -386,7 +386,7 @@ export const Projects = styled.div`
     border-radius: 20px;
     grid-area: image;
     max-width: 100%;
-    
+
     img {
       width: 100%;
       max-width: 400px;
@@ -398,29 +398,29 @@ export const Projects = styled.div`
 
   @media only screen and (max-width: 480px) {
     padding: 0 0.5rem;
-    
+
     h1 {
       font-size: 2rem;
     }
-    
+
     p {
       font-size: 1rem;
     }
   }
-  
+
   @media only screen and (min-width: 768px) {
     padding: 0 2rem;
-    
+
     .projectImage {
       max-width: 500px;
       margin: auto;
-      
+
       img {
         max-width: 500px;
       }
     }
   }
-  
+
   @media only screen and (min-width: 1024px) {
     display: grid;
     grid-template-columns: 3fr 2fr;
@@ -432,17 +432,17 @@ export const Projects = styled.div`
       'button image';
     gap: 1rem;
     padding: 0;
-    
+
     .projectImage {
       margin: auto;
       background: transparent;
       max-width: 600px;
-      
+
       img {
         max-width: 600px;
       }
     }
-    
+
     /* Ensure button appears after text */
     & > div:last-child {
       grid-area: button;
@@ -485,4 +485,3 @@ export const HeroP = styled.p`
     max-width: 30rem;
   }
 `;
-

@@ -1,7 +1,7 @@
 ﻿module.exports = {
   siteMetadata: {
     title: `mohammed Abdirahman | Software Engineer`,
-    lang: "en-US",
+    lang: 'en-US',
     author: {
       name: `mohammed Abdirahman`,
       summary: `mohammed Abdirahman loves to build tools to simplify your digital needs`,
@@ -14,7 +14,7 @@
     },
   },
   plugins: [
-    "gatsby-plugin-netlify-cms",
+    'gatsby-plugin-netlify-cms',
     `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-chakra-ui`,
@@ -27,14 +27,14 @@
     },
 
     {
-      resolve: "gatsby-plugin-robots-txt",
+      resolve: 'gatsby-plugin-robots-txt',
       options: {
-        host: "https://aAbdirahman.com/",
-        policy: [{ userAgent: "*", allow: "/" }],
+        host: 'https://aAbdirahman.com/',
+        policy: [{ userAgent: '*', allow: '/' }],
       },
     },
     {
-      resolve: "gatsby-plugin-anchor-links",
+      resolve: 'gatsby-plugin-anchor-links',
       options: {
         offset: 0,
       },
@@ -62,17 +62,17 @@
       },
     },
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/src/pages`,
-        name: "pages",
+        name: 'pages',
       },
     },
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/static/img`,
-        name: "img",
+        name: 'img',
       },
     },
     {
@@ -83,7 +83,7 @@
       },
     },
     {
-      resolve: "gatsby-plugin-react-svg",
+      resolve: 'gatsby-plugin-react-svg',
       options: {
         rule: {
           include: /draw/,
@@ -97,7 +97,7 @@
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
-        extensions: [".mdx", ".md"],
+        extensions: ['.mdx', '.md'],
         gatsbyRemarkPlugins: [
           {
             resolve: `gatsby-remark-images`,
@@ -124,7 +124,7 @@
               // you may use this to prevent Prism from re-processing syntax.
               // This is an uncommon use-case though;
               // If you're unsure, it's best to use the default value.
-              classPrefix: "language-",
+              classPrefix: 'language-',
               // This is used to allow setting a language for inline code
               // (i.e. single backticks) by creating a separator.
               // This separator is a string and will do no white-space
@@ -155,8 +155,8 @@
               // Customize the prompt used in shell output
               // Values below are default
               prompt: {
-                user: "root",
-                host: "localhost",
+                user: 'root',
+                host: 'localhost',
                 global: false,
               },
               // By default the HTML entities <>&'" are escaped.
@@ -198,5 +198,4 @@
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
-}
-
+};

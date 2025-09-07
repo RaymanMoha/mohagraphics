@@ -25,21 +25,30 @@ body {
   body {
     font-size: 14px;
   }
-  
+
   /* Prevent text from being too small on mobile */
   p {
     font-size: 1rem !important;
     line-height: 1.5;
   }
-  
+
   /* Improve touch targets */
-  button, a, input, select, textarea {
+  button,
+  a,
+  input,
+  select,
+  textarea {
     min-height: 44px;
     touch-action: manipulation;
   }
-  
+
   /* Better spacing for mobile */
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     margin-top: 1rem;
     margin-bottom: 0.5rem;
   }
@@ -271,4 +280,3 @@ svg {
     animation: ring 1s ease-in-out alternate infinite;
   }
 }
-

@@ -71,4 +71,3 @@ MyApp.getInitialProps = async (
 
   return { ...ctx, example: 'data' };
 };
-

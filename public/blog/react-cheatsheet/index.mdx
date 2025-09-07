@@ -2,14 +2,16 @@
 title: React interview cheatsheet
 draft: false
 date: 2020-12-01T18:44:42.151Z
-description: "Complete React interview cheatsheet covering hooks, DOM, props, state management, lifecycle methods, and advanced concepts. Master React fundamentals for technical interviews at top tech companies."
+description: 'Complete React interview cheatsheet covering hooks, DOM, props, state management, lifecycle methods, and advanced concepts. Master React fundamentals for technical interviews at top tech companies.'
 internal: false
-keywords: "JavaScript, react, interviews, cs, cheatsheet, scrimba, cassidoo, react hooks, virtual DOM, JSX, state management, component lifecycle, react context, higher order components, react interview questions, frontend development"
+keywords: 'JavaScript, react, interviews, cs, cheatsheet, scrimba, cassidoo, react hooks, virtual DOM, JSX, state management, component lifecycle, react context, higher order components, react interview questions, frontend development'
 featured: true
 thumb: react.png
 ---
 
-import Table, { H1 } from "./blog/react-cheatsheet/components/table-of-contents-q"
+import Table, {
+  H1,
+} from './blog/react-cheatsheet/components/table-of-contents-q';
 
 I was **super lucky** to be selected to have a mock **React interview** with the wonderful [Cassidoo](https://twitter.com/cassidoo). She’s a Principal Developer Experience Engineer over at [Netlify](https://www.netlify.com/).
 
@@ -103,7 +105,7 @@ Functional components are managed by using the `useState` hook. This gets recall
 <H1>What is the component lifecycle?</H1>
 
 A component gets initialized, mounted, updated and unmounted. These methods live under the useEffect hook.
-  ![lifecycle methods diagram](/blog/react-cheatsheet/lifecycle.png)
+![lifecycle methods diagram](/blog/react-cheatsheet/lifecycle.png)
 
 <H1>How do you update lifecycle in functional components?</H1>
 
@@ -185,8 +187,14 @@ React.memo is a higher-order component that memoizes the result of a component. 
 
 ```jsx
 const ExpensiveComponent = React.memo(({ data }) => {
-  return <div>{data.map(item => <Item key={item.id} {...item} />)}</div>
-})
+  return (
+    <div>
+      {data.map((item) => (
+        <Item key={item.id} {...item} />
+      ))}
+    </div>
+  );
+});
 ```
 
 <H1>What is the difference between useMemo and useCallback?</H1>
@@ -213,23 +221,23 @@ Error boundaries are React components that catch JavaScript errors anywhere in t
 ```jsx
 class ErrorBoundary extends React.Component {
   constructor(props) {
-    super(props)
-    this.state = { hasError: false }
+    super(props);
+    this.state = { hasError: false };
   }
 
   static getDerivedStateFromError(error) {
-    return { hasError: true }
+    return { hasError: true };
   }
 
   componentDidCatch(error, errorInfo) {
-    console.log('Error caught:', error, errorInfo)
+    console.log('Error caught:', error, errorInfo);
   }
 
   render() {
     if (this.state.hasError) {
-      return <h1>Something went wrong.</h1>
+      return <h1>Something went wrong.</h1>;
     }
-    return this.props.children
+    return this.props.children;
   }
 }
 ```
@@ -241,27 +249,27 @@ class ErrorBoundary extends React.Component {
 useReducer is an alternative to useState for managing complex state logic. It's ideal when state updates depend on previous state or when you have multiple sub-values.
 
 ```jsx
-const initialState = { count: 0 }
+const initialState = { count: 0 };
 
 function reducer(state, action) {
   switch (action.type) {
     case 'increment':
-      return { count: state.count + 1 }
+      return { count: state.count + 1 };
     case 'decrement':
-      return { count: state.count - 1 }
+      return { count: state.count - 1 };
     default:
-      throw new Error()
+      throw new Error();
   }
 }
 
 function Counter() {
-  const [state, dispatch] = useReducer(reducer, initialState)
+  const [state, dispatch] = useReducer(reducer, initialState);
   return (
     <div>
       Count: {state.count}
       <button onClick={() => dispatch({ type: 'increment' })}>+</button>
     </div>
-  )
+  );
 }
 ```
 
@@ -276,15 +284,15 @@ useLayoutEffect runs synchronously after all DOM mutations but before the browse
 Use React Testing Library for user-centric testing:
 
 ```jsx
-import { render, screen, fireEvent } from '@testing-library/react'
-import Counter from './Counter'
+import { render, screen, fireEvent } from '@testing-library/react';
+import Counter from './Counter';
 
 test('increments counter', () => {
-  render(<Counter />)
-  const button = screen.getByRole('button', { name: /increment/i })
-  fireEvent.click(button)
-  expect(screen.getByText('1')).toBeInTheDocument()
-})
+  render(<Counter />);
+  const button = screen.getByRole('button', { name: /increment/i });
+  fireEvent.click(button);
+  expect(screen.getByText('1')).toBeInTheDocument();
+});
 ```
 
 ## React Patterns
@@ -295,21 +303,27 @@ A technique for sharing code between React components using a prop whose value i
 
 ```jsx
 const MouseTracker = ({ render }) => {
-  const [position, setPosition] = useState({ x: 0, y: 0 })
-  
+  const [position, setPosition] = useState({ x: 0, y: 0 });
+
   useEffect(() => {
     const handleMouseMove = (e) => {
-      setPosition({ x: e.clientX, y: e.clientY })
-    }
-    document.addEventListener('mousemove', handleMouseMove)
-    return () => document.removeEventListener('mousemove', handleMouseMove)
-  }, [])
+      setPosition({ x: e.clientX, y: e.clientY });
+    };
+    document.addEventListener('mousemove', handleMouseMove);
+    return () => document.removeEventListener('mousemove', handleMouseMove);
+  }, []);
 
-  return render(position)
-}
+  return render(position);
+};
 
 // Usage
-<MouseTracker render={({ x, y }) => <p>Mouse at {x}, {y}</p>} />
+<MouseTracker
+  render={({ x, y }) => (
+    <p>
+      Mouse at {x}, {y}
+    </p>
+  )}
+/>;
 ```
 
 <H1>What is the compound component pattern?</H1>
@@ -318,28 +332,26 @@ A pattern where multiple components work together to form a complete UI. Think o
 
 ```jsx
 const Tabs = ({ children, defaultTab }) => {
-  const [activeTab, setActiveTab] = useState(defaultTab)
+  const [activeTab, setActiveTab] = useState(defaultTab);
   return (
     <div>
-      {React.Children.map(children, child =>
-        React.cloneElement(child, { activeTab, setActiveTab })
+      {React.Children.map(children, (child) =>
+        React.cloneElement(child, { activeTab, setActiveTab }),
       )}
     </div>
-  )
-}
+  );
+};
 
-Tabs.List = ({ children, activeTab, setActiveTab }) => (
-  <div>{children}</div>
-)
+Tabs.List = ({ children, activeTab, setActiveTab }) => <div>{children}</div>;
 
 Tabs.Tab = ({ id, children, activeTab, setActiveTab }) => (
-  <button 
+  <button
     onClick={() => setActiveTab(id)}
     className={activeTab === id ? 'active' : ''}
   >
     {children}
   </button>
-)
+);
 ```
 
 ## Interview Success Tips
@@ -347,24 +359,28 @@ Tabs.Tab = ({ id, children, activeTab, setActiveTab }) => (
 <H1>🎯 How to Ace Your React Interview</H1>
 
 **Technical Preparation:**
+
 - Practice building components from scratch without looking at documentation
 - Understand when and why to use different hooks
 - Be able to explain the virtual DOM reconciliation process
 - Know the component lifecycle and how hooks relate to class methods
 
 **Communication Tips:**
+
 - Think out loud when solving coding problems
 - Explain your architectural decisions
 - Discuss trade-offs between different approaches
 - Ask clarifying questions about requirements
 
 **Common Coding Challenges:**
+
 - Build a todo list with add/remove/edit functionality
 - Implement a search/filter feature
 - Create a custom hook for API calls
 - Design a reusable modal component
 
 **Performance Questions:**
+
 - Explain when you'd use React.memo vs useMemo vs useCallback
 - Describe how to prevent unnecessary re-renders
 - Discuss code splitting strategies
@@ -375,18 +391,21 @@ Tabs.Tab = ({ id, children, activeTab, setActiveTab }) => (
 <H1>💼 Industry Best Practices</H1>
 
 **State Management:**
+
 - Use local state for component-specific data
 - Consider Context API for app-wide state (themes, auth)
 - Use external libraries (Redux, Zustand) for complex state logic
 - Keep state as close to where it's used as possible
 
 **Component Organization:**
+
 - Follow the single responsibility principle
 - Create reusable, composable components
 - Use TypeScript for better development experience
 - Implement proper error boundaries
 
 **Performance in Production:**
+
 - Code splitting at route level
 - Lazy loading for large components
 - Optimize images and assets
@@ -409,6 +428,7 @@ This cheatsheet covers the essential React concepts that appear in 90% of fronte
 **🎨 Advanced Patterns:** Explore compound components, render props, and custom hooks
 
 **Common Interview Mistakes to Avoid:**
+
 - Don't memorize answers—understand the concepts deeply
 - Always explain your reasoning and trade-offs
 - Practice coding without autocomplete or documentation

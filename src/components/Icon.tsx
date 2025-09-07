@@ -30,4 +30,3 @@ const Wrapper = styled.div<any>`
     animation: example ${(props) => props.speed} linear infinite;
   }
 `;
-

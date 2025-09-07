@@ -70,7 +70,7 @@ const AboutPage = ({
           'frontend development services',
           'software engineering services',
           'AI development services',
-          'UI/UX development services'
+          'UI/UX development services',
         ]}
       />
       <ResponsiveAboutSection>
@@ -85,17 +85,17 @@ export default AboutPage;
 
 const ResponsiveAboutSection = styled(Section)`
   padding: 0 clamp(1rem, 5vw, 200px);
-  
+
   @media only screen and (max-width: 768px) {
     padding: 0 1rem;
-    
+
     h1 {
       font-size: 2rem !important;
       line-height: 1.2;
       margin-bottom: 2rem;
     }
   }
-  
+
   @media only screen and (max-width: 480px) {
     h1 {
       font-size: 1.5rem !important;
@@ -106,38 +106,40 @@ const ResponsiveAboutSection = styled(Section)`
 const ResponsiveContent = styled.div`
   max-width: 800px;
   line-height: 1.6;
-  
+
   p {
     font-size: 1.1rem;
     margin-bottom: 1.5rem;
     color: #666;
   }
-  
-  h2, h3 {
+
+  h2,
+  h3 {
     margin: 2rem 0 1rem 0;
     color: #333;
   }
-  
+
   @media only screen and (max-width: 768px) {
     p {
       font-size: 1rem;
       margin-bottom: 1rem;
     }
-    
-    h2, h3 {
+
+    h2,
+    h3 {
       font-size: 1.2rem;
       margin: 1.5rem 0 0.5rem 0;
     }
   }
-  
+
   @media only screen and (max-width: 480px) {
     p {
       font-size: 0.9rem;
     }
-    
-    h2, h3 {
+
+    h2,
+    h3 {
       font-size: 1.1rem;
     }
   }
 `;
-

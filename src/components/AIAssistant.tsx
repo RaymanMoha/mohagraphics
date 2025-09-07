@@ -23,7 +23,7 @@ const ChatContainer = styled.div<ChatContainerProps>`
   background: ${({ isOpen }) => (isOpen ? colors.background : 'transparent')};
   border: ${({ isOpen }) => (isOpen ? `2px solid ${colors.accent}` : 'none')};
   border-radius: ${({ isOpen }) => (isOpen ? '15px' : '0')};
-  box-shadow: ${({ isOpen }) => 
+  box-shadow: ${({ isOpen }) =>
     isOpen ? '0 8px 32px rgba(0, 0, 0, 0.3)' : 'none'};
   transition: all 0.3s ease;
   z-index: 1000;
@@ -119,7 +119,7 @@ const MessageBubble = styled.div<{ isUser: boolean }>`
   background: ${({ isUser }) => (isUser ? colors.accent : '#f0f0f0')};
   color: ${({ isUser }) => (isUser ? colors.white : colors.background)};
   padding: 12px 16px;
-  border-radius: ${({ isUser }) => 
+  border-radius: ${({ isUser }) =>
     isUser ? '15px 15px 5px 15px' : '15px 15px 15px 5px'};
   max-width: 80%;
   word-wrap: break-word;
@@ -203,10 +203,13 @@ interface AIAssistantProps {
   onToggle?: () => void;
 }
 
-export default function AIAssistant({ isOpen: externalIsOpen, onToggle }: AIAssistantProps = {}) {
+export default function AIAssistant({
+  isOpen: externalIsOpen,
+  onToggle,
+}: AIAssistantProps = {}) {
   const { isChatOpen, openChat, closeChat } = useChatContext();
   const [internalIsOpen, setInternalIsOpen] = useState(false);
-  
+
   // Use context state primarily, fall back to external or internal state
   const isOpen = isChatOpen || externalIsOpen || internalIsOpen;
   const setIsOpen = (open: boolean) => {
@@ -240,7 +243,7 @@ export default function AIAssistant({ isOpen: externalIsOpen, onToggle }: AIAssi
       timestamp: new Date(),
     };
 
-    setMessages(prev => [...prev, userMessage]);
+    setMessages((prev) => [...prev, userMessage]);
     setInputValue('');
     setIsLoading(true);
 
@@ -260,11 +263,12 @@ export default function AIAssistant({ isOpen: externalIsOpen, onToggle }: AIAssi
 
       const assistantMessage: Message = {
         role: 'assistant',
-        content: data.message || 'Sorry, I encountered an error. Please try again.',
+        content:
+          data.message || 'Sorry, I encountered an error. Please try again.',
         timestamp: new Date(),
       };
 
-      setMessages(prev => [...prev, assistantMessage]);
+      setMessages((prev) => [...prev, assistantMessage]);
     } catch (error) {
       console.error('Error sending message:', error);
       const errorMessage: Message = {
@@ -272,7 +276,7 @@ export default function AIAssistant({ isOpen: externalIsOpen, onToggle }: AIAssi
         content: 'Sorry, I encountered an error. Please try again.',
         timestamp: new Date(),
       };
-      setMessages(prev => [...prev, errorMessage]);
+      setMessages((prev) => [...prev, errorMessage]);
     } finally {
       setIsLoading(false);
     }
@@ -303,23 +307,19 @@ export default function AIAssistant({ isOpen: externalIsOpen, onToggle }: AIAssi
           <MessagesContainer>
             {messages.length === 0 && (
               <WelcomeMessage>
-                👋 Hi! I'm here to help you learn about Mohammed's portfolio. 
+                👋 Hi! I'm here to help you learn about Mohammed's portfolio.
                 Ask me about his skills, projects, or experience!
               </WelcomeMessage>
             )}
-            
+
             {messages.map((message, index) => (
               <MessageBubble key={index} isUser={message.role === 'user'}>
                 {message.content}
               </MessageBubble>
             ))}
-            
-            {isLoading && (
-              <TypingIndicator>
-                AI is typing...
-              </TypingIndicator>
-            )}
-            
+
+            {isLoading && <TypingIndicator>AI is typing...</TypingIndicator>}
+
             <div ref={messagesEndRef} />
           </MessagesContainer>
 
@@ -332,7 +332,10 @@ export default function AIAssistant({ isOpen: externalIsOpen, onToggle }: AIAssi
               onKeyPress={handleKeyPress}
               disabled={isLoading}
             />
-            <SendButton onClick={sendMessage} disabled={isLoading || !inputValue.trim()}>
+            <SendButton
+              onClick={sendMessage}
+              disabled={isLoading || !inputValue.trim()}
+            >
               <IoSend />
             </SendButton>
           </InputContainer>

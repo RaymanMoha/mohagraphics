@@ -19,4 +19,3 @@ const EmailWrapper = styled.div`
   border: 2px solid blue;
   font-weight: bold;
 `;
-

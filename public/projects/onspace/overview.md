@@ -6,7 +6,7 @@
 Develop a comprehensive business management platform tailored for small and medium-sized enterprises (SMEs), with a focus on enhancing operational efficiency through a centralized, no-code tool. The platform aimed to address the unique and dynamic needs of operations teams across various industries, enabling them to manage tasks, data, and communication within a single system.
 
 # Tools & Technologies I used
-  
+
 **Flutter** (for mobile and web front-end)  
 **Dart**  
 **Firebase**  
@@ -45,5 +45,4 @@ The platform aimed to break down data silos and improve communication within tea
 
 [Visit Website](#)
 
-![Profile page](Onspace/profile.jpeg "Profile page showing active applications")
-
+![Profile page](Onspace/profile.jpeg 'Profile page showing active applications')

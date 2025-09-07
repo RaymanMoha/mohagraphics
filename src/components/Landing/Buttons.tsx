@@ -37,17 +37,17 @@ const StyledButton = styled(Link)<{ invert: boolean }>`
     border: none;
     border-radius: 4px;
     white-space: nowrap;
-    
+
     @media only screen and (min-width: 480px) {
       font-size: 1rem;
       padding: 1rem 2rem;
     }
-    
+
     @media only screen and (min-width: 768px) {
       font-size: 1.1rem;
       padding: 1rem 2.5rem;
     }
-    
+
     @media only screen and (min-width: 1024px) {
       font-size: 1.2rem;
       margin-top: 2rem;
@@ -61,7 +61,7 @@ const StyledButton = styled(Link)<{ invert: boolean }>`
     transform: translate3d(-6px, -6px, 0px) scale3d(1, 1, 1) rotateX(0deg)
       rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
     transition: transform 0.2s ease-in-out;
-    
+
     @media only screen and (min-width: 768px) {
       transform: translate3d(-8px, -8px, 0px) scale3d(1, 1, 1) rotateX(0deg)
         rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
@@ -81,7 +81,7 @@ const StyledButton = styled(Link)<{ invert: boolean }>`
   :focus {
     transform: translate3d(1px, 1px, 1px);
     cursor: pointer;
-    
+
     @media only screen and (min-width: 768px) {
       transform: translate3d(2px, 2px, 2px);
     }
@@ -91,4 +91,3 @@ const StyledButton = styled(Link)<{ invert: boolean }>`
     outline: none;
   }
 `;
-

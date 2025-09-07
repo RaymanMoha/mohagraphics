@@ -41,4 +41,3 @@ export const content = {
   blossom: { ...blossom.content },
   convolab: { ...convolab.content },
 };
-

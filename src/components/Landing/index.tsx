@@ -37,16 +37,16 @@ export const ProjectImage = styled.div`
       transform 0.3s ease-in-out,
       box-shadow 0.2s ease-in-out;
     object-fit: cover;
-    
+
     @media only screen and (min-width: 768px) {
       max-width: 500px;
       border-radius: 30px;
     }
-    
+
     @media only screen and (min-width: 1024px) {
       max-width: 600px;
       border-radius: 40px;
-      
+
       :hover,
       :focus {
         transform: translate(0, -2%);
@@ -65,4 +65,3 @@ export const ReadMore = styled.div`
     filter: brightness(0.8);
   }
 `;
-

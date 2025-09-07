@@ -12,4 +12,3 @@ I started the sprint wanting to learn about brand strategy. Right away, **I came
 **This year has been challenging for everyone, no doubt about it. But what I've learned from this analysis, makes me very hopeful for the future.**
 
 I'm **excited** to be part of this **great** community of **creative** people, I want to learn more and I'd **love** to **help** as much as possible. I'll be talking to you after lunch 😉
-

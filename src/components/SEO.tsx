@@ -83,22 +83,9 @@ export const SEO = ({
       {metaTags.map((tag, i) => {
         const key = tag.name || tag.property || `meta-${i}`;
         if (tag.name)
-          return (
-            <meta
-              key={key}
-              name={tag.name}
-              content={tag.content}
-            />
-          );
-        return (
-          <meta
-            key={key}
-            property={tag.property}
-            content={tag.content}
-          />
-        );
+          return <meta key={key} name={tag.name} content={tag.content} />;
+        return <meta key={key} property={tag.property} content={tag.content} />;
       })}
     </Head>
   );
 };
-

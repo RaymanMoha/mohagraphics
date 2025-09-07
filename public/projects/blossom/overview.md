@@ -5,8 +5,8 @@ Create a user-friendly and accessible insurance platform that allows customers t
 
 # Tools & Technologies Used
 
-- **WordPress**  
-- **PHP**  
+- **WordPress**
+- **PHP**
 - **PostgreSQL**
 
 # Key Responsibilities
@@ -29,4 +29,3 @@ Blossom Insurance aimed to improve accessibility and ease of use for their insur
 Individuals and businesses seeking simple, accessible insurance solutions.
 
 [Visit Website](https://blossominsurance.co.ke/)
-

@@ -237,4 +237,3 @@ export const all = [
   { text: "excited", value: 130 },
 ]
  */
-

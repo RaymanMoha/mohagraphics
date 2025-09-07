@@ -1,4 +1,4 @@
-﻿![hbnb](hbnb/screen.png "hbnb Web Dynamic")
+﻿![hbnb](hbnb/screen.png 'hbnb Web Dynamic')
 
 # Project Purpose and Goal
 
@@ -47,4 +47,3 @@ This project enhanced my **understanding of full-stack web development**, includ
 - **Integrating OAuth authentication** for a more secure login experience.
 
 [Visit Repository](https://github.com/user/AirBnB_clone_v4)
-

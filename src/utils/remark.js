@@ -5,4 +5,3 @@ const toHTML = (value) =>
   remark().use(remarkHTML).processSync(value).toString();
 
 export default toHTML;
-

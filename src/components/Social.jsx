@@ -43,4 +43,3 @@ export default function Social({ c = colors.accent, h = 'white', p = null }) {
     </SocialIcons>
   );
 }
-

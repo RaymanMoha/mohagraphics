@@ -15,4 +15,3 @@ export const content: Content = {
   keywords: ['mysql', 'wordpress', 'Google analytics', 'google ads'],
   role: 'FRONTEND DEVELOPER',
 };
-

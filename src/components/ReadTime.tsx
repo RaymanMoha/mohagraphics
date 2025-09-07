@@ -13,4 +13,3 @@ export const ReadTimeWrapper = styled.div`
   margin-bottom: 1rem;
   font-weight: 600;
 `;
-

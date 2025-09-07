@@ -42,4 +42,3 @@ export const BioSection = ({ bio }: Props) => {
     </Bio>
   );
 };
-
