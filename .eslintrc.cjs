@@ -31,6 +31,7 @@ module.exports = {
     'no-unused-vars': 'warn',
     'react/prop-types': 'off',
     'react/react-in-jsx-scope': 'off',
+    'react/no-unescaped-entities': 'warn',
     'prettier/prettier': 'error',
   },
   settings: {

@@ -98,8 +98,8 @@ const AnalyticsTest = () => {
         <ol>
           <li>Open Google Analytics</li>
           <li>Go to Real-time → Events</li>
-          <li>Click the "Send Test Event" button above</li>
-          <li>You should see "test_button_click" event appear</li>
+          <li>Click the &quot;Send Test Event&quot; button above</li>
+          <li>You should see &quot;test_button_click&quot; event appear</li>
         </ol>
       </div>
     </div>

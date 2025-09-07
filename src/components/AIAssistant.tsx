@@ -307,8 +307,8 @@ export default function AIAssistant({
           <MessagesContainer>
             {messages.length === 0 && (
               <WelcomeMessage>
-                👋 Hi! I'm here to help you learn about Mohammed's portfolio.
-                Ask me about his skills, projects, or experience!
+                👋 Hi! I&apos;m here to help you learn about Mohammed&apos;s
+                portfolio. Ask me about his skills, projects, or experience!
               </WelcomeMessage>
             )}
 
