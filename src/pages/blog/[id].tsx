@@ -115,7 +115,7 @@ export const getStaticProps = (async (context) => {
     // Try .mdx first, then .md
     let filePath = path.join(process.cwd(), `public/blog/${id}/index.mdx`);
     let fileContents;
-    
+
     try {
       fileContents = fs.readFileSync(filePath, 'utf8');
     } catch (error) {
@@ -164,21 +164,21 @@ export const getStaticPaths = (async () => {
   const filePath = path.join(process.cwd(), `public/blog`);
   const fileContents = fs.readdirSync(filePath, 'utf8');
   console.log(fileContents);
-  
+
   // Filter out components directory and only include directories with index files
   const validPosts = fileContents.filter((dir) => {
     if (dir === 'components' || dir === 'drafts') return false;
-    
+
     const dirPath = path.join(filePath, dir);
     if (!fs.statSync(dirPath).isDirectory()) return false;
-    
+
     // Check if directory has index.mdx or index.md
     const mdxPath = path.join(dirPath, 'index.mdx');
     const mdPath = path.join(dirPath, 'index.md');
-    
+
     return fs.existsSync(mdxPath) || fs.existsSync(mdPath);
   });
-  
+
   return {
     paths: validPosts.map((contentkey) => ({
       params: { id: contentkey },

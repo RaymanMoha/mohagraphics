@@ -16,17 +16,17 @@ export const Section = styled(S)`
     margin: 1.5rem 0;
     padding-left: 1rem;
     line-height: 1.6;
-    
+
     li {
       list-style: disc;
       margin: 0.8rem 0;
       padding-left: 0.5rem;
       line-height: 1.5;
     }
-    
+
     @media only screen and (min-width: 768px) {
       padding-left: 1.5rem;
-      
+
       li {
         margin: 1rem 0;
         padding-left: 0.75rem;
@@ -56,4 +56,3 @@ export const Note = styled(HP)`
   margin: 1rem 0;
 `;
 export const HeroP = styled(HP)``;
-

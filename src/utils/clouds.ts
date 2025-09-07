@@ -10,4 +10,3 @@ export const makeClouds = (count: number) => {
   }
   return res;
 };
-

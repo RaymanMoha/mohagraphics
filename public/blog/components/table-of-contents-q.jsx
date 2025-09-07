@@ -61,4 +61,3 @@ export const H1 = ({ children: text, id: directID, ...props }) => {
     </div>
   );
 };
-

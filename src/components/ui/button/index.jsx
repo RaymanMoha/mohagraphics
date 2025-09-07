@@ -17,4 +17,3 @@ const Button = ({ children, to, ...props }) => {
 };
 
 export default Button;
-

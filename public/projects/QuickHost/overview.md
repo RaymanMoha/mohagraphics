@@ -1,4 +1,4 @@
-﻿![QuickHost Website](quickhost/screen.png "QuickHost Homepage")
+﻿![QuickHost Website](quickhost/screen.png 'QuickHost Homepage')
 
 # Project Purpose and Goal
 
@@ -44,4 +44,3 @@ The **redesign significantly improved customer engagement**, making it easier fo
 - Introduce **automated chatbot support** for improved customer service.
 
 [Visit Website](https://quickhost.co.ke/)
-

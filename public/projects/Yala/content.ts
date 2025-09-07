@@ -14,4 +14,3 @@ export const content: Content = {
   keywords: ['payments', 'fintech', 'Yala Pay', 'WordPress', 'Flutter', 'SEO'],
   role: 'Frontend Developer & SEO Specialist',
 };
-

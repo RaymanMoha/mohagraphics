@@ -2,14 +2,14 @@
 title: Guide to clean code
 draft: false
 date: 2021-01-06T18:44:42.151Z
-description: "Write clean code. So others can understand your work."
+description: 'Write clean code. So others can understand your work.'
 internal: false
-keywords: "JavaScript, interviews, clean code, cs"
+keywords: 'JavaScript, interviews, clean code, cs'
 ---
 
 Based on [Dylan Israel's](https://twitter.com/pizzapokerguy?lang=en) awesome [Scrimba Introduction to Clean Code](https://scrimba.com/learn/cleancode).
 
-import Table, { H1 } from "../../components/table-of-contents"
+import Table, { H1 } from '../../components/table-of-contents';
 
 ## Table of contents
 
@@ -37,18 +37,18 @@ In this example, I have a function that converts a string to a caps lock version
 
 ```js
 function typeLikeMom(str) {
-  let result = []
-  const strArr = str.split(" ")
+  let result = [];
+  const strArr = str.split(' ');
 
   for (let i = 0; i < strArr.length; i++) {
-    const element = strArr[i].toUpperCase()
+    const element = strArr[i].toUpperCase();
 
-    result.push(element)
+    result.push(element);
   }
 
-  return result.join("...")
+  return result.join('...');
 }
-console.log(typeLikeMom("I love you"))
+console.log(typeLikeMom('I love you'));
 
 // I...LOVE...YOU
 ```
@@ -57,18 +57,18 @@ Variable names are not very descriptive and it’s hard to follow. Let’s renam
 
 ```js
 function typeLikeMom(str) {
-  let capWords = []
-  const wordsArray = str.split(" ")
+  let capWords = [];
+  const wordsArray = str.split(' ');
 
   for (let i = 0; i < wordsArray.length; i++) {
-    const wordOnCaps = wordsArray[i].toUpperCase()
+    const wordOnCaps = wordsArray[i].toUpperCase();
 
-    capWords.push(wordOnCaps)
+    capWords.push(wordOnCaps);
   }
 
-  return capWords.join("...")
+  return capWords.join('...');
 }
-console.log(typeLikeMom("I love you"))
+console.log(typeLikeMom('I love you'));
 
 // I...LOVE...YOU
 ```
@@ -84,19 +84,19 @@ Here is an implementation of that:
 
 ```js
 function createUser(userData) {
-  const { userName, userEmail, userAge } = userData
+  const { userName, userEmail, userAge } = userData;
 
   console.log(
     `User: ${userName}, age ${userAge}
-    has been created with email "${userEmail}!"`
-  )
+    has been created with email "${userEmail}!"`,
+  );
 }
 
 createUser({
-  userName: "Poppy",
-  userEmail: "poppy_is_cool@gmail.com",
+  userName: 'Poppy',
+  userEmail: 'poppy_is_cool@gmail.com',
   userAge: 100,
-})
+});
 
 // User: Poppy, age 100
 // has been created with email "poppy_is_cool@gmail.com!"
@@ -106,19 +106,19 @@ Now **without** redundancy:
 
 ```js
 function createUser(data) {
-  const { name, email, age } = data
+  const { name, email, age } = data;
 
   console.log(
     `User: ${name}, age ${age}
-    has been created with email "${email}!"`
-  )
+    has been created with email "${email}!"`,
+  );
 }
 
 createUser({
-  name: "Poppy",
-  email: "poppy_is_cool@gmail.com",
+  name: 'Poppy',
+  email: 'poppy_is_cool@gmail.com',
   age: 100,
-})
+});
 
 // User: Poppy, age 100
 //  has been created with email "poppy_is_cool@gmail.com!"
@@ -134,38 +134,38 @@ We have to multiply `days` by 24 to get hours, then by 60 to get minutes, then b
 
 ```js
 function futureDate(days) {
-  const now = Date.now()
+  const now = Date.now();
 
-  const milisecs = days * 86400000
-  const futureDate = new Date(now + milisecs)
+  const milisecs = days * 86400000;
+  const futureDate = new Date(now + milisecs);
 
   return `${futureDate.getDate()}/${
     futureDate.getMonth() + 1
-  }/${futureDate.getFullYear()}`
+  }/${futureDate.getFullYear()}`;
 }
-futureDate(100)
+futureDate(100);
 ```
 
 Let’s remove that magic number and clean up the variables.
 
 ```js
 function futureDate(days) {
-  const now = Date.now()
+  const now = Date.now();
 
-  const oneDay = 24
-  const oneHour = 60
-  const oneMinute = 60
-  const oneMillisecond = 1000
-  const daysInMillisecs = days * oneDay * oneHour * oneMinute * oneMillisecond
+  const oneDay = 24;
+  const oneHour = 60;
+  const oneMinute = 60;
+  const oneMillisecond = 1000;
+  const daysInMillisecs = days * oneDay * oneHour * oneMinute * oneMillisecond;
 
-  const futureDate = new Date(now + daysInMillisecs)
-  const day = futureDate.getDate()
-  const month = futureDate.getMonth() + 1
-  const year = futureDate.getFullYear()
+  const futureDate = new Date(now + daysInMillisecs);
+  const day = futureDate.getDate();
+  const month = futureDate.getMonth() + 1;
+  const year = futureDate.getFullYear();
 
-  return `${day}/${month}/${year}`
+  return `${day}/${month}/${year}`;
 }
-futureDate(100)
+futureDate(100);
 ```
 
 <H1>Spacing</H1>
@@ -174,17 +174,17 @@ Having proper spacing between statements improves readability. Think about the w
 
 ```js
 switch (animalType) {
-  case "dog":
-    bark()
-    break
-  case "cat":
-    sleep()
-    break
-  case "sheep":
-    baaah()
-    break
+  case 'dog':
+    bark();
+    break;
+  case 'cat':
+    sleep();
+    break;
+  case 'sheep':
+    baaah();
+    break;
   default:
-    zoo()
+    zoo();
 }
 ```
 
@@ -192,20 +192,20 @@ Let's add some spacing now.
 
 ```js
 switch (animalType) {
-  case "dog":
-    bark()
-    break
+  case 'dog':
+    bark();
+    break;
 
-  case "cat":
-    sleep()
-    break
+  case 'cat':
+    sleep();
+    break;
 
-  case "sheep":
-    baaah()
-    break
+  case 'sheep':
+    baaah();
+    break;
 
   default:
-    zoo()
+    zoo();
 }
 ```
 

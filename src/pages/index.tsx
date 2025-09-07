@@ -26,7 +26,7 @@ const Index = ({
 
   return (
     <>
-            <SEO
+      <SEO
         title="Mohammed Abdirahman | Frontend Developer | Software Engineer | AI Developer | UI/UX Designer for Hire"
         description="Professional Frontend Developer, Software Engineer, AI Developer & UI/UX Designer with 5+ years experience. Expert in React, Next.js, Flutter, AI integration, and modern web development. Available for freelance projects, custom software development, and consulting. Hire experienced developer for your startup or business."
         lang="en"
@@ -85,7 +85,7 @@ const Index = ({
           'contract developer',
           'remote work developer',
           'agile developer',
-          'scrum developer'
+          'scrum developer',
         ]}
       />
       <ResponsiveMainContainer>
@@ -101,10 +101,7 @@ const Index = ({
             </div>
           </div>
         </HeroSection>
-        <ResponsiveFlameGif
-          src="img\flame.gif"
-          alt="Animated GIF"
-        />
+        <ResponsiveFlameGif src="img\flame.gif" alt="Animated GIF" />
       </ResponsiveMainContainer>
 
       <Section id="bio">
@@ -143,47 +140,47 @@ const ResponsiveMainContainer = styled.div`
   background: ${colors.background};
   position: relative;
   overflow-x: hidden;
-  
+
   @media only screen and (min-width: 768px) {
     padding: 0 clamp(2rem, 5vw, 100px);
   }
-  
+
   @media only screen and (min-width: 1024px) {
     padding: 0 clamp(2rem, 7vw, 200px);
   }
-  
+
   .marquee {
     min-height: 100vh;
     padding: 2rem 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
+
     h1 {
       margin-top: 0;
       font-size: 1.8rem;
       line-height: 1.2;
     }
-    
+
     @media only screen and (min-width: 480px) {
       h1 {
         margin-top: 0;
         font-size: 2.2rem;
       }
     }
-    
+
     @media only screen and (min-width: 768px) {
       min-height: 60vh;
-      
+
       h1 {
         margin-top: 15vh;
         font-size: 3rem;
       }
     }
-    
+
     @media only screen and (min-width: 1024px) {
       min-height: 65vh;
-      
+
       h1 {
         margin-top: 25vh;
         font-size: 4rem;
@@ -203,14 +200,14 @@ const ResponsiveFlameGif = styled.img`
   /* Mobile: Move to bottom of hero section */
   top: auto;
   bottom: -100px;
-  
+
   @media only screen and (min-width: 480px) {
     width: 250px;
     height: 250px;
     right: 20px;
     bottom: -80px;
   }
-  
+
   @media only screen and (min-width: 768px) {
     width: 350px;
     height: 350px;
@@ -219,21 +216,21 @@ const ResponsiveFlameGif = styled.img`
     bottom: auto;
     opacity: 1;
   }
-  
+
   @media only screen and (min-width: 1024px) {
     width: 450px;
     height: 450px;
     right: 100px;
     top: 380px;
   }
-  
+
   @media only screen and (min-width: 1200px) {
     width: 500px;
     height: 500px;
     right: 150px;
     top: 400px;
   }
-  
+
   @media only screen and (max-width: 320px) {
     width: 150px;
     height: 150px;
@@ -241,4 +238,3 @@ const ResponsiveFlameGif = styled.img`
     opacity: 0.6;
   }
 `;
-

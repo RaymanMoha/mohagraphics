@@ -5,6 +5,7 @@ Your portfolio now includes an AI-powered chat assistant. Here's how to make it 
 ## 🧠 **Current Intelligence Level: Enhanced**
 
 The AI now includes:
+
 - **Detailed portfolio context** with comprehensive skill breakdowns
 - **Conversation memory** to maintain context
 - **Intelligent fallbacks** with context awareness
@@ -13,6 +14,7 @@ The AI now includes:
 ## 🚀 **How to Upgrade Intelligence (FREE)**
 
 ### **Option 1: Hugging Face (FREE - Recommended)**
+
 1. Go to https://huggingface.co/join
 2. Create free account
 3. Get API key: https://huggingface.co/settings/tokens
@@ -22,6 +24,7 @@ The AI now includes:
    ```
 
 ### **Option 2: Cohere (FREE Tier)**
+
 1. Visit https://dashboard.cohere.ai/
 2. Sign up for free account
 3. Get API key from dashboard
@@ -31,6 +34,7 @@ The AI now includes:
    ```
 
 ### **Option 3: Use Advanced Multi-AI System**
+
 Switch to the advanced AI endpoint that tries multiple providers:
 
 1. Update AI Assistant component to use `/api/chat-advanced`
@@ -38,18 +42,20 @@ Switch to the advanced AI endpoint that tries multiple providers:
 
 ## 📊 **Intelligence Levels Comparison**
 
-| Feature | Basic | Enhanced | With AI API |
-|---------|-------|----------|-------------|
-| Context awareness | ❌ | ✅ | ✅✅ |
-| Conversation memory | ❌ | ✅ | ✅✅ |
-| Natural responses | ❌ | ✅ | ✅✅✅ |
-| Learning ability | ❌ | ❌ | ✅✅ |
-| Complex questions | ❌ | ✅ | ✅✅✅ |
+| Feature             | Basic | Enhanced | With AI API |
+| ------------------- | ----- | -------- | ----------- |
+| Context awareness   | ❌    | ✅       | ✅✅        |
+| Conversation memory | ❌    | ✅       | ✅✅        |
+| Natural responses   | ❌    | ✅       | ✅✅✅      |
+| Learning ability    | ❌    | ❌       | ✅✅        |
+| Complex questions   | ❌    | ✅       | ✅✅✅      |
 
 ## 🛠 **Advanced Customization**
 
 ### **Enhance Portfolio Context**
+
 Edit `portfolioContext` in `/api/chat.ts` to include:
+
 - Specific project details with technologies used
 - Professional achievements and metrics
 - Detailed skill descriptions
@@ -58,10 +64,13 @@ Edit `portfolioContext` in `/api/chat.ts` to include:
 - Personal interests and goals
 
 ### **Add Conversation Memory**
+
 The AI now remembers recent conversation topics for better context.
 
 ### **Implement RAG (Retrieval-Augmented Generation)**
+
 For maximum intelligence, you can add:
+
 1. **Vector database** for semantic search
 2. **Document embeddings** of your resume/portfolio
 3. **Real-time project data** from GitHub API
@@ -75,26 +84,27 @@ Update your portfolio context with more details:
 const portfolioContext = {
   // Add specific metrics
   achievements: [
-    "Improved app performance by 40%",
-    "Built 15+ production applications",
-    "Reduced loading time from 3s to 0.8s"
+    'Improved app performance by 40%',
+    'Built 15+ production applications',
+    'Reduced loading time from 3s to 0.8s',
   ],
-  
+
   // Add detailed project info
   projects: [
     {
-      name: "E-commerce Platform",
-      description: "Built scalable platform handling 10k+ users",
-      technologies: ["React", "Node.js", "MongoDB"],
-      metrics: "40% faster than competitors"
-    }
-  ]
-}
+      name: 'E-commerce Platform',
+      description: 'Built scalable platform handling 10k+ users',
+      technologies: ['React', 'Node.js', 'MongoDB'],
+      metrics: '40% faster than competitors',
+    },
+  ],
+};
 ```
 
 ## 🧪 **Test Intelligence Levels**
 
 Try these questions to test AI intelligence:
+
 - "How would Mohammed approach building a scalable web app?"
 - "What's Mohammed's experience with performance optimization?"
 - "Can you compare Mohammed's React skills to his backend expertise?"

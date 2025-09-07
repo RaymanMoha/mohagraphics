@@ -114,4 +114,3 @@ export const landingPage = {
     buttonText: 'Get in touch',
   },
 };
-

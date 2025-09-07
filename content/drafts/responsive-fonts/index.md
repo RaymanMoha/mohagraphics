@@ -2,7 +2,7 @@
 title: Responsive fonts
 draft: false
 date: 2020-08-03T18:44:42.151Z
-description: "Sometimes we want to make things simple"
+description: 'Sometimes we want to make things simple'
 internal: false
 ---
 
@@ -33,4 +33,3 @@ const H1 = styled.h1`
   }
 `
 ```
-

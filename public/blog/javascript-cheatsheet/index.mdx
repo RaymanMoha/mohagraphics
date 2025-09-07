@@ -2,9 +2,9 @@
 title: JavaScript cheatsheet
 draft: false
 date: 2020-12-10T18:44:42.151Z
-description: "Complete JavaScript interview cheatsheet with code examples. Master ES6+, async programming, array methods, operators, and common interview questions. Essential guide for frontend developers."
+description: 'Complete JavaScript interview cheatsheet with code examples. Master ES6+, async programming, array methods, operators, and common interview questions. Essential guide for frontend developers.'
 internal: false
-keywords: "JavaScript, interviews, cs, cheatsheet, scrimba, ES6, async await, promises, array methods, frontend development, web development, JavaScript fundamentals, coding interview prep, JavaScript concepts"
+keywords: 'JavaScript, interviews, cs, cheatsheet, scrimba, ES6, async await, promises, array methods, frontend development, web development, JavaScript fundamentals, coding interview prep, JavaScript concepts'
 thumb: smwyg.jpg
 featured: true
 ---
@@ -19,11 +19,12 @@ internal: false
 keywords: "JavaScript, interviews, cs, cheatsheet, scrimba"
 thumb: smwyg.jpg
 featured: true
+
 ---
 
 Based on [Dylan Israel's](https://twitter.com/pizzapokerguy?lang=en) awesome [Scrimba Frontend Interview Tips](https://scrimba.com/learn/frontendinterview/). I wrote a few code examples to understand these concepts better. Shoutout to the awesome [Josh Comeau](https://twitter.com/JoshWComeau) for his incredible operator [lookup tool](https://www.joshwcomeau.com/operator-lookup?match=restspread).
 
-import Table, { H1 } from "../components/table-of-contents-q"
+import Table, { H1 } from '../components/table-of-contents-q';
 
 ## Table of contents
 
@@ -75,10 +76,10 @@ console.log(user) // { name: 'Alex' }
 This is why you can call a function before it's been declared
 
 ```js
-catName("Tamal")
+catName('Tamal');
 
 function catName(name) {
-  console.log("My cat's name is " + name)
+  console.log("My cat's name is " + name);
   // My cat's name is Tamal
 }
 ```
@@ -86,9 +87,9 @@ function catName(name) {
 JavaScript only hoists declarations, not initializations.
 
 ```js
-console.log(num) // undefined
-var num // Declaration
-num = 6 // Initialization
+console.log(num); // undefined
+var num; // Declaration
+num = 6; // Initialization
 ```
 
 <H1>Q: What is the difference between == vs === ?</H1>
@@ -98,11 +99,11 @@ This operator checks to see if two values are equivalent. Returns a boolean valu
 === does a strict check and checks both type and value.
 
 ```js
-const value1 = 5
-const value2 = "5"
+const value1 = 5;
+const value2 = '5';
 
-console.log(value1 == value2) // true
-console.log(value1 === value2) // false
+console.log(value1 == value2); // true
+console.log(value1 === value2); // false
 ```
 
 <H1>Q: What do map(), filter() and reduce() do?</H1>
@@ -110,17 +111,17 @@ console.log(value1 === value2) // false
 Map applies the callback to each value. Returns an array with the results.
 
 ```js
-const nums = [1, 2, 3]
-const numsAddOne = nums.map(value => value + 1)
-console.log(numsAddOne) // [2,3,4]
+const nums = [1, 2, 3];
+const numsAddOne = nums.map((value) => value + 1);
+console.log(numsAddOne); // [2,3,4]
 ```
 
 Filter applies the callback but only passes the elements that return true.
 
 ```js
-const nums = [1, 2, 3, 4]
-const evenNums = nums.filter(value => value % 2 === 0)
-console.log(evenNums) // [2, 4]
+const nums = [1, 2, 3, 4];
+const evenNums = nums.filter((value) => value % 2 === 0);
+console.log(evenNums); // [2, 4]
 ```
 
 Reduce takes a callback with two arguments, the first one is the accumulator, the second is the current value. It takes a second argument which is the initial accumulator value.
@@ -128,12 +129,12 @@ Reduce takes a callback with two arguments, the first one is the accumulator, th
 For each of the elements in the array, the callback is applied and the result becomes the new accumulator.
 
 ```js
-const nums = [1, 2, 3]
+const nums = [1, 2, 3];
 const sum = nums.reduce((total, current) => {
-  return total + current
-}, 0)
+  return total + current;
+}, 0);
 
-console.log(sum) // 6
+console.log(sum); // 6
 ```
 
 <H1>Q: What is the difference between undefined and null?</H1>
@@ -154,12 +155,12 @@ The spread operator can be used to unwrap an array or an object.
 It can also be used to clone or merge arrays and objects.
 
 ```js
-const users = ["dinosaur", "pumpkin", "cat"]
-const allUsers = ["Mr. Dog", ...users]
+const users = ['dinosaur', 'pumpkin', 'cat'];
+const allUsers = ['Mr. Dog', ...users];
 
-console.log(users)
+console.log(users);
 // [ 'dinosaur', 'pumpkin', 'cat' ]
-console.log(allUsers)
+console.log(allUsers);
 // [ 'Mr. Dog', 'dinosaur', 'pumpkin', 'cat' ]
 ```
 
@@ -167,21 +168,21 @@ This operator is used in function definitions to collect additional function arg
 
 ```js
 function easy(a, b, c) {
-  console.log("Easy as", a, b, c)
+  console.log('Easy as', a, b, c);
 }
-const letters = ["A", "B", "C"]
-easy(...letters) // Easy as A B C
+const letters = ['A', 'B', 'C'];
+easy(...letters); // Easy as A B C
 ```
 
 **concatenate an array**
 
 ```js
-const a = ["Mr. Dog", "Mrs. Dog"]
-const b = ["Pup", "Little Dog"]
+const a = ['Mr. Dog', 'Mrs. Dog'];
+const b = ['Pup', 'Little Dog'];
 
-const family = [...a, ...b]
+const family = [...a, ...b];
 
-console.log(family)
+console.log(family);
 //[ 'Mr. Dog', 'Mrs. Dog', 'Pup', 'Little Dog' ]
 ```
 
@@ -191,9 +192,9 @@ Does the opposite of spread. It collects a function's arguments into an array. I
 
 ```js
 function order(...elements) {
-  elements.forEach(el => console.log(el))
+  elements.forEach((el) => console.log(el));
 }
-order("fries", "milkshake", "cheesburger")
+order('fries', 'milkshake', 'cheesburger');
 //fries
 //milkshake
 //cheesburger
@@ -213,25 +214,25 @@ const scores = {
   wine: 11,
   milk: 4,
   beer: 7,
-}
-const { wine: fav, ...others } = scores
+};
+const { wine: fav, ...others } = scores;
 
-console.log("How would you rate wine?", fav)
+console.log('How would you rate wine?', fav);
 //How would you rate wine? 11
 ```
 
 Now let's do arrays
 
 ```js
-const user = "Paul Hollywood 🍰"
-const [first, last, emoji] = user.split(" ")
+const user = 'Paul Hollywood 🍰';
+const [first, last, emoji] = user.split(' ');
 
-console.log(`${first} loves ${emoji}`)
+console.log(`${first} loves ${emoji}`);
 //Paul loves 🍰
 ```
 
 <H1 id="operators">
-  {" "}
+  {' '}
   Q: What is the difference between the && and || operators?
 </H1>
 
@@ -247,30 +248,30 @@ Think about this one as the superhero 🦸‍♀️ with the && printed on their
 See them in action:
 
 ```js
-const isFrench = true
+const isFrench = true;
 
-const greeting = str => console.log(str)
+const greeting = (str) => console.log(str);
 
 // If statement
 if (isFrench) {
-  greeting("bonjour! if 🥐")
+  greeting('bonjour! if 🥐');
 } else {
-  greeting("hi! if 🍞")
+  greeting('hi! if 🍞');
 }
 // bonjour! if 🥐
 
 // Ternary operator
-isFrench ? greeting("bonjour! ? 🥐") : greeting("hi! ? 🍞")
+isFrench ? greeting('bonjour! ? 🥐') : greeting('hi! ? 🍞');
 // bonjour! ? 🥐
 
 // Or operator
-!isFrench || greeting("bonjour! || 🥐")
-isFrench || greeting("hi! || 🍞")
+!isFrench || greeting('bonjour! || 🥐');
+isFrench || greeting('hi! || 🍞');
 // bonjour! || 🥐
 
 // And operator
-isFrench && greeting("bonjour! && 🥐")
-!isFrench && greeting("hi! && 🍞")
+isFrench && greeting('bonjour! && 🥐');
+!isFrench && greeting('hi! && 🍞');
 // bonjour! && 🥐
 ```
 
@@ -285,6 +286,7 @@ Checkout [Josh Comeau's Operator Lookup](https://www.joshwcomeau.com/operator-lo
 **Practice Coding Out Loud**: During interviews, verbalize your thought process. Explain why you're choosing specific methods or approaches.
 
 **Know the Time Complexity**: Be prepared to discuss Big O notation for array methods:
+
 - `map()`, `filter()`, `forEach()`: O(n)
 - `find()`, `includes()`: O(n) worst case
 - `sort()`: O(n log n)
@@ -299,33 +301,33 @@ Checkout [Josh Comeau's Operator Lookup](https://www.joshwcomeau.com/operator-lo
 
 ```js
 // Array destructuring
-const [first, second, ...rest] = [1, 2, 3, 4, 5]
-console.log(first) // 1
-console.log(rest) // [3, 4, 5]
+const [first, second, ...rest] = [1, 2, 3, 4, 5];
+console.log(first); // 1
+console.log(rest); // [3, 4, 5]
 
 // Object destructuring with renaming
-const { name: userName, age } = { name: 'Alice', age: 30 }
-console.log(userName) // 'Alice'
+const { name: userName, age } = { name: 'Alice', age: 30 };
+console.log(userName); // 'Alice'
 ```
 
 **Template Literals and Tagged Templates**:
 
 ```js
-const name = 'Mohammed'
-const age = 25
+const name = 'Mohammed';
+const age = 25;
 
 // Template literal
-const greeting = `Hello, I'm ${name} and I'm ${age} years old`
+const greeting = `Hello, I'm ${name} and I'm ${age} years old`;
 
 // Tagged template
 function highlight(strings, ...values) {
   return strings.reduce((result, string, i) => {
-    const value = values[i] ? `<mark>${values[i]}</mark>` : ''
-    return result + string + value
-  }, '')
+    const value = values[i] ? `<mark>${values[i]}</mark>` : '';
+    return result + string + value;
+  }, '');
 }
 
-const highlighted = highlight`Name: ${name}, Age: ${age}`
+const highlighted = highlight`Name: ${name}, Age: ${age}`;
 ```
 
 **Async/Await Patterns**:
@@ -333,18 +335,18 @@ const highlighted = highlight`Name: ${name}, Age: ${age}`
 ```js
 // Sequential execution
 async function sequential() {
-  const result1 = await fetch('/api/data1')
-  const result2 = await fetch('/api/data2')
-  return [result1, result2]
+  const result1 = await fetch('/api/data1');
+  const result2 = await fetch('/api/data2');
+  return [result1, result2];
 }
 
 // Parallel execution
 async function parallel() {
   const [result1, result2] = await Promise.all([
     fetch('/api/data1'),
-    fetch('/api/data2')
-  ])
-  return [result1, result2]
+    fetch('/api/data2'),
+  ]);
+  return [result1, result2];
 }
 ```
 
@@ -353,10 +355,10 @@ async function parallel() {
 **1. Event Loop Confusion**:
 
 ```js
-console.log('1')
-setTimeout(() => console.log('2'), 0)
-Promise.resolve().then(() => console.log('3'))
-console.log('4')
+console.log('1');
+setTimeout(() => console.log('2'), 0);
+Promise.resolve().then(() => console.log('3'));
+console.log('4');
 // Output: 1, 4, 3, 2
 ```
 
@@ -365,12 +367,14 @@ console.log('4')
 ```js
 const obj = {
   name: 'Mohammed',
-  greet: function() { return `Hello, ${this.name}` },
-  greetArrow: () => `Hello, ${this.name}` // `this` is not bound!
-}
+  greet: function () {
+    return `Hello, ${this.name}`;
+  },
+  greetArrow: () => `Hello, ${this.name}`, // `this` is not bound!
+};
 
-console.log(obj.greet()) // "Hello, Mohammed"
-console.log(obj.greetArrow()) // "Hello, undefined"
+console.log(obj.greet()); // "Hello, Mohammed"
+console.log(obj.greetArrow()); // "Hello, undefined"
 ```
 
 **3. Closures and Memory Leaks**:
@@ -378,12 +382,12 @@ console.log(obj.greetArrow()) // "Hello, undefined"
 ```js
 // Potential memory leak
 function createHandlers() {
-  const bigData = new Array(1000000).fill('data')
-  
+  const bigData = new Array(1000000).fill('data');
+
   return {
     handler: () => console.log('Handler called'),
     // bigData is captured in closure even if not used
-  }
+  };
 }
 ```
 
@@ -394,33 +398,33 @@ function createHandlers() {
 ```js
 // ❌ Inefficient: Multiple iterations
 const processed = data
-  .filter(item => item.active)
-  .map(item => item.value)
-  .filter(value => value > 0)
+  .filter((item) => item.active)
+  .map((item) => item.value)
+  .filter((value) => value > 0);
 
 // ✅ Efficient: Single iteration with reduce
 const processed = data.reduce((acc, item) => {
   if (item.active && item.value > 0) {
-    acc.push(item.value)
+    acc.push(item.value);
   }
-  return acc
-}, [])
+  return acc;
+}, []);
 ```
 
 **Debouncing for Search**:
 
 ```js
 function debounce(func, delay) {
-  let timeoutId
+  let timeoutId;
   return function (...args) {
-    clearTimeout(timeoutId)
-    timeoutId = setTimeout(() => func.apply(this, args), delay)
-  }
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(() => func.apply(this, args), delay);
+  };
 }
 
 const debouncedSearch = debounce((query) => {
   // API call
-}, 300)
+}, 300);
 ```
 
 <H1 id="next-steps">📚 Keep Learning</H1>

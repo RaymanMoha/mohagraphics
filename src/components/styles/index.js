@@ -7,4 +7,3 @@
   grey: '#c7c7c7',
   contrast: '#f9efe7',
 };
-

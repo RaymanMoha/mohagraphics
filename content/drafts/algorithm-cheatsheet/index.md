@@ -2,7 +2,7 @@
 title: Algorithm cheatsheet
 draft: true
 date: 2020-10-17T18:24:09.989Z
-description: "Notes from the algorithm world"
+description: 'Notes from the algorithm world'
 internal: false
 ---
 
@@ -41,4 +41,3 @@ Additional lookups are neglible on the overall runtime. The general consesus is 
 Only works when the array has already been sorted.
 
 ![log o](./fig-log.png)
-

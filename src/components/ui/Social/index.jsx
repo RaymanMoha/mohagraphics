@@ -38,4 +38,3 @@ const Soc = (props) => {
 };
 
 export default Soc;
-

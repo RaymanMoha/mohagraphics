@@ -1,13 +1,13 @@
 import { HighlightedWords } from '@/components/HighlightedWords';
 import { SlidingButton } from '@/components/Landing/Buttons';
 import { SEO } from '@/components/SEO';
-import { 
-  Hero, 
-  Section, 
-  Header, 
+import {
+  Hero,
+  Section,
+  Header,
   Paragraph,
   colors,
-  HeroP
+  HeroP,
 } from '@/styles/components';
 import styled from 'styled-components';
 
@@ -39,10 +39,10 @@ const AIChatWebsiteIntegration = () => {
           'AI web development',
           'conversational interface',
           'AI chat SDK',
-          'machine learning chat'
+          'machine learning chat',
         ]}
       />
-      
+
       <ArticleContainer>
         <ArticleHeader>
           <ArticleMeta>
@@ -52,14 +52,17 @@ const AIChatWebsiteIntegration = () => {
             <span>•</span>
             <span>12 min read</span>
           </ArticleMeta>
-          
+
           <Hero invert={false}>
-            <HighlightedWords title={"Adding **AI Chat** to Your Website: Complete Guide"} />
+            <HighlightedWords
+              title={'Adding **AI Chat** to Your Website: Complete Guide'}
+            />
           </Hero>
-          
+
           <HeroP>
-            Step-by-step tutorial on integrating AI chat assistants into your website. Boost user engagement 
-            and provide 24/7 customer support with modern AI technology.
+            Step-by-step tutorial on integrating AI chat assistants into your
+            website. Boost user engagement and provide 24/7 customer support
+            with modern AI technology.
           </HeroP>
         </ArticleHeader>
 
@@ -67,60 +70,88 @@ const AIChatWebsiteIntegration = () => {
           <TableOfContents>
             <h3>Table of Contents</h3>
             <ol>
-              <li><a href="#why-ai-chat">Why Add AI Chat to Your Website?</a></li>
-              <li><a href="#choosing-ai-provider">Choosing the Right AI Provider</a></li>
-              <li><a href="#basic-implementation">Basic Implementation Setup</a></li>
-              <li><a href="#advanced-features">Advanced Features & Customization</a></li>
-              <li><a href="#best-practices">Best Practices & Security</a></li>
-              <li><a href="#cost-optimization">Cost Optimization Strategies</a></li>
+              <li>
+                <a href="#why-ai-chat">Why Add AI Chat to Your Website?</a>
+              </li>
+              <li>
+                <a href="#choosing-ai-provider">
+                  Choosing the Right AI Provider
+                </a>
+              </li>
+              <li>
+                <a href="#basic-implementation">Basic Implementation Setup</a>
+              </li>
+              <li>
+                <a href="#advanced-features">
+                  Advanced Features & Customization
+                </a>
+              </li>
+              <li>
+                <a href="#best-practices">Best Practices & Security</a>
+              </li>
+              <li>
+                <a href="#cost-optimization">Cost Optimization Strategies</a>
+              </li>
             </ol>
           </TableOfContents>
 
           <Section id="why-ai-chat">
-            <Header><HighlightedWords title={"Why Add **AI Chat** to Your Website?"} /></Header>
-            
+            <Header>
+              <HighlightedWords
+                title={'Why Add **AI Chat** to Your Website?'}
+              />
+            </Header>
+
             <Paragraph>
-              AI chat assistants have become essential for modern websites. Here's why your business needs one:
+              AI chat assistants have become essential for modern websites.
+              Here's why your business needs one:
             </Paragraph>
 
             <BenefitCard>
               <h4>📈 Boost User Engagement by 40%</h4>
               <Paragraph>
-                Websites with AI chat see 40% longer session durations and 25% higher conversion rates. 
-                Users love getting instant answers without filling out contact forms.
+                Websites with AI chat see 40% longer session durations and 25%
+                higher conversion rates. Users love getting instant answers
+                without filling out contact forms.
               </Paragraph>
             </BenefitCard>
 
             <BenefitCard>
               <h4>🕒 24/7 Customer Support</h4>
               <Paragraph>
-                Your AI assistant works around the clock, handling common questions and qualifying leads 
-                while you sleep. No more missed opportunities from different time zones.
+                Your AI assistant works around the clock, handling common
+                questions and qualifying leads while you sleep. No more missed
+                opportunities from different time zones.
               </Paragraph>
             </BenefitCard>
 
             <BenefitCard>
               <h4>💰 Reduce Support Costs by 60%</h4>
               <Paragraph>
-                AI handles 80% of routine inquiries, freeing your team for complex issues. 
-                Average cost savings: $30,000-50,000 annually for small businesses.
+                AI handles 80% of routine inquiries, freeing your team for
+                complex issues. Average cost savings: $30,000-50,000 annually
+                for small businesses.
               </Paragraph>
             </BenefitCard>
 
             <BenefitCard>
               <h4>🎯 Lead Qualification & Data Collection</h4>
               <Paragraph>
-                Smart chatbots can qualify leads, collect contact information, and schedule meetings 
-                automatically. Better leads = higher conversion rates.
+                Smart chatbots can qualify leads, collect contact information,
+                and schedule meetings automatically. Better leads = higher
+                conversion rates.
               </Paragraph>
             </BenefitCard>
           </Section>
 
           <Section id="choosing-ai-provider">
-            <Header><HighlightedWords title={"Choosing the Right **AI Provider**"} /></Header>
-            
+            <Header>
+              <HighlightedWords title={'Choosing the Right **AI Provider**'} />
+            </Header>
+
             <Paragraph>
-              The AI landscape offers multiple excellent options. Here's a comprehensive comparison:
+              The AI landscape offers multiple excellent options. Here's a
+              comprehensive comparison:
             </Paragraph>
 
             <ProviderComparison>
@@ -141,13 +172,16 @@ const AIChatWebsiteIntegration = () => {
                   <p>Limited customization options</p>
                 </div>
                 <div className="best-for">
-                  <strong>Best for:</strong> Startups, real-time chat, cost-conscious projects
+                  <strong>Best for:</strong> Startups, real-time chat,
+                  cost-conscious projects
                 </div>
               </ProviderCard>
 
               <ProviderCard>
                 <h4>🤖 OpenAI (GPT-4)</h4>
-                <div className="pricing">$0.03/1K tokens input, $0.06/1K tokens output</div>
+                <div className="pricing">
+                  $0.03/1K tokens input, $0.06/1K tokens output
+                </div>
                 <div className="pros">
                   <strong>Pros:</strong>
                   <p>Most advanced language understanding</p>
@@ -163,13 +197,16 @@ const AIChatWebsiteIntegration = () => {
                   <p>Rate limiting can be restrictive</p>
                 </div>
                 <div className="best-for">
-                  <strong>Best for:</strong> Enterprise applications, complex reasoning, brand trust
+                  <strong>Best for:</strong> Enterprise applications, complex
+                  reasoning, brand trust
                 </div>
               </ProviderCard>
 
               <ProviderCard>
                 <h4>🧠 Anthropic Claude</h4>
-                <div className="pricing">$0.025/1K tokens input, $0.125/1K tokens output</div>
+                <div className="pricing">
+                  $0.025/1K tokens input, $0.125/1K tokens output
+                </div>
                 <div className="pros">
                   <strong>Pros:</strong>
                   <p>Excellent safety and alignment</p>
@@ -184,24 +221,28 @@ const AIChatWebsiteIntegration = () => {
                   <p>Smaller developer community</p>
                 </div>
                 <div className="best-for">
-                  <strong>Best for:</strong> Customer service, content moderation, safety-critical apps
+                  <strong>Best for:</strong> Customer service, content
+                  moderation, safety-critical apps
                 </div>
               </ProviderCard>
             </ProviderComparison>
           </Section>
 
           <Section id="basic-implementation">
-            <Header><HighlightedWords title={"**Basic Implementation** Setup"} /></Header>
-            
+            <Header>
+              <HighlightedWords title={'**Basic Implementation** Setup'} />
+            </Header>
+
             <Paragraph>
-              Let's build a complete AI chat widget that you can add to any website. We'll use Groq for this example 
-              due to its speed and generous free tier.
+              Let's build a complete AI chat widget that you can add to any
+              website. We'll use Groq for this example due to its speed and
+              generous free tier.
             </Paragraph>
 
             <ImplementationStep>
               <h4>Step 1: HTML Structure</h4>
               <CodeBlock>
-{`<!-- Add this to your HTML -->
+                {`<!-- Add this to your HTML -->
 <div id="ai-chat-widget">
   <div id="chat-toggle">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -229,7 +270,7 @@ const AIChatWebsiteIntegration = () => {
             <ImplementationStep>
               <h4>Step 2: CSS Styling</h4>
               <CodeBlock>
-{`/* Modern chat widget styles */
+                {`/* Modern chat widget styles */
 #ai-chat-widget {
   position: fixed;
   bottom: 20px;
@@ -399,7 +440,7 @@ const AIChatWebsiteIntegration = () => {
             <ImplementationStep>
               <h4>Step 3: JavaScript Functionality</h4>
               <CodeBlock>
-{`class AIChatWidget {
+                {`class AIChatWidget {
   constructor() {
     this.apiKey = 'YOUR_GROQ_API_KEY'; // Replace with your API key
     this.baseURL = 'https://api.groq.com/openai/v1/chat/completions';
@@ -567,8 +608,12 @@ document.addEventListener('DOMContentLoaded', () => {
           </Section>
 
           <Section id="advanced-features">
-            <Header><HighlightedWords title={"**Advanced Features** & Customization"} /></Header>
-            
+            <Header>
+              <HighlightedWords
+                title={'**Advanced Features** & Customization'}
+              />
+            </Header>
+
             <Paragraph>
               Take your AI chat to the next level with these advanced features:
             </Paragraph>
@@ -576,10 +621,11 @@ document.addEventListener('DOMContentLoaded', () => {
             <FeatureCard>
               <h4>🎯 Lead Qualification</h4>
               <Paragraph>
-                Add smart lead qualification to automatically collect contact information:
+                Add smart lead qualification to automatically collect contact
+                information:
               </Paragraph>
               <CodeBlock>
-{`// Add to your system prompt
+                {`// Add to your system prompt
 const leadQualificationPrompt = \`
 If a user shows interest in our services or asks about pricing/demos:
 1. Ask for their name if not provided
@@ -598,7 +644,7 @@ Format responses like: "That's great! To help you better, could I get your name 
                 Track conversation metrics and user satisfaction:
               </Paragraph>
               <CodeBlock>
-{`// Add analytics tracking
+                {`// Add analytics tracking
 class ChatAnalytics {
   static trackEvent(event, data) {
     // Google Analytics 4
@@ -636,10 +682,11 @@ this.sendMessage = async function() {
             <FeatureCard>
               <h4>🔗 CRM Integration</h4>
               <Paragraph>
-                Automatically create leads in your CRM when users provide contact info:
+                Automatically create leads in your CRM when users provide
+                contact info:
               </Paragraph>
               <CodeBlock>
-{`// CRM integration example
+                {`// CRM integration example
 class CRMIntegration {
   static async createLead(contactInfo) {
     try {
@@ -676,7 +723,7 @@ class CRMIntegration {
                 Detect user language and respond accordingly:
               </Paragraph>
               <CodeBlock>
-{`// Language detection and response
+                {`// Language detection and response
 const detectLanguage = (text) => {
   // Simple language detection (use a proper library in production)
   const patterns = {
@@ -707,43 +754,91 @@ const getSystemPrompt = (language) => {
           </Section>
 
           <Section id="best-practices">
-            <Header><HighlightedWords title={"**Best Practices** & Security"} /></Header>
-            
+            <Header>
+              <HighlightedWords title={'**Best Practices** & Security'} />
+            </Header>
+
             <Paragraph>
-              Follow these best practices to ensure your AI chat is secure, performant, and user-friendly:
+              Follow these best practices to ensure your AI chat is secure,
+              performant, and user-friendly:
             </Paragraph>
 
             <BestPracticeCard>
               <h4>🔒 Security Best Practices</h4>
-              <p><strong>Never expose API keys in frontend code:</strong> Use a backend proxy to make API calls</p>
-              <p><strong>Implement rate limiting:</strong> Prevent abuse with per-user message limits</p>
-              <p><strong>Sanitize user input:</strong> Filter out malicious content and injection attempts</p>
-              <p><strong>Validate responses:</strong> Check AI responses for inappropriate content</p>
-              <p><strong>Use HTTPS only:</strong> Encrypt all communication between client and server</p>
+              <p>
+                <strong>Never expose API keys in frontend code:</strong> Use a
+                backend proxy to make API calls
+              </p>
+              <p>
+                <strong>Implement rate limiting:</strong> Prevent abuse with
+                per-user message limits
+              </p>
+              <p>
+                <strong>Sanitize user input:</strong> Filter out malicious
+                content and injection attempts
+              </p>
+              <p>
+                <strong>Validate responses:</strong> Check AI responses for
+                inappropriate content
+              </p>
+              <p>
+                <strong>Use HTTPS only:</strong> Encrypt all communication
+                between client and server
+              </p>
             </BestPracticeCard>
 
             <BestPracticeCard>
               <h4>⚡ Performance Optimization</h4>
-              <p><strong>Implement response caching:</strong> Cache common questions to reduce API calls</p>
-              <p><strong>Use streaming responses:</strong> Show partial responses as they arrive</p>
-              <p><strong>Optimize message history:</strong> Only send relevant context, not entire conversation</p>
-              <p><strong>Lazy load the widget:</strong> Load chat components only when needed</p>
-              <p><strong>Implement retry logic:</strong> Handle API failures gracefully</p>
+              <p>
+                <strong>Implement response caching:</strong> Cache common
+                questions to reduce API calls
+              </p>
+              <p>
+                <strong>Use streaming responses:</strong> Show partial responses
+                as they arrive
+              </p>
+              <p>
+                <strong>Optimize message history:</strong> Only send relevant
+                context, not entire conversation
+              </p>
+              <p>
+                <strong>Lazy load the widget:</strong> Load chat components only
+                when needed
+              </p>
+              <p>
+                <strong>Implement retry logic:</strong> Handle API failures
+                gracefully
+              </p>
             </BestPracticeCard>
 
             <BestPracticeCard>
               <h4>👥 User Experience Guidelines</h4>
-              <p><strong>Set clear expectations:</strong> Tell users what the AI can and cannot do</p>
-              <p><strong>Provide escalation paths:</strong> Always offer ways to reach human support</p>
-              <p><strong>Keep responses concise:</strong> Aim for under 150 words per response</p>
-              <p><strong>Use personality consistently:</strong> Maintain a consistent tone and style</p>
-              <p><strong>Handle errors gracefully:</strong> Provide helpful error messages and alternatives</p>
+              <p>
+                <strong>Set clear expectations:</strong> Tell users what the AI
+                can and cannot do
+              </p>
+              <p>
+                <strong>Provide escalation paths:</strong> Always offer ways to
+                reach human support
+              </p>
+              <p>
+                <strong>Keep responses concise:</strong> Aim for under 150 words
+                per response
+              </p>
+              <p>
+                <strong>Use personality consistently:</strong> Maintain a
+                consistent tone and style
+              </p>
+              <p>
+                <strong>Handle errors gracefully:</strong> Provide helpful error
+                messages and alternatives
+              </p>
             </BestPracticeCard>
 
             <CodeExample>
               <h4>Secure Backend Implementation (Node.js)</h4>
               <CodeBlock>
-{`// server.js - Secure backend proxy
+                {`// server.js - Secure backend proxy
 const express = require('express');
 const rateLimit = require('express-rate-limit');
 const helmet = require('helmet');
@@ -838,10 +933,13 @@ app.listen(3000, () => {
           </Section>
 
           <Section id="cost-optimization">
-            <Header><HighlightedWords title={"**Cost Optimization** Strategies"} /></Header>
-            
+            <Header>
+              <HighlightedWords title={'**Cost Optimization** Strategies'} />
+            </Header>
+
             <Paragraph>
-              Keep your AI chat costs under control with these proven strategies:
+              Keep your AI chat costs under control with these proven
+              strategies:
             </Paragraph>
 
             <CostStrategy>
@@ -861,7 +959,9 @@ app.listen(3000, () => {
                 Reduce token usage by optimizing conversation context:
               </Paragraph>
               <p>Only send last 3-5 messages for context</p>
-              <p>Summarize long conversations instead of sending full history</p>
+              <p>
+                Summarize long conversations instead of sending full history
+              </p>
               <p>Remove unnecessary formatting and whitespace</p>
               <p>Use shorter system prompts</p>
             </CostStrategy>
@@ -869,7 +969,7 @@ app.listen(3000, () => {
             <CostStrategy>
               <h4>📊 Cost Monitoring Dashboard</h4>
               <CodeBlock>
-{`// Track API usage and costs
+                {`// Track API usage and costs
 class CostTracker {
   static async logAPICall(tokens, model, cost) {
     await fetch('/api/usage-tracking', {
@@ -936,14 +1036,18 @@ class CostTracker {
 
           <CallToAction>
             <Hero invert={false}>
-              <HighlightedWords title={"Need help **implementing** AI chat?"} />
+              <HighlightedWords title={'Need help **implementing** AI chat?'} />
             </Hero>
             <HeroP>
-              I've integrated AI chat systems for 30+ websites and can help you implement the perfect solution 
-              for your business. From simple widgets to complex multi-agent systems.
+              I've integrated AI chat systems for 30+ websites and can help you
+              implement the perfect solution for your business. From simple
+              widgets to complex multi-agent systems.
             </HeroP>
             <div style={{ textAlign: 'center', marginTop: '2rem' }}>
-              <SlidingButton buttonText="Get AI Chat Consultation" link="https://calendly.com/abdulmoharayman/30min" />
+              <SlidingButton
+                buttonText="Get AI Chat Consultation"
+                link="https://calendly.com/abdulmoharayman/30min"
+              />
             </div>
           </CallToAction>
         </ArticleContent>
@@ -959,7 +1063,7 @@ const ArticleContainer = styled(Section)`
   padding: 2rem;
   overflow-x: hidden;
   word-wrap: break-word;
-  
+
   @media (max-width: 768px) {
     padding: 1rem;
     max-width: 100%;
@@ -978,7 +1082,7 @@ const ArticleMeta = styled.div`
   font-size: 0.9rem;
   color: ${colors.faded};
   margin-bottom: 2rem;
-  
+
   span:first-child {
     background: ${colors.accent}20;
     color: ${colors.accent};
@@ -992,18 +1096,22 @@ const ArticleContent = styled.div`
   line-height: 1.8;
   word-wrap: break-word;
   overflow-wrap: break-word;
-  
-  h1, h2, h3, h4, h5 {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
     margin: 2rem 0 1rem 0;
     line-height: 1.3;
     word-wrap: break-word;
   }
-  
+
   p {
     margin: 1.5rem 0;
     word-wrap: break-word;
   }
-  
+
   * {
     max-width: 100%;
     box-sizing: border-box;
@@ -1011,30 +1119,34 @@ const ArticleContent = styled.div`
 `;
 
 const TableOfContents = styled.div`
-  background: linear-gradient(135deg, ${colors.background}05, ${colors.accent}05);
+  background: linear-gradient(
+    135deg,
+    ${colors.background}05,
+    ${colors.accent}05
+  );
   border: 1px solid ${colors.accent}20;
   border-radius: 10px;
   padding: 2rem;
   margin: 2rem 0;
-  
+
   h3 {
     margin-top: 0;
     color: ${colors.accent};
   }
-  
+
   ol {
     margin: 1rem 0;
     padding-left: 1.5rem;
   }
-  
+
   li {
     margin: 0.5rem 0;
   }
-  
+
   a {
     color: ${colors.contrast};
     text-decoration: none;
-    
+
     &:hover {
       color: ${colors.accent};
       text-decoration: underline;
@@ -1049,7 +1161,7 @@ const BenefitCard = styled.div`
   border: 1px solid #10b98130;
   border-radius: 12px;
   border-left: 4px solid #10b981;
-  
+
   h4 {
     margin-top: 0;
     color: #10b981;
@@ -1063,7 +1175,7 @@ const ProviderComparison = styled.div`
   margin: 3rem 0;
   width: 100%;
   max-width: 1200px;
-  
+
   @media (min-width: 1200px) {
     grid-template-columns: 1fr;
     gap: 3rem;
@@ -1074,25 +1186,29 @@ const ProviderCard = styled.div`
   padding: 3rem;
   border-radius: 15px;
   border: 2px solid ${colors.accent}20;
-  background: linear-gradient(135deg, ${colors.background}02, ${colors.accent}02);
+  background: linear-gradient(
+    135deg,
+    ${colors.background}02,
+    ${colors.accent}02
+  );
   min-height: 450px;
   width: 100%;
   max-width: 1200px;
-  
+
   &.recommended {
     border-color: #10b981;
     background: linear-gradient(135deg, #10b98115, #10b98105);
   }
-  
+
   h4 {
     margin-top: 0;
     color: ${colors.accent};
-    
+
     .recommended & {
       color: #10b981;
     }
   }
-  
+
   .pricing {
     background: ${colors.accent}10;
     padding: 0.5rem 1rem;
@@ -1101,10 +1217,12 @@ const ProviderCard = styled.div`
     margin: 1rem 0;
     color: ${colors.accent};
   }
-  
-  .pros, .cons, .best-for {
+
+  .pros,
+  .cons,
+  .best-for {
     margin: 2rem 0;
-    
+
     strong {
       color: ${colors.accent};
       display: block;
@@ -1116,13 +1234,13 @@ const ProviderCard = styled.div`
       line-height: 1.7;
     }
   }
-  
+
   ul {
     margin: 1rem 0;
     padding-left: 1.5rem;
     list-style: none;
   }
-  
+
   li {
     margin: 1.5rem 0;
     padding: 1rem 0;
@@ -1130,13 +1248,13 @@ const ProviderCard = styled.div`
     position: relative;
     display: block;
     border-bottom: 1px solid ${colors.accent}08;
-    
+
     &:last-child {
       border-bottom: none;
     }
-    
+
     &:before {
-      content: "▪";
+      content: '▪';
       color: ${colors.accent};
       font-weight: bold;
       position: absolute;
@@ -1148,7 +1266,7 @@ const ProviderCard = styled.div`
 
 const ImplementationStep = styled.div`
   margin: 3rem 0;
-  
+
   h4 {
     color: ${colors.accent};
     margin-bottom: 1rem;
@@ -1167,7 +1285,7 @@ const CodeBlock = styled.pre`
   border: 1px solid ${colors.accent}30;
   word-wrap: break-word;
   white-space: pre-wrap;
-  
+
   @media (max-width: 768px) {
     padding: 1rem;
     font-size: 0.8rem;
@@ -1178,11 +1296,15 @@ const CodeBlock = styled.pre`
 const FeatureCard = styled.div`
   margin: 2rem 0;
   padding: 2rem;
-  background: linear-gradient(135deg, ${colors.background}05, ${colors.accent}05);
+  background: linear-gradient(
+    135deg,
+    ${colors.background}05,
+    ${colors.accent}05
+  );
   border: 1px solid ${colors.accent}20;
   border-radius: 12px;
   border-left: 4px solid ${colors.accent};
-  
+
   h4 {
     margin-top: 0;
     color: ${colors.accent};
@@ -1252,7 +1374,7 @@ const BestPracticeCard = styled.div`
 
 const CodeExample = styled.div`
   margin: 2rem 0;
-  
+
   h4 {
     color: ${colors.accent};
     margin-bottom: 1rem;
@@ -1266,24 +1388,24 @@ const CostStrategy = styled.div`
   border: 1px solid #f59e0b30;
   border-radius: 12px;
   border-left: 4px solid #f59e0b;
-  
+
   h4 {
     margin-top: 0;
     color: #f59e0b;
   }
-  
+
   p {
     margin: 0.75rem 0;
     padding: 0;
     line-height: 1.7;
     border-bottom: 1px solid #f59e0b08;
     padding-bottom: 0.75rem;
-    
+
     &:last-child {
       border-bottom: none;
       padding-bottom: 0;
     }
-    
+
     strong {
       color: #f59e0b;
     }
@@ -1292,39 +1414,41 @@ const CostStrategy = styled.div`
 
 const CostComparison = styled.div`
   margin: 2rem 0;
-  
+
   h4 {
     color: ${colors.accent};
     margin-bottom: 1rem;
   }
-  
+
   table {
     width: 100%;
     border-collapse: collapse;
-    
-    th, td {
+
+    th,
+    td {
       padding: 1rem;
       text-align: left;
       border-bottom: 1px solid ${colors.accent}20;
     }
-    
+
     th {
       background: ${colors.accent}10;
       color: ${colors.accent};
       font-weight: 600;
     }
-    
+
     tr:hover {
       background: ${colors.background}05;
     }
   }
-  
+
   @media (max-width: 768px) {
     table {
       font-size: 0.9rem;
     }
-    
-    th, td {
+
+    th,
+    td {
       padding: 0.75rem 0.5rem;
     }
   }
@@ -1334,10 +1458,14 @@ const CallToAction = styled.div`
   text-align: center;
   margin: 4rem 0;
   padding: 3rem 2rem;
-  background: linear-gradient(135deg, ${colors.accent}08, ${colors.background}05);
+  background: linear-gradient(
+    135deg,
+    ${colors.accent}08,
+    ${colors.background}05
+  );
   border-radius: 15px;
   border: 1px solid ${colors.accent}20;
-  
+
   @media (max-width: 768px) {
     padding: 2rem 1rem;
     margin: 2rem 0;

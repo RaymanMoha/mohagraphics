@@ -5,16 +5,19 @@
 ### **Blog Post Ideas to Write (High Traffic Potential):**
 
 1. **"How I Built an AI-Powered Portfolio with Next.js and Groq API"**
+
    - Tutorial format
    - Share on Dev.to, Medium, Hashnode
    - Include code snippets and screenshots
 
 2. **"5 React UI Patterns Every Developer Should Know in 2025"**
+
    - Expand your existing blog post
    - Update with latest React patterns
    - Share on Reddit r/reactjs
 
 3. **"From Kenya to Global: My Journey as a Full Stack Developer"**
+
    - Personal story + technical insights
    - Great for LinkedIn articles
    - Include your project case studies
@@ -27,18 +30,21 @@
 ## 🎯 **Social Media Strategy**
 
 ### **LinkedIn Posts (Daily)**
+
 - Share project screenshots with technical explanations
 - Write about your AI chat feature
 - Post about your experience with different technologies
 - Share coding tips and insights
 
 ### **Twitter/X Strategy**
+
 - Daily coding tips
 - Share your portfolio link with #buildinpublic hashtag
 - Reply to developer threads
 - Share screenshots of your projects
 
 ### **GitHub Strategy**
+
 - Make repositories public (if possible)
 - Add detailed README files
 - Contribute to open source projects
@@ -47,6 +53,7 @@
 ## 🔍 **SEO Optimization**
 
 ### **Keywords to Target:**
+
 - "Full Stack Developer Kenya"
 - "React Developer Nairobi"
 - "Next.js Portfolio"
@@ -55,6 +62,7 @@
 - "Software Engineer Kenya"
 
 ### **Content to Add:**
+
 - Case studies for each project
 - Technical blog posts
 - About page optimization
@@ -97,18 +105,21 @@ Mohammed Abdirahman
 ## 🚀 **Quick Implementation Plan**
 
 ### **Week 1:**
+
 1. Optimize SEO (already done above)
 2. Write "AI Portfolio" blog post
 3. Share on all social platforms
 4. Submit to developer communities
 
 ### **Week 2:**
+
 5. Write technical tutorial
 6. LinkedIn article about your journey
 7. Reddit posts in relevant communities
 8. Email outreach to network
 
 ### **Week 3:**
+
 9. Guest posting on other blogs
 10. Podcast appearances (apply to developer podcasts)
 11. YouTube video about your projects
@@ -117,6 +128,7 @@ Mohammed Abdirahman
 ## 📊 **Content Distribution Channels**
 
 ### **Developer Communities:**
+
 - Dev.to
 - Hashnode
 - Medium
@@ -125,6 +137,7 @@ Mohammed Abdirahman
 - Slack workspaces
 
 ### **Professional Networks:**
+
 - LinkedIn
 - AngelList
 - Upwork/Freelancer profiles
@@ -132,6 +145,7 @@ Mohammed Abdirahman
 - Kenya developer groups
 
 ### **Portfolio Showcases:**
+
 - Awwwards
 - CSS Design Awards
 - Product Hunt (for your AI feature)

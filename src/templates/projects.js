@@ -145,4 +145,3 @@ export const pageQuery = graphql`
     }
   }
 `;
-

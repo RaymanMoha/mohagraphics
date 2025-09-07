@@ -26,10 +26,12 @@ export const ChatProvider: React.FC<ChatProviderProps> = ({ children }) => {
 
   const openChat = () => setIsChatOpen(true);
   const closeChat = () => setIsChatOpen(false);
-  const toggleChat = () => setIsChatOpen(prev => !prev);
+  const toggleChat = () => setIsChatOpen((prev) => !prev);
 
   return (
-    <ChatContext.Provider value={{ isChatOpen, openChat, closeChat, toggleChat }}>
+    <ChatContext.Provider
+      value={{ isChatOpen, openChat, closeChat, toggleChat }}
+    >
       {children}
     </ChatContext.Provider>
   );

@@ -22,4 +22,3 @@ export const content: Content = {
   ],
   role: 'Frontend Developer & SEO Specialist',
 };
-

@@ -1,7 +1,7 @@
-﻿import React, { useEffect, useState } from "react"
-import { navigate } from "@reach/router"
-import kebab from "lodash/kebabCase"
-import styled from "styled-components"
+﻿import React, { useEffect, useState } from 'react';
+import { navigate } from '@reach/router';
+import kebab from 'lodash/kebabCase';
+import styled from 'styled-components';
 
 const Menu = styled.div`
   div {
@@ -9,56 +9,55 @@ const Menu = styled.div`
     cursor: pointer;
     font-size: 1.2rem;
   }
-`
+`;
 const Table = () => {
-  const [allTitles, setAllTitles] = useState(null)
-  const [hasNavigated, setHasNavigated] = useState(null)
+  const [allTitles, setAllTitles] = useState(null);
+  const [hasNavigated, setHasNavigated] = useState(null);
 
   useEffect(() => {
-    const titles = document.querySelectorAll("h3")
+    const titles = document.querySelectorAll('h3');
     const indexArr = Object.values(titles).map((el, i) => {
-      const directId = el.attributes.direct?.value
+      const directId = el.attributes.direct?.value;
       return (
         <div
           className="anchorLink"
           onClick={() => {
-            setHasNavigated(true)
+            setHasNavigated(true);
             navigate(
-              directId ? "#" + el.id : "#" + kebab(el.innerText.split(" "))
-            )
+              directId ? '#' + el.id : '#' + kebab(el.innerText.split(' ')),
+            );
           }}
           key={`titles-index-${i}`}
         >
-          {el.innerText.replace(/Q:|:/, "")}
+          {el.innerText.replace(/Q:|:/, '')}
         </div>
-      )
-    })
-    setAllTitles(indexArr)
-  }, [])
+      );
+    });
+    setAllTitles(indexArr);
+  }, []);
 
   useEffect(() => {
     const goToTitle = () => {
-      setHasNavigated(false)
-      navigate("#title", { replace: true })
-      window.removeEventListener("hashchange", goToTitle)
-    }
+      setHasNavigated(false);
+      navigate('#title', { replace: true });
+      window.removeEventListener('hashchange', goToTitle);
+    };
     if (hasNavigated) {
-      window.addEventListener("hashchange", goToTitle)
+      window.addEventListener('hashchange', goToTitle);
     }
-  }, [hasNavigated])
-  return <Menu style={{ display: "grid" }}>{allTitles}</Menu>
-}
+  }, [hasNavigated]);
+  return <Menu style={{ display: 'grid' }}>{allTitles}</Menu>;
+};
 
-export default Table
+export default Table;
 
 export const H1 = ({ children: text, id: directID, ...props }) => {
-  const id = directID || kebab(text.split(" ").slice(1, 7))
+  const id = directID || kebab(text.split(' ').slice(1, 7));
   return (
     <div>
-      <h3 id={id} direct={directID ? "true" : null}>
+      <h3 id={id} direct={directID ? 'true' : null}>
         {text}
       </h3>
     </div>
-  )
-}
-
+  );
+};

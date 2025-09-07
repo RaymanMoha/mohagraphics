@@ -63,4 +63,3 @@ const Waterfall = ({ size = 'md' }) => {
 };
 
 export default Waterfall;
-

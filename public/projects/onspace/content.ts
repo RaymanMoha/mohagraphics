@@ -14,4 +14,3 @@ export const content: Content = {
   keywords: ['flutter', 'dart', 'react', 'firebase', 'react'],
   role: `Frontend Developer`,
 };
-
