@@ -190,7 +190,7 @@ PERSONALITY: Be enthusiastic, knowledgeable, and helpful. Provide specific detai
 
     // Try available AI providers in order of preference
     const providers = [];
-    
+
     if (process.env.OPENAI_API_KEY) providers.push(openAIProvider);
     if (process.env.COHERE_API_KEY) providers.push(cohereProvider);
 
@@ -205,7 +205,7 @@ PERSONALITY: Be enthusiastic, knowledgeable, and helpful. Provide specific detai
           console.log(`Using ${provider.name} for response`);
           return res.status(200).json({ 
             message: aiResponse,
-            provider: provider.name 
+            provider: provider.name
           });
         }
       } catch (error) {
@@ -224,7 +224,7 @@ PERSONALITY: Be enthusiastic, knowledgeable, and helpful. Provide specific detai
   } catch (error) {
     console.error('Advanced chat API error:', error);
     const fallbackResponse = getIntelligentFallback(req.body.message || '', req.body.conversationHistory || []);
-    res.status(200).json({ 
+    res.status(200).json({
       message: fallbackResponse,
       provider: 'Error Fallback'
     });

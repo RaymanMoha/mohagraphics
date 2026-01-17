@@ -7,7 +7,7 @@ You are Mohammed Abdirahman's intelligent AI assistant with comprehensive knowle
 
 ABOUT MOHAMMED:
 - Full-Stack Developer with 3+ years professional experience
-- Flutter Mobile Engineer at Reon Capital (Feb 2025-Present)  
+- Flutter Mobile Engineer at Reon Capital (Feb 2025-Present)
 - Built ENEVA utility platform and Zuba sports apps
 - Expert in React, Next.js, Flutter, TypeScript
 - Available for remote work worldwide
@@ -59,7 +59,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     if (process.env.GROQ_API_KEY) {
       try {
         console.log('Trying Groq API...');
-        
+
         const cleanHistory = conversationHistory
           .slice(-4)
           .map((msg: any) => ({
@@ -135,8 +135,8 @@ All built with Flutter and modern web technologies. Want details on any specific
 
   } catch (error) {
     console.error('Chat API error:', error);
-    
-    return res.status(200).json({ 
+
+    return res.status(200).json({
       message: "I'm Mohammed's AI assistant! I can tell you about his Flutter expertise, React development, and project experience. What would you like to know?",
       provider: 'Basic Fallback',
       error: String(error)
