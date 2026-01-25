@@ -7,7 +7,7 @@ import { Box } from '@chakra-ui/react';
 
 const Foot = styled.footer`
   padding: 2rem clamp(1rem, 7vw, 200px);
-  background-color: ${c.background};
+  background-color: ${({ $invert }) => ($invert ? c.white : c.background)};
   z-index: 2;
 
   #footWrap {
@@ -40,13 +40,13 @@ const Grid = styled.div`
 
 const Heading = styled.h4`
   font-weight: bold;
-  color: ${c.grey};
+  color: ${({ $invert }) => ($invert ? c.background : c.grey)};
   margin-bottom: 0.5rem;
   font-size: 1.1rem;
 `;
 
 const To = styled(Link)`
-  color: ${c.faded};
+  color: ${({ $invert }) => ($invert ? c.background : c.faded)};
   font-size: 0.9rem;
   text-decoration: none;
   transition: color 0.3s ease;
@@ -57,7 +57,7 @@ const To = styled(Link)`
 `;
 
 const Logo = styled(Link)`
-  color: white;
+  color: ${({ $invert }) => ($invert ? c.background : c.white)};
   font-size: 1.8rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
@@ -72,14 +72,20 @@ const Logo = styled(Link)`
 
 const Div = styled(Box)``;
 
-export default function Footer() {
+export default function Footer({ invert = false }) {
   return (
-    <Foot>
+    <Foot $invert={invert}>
       <div id="footWrap">
         <Div maxW="200px">
-          <Logo href="/">moha</Logo>
+          <Logo href="/" $invert={invert}>
+            moha
+          </Logo>
           <p
-            style={{ fontSize: '0.8rem', marginTop: '0.5rem', color: c.faded }}
+            style={{
+              fontSize: '0.8rem',
+              marginTop: '0.5rem',
+              color: invert ? c.background : c.faded,
+            }}
           >
             © {new Date().getFullYear()}, Built and designed by Mohammed
             Abdirahman
@@ -87,23 +93,32 @@ export default function Footer() {
         </Div>
 
         <Div w="200px">
-          <Heading>Links</Heading>
+          <Heading $invert={invert}>Links</Heading>
           <Grid>
-            <To href="/about">About</To>
+            <To href="/about" $invert={invert}>
+              About
+            </To>
             {/* <To href="/blog">Blog</To> */}
-            <To href="/#projects">Projects</To>
-            <To href="/#contact">Contact</To>
+            <To href="/#projects" $invert={invert}>
+              Projects
+            </To>
+            <To href="/#contact" $invert={invert}>
+              Contact
+            </To>
           </Grid>
         </Div>
 
         <Div w="200px">
-          <Heading>Get in touch</Heading>
+          <Heading $invert={invert}>Get in touch</Heading>
           <Div display="flex" flexDirection="column" alignItems="flex-start">
-            <Social c="white" h="white" p="0 1rem 2rem 0" />
+            <Social
+              c={invert ? c.background : 'white'}
+              h={invert ? c.background : 'white'}
+              p="0 1rem 2rem 0"
+            />
           </Div>
         </Div>
       </div>
     </Foot>
   );
 }
-

@@ -17,6 +17,20 @@ export const SEO = ({
   keywords,
   canonical,
 }: Props) => {
+  const siteUrl = 'https://www.mohammedabdirahman.com';
+  const resolvedThumb = (thumb || 'logo.png').trim();
+  const imageUrl = (() => {
+    if (!resolvedThumb) return `${siteUrl}/img/logo.png`;
+    if (
+      resolvedThumb.startsWith('http://') ||
+      resolvedThumb.startsWith('https://')
+    ) {
+      return resolvedThumb;
+    }
+    if (resolvedThumb.startsWith('/')) return `${siteUrl}${resolvedThumb}`;
+    return `${siteUrl}/img/${resolvedThumb}`;
+  })();
+
   const metaTags = [
     {
       name: `description`,
@@ -33,7 +47,7 @@ export const SEO = ({
     {
       property: `og:image`,
       itemprop: 'image',
-      content: `https://www.mohammedabdirahman.com/img/${thumb || 'logo.png'}`,
+      content: imageUrl,
     },
     {
       property: `og:description`,
@@ -49,7 +63,7 @@ export const SEO = ({
     },
     {
       name: `twitter:image`,
-      content: `https://www.mohammedabdirahman.com/img/${thumb || 'logo.png'}`,
+      content: imageUrl,
     },
     {
       name: `twitter:image:alt`,
@@ -101,4 +115,3 @@ export const SEO = ({
     </Head>
   );
 };
-
