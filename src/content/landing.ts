@@ -21,8 +21,8 @@ export const landingPage = {
   },
   projects: [
     {
-      body: 'I built a insurance quote calculator and onboarding platform using React and TypeScript as an interview project for Inclusivity Solutions.',
-      image: 'inclusive-logo.png',
+      body: 'I built an insurance quote calculator and onboarding platform using React and TypeScript as an interview project.',
+      image: 'insurance-widget.png',
       buttonText: 'View project',
       link: '/projects/InsuranceWidget/',
       ...projectData.InsuranceWidget,
@@ -114,4 +114,3 @@ export const landingPage = {
     buttonText: 'Get in touch',
   },
 };
-

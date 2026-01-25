@@ -7,7 +7,7 @@ description: 'A comprehensive insurance platform with multi-step onboarding, PWA
 
 ## Project Overview
 
-InsuranceWidget is a cutting-edge insurance quote calculator and onboarding platform developed as an interview project for **Inclusivity Solutions**. This project was designed to demonstrate modern web development capabilities and showcase the ability to create a comprehensive insurance platform that streamlines the application process.
+InsuranceWidget is a cutting-edge insurance quote calculator and onboarding platform developed as an interview project. This project was designed to demonstrate modern web development capabilities and showcase the ability to create a comprehensive insurance platform that streamlines the application process.
 
 **Special Thanks**: I would like to extend my gratitude to **Erick** and **Chaddy** for providing this interview opportunity and for their guidance throughout the development process.
 

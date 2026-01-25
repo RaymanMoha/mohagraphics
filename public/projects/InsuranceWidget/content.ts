@@ -2,9 +2,9 @@ import { Content } from '@/content/projects';
 
 export const content: Content = {
   title: 'InsuranceWidget: Insurance Quote Calculator',
-  featuredImage: 'inclusive-logo.png',
+  featuredImage: 'insurance-widget.png',
   description:
-    'InsuranceWidget is a comprehensive insurance quote calculator and onboarding platform developed as an interview project for Inclusivity Solutions. Built with React and TypeScript, it features a multi-step onboarding flow, PWA capabilities, and iframe integration for seamless embedding in websites.',
+    'InsuranceWidget is a comprehensive insurance quote calculator and onboarding platform developed as an interview project. Built with React and TypeScript, it features a multi-step onboarding flow, PWA capabilities, and iframe integration for seamless embedding in websites.',
   seo: 'InsuranceWidget is a modern insurance calculator platform built with React, TypeScript, and Vite. Features include multi-step onboarding, PWA support, responsive design, and iframe embedding capabilities for insurance companies.',
   details: {
     type: 'Interview Project - Insurance Technology Platform',
@@ -23,7 +23,6 @@ export const content: Content = {
     'iframe',
     'responsive',
     'interview project',
-    'inclusivity solutions',
   ],
   role: 'Frontend Developer - Interview Project',
 };
