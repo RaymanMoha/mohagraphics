@@ -2,7 +2,7 @@ import { Content } from '@/content/projects';
 
 export const content: Content = {
   title: 'InsuranceWidget: Insurance Quote Calculator',
-  featuredImage: 'insurance-widget.png',
+  featuredImage: '/img/insurance-widget-overview.png',
   description:
     'InsuranceWidget is a comprehensive insurance quote calculator and onboarding platform developed as an interview project. Built with React and TypeScript, it features a multi-step onboarding flow, PWA capabilities, and iframe integration for seamless embedding in websites.',
   seo: 'InsuranceWidget is a modern insurance calculator platform built with React, TypeScript, and Vite. Features include multi-step onboarding, PWA support, responsive design, and iframe embedding capabilities for insurance companies.',

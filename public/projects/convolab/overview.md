@@ -1,4 +1,6 @@
-﻿# Project Scope
+﻿![Conversation Lab overview](/img/convolab-overview.png "Conversation Lab website overview")
+
+# Project Scope
 
 **Objective:**  
 Develop a responsive, user-friendly website for the agency to showcase their portfolio, services, and client testimonials. The goal was to create a visually appealing, functional platform that highlights the agency's expertise and allows for easy navigation.

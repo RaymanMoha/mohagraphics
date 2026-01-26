@@ -2,7 +2,7 @@
 
 export const content: Content = {
   title: 'QuickHost: Streamlining Web Hosting Services',
-  featuredImage: 'quickhost-overview.png',
+  featuredImage: '/img/quick-host-overview.png',
   description:
     'QuickHost is a leading web hosting and domain registration provider in Kenya. This project focused on redesigning the website to enhance customer experience, optimize performance, and reinforce brand consistency.',
   seo: 'QuickHost is a web hosting platform. For this project, I redesigned the website for a seamless customer journey, improved performance, and ensured consistent branding across digital channels.',

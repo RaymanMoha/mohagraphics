@@ -2,7 +2,7 @@ import { Content } from '@/content/projects';
 
 export const content: Content = {
   title: 'Zuba: Botswana Premier League Digital Platform',
-  featuredImage: 'zuba-platform.png',
+  featuredImage: '/img/zuba-overview.png',
   description:
     'Zuba is a comprehensive digital platform for the Botswana Premier League, featuring fan engagement apps, steward management systems, and real-time match data. Built with React Native and modern web technologies to connect football fans across Botswana.',
   seo: 'Zuba Botswana Premier League digital platform with fan engagement apps, steward management, live match updates, and comprehensive football data management system built with React Native and modern web technologies.',

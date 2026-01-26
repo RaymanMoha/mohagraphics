@@ -92,13 +92,13 @@ const Index = ({
         <HeroSection invert={true}>
           <div>
             <MakeClouds cloudCount={30} mult={1} />
-            <div className="marquee">
+            <HeroContent>
               <Hero invert={true}>
                 <HighlightedWords title={title} />
               </Hero>
               <Social />
               <HeroP>{subtitle}</HeroP>
-            </div>
+            </HeroContent>
           </div>
         </HeroSection>
         <ResponsiveFlameGif
@@ -139,55 +139,40 @@ export const getStaticProps = (async () => {
 export default Index;
 
 const ResponsiveMainContainer = styled.div`
-  padding: 0 1rem;
+  padding: 0;
   background: ${colors.background};
   position: relative;
   overflow-x: hidden;
-  
-  @media only screen and (min-width: 768px) {
-    padding: 0 clamp(2rem, 5vw, 100px);
+`;
+
+const HeroContent = styled.div`
+  padding: 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-start;
+
+  h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    line-height: 1.2;
   }
-  
-  @media only screen and (min-width: 1024px) {
-    padding: 0 clamp(2rem, 7vw, 200px);
-  }
-  
-  .marquee {
-    min-height: 100vh;
-    padding: 2rem 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
+
+  @media only screen and (min-width: 480px) {
     h1 {
-      margin-top: 0;
-      font-size: 1.8rem;
-      line-height: 1.2;
+      font-size: 2.2rem;
     }
-    
-    @media only screen and (min-width: 480px) {
-      h1 {
-        margin-top: 0;
-        font-size: 2.2rem;
-      }
+  }
+
+  @media only screen and (min-width: 768px) {
+    h1 {
+      font-size: 3rem;
     }
-    
-    @media only screen and (min-width: 768px) {
-      min-height: 60vh;
-      
-      h1 {
-        margin-top: 15vh;
-        font-size: 3rem;
-      }
-    }
-    
-    @media only screen and (min-width: 1024px) {
-      min-height: 65vh;
-      
-      h1 {
-        margin-top: 25vh;
-        font-size: 4rem;
-      }
+  }
+
+  @media only screen and (min-width: 1024px) {
+    h1 {
+      font-size: 4rem;
     }
   }
 `;
@@ -202,20 +187,20 @@ const ResponsiveFlameGif = styled.img`
 
   /* Mobile: Move to bottom of hero section */
   top: auto;
-  bottom: -100px;
+  bottom: 40px;
   
   @media only screen and (min-width: 480px) {
     width: 250px;
     height: 250px;
     right: 20px;
-    bottom: -80px;
+    bottom: 60px;
   }
   
   @media only screen and (min-width: 768px) {
     width: 350px;
     height: 350px;
     right: 50px;
-    top: 350px;
+    top: 160px;
     bottom: auto;
     opacity: 1;
   }
@@ -224,21 +209,20 @@ const ResponsiveFlameGif = styled.img`
     width: 450px;
     height: 450px;
     right: 100px;
-    top: 380px;
+    top: 200px;
   }
   
   @media only screen and (min-width: 1200px) {
     width: 500px;
     height: 500px;
     right: 150px;
-    top: 400px;
+    top: 220px;
   }
   
   @media only screen and (max-width: 320px) {
     width: 150px;
     height: 150px;
-    bottom: -120px;
+    bottom: 20px;
     opacity: 0.6;
   }
 `;
-

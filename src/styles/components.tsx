@@ -208,54 +208,34 @@ export const WrapperUnused = styled.div`
 `;
 
 export const Section = styled.section<{ invert?: boolean; top?: boolean }>`
-  max-width: 1100px;
-  margin: auto;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
   background: ${(props) => (props.invert ? colors.background : colors.white)};
   color: ${(props) => (props.invert ? colors.white : colors.background)};
-  padding: ${(props) => (props.top ? '12vh 1rem 22vh' : '3rem 1rem')};
+  padding: ${(props) => (props.top ? '8vh 1rem 12vh' : '2.5rem 1rem')};
 
   @media only screen and (min-width: 768px) {
-    padding: ${(props) => (props.top ? '12vh 2rem 22vh' : '4rem 2rem')};
+    padding: ${(props) => (props.top ? '8vh 2rem 12vh' : '3rem 2rem')};
   }
 
   @media only screen and (min-width: 1024px) {
-    padding: ${(props) => (props.top ? '12vh 3rem 22vh' : '5rem 3rem')};
-  }
-
-  .marquee {
-    min-height: 50vh;
-    
-    h1 {
-      margin-top: 15vh;
-      
-      @media only screen and (min-width: 768px) {
-        margin-top: 25vh;
-      }
-    }
-    
-    #spinner {
-      position: absolute;
-      top: 33%;
-      left: 33%;
-      margin: 0;
-      z-index: 100;
-      opacity: 0.5;
-    }
+    padding: ${(props) => (props.top ? '9vh 3rem 13vh' : '3.5rem 3rem')};
   }
 
   #contactBox {
     position: relative;
     max-width: 700px;
     margin: auto;
-    padding: 2rem 1rem;
+    padding: 1.5rem 1rem;
     overflow: visible;
     
     @media only screen and (min-width: 768px) {
-      padding: 3rem 2rem;
+      padding: 2.5rem 2rem;
     }
     
     @media only screen and (min-width: 1024px) {
-      padding: 4rem 2rem;
+      padding: 3rem 2rem;
     }
   }
 `;
@@ -352,7 +332,7 @@ export const Projects = styled.div`
   display: flex;
   justify-content: space-between;
   flex-flow: column;
-  margin-bottom: clamp(30px, 15vh, 120px);
+  margin-bottom: clamp(24px, 8vh, 80px);
   padding: 0 1rem;
 
   p {
@@ -442,6 +422,10 @@ export const Projects = styled.div`
         max-width: 600px;
       }
     }
+
+    p {
+      max-width: 100%;
+    }
     
     /* Ensure button appears after text */
     & > div:last-child {
@@ -485,4 +469,3 @@ export const HeroP = styled.p`
     max-width: 30rem;
   }
 `;
-

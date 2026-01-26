@@ -34,11 +34,6 @@ const portfolioContext = {
       description: "Comprehensive Botswana Premier League platform with fan engagement and steward management apps"
     },
     {
-      name: "Insurance Widget Platform",
-      tech: ["React", "TypeScript", "Redux", "PWA", "Vite"],
-      description: "Modern insurance quote calculator with multi-step onboarding and iframe integration"
-    },
-    {
       name: "E-commerce Platform",
       tech: ["React", "Node.js", "MongoDB", "Stripe"],
       description: "Full-stack e-commerce solution with payment integration"

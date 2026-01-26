@@ -3,6 +3,8 @@ title: 'Zuba: Botswana Premier League Digital Platform'
 description: 'Comprehensive digital ecosystem for BPL with fan engagement, steward management, and real-time match data'
 ---
 
+![Zuba: Botswana Premier League Digital Platform overview](/img/zuba-overview.png "Zuba: Botswana Premier League Digital Platform website overview")
+
 # Zuba: Botswana Premier League Digital Platform
 
 ## Project Overview

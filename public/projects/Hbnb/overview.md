@@ -1,4 +1,4 @@
-﻿![hbnb](hbnb/screen.png "hbnb Web Dynamic")
+﻿![Hbnb: AirBnB Clone overview](/img/hbnb-overview.png "Hbnb: AirBnB Clone website overview")
 
 # Project Purpose and Goal
 

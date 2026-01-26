@@ -19,7 +19,7 @@ export const content: Content = {
     code: 'Private',
     live: 'https://play.google.com/store/apps/details?id=com.eneva.app&hl=en'
   },
-  featuredImage: '/img/eneva4.png',
+  featuredImage: '/img/eneva-overview.png',
   role: 'Full Stack Mobile Developer & AI Engineer',
   seo: 'ENEVA Enterprise Utility Manager - AI-powered Flutter app with OCR meter reading, Google Cloud Platform, BigQuery analytics, and custom payment systems'
 };

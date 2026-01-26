@@ -21,16 +21,24 @@ export const landingPage = {
   },
   projects: [
     {
-      body: 'I built an insurance quote calculator and onboarding platform using React and TypeScript as an interview project.',
-      image: 'insurance-widget.png',
+      body: 'Budj is a merchant suite with a guided onboarding flow for new businesses, starting with business info and category selection.',
+      image: 'budj-overview.png',
       buttonText: 'View project',
-      link: '/projects/InsuranceWidget/',
-      ...projectData.InsuranceWidget,
-      title: 'Insurance Widget ',
+      link: '/projects/Budj/',
+      ...projectData.Budj,
+      title: 'Budj',
+    },
+    {
+      body: 'Reon Capital Developer Hub is a branded developer portal with focused sign-in and account creation experiences.',
+      image: 'reon-dev-hub-overview.png',
+      buttonText: 'View project',
+      link: '/projects/ReonDevHub/',
+      ...projectData.ReonDevHub,
+      title: 'Reon Capital Dev Hub',
     },
     {
       body: 'I architected an enterprise-grade Flutter mobile application for utility bill management powered by Google Cloud Platform.',
-      image: 'eneva4.png',
+      image: 'eneva-overview.png',
       buttonText: 'View project',
       link: '/projects/ENEVA/',
       ...projectData.ENEVA,
@@ -38,7 +46,7 @@ export const landingPage = {
     },
     {
       body: 'I developed a comprehensive digital platform for the Botswana Premier League featuring dual mobile applications - a fan engagement app and steward management system.',
-      image: 'bpl 1.png',
+      image: 'zuba-overview.png',
       buttonText: 'View project',
       link: '/projects/Zuba/',
       ...projectData.Zuba,
@@ -46,14 +54,14 @@ export const landingPage = {
     },
     {
       body: 'I transformed detailed Figma designs into a responsive, user-friendly platform for both web and mobile. The site features integrated core functionalities—like dynamic form creation, team chat, and data visualization',
-      image: 'onspace.png',
+      image: 'onspace-overview.png',
       buttonText: 'View project',
       link: '/projects/onspace/',
       ...projectData.onspace,
     },
     {
       body: 'I developed a modern, responsive website using Next.js and Tailwind CSS, ensuring a seamless user experience. The platform integrates Sanity CMS for dynamic content management and is optimized for performance and scalability with Vercel deployment.',
-      image: 'convolab.png',
+      image: 'convolab-overview.png',
       buttonText: 'View project',
       link: '/projects/convolab',
       ...projectData.convolab,
@@ -61,7 +69,7 @@ export const landingPage = {
     },
     {
       body: 'I created the website to precisely mirror the look and feel of the Flutter mobile app. By closely aligning the design elements, color schemes, I ensured a consistent, seamless user experience across platforms. This approach not only reinforced the brand identity but also made the transition between mobile and web effortless for users, creating a cohesive and engaging digital presence.',
-      image: 'yalapay.jpeg',
+      image: 'yala-overview.png',
       buttonText: 'View project',
       link: '/projects/Yala',
       ...projectData.Yala,
@@ -69,7 +77,7 @@ export const landingPage = {
     },
     {
       body: 'I helped with build the AMC Group Africa website using WordPress, ensuring a seamless and engaging user experience. The site not only showcases the range of courses offered but also integrates targeted marketing campaigns designed to boost enrollment and drive engagement. Through strategically crafted landing pages and dynamic content, the website effectively connects prospective students with the educational opportunities available, reinforcing the brand',
-      image: 'amc.png',
+      image: 'amc-overview.png',
       buttonText: 'View project',
       link: '/projects/Amc/',
       ...projectData.Amc,
@@ -78,7 +86,7 @@ export const landingPage = {
 
     {
       body: 'The goal was to simplify the hosting process for both beginners and professionals. To achieve this, we revamped the homepage with a clean, modern design that immediately communicates the core services: domain registration, web hosting, and cloud solutions.',
-      image: 'quickhost.jpg',
+      image: 'quick-host-overview.png',
       buttonText: 'View project',
       link: '/projects/QuickHost/',
       ...projectData.QuickHost,
@@ -86,7 +94,7 @@ export const landingPage = {
     },
     {
       body: 'I worked on building a user-friendly platform for Blossom Insurance, ensuring seamless access to a variety of insurance services. The site includes detailed information about different plans—such as Group Life, Personal Accident, and Medical Insurance—while offering tools for quotes and consultations. With a focus on trust and transparency, the website helps individuals, SMEs, and corporates easily navigate their insurance needs.',
-      image: 'blossom-logo.png',
+      image: 'blossom-overview.png',
       buttonText: 'View project',
       link: '/projects/blossom/',
       ...projectData.blossom,
@@ -94,7 +102,7 @@ export const landingPage = {
     },
     {
       body: 'hbnb is a full-stack clone of the web application AirBnB. This clone was built in four iterative phases. This version includes completion of Phase 1, Phase 2, Phase 3 plus Phase 4 (Final version!), which involves loading objects from the client-side using our custom RESTful API and jQuery.',
-      image: 'hbnb.png',
+      image: 'hbnb-overview.png',
       buttonText: 'View project',
       link: '/projects/Hbnb/',
       ...projectData.Hbnb,
@@ -102,7 +110,7 @@ export const landingPage = {
     },
     {
       body: 'I developed the Yala Super Fiber website using WordPress as a complete redesign and rebrand of the original Quick Fiber platform (quickfiber.co.ke). Working with the same team behind Quick Host and Yala Pay, I transformed the internet service provider website into a modern, comprehensive platform. The new design showcases high-speed fiber internet services across Kenya with improved user experience, service packages, coverage maps, customer portals, and streamlined subscription processes.',
-      image: 'yalapay.jpeg',
+      image: 'yala-super-fiber-overview.png',
       buttonText: 'View Site',
       link: 'https://yalasuperfiber.co.ke/',
       title: 'Yala Super Fiber',

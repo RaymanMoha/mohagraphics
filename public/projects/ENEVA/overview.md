@@ -3,6 +3,8 @@ title: 'ENEVA: Smart Utility Bills Manager'
 description: 'Enterprise-grade Flutter mobile application for electricity and water bill management with Google Cloud Platform integration'
 ---
 
+![ENEVA: Smart Utility Bills Manager overview](/img/eneva-overview.png "ENEVA: Smart Utility Bills Manager website overview")
+
 ## Project Overview
 
 ENEVA represents a sophisticated enterprise-grade mobile application built with Flutter, designed to revolutionize utility bill management for electricity and water services. Leveraging Google Cloud Platform's powerful infrastructure, the app provides seamless bill tracking, payment processing, and advanced analytics for both consumers and utility providers.

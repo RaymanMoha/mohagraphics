@@ -1,4 +1,6 @@
-﻿# Project Scope
+﻿![Blossom Insurance. overview](/img/blossom-overview.png "Blossom Insurance. website overview")
+
+# Project Scope
 
 **Objective:**  
 Create a user-friendly and accessible insurance platform that allows customers to easily explore and manage various insurance products. The focus was on offering seamless policy management and quick access to quotes and information.

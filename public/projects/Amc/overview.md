@@ -1,4 +1,4 @@
-﻿![Results page](Amc.png "Resources page that shows the available workshops")
+﻿![AMC GROUP AFRICA overview](/img/amc-overview.png "AMC GROUP AFRICA website overview")
 
 # Project Purpose and Goal
 

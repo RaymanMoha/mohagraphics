@@ -3,6 +3,8 @@ title: 'InsuranceWidget: Modern Insurance Quote Calculator'
 description: 'A comprehensive insurance platform with multi-step onboarding, PWA capabilities, and iframe integration'
 ---
 
+![InsuranceWidget: Insurance Quote Calculator overview](/img/insurance-widget-overview.png "InsuranceWidget: Insurance Quote Calculator website overview")
+
 # InsuranceWidget: Modern Insurance Quote Calculator
 
 ## Project Overview
