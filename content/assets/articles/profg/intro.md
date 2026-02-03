@@ -1,4 +1,4 @@
-﻿---
+---
 name: intro
 title: Prof g
 internal: true

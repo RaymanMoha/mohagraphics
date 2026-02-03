@@ -1,4 +1,4 @@
-﻿import { CupContainer, Hero } from '@/styles/components';
+import { CupContainer, Hero } from '@/styles/components';
 import { Email } from '.';
 import { HighlightedWords } from '../HighlightedWords';
 import { SlidingButton } from './Buttons';

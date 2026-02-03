@@ -114,8 +114,10 @@ const ProjectPage = ({ mdxSource, content, heroImageSrc }: PageProps) => {
   );
   const descriptionText = stripHtml(description);
   const paragraphs = mdxSource.match(/<p>[\s\S]*?<\/p>/g) ?? [];
-  const briefText =
-    paragraphs.length > 0 ? stripHtml(paragraphs[0]) : descriptionText;
+  const firstParagraph = paragraphs[0];
+  const briefText = firstParagraph
+    ? stripHtml(firstParagraph)
+    : descriptionText;
   const stackPreview = stackItems
     .slice(0, 3)
     .map((tech) => tech.replaceAll('_', ' '))
@@ -123,8 +125,10 @@ const ProjectPage = ({ mdxSource, content, heroImageSrc }: PageProps) => {
   const solutionFallback = stackPreview
     ? `Built as ${type} using ${stackPreview}.`
     : `Built as ${type}.`;
-  const solutionText =
-    paragraphs.length > 1 ? stripHtml(paragraphs[1]) : solutionFallback;
+  const secondParagraph = paragraphs[1];
+  const solutionText = secondParagraph
+    ? stripHtml(secondParagraph)
+    : solutionFallback;
   const wordCount = mdxSource
     .replace(/<[^>]*>/g, ' ')
     .trim()

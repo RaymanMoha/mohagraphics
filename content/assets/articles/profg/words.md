@@ -1,4 +1,4 @@
-﻿---
+---
 name: words
 title: Prof g
 internal: true

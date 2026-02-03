@@ -1,4 +1,4 @@
-﻿![Yala Pay: Streamlining Payments in East Africa overview](/img/yala-overview.png "Yala Pay: Streamlining Payments in East Africa website overview")
+![Yala Pay: Streamlining Payments in East Africa overview](/img/yala-overview.png "Yala Pay: Streamlining Payments in East Africa website overview")
 
 # Project Purpose and Goal
 

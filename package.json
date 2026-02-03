@@ -26,7 +26,6 @@
     "@next/mdx": "^14.0.4",
     "@svgr/webpack": "^8.1.0",
     "@types/mdx": "^2.0.10",
-    "canvas": "^3.2.0",
     "dayjs": "^1.11.10",
     "framer-motion": "^10.17.0",
     "gray-matter": "^4.0.3",

@@ -1,4 +1,4 @@
-﻿---
+---
 name: conclusion
 title: Prof g
 internal: true

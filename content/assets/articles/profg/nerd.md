@@ -1,4 +1,4 @@
-﻿---
+---
 name: nerd
 title: Prof g
 internal: true

@@ -1,4 +1,4 @@
-﻿export const c = {
+export const c = {
   background: '#121e27',
   accent: '#ff715b',
   green: '#0dab76',

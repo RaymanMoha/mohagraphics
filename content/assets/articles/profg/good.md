@@ -1,4 +1,4 @@
-﻿---
+---
 name: good
 title: Prof g
 internal: true

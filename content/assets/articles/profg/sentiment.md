@@ -1,4 +1,4 @@
-﻿---
+---
 name: sentiment
 title: Prof g
 internal: true

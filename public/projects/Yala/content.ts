@@ -1,4 +1,4 @@
-﻿import { Content } from '@/content/projects';
+import { Content } from '@/content/projects';
 
 export const content: Content = {
   title: 'Yala Pay: Streamlining Payments in East Africa',

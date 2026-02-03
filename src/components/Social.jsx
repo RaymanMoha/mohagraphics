@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 import { FaLinkedin, FaGithub, FaTwitter } from 'react-icons/fa';
 import { AiFillMail } from 'react-icons/ai';
 import { colors } from '../styles/components';

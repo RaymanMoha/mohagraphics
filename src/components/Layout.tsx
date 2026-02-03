@@ -1,4 +1,4 @@
-﻿import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import StyledComponentsRegistry from '../../lib/registry';
 import Footer from './Footer';
 import Navbar from './Navbar';

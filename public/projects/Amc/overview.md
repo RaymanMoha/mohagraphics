@@ -1,4 +1,4 @@
-﻿![AMC GROUP AFRICA overview](/img/amc-overview.png "AMC GROUP AFRICA website overview")
+![AMC GROUP AFRICA overview](/img/amc-overview.png "AMC GROUP AFRICA website overview")
 
 # Project Purpose and Goal
 

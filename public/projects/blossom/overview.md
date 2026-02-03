@@ -1,4 +1,4 @@
-﻿![Blossom Insurance. overview](/img/blossom-overview.png "Blossom Insurance. website overview")
+![Blossom Insurance. overview](/img/blossom-overview.png "Blossom Insurance. website overview")
 
 # Project Scope
 

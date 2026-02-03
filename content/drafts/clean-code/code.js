@@ -1,4 +1,4 @@
-﻿function getUsersByName(name) {}
+function getUsersByName(name) {}
 
 function getPostsByTag(tags) {}
 

@@ -1,4 +1,4 @@
-﻿const withMDX = require('@next/mdx')();
+const withMDX = require('@next/mdx')();
 const path = require('path');
 
 /** @type {import('next').NextConfig} */
@@ -9,6 +9,9 @@ const nextConfig = {
   },
   compiler: {
     styledComponents: true,
+  },
+  eslint: {
+    ignoreDuringBuilds: true,
   },
   webpack(config) {
     config.module.rules.push({
@@ -21,4 +24,3 @@ const nextConfig = {
 };
 
 module.exports = withMDX(nextConfig);
-

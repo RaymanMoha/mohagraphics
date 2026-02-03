@@ -1,4 +1,4 @@
-﻿import Typography from 'typography';
+import Typography from 'typography';
 import Wordpress2016 from 'typography-theme-wordpress-2016';
 
 Wordpress2016.overrideThemeStyles = () => {

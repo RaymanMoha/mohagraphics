@@ -1,4 +1,4 @@
-﻿import { Hero, HeroP, colors } from '../styles/components';
+import { Hero, HeroP, colors } from '../styles/components';
 
 import Social from '../components/Social';
 

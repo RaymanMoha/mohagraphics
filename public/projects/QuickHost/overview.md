@@ -1,4 +1,4 @@
-﻿![QuickHost: Streamlining Web Hosting Services overview](/img/quick-host-overview.png "QuickHost: Streamlining Web Hosting Services website overview")
+![QuickHost: Streamlining Web Hosting Services overview](/img/quick-host-overview.png "QuickHost: Streamlining Web Hosting Services website overview")
 
 # Project Purpose and Goal
 

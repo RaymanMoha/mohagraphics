@@ -1,4 +1,4 @@
-﻿---
+---
 name: full
 title: Prof g
 internal: true

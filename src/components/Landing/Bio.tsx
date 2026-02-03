@@ -1,4 +1,4 @@
-﻿import { Bio, ImageFull } from '@/styles/components';
+import { Bio, ImageFull } from '@/styles/components';
 import { HighlightedWords } from '../HighlightedWords';
 import { Img } from '@chakra-ui/react';
 import Link from 'next/link';

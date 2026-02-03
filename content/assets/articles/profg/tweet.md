@@ -1,4 +1,4 @@
-﻿---
+---
 name: tweet
 title: Prof g
 internal: true

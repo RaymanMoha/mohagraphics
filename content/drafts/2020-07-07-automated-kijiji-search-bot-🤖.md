@@ -1,4 +1,4 @@
-﻿---
+---
 title: Automated kijiji search bot 🤖
 draft: true
 date: 2020-07-07T22:35:00.000Z

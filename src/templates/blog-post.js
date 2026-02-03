@@ -1,4 +1,4 @@
-﻿import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { Link, graphql } from 'gatsby';
 import { Space } from '../styles/components';
 import Bio from '../components/bio';

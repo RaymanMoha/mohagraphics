@@ -1,4 +1,4 @@
-﻿[![Video](https://img.youtube.com/vi/W72HrS7-3rI/hqdefault.jpg)](https://www.youtube.com/watch?v=W72HrS7-3rI&t=9s)
+[![Video](https://img.youtube.com/vi/W72HrS7-3rI/hqdefault.jpg)](https://www.youtube.com/watch?v=W72HrS7-3rI&t=9s)
 
 ![onspace. overview](/img/onspace-overview.png "onspace. website overview")
 

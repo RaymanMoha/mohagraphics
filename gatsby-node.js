@@ -1,4 +1,4 @@
-﻿const path = require(`path`)
+const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
 require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,

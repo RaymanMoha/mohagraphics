@@ -1,4 +1,4 @@
-﻿import { colors } from '@/styles/components';
+import { colors } from '@/styles/components';
 import Link from 'next/link';
 import styled from 'styled-components';
 

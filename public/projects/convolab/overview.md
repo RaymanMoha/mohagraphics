@@ -1,4 +1,4 @@
-﻿![Conversation Lab overview](/img/convolab-overview.png "Conversation Lab website overview")
+![Conversation Lab overview](/img/convolab-overview.png "Conversation Lab website overview")
 
 # Project Scope
 

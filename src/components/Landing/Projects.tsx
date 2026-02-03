@@ -1,4 +1,4 @@
-﻿import {
+import {
   Header,
   Paragraph,
   Projects,

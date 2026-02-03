@@ -1,4 +1,4 @@
-﻿import * as Hbnb from '../../public/projects/Hbnb/content';
+import * as Hbnb from '../../public/projects/Hbnb/content';
 import * as onspace from '../../public/projects/onspace/content';
 import * as Amc from '../../public/projects/Amc/content';
 import * as QuickHost from '../../public/projects/QuickHost/content';
@@ -9,6 +9,7 @@ import * as Zuba from '../../public/projects/Zuba/content';
 import * as ENEVA from '../../public/projects/ENEVA/content';
 import * as Budj from '../../public/projects/Budj/content';
 import * as ReonDevHub from '../../public/projects/ReonDevHub/content';
+import * as Shambaboy from '../../public/projects/Shambaboy/content';
 
 export type Content = {
   title: string;
@@ -33,6 +34,7 @@ export type Content = {
 export const content = {
   Budj: { ...Budj.content },
   ReonDevHub: { ...ReonDevHub.content },
+  Shambaboy: { ...Shambaboy.content },
   Zuba: { ...Zuba.content },
   ENEVA: { ...ENEVA.content },
   Hbnb: { ...Hbnb.content },

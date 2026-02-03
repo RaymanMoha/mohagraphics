@@ -1,4 +1,4 @@
-﻿![Hbnb: AirBnB Clone overview](/img/hbnb-overview.png "Hbnb: AirBnB Clone website overview")
+![Hbnb: AirBnB Clone overview](/img/hbnb-overview.png "Hbnb: AirBnB Clone website overview")
 
 # Project Purpose and Goal
 

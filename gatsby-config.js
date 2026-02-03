@@ -1,4 +1,4 @@
-﻿module.exports = {
+module.exports = {
   siteMetadata: {
     title: `mohammed Abdirahman | Software Engineer`,
     lang: "en-US",

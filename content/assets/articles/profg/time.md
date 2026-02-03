@@ -1,4 +1,4 @@
-﻿---
+---
 name: time
 title: Prof g
 internal: true

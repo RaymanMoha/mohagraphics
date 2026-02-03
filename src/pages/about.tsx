@@ -1,4 +1,4 @@
-﻿import { SEO } from '@/components/SEO';
+import { SEO } from '@/components/SEO';
 import Social from '@/components/Social';
 import { Hero, Section } from '@/styles/components';
 import fs from 'fs';

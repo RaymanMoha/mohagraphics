@@ -1,4 +1,4 @@
-﻿import { content as projectData } from './projects';
+import { content as projectData } from './projects';
 
 export const landingPage = {
   title: 'Landing page title from local markdown',
@@ -35,6 +35,14 @@ export const landingPage = {
       link: '/projects/ReonDevHub/',
       ...projectData.ReonDevHub,
       title: 'Reon Capital Dev Hub',
+    },
+    {
+      body: 'Shambaboy is the official brand website, highlighting the story, offerings, and contact paths for visitors.',
+      image: 'shambaboy-overview.png',
+      buttonText: 'View project',
+      link: '/projects/Shambaboy/',
+      ...projectData.Shambaboy,
+      title: 'Shambaboy',
     },
     {
       body: 'I architected an enterprise-grade Flutter mobile application for utility bill management powered by Google Cloud Platform.',

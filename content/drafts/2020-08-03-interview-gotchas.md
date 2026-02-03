@@ -1,4 +1,4 @@
-﻿---
+---
 title: 100 days of code
 draft: true
 date: 2020-10-17T18:24:09.989Z

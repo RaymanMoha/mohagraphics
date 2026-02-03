@@ -1,4 +1,4 @@
-﻿import {
+import {
   Hero as H,
   HeroP as HP,
   Section as S,
