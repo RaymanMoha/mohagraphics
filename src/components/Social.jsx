@@ -37,10 +37,9 @@ export default function Social({ c = colors.accent, h = 'white', p = null }) {
         <FaLinkedin />
       </Link>
 
-      <Link href="mailto:contact@aAbdulmoharayman@gmail.com">
+      <Link href="mailto:abdulmoharayman@gmail.com">
         <AiFillMail />
       </Link>
     </SocialIcons>
   );
 }
-

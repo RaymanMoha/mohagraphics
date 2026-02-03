@@ -4,7 +4,7 @@ import styled from 'styled-components';
 export default function Email() {
   return (
     <EmailWrapper>
-      <div>contact@aAbdirahman.com</div>
+      <div>abdulmoharayman@gmail.com</div>
     </EmailWrapper>
   );
 }
@@ -19,4 +19,3 @@ const EmailWrapper = styled.div`
   border: 2px solid blue;
   font-weight: bold;
 `;
-

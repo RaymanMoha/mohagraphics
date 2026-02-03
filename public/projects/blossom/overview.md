@@ -1,34 +1,31 @@
-![Blossom Insurance. overview](/img/blossom-overview.png "Blossom Insurance. website overview")
+![Blossom Insurance overview](/img/blossom-overview.png "Blossom Insurance website overview")
 
-# Project Scope
+# Product Overview
 
-**Objective:**  
-Create a user-friendly and accessible insurance platform that allows customers to easily explore and manage various insurance products. The focus was on offering seamless policy management and quick access to quotes and information.
+Blossom Insurance needed a clear, accessible website that explains coverage options and guides customers to quotes.
 
-# Tools & Technologies Used
+## User Need
 
-- **WordPress**  
-- **PHP**  
-- **PostgreSQL**
+Individuals and businesses needed simple plan comparisons and a direct way to request a quote.
 
-# Key Responsibilities
+## Product Experience
 
-**UI/UX Design:**  
-Implemented a clean, responsive, and intuitive design to enhance navigation and user experience.
+- Plan pages for Group Life, Personal Accident, and Medical Insurance.
+- Quote and consultation calls-to-action.
+- Responsive layout for mobile and desktop.
 
-**Feature Integration:**  
-Integrated features such as policy management, quote generation, and easy contact with customer support.
+## Role
 
-**Performance Optimization:**  
-Ensured fast load times and smooth user interactions for a seamless browsing experience.
+Frontend Developer
 
-# Design Rationale
+## Outcome
 
-**Problem Addressed:**  
-Blossom Insurance aimed to improve accessibility and ease of use for their insurance services online.
+- Delivered a plan-led structure that keeps insurance products easy to compare.
 
-**Target Users:**  
-Individuals and businesses seeking simple, accessible insurance solutions.
+# Tech Stack
 
-[Visit Website](https://blossominsurance.co.ke/)
+- WordPress
 
+# Links
+
+- Live site: https://blossominsurance.co.ke/

@@ -29,48 +29,30 @@ const AboutPage = ({
   return (
     <>
       <SEO
-        title="About Mohammed Abdirahman | Frontend Developer & Software Engineer | AI Developer & UI/UX Specialist"
-        description="Professional Frontend Developer and Software Engineer with 5+ years experience. Specializing in React, Next.js, AI development, and UI/UX design. Expert in building custom web applications, e-commerce platforms, and mobile apps. Available for hire - freelance and contract projects."
+        title="About Mohammed Abdirahman | Frontend & Mobile Engineer"
+        description="Frontend and mobile engineer with 5+ years of experience building React, React Native, and Flutter products. Based in Nairobi and available for remote or Kenya-based roles, focused on performance, accessibility, and clean UX."
         lang="en"
         thumb="/img/mohammed.jpeg"
         keywords={[
-          'frontend developer for hire',
-          'software engineer freelance',
-          'AI developer specialist',
-          'UI/UX developer expert',
-          'professional web developer',
-          'experienced react developer',
-          'hire full stack developer',
-          'custom web development services',
-          'freelance frontend developer',
-          'software engineer consultant',
-          'AI application developer',
-          'UI/UX design specialist',
-          'react developer for hire',
-          'next.js developer expert',
+          'frontend engineer',
+          'frontend developer',
+          'mobile engineer',
+          'react developer',
+          'react native developer',
+          'flutter developer',
+          'next.js developer',
           'typescript developer',
           'javascript developer',
+          'web application developer',
           'mobile app developer',
-          'flutter developer',
-          'web app development',
-          'ecommerce developer',
-          'startup developer',
           'remote frontend developer',
-          'software development consultant',
-          'AI integration specialist',
+          'remote mobile developer',
+          'nairobi developer',
+          'kenya developer',
           'user interface developer',
           'user experience designer',
-          'frontend engineer',
-          'software architect',
-          'web development expert',
-          'react consultant',
-          'freelance software engineer',
-          'custom software development',
-          'web application specialist',
-          'frontend development services',
-          'software engineering services',
-          'AI development services',
-          'UI/UX development services'
+          'performance optimization',
+          'accessibility'
         ]}
       />
       <ResponsiveAboutSection>
@@ -140,4 +122,3 @@ const ResponsiveContent = styled.div`
     }
   }
 `;
-

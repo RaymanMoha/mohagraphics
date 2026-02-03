@@ -1,41 +1,32 @@
 ![Conversation Lab overview](/img/convolab-overview.png "Conversation Lab website overview")
 
-# Project Scope
+# Product Overview
 
-**Objective:**  
-Develop a responsive, user-friendly website for the agency to showcase their portfolio, services, and client testimonials. The goal was to create a visually appealing, functional platform that highlights the agency's expertise and allows for easy navigation.
+Conversation Lab is a creative agency. The site showcases services, work, and content through a CMS-driven structure.
 
-# Tools & Technologies Used
+## User Need
 
-- **React.js**  
-- **Next.js**  
-- **CSS**  
-- **Node.js**  
+Prospective clients needed a fast, clear way to view services, case studies, and contact the agency.
 
-# Key Responsibilities
+## Product Experience
 
-**UI/UX Design Implementation:**  
-Developed and implemented a modern, responsive design with attention to user experience across both desktop and mobile platforms.
+- CMS-driven pages for services, work, and blog content.
+- Responsive layout that keeps case studies readable on mobile.
+- Performance-focused build and deployment pipeline.
 
-**Feature Integration:**  
-Integrated features like dynamic project galleries, client testimonial sections, and a blog for content marketing.
+## Role
 
-**Performance Optimization:**  
-Ensured fast load times and smooth interactions, enhancing user experience and SEO performance.
+Frontend Developer
 
-**Collaboration:**  
-Worked with the backend team to integrate APIs and ensure seamless data flow.
+## Outcome
 
-# Design Rationale
+- Delivered a marketing site with editable content and consistent layouts.
 
-**Problem Addressed:**  
-The agency needed a visually appealing and easy-to-navigate platform to showcase their services and attract clients. The goal was to build a website that was modern and easy to maintain.
+# Tech Stack
 
-**Target Users:**  
-Prospective clients looking to learn about the agency’s services and view past projects.
+- Next.js, Tailwind CSS
+- Sanity CMS, Vercel
 
-**Insight-Driven Design:**  
-Focused on delivering an intuitive interface that guides users seamlessly through the site, from discovering services to viewing the portfolio and contacting the agency.
+# Links
 
-[Visit Website](#)
-
+- Live site: https://www.conversationlab.com/

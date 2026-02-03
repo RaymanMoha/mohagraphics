@@ -7,32 +7,32 @@ const hf = new HfInference(process.env.HUGGINGFACE_API_KEY);
 // Enhanced portfolio context data - customize this with your actual information
 const portfolioContext = {
   name: "Mohammed Abdirahman",
-  title: "Full-Stack Developer & UI/UX Designer",
+  title: "Frontend & Mobile Engineer",
   skills: [
-    "React", "Next.js", "TypeScript", "JavaScript", "Node.js", "Python", 
-    "UI/UX Design", "Tailwind CSS", "Styled Components", "GraphQL", 
-    "MongoDB", "PostgreSQL", "AWS", "Docker"
+    "React", "Next.js", "TypeScript", "JavaScript", "React Native", "Flutter",
+    "Dart", "HTML", "CSS", "Tailwind CSS", "Styled Components", "Node.js",
+    "Python", "REST APIs", "MongoDB", "PostgreSQL", "Firebase", "Docker"
   ],
   experience: [
-    "3+ years of full-stack development",
-    "Specialized in modern web applications",
-    "Experience with cloud deployment and DevOps",
-    "Strong background in responsive design"
+    "5+ years building frontend and mobile applications",
+    "Specialized in React, React Native, and Flutter",
+    "Strong background in responsive design and accessibility",
+    "Collaborative across product, design, and engineering"
   ],
   projects: [
-    "Zuba BPL platform with React Native and real-time features",
-    "Insurance widget platform with React and TypeScript",
-    "E-commerce platforms with React and Node.js",
-    "Real-time chat applications",
-    "Portfolio websites and landing pages",
-    "Mobile-responsive web applications",
-    "Database-driven applications"
+    "Budj merchant onboarding experience",
+    "Reon Capital developer hub",
+    "ENEVA utility manager",
+    "Zuba Botswana Premier League apps",
+    "OnSpace platform",
+    "Conversation Lab website",
+    "Yala Pay website"
   ],
-  education: "Computer Science background with focus on software engineering",
-  location: "Available for remote work worldwide",
-  specialization: "Creating modern, scalable web applications with excellent user experience",
-  interests: ["Web3 development", "AI/ML integration", "Performance optimization"],
-  contact: "Available through portfolio contact form or professional networks"
+  education: "ALX software engineering program",
+  location: "Nairobi, Kenya (open to remote and Kenya-based roles)",
+  specialization: "Building fast, accessible web and mobile experiences",
+  interests: ["Performance optimization", "Design systems", "Developer experience"],
+  contact: "Email: abdulmoharayman@gmail.com · Phone: +254799722501"
 };
 
 // Enhanced fallback responses with intelligent question analysis
@@ -43,51 +43,51 @@ const getFallbackResponse = (message: string, conversationHistory: any[] = []): 
   // Advanced question analysis for complex queries
   if (lowerMessage.includes('approach') || lowerMessage.includes('how would')) {
     if (lowerMessage.includes('e-commerce') || lowerMessage.includes('ecommerce') || lowerMessage.includes('shop')) {
-      return `Mohammed would approach an e-commerce platform systematically: 1) **Frontend**: React/Next.js for fast, SEO-friendly pages 2) **Backend**: Node.js with Express for APIs, PostgreSQL for transactions 3) **Payments**: Stripe integration for secure payments 4) **Scalability**: Redis caching, CDN for images, microservices architecture 5) **Performance**: Code splitting, lazy loading, optimized images. His experience with similar projects shows he prioritizes user experience and performance optimization.`;
+      return `Mohammed would approach an e-commerce platform systematically: 1) **Frontend**: React/Next.js for fast, SEO-friendly pages 2) **Backend**: Node.js with Express for APIs, PostgreSQL for transactions 3) **Payments**: Stripe integration for secure checkout 4) **Scalability**: caching and CDN for assets 5) **Performance**: code splitting, lazy loading, optimized images. He prioritizes user experience and performance in every step.`;
     }
     
     if (lowerMessage.includes('scalable') || lowerMessage.includes('scale')) {
-      return `Mohammed's approach to scalable applications: 1) **Architecture**: Microservices with Docker containers 2) **Database**: PostgreSQL with read replicas, Redis caching 3) **Frontend**: React with code splitting and lazy loading 4) **API**: GraphQL for efficient data fetching 5) **Infrastructure**: AWS/Vercel with auto-scaling 6) **Monitoring**: Performance tracking and error logging. His portfolio shows applications handling thousands of users efficiently.`;
+      return `Mohammed's approach to scalable applications: 1) **Architecture**: clear service boundaries and containerization 2) **Database**: PostgreSQL with indexing and caching 3) **Frontend**: React with code splitting and lazy loading 4) **API**: efficient REST or GraphQL 5) **Infrastructure**: Vercel/GCP with autoscaling 6) **Monitoring**: performance tracking and error logging. He focuses on reliability and smooth user experience.`;
     }
     
     if (lowerMessage.includes('performance') || lowerMessage.includes('optimize')) {
-      return `Mohammed's performance optimization strategy: 1) **Code**: Tree shaking, code splitting, lazy loading 2) **Images**: WebP format, responsive images, CDN 3) **Caching**: Redis for data, browser caching for assets 4) **Database**: Query optimization, indexing, connection pooling 5) **Monitoring**: Lighthouse audits, Core Web Vitals tracking. He's achieved 40% performance improvements in past projects.`;
+      return `Mohammed's performance optimization strategy: 1) **Code**: tree shaking, code splitting, lazy loading 2) **Images**: WebP/AVIF, responsive images, CDN 3) **Caching**: browser caching and API caching 4) **Database**: query optimization and indexing 5) **Monitoring**: Lighthouse audits and Core Web Vitals tracking.`;
     }
   }
 
   // Technical comparison questions
   if (lowerMessage.includes('compare') || lowerMessage.includes('vs') || lowerMessage.includes('versus')) {
     if (lowerMessage.includes('frontend') && lowerMessage.includes('backend')) {
-      return `Mohammed's skillset comparison: **Frontend (Strong)**: ${context.skills.slice(0, 4).join(', ')} - 3+ years React experience, responsive design expert. **Backend (Solid)**: Node.js, Python, database design - builds scalable APIs and handles complex data flows. He's stronger on frontend but very capable full-stack, with experience in ${context.projects.length} production applications combining both.`;
+      return `Mohammed's skillset comparison: **Frontend (Strong)**: ${context.skills.slice(0, 4).join(', ')} with 5+ years building interfaces. **Backend (Supporting)**: Node.js, Python, database design for API work. He's strongest in frontend and mobile, with experience across ${context.projects.length} production projects.`;
     }
   }
 
   // What makes different questions
   if (lowerMessage.includes('different') || lowerMessage.includes('unique') || lowerMessage.includes('special')) {
-    return `What sets Mohammed apart: 1) **Performance Focus**: Consistently improves app performance by 30-40% 2) **Full-Stack Expertise**: Strong in both frontend (React ecosystem) and backend (Node.js/Python) 3) **Design Sense**: UI/UX skills make his apps both functional and beautiful 4) **Modern Stack**: Uses latest technologies like Next.js, TypeScript, GraphQL 5) **Problem Solver**: ${context.experience[0]} with complex web applications. He combines technical skill with design thinking.`;
+    return `What sets Mohammed apart: 1) **Performance Focus**: Optimizes UX and loading speed 2) **Frontend & Mobile Depth**: React, React Native, and Flutter expertise 3) **Design Sense**: UI/UX skills make his apps both functional and clean 4) **Modern Stack**: Next.js, TypeScript, modern tooling 5) **Problem Solver**: ${context.experience[0]}. He combines technical skill with design thinking.`;
   }
 
   // Project-specific questions
   if (lowerMessage.includes('project') && (lowerMessage.includes('example') || lowerMessage.includes('built') || lowerMessage.includes('work'))) {
-    return `Mohammed's notable projects include: **E-commerce Platform** (React, Node.js, Stripe integration) serving 1000+ customers, **Real-time Chat App** (WebSocket, Redis) with instant messaging, **Portfolio Sites** (Gatsby, GraphQL) with 90+ performance scores. Each project showcases different skills: payment processing, real-time features, performance optimization. Check his portfolio for live demos and code examples.`;
+    return `Mohammed's notable projects include: **Budj** (merchant onboarding), **ENEVA** (utility manager), **Zuba** (BPL apps), and **Reon Capital Dev Hub**. Each project showcases frontend and mobile delivery, clean UI, and solid UX. Check his portfolio for live demos and details.`;
   }
 
   // Technology-specific deep dives
   if (lowerMessage.includes('react') && (lowerMessage.includes('experience') || lowerMessage.includes('skill'))) {
-    return `Mohammed's React expertise spans 3+ years: **Core**: Hooks, Context, Redux for state management **Advanced**: Server-side rendering with Next.js, TypeScript integration **Performance**: Code splitting, memoization, lazy loading **Testing**: Jest, React Testing Library **Styling**: Styled Components, Tailwind CSS **Projects**: Built 5+ production React apps with modern patterns and best practices.`;
+    return `Mohammed's React expertise spans 5+ years: **Core**: Hooks, Context, state management **Advanced**: Next.js, TypeScript integration **Performance**: code splitting, memoization, lazy loading **Testing**: React Testing Library **Styling**: Styled Components, Tailwind CSS **Projects**: Multiple production React apps with modern patterns.`;
   }
 
   if (lowerMessage.includes('typescript') || lowerMessage.includes('ts')) {
-    return `Mohammed uses TypeScript extensively: **Benefits**: Catches 60% of bugs before runtime, better IDE support **Experience**: 2+ years in production apps **Advanced Features**: Generics, utility types, strict mode **Integration**: React components, Node.js backends, API typing **Projects**: All recent projects use TypeScript for better code quality and developer experience.`;
+    return `Mohammed uses TypeScript extensively: **Benefits**: fewer runtime bugs, stronger IDE support **Experience**: multiple years in production apps **Advanced Features**: Generics, utility types, strict mode **Integration**: React components, APIs, shared types.`;
   }
 
   // Simple greetings with more personality
   if (lowerMessage.includes('hello') || lowerMessage.includes('hi') || lowerMessage.includes('hey')) {
-    return `Hello! 👋 I'm Mohammed's intelligent AI assistant. I can discuss his ${context.experience} in detail - like how he'd build scalable systems, his React expertise, performance optimization techniques, or specific project examples. What interests you most about his work?`;
+    return `Hello! 👋 I'm Mohammed's AI assistant. I can discuss his ${context.experience[0]} in detail, his React/Flutter experience, or specific project examples. What interests you most about his work?`;
   }
 
   // Default intelligent response
-  return `Great question! I can provide detailed insights about Mohammed's approach to: **Technical Architecture** (how he builds scalable systems), **Technology Stack** (React, Next.js, Node.js expertise), **Project Examples** (e-commerce, chat apps, portfolios), **Performance Optimization** (40% improvements achieved), or **Problem-Solving** approach. What specific aspect would you like to explore?`;
+  return `Great question! I can provide insights about Mohammed's approach to: **Technical Architecture**, **Technology Stack** (React, React Native, Flutter), **Project Examples** (Budj, ENEVA, Zuba), or **Performance Optimization**. What specific aspect would you like to explore?`;
 };
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {

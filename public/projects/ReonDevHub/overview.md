@@ -5,24 +5,30 @@ description: 'Secure developer portal with branded sign-in and account creation 
 
 ![Reon Capital Developer Hub sign-in](/img/reon-dev-hub-overview.png "Reon Capital Developer Hub sign-in screen")
 
-# Project Overview
+# Product Overview
 
-Reon Capital Developer Hub is a branded developer portal that guides users through secure access and account creation. The entry experience combines a high-contrast hero, a split layout, and focused forms to keep attention on authentication tasks.
+Reon Capital Developer Hub is a branded developer portal that provides a focused entry experience for sign-in and account creation.
 
-# Entry Flow Highlights
+## User Need
 
-- Sign-in headline: "Welcome back!" with supporting copy that reinforces quick access.
-- Clear form structure: email and password inputs with a single primary action.
-- Secondary path: a "Sign Up" link that routes new users into registration.
-- Visual framing: a large hero image with gradient overlay and the tagline "Powering knowledge and tools to work limitless."
+Developers needed a secure, clear entry point that separates sign-in from account creation without confusion.
 
-# Account Creation Experience
+## Product Experience
 
-![Reon Capital Developer Hub create account](/img/reon-dev-hub-signup.png "Reon Capital Developer Hub create account")
+- Two distinct entry points: sign-in and create account.
+- Focused form layout with a single primary action.
+- Inline terms and privacy agreement before account creation.
+- Branded hero panel that reinforces trust and product identity.
+- Responsive layout across desktop and mobile.
 
-- Create Account form with Full Name, Email, Password, and Confirm Password fields.
-- Terms and Privacy agreement presented inline before submission.
-- Primary CTA emphasizes a single action: "Create Account."
+## Role
+
+Frontend Developer
+
+## Outcome
+
+- Delivered a consistent authentication experience across devices.
+- Shipped branded entry flows that keep attention on the form.
 
 # Links
 

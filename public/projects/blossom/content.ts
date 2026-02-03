@@ -1,23 +1,23 @@
 import { Content } from '@/content/projects';
 
 export const content: Content = {
-  title: 'Blossom Insurance.',
+  title: 'Blossom Insurance',
   featuredImage: '/img/blossom-overview.png',
-  description: `Blossom Insurance is an easy-to-use online platform that simplifies the process of accessing and managing insurance products. The goal was to create a user-friendly website using WordPress to improve accessibility and efficiency in managing insurance policies.`,
-  seo: `Developed a WordPress-based platform for Blossom Insurance, focusing on intuitive design and performance optimization.`,
+  description:
+    'Insurance website that explains plans clearly and makes quotes and consultations easy to request.',
+  seo: 'Blossom Insurance website with clear plan pages and streamlined quote and consultation paths.',
   details: {
-    type: `Insurance`,
-    stack: `WordPress, PostgreSQL, Netlify`,
-    code: `Private`,
-    live: `https://blossominsurance.co.ke/`,
+    type: 'Insurance Website',
+    stack: 'WordPress Netlify',
+    code: 'Private',
+    live: 'https://blossominsurance.co.ke/',
   },
   keywords: [
     'insurance',
-    'web development',
-    'WordPress',
-    'UI/UX',
+    'wordpress',
     'responsive design',
+    'quotes',
+    'consultations',
   ],
-  role: `Frontend Developer`,
+  role: 'Frontend Developer',
 };
-

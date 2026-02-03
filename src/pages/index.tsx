@@ -26,66 +26,37 @@ const Index = ({
 
   return (
     <>
-            <SEO
-        title="Mohammed Abdirahman | Frontend Developer | Software Engineer | AI Developer | UI/UX Designer for Hire"
-        description="Professional Frontend Developer, Software Engineer, AI Developer & UI/UX Designer with 5+ years experience. Expert in React, Next.js, Flutter, AI integration, and modern web development. Available for freelance projects, custom software development, and consulting. Hire experienced developer for your startup or business."
+      <SEO
+        title="Mohammed Abdirahman | Frontend & Mobile Engineer | React, React Native, Flutter"
+        description="Frontend and mobile engineer with 5+ years building React, React Native, and Flutter products. Based in Nairobi and available for remote or Kenya-based roles, focused on performance, accessibility, and clean UX."
         lang="en"
         thumb="/img/mohammed.jpeg"
         keywords={[
-          'frontend developer for hire',
-          'software engineer freelance',
-          'AI developer specialist',
-          'UI/UX designer developer',
-          'hire frontend developer',
-          'freelance software engineer',
-          'custom web development',
-          'react developer for hire',
-          'next.js developer',
+          'frontend engineer',
+          'frontend developer',
+          'mobile engineer',
+          'react developer',
+          'react native developer',
           'flutter developer',
+          'next.js developer',
           'typescript developer',
           'javascript developer',
-          'full stack developer',
+          'responsive web design',
+          'ui engineer',
+          'ui/ux developer',
           'web application developer',
           'mobile app developer',
-          'ecommerce developer',
-          'startup developer',
-          'remote developer',
-          'web developer Kenya',
-          'software engineer Kenya',
-          'frontend engineer',
-          'backend developer',
-          'API developer',
-          'database developer',
-          'responsive web design',
-          'user interface developer',
-          'user experience designer',
-          'web design and development',
-          'custom software solutions',
-          'AI integration services',
-          'machine learning developer',
-          'chatbot developer',
-          'automation developer',
-          'SaaS developer',
-          'progressive web app developer',
-          'single page application developer',
-          'e-commerce platform developer',
-          'CMS developer',
-          'WordPress developer',
-          'React Native developer',
-          'Node.js developer',
-          'Python developer',
-          'GraphQL developer',
-          'REST API developer',
-          'cloud developer',
-          'serverless developer',
-          'DevOps engineer',
-          'technical consultant',
-          'startup CTO',
-          'freelance developer',
-          'contract developer',
-          'remote work developer',
-          'agile developer',
-          'scrum developer'
+          'remote frontend developer',
+          'remote mobile developer',
+          'nairobi developer',
+          'kenya developer',
+          'frontend engineer kenya',
+          'react native kenya',
+          'flutter kenya',
+          'product engineer',
+          'design systems',
+          'web performance',
+          'accessibility'
         ]}
       />
       <ResponsiveMainContainer>
@@ -102,8 +73,8 @@ const Index = ({
           </div>
         </HeroSection>
         <ResponsiveFlameGif
-          src="img\flame.gif"
-          alt="Animated GIF"
+          src="/img/flame.gif"
+          alt="Animated flame"
         />
       </ResponsiveMainContainer>
 

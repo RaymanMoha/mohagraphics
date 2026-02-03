@@ -1,17 +1,23 @@
 import { Content } from '@/content/projects';
 
 export const content: Content = {
-  title: 'Yala Pay: Streamlining Payments in East Africa',
+  title: 'Yala Pay: Fintech Website',
   featuredImage: '/img/yala-overview.png',
   description:
-    'Yala Pay started in Somalia and expanded to Kenya, offering businesses a seamless and secure way to manage transactions. I worked on creating a <b>WordPress landing page</b> and ensuring a <b>consistent user experience</b> across the website and Flutter mobile app. Additionally, I supported <b>SEO optimization and Google Ads campaigns</b> to increase visibility and user acquisition.',
+    'Fintech marketing site aligned to the Flutter app UI, with SEO and Google Ads support for acquisition.',
   details: {
-    type: 'Payment Platform',
-    stack: 'WordPress Flutter React Node.js PostgreSQL',
+    type: 'Fintech Website',
+    stack: 'WordPress SEO Google_Ads Flutter',
     live: 'https://yala.co.ke/',
     code: 'Private',
   },
-  keywords: ['payments', 'fintech', 'Yala Pay', 'WordPress', 'Flutter', 'SEO'],
-  role: 'Frontend Developer & SEO Specialist',
+  keywords: [
+    'payments',
+    'fintech',
+    'wordpress',
+    'seo',
+    'google ads',
+    'mobile app branding',
+  ],
+  role: 'Frontend Developer',
 };
-

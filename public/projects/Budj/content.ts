@@ -1,23 +1,23 @@
 import { Content } from '@/content/projects';
 
 export const content: Content = {
-  title: 'Budj: Web Product',
+  title: 'Budj: Merchant Onboarding',
   featuredImage: '/img/budj-overview.png',
   description:
-    'Budj is a merchant suite with a guided, three-step registration flow. The onboarding focuses on Business Info, category selection, and a clear step indicator to move merchants through setup quickly.',
-  seo: 'Budj merchant suite onboarding with a three-step registration flow, business info capture, and category selection for new merchants.',
+    'Merchant onboarding flow that collects business details in three clear steps with a visible progress indicator.',
+  seo: 'Budj merchant onboarding flow with step indicator, business info capture, and category selection.',
   details: {
-    type: 'Product Website',
-    stack: 'Web_App',
+    type: 'Product Web App',
+    stack: 'Web_App Onboarding_Flow Form_UI Responsive_Layout',
     live: 'https://www.budj.app/',
     code: 'Private',
   },
   keywords: [
-    'budj',
-    'merchant suite',
-    'onboarding',
-    'registration',
+    'merchant onboarding',
+    'registration flow',
+    'form ux',
+    'product onboarding',
     'web app',
   ],
-  role: 'Developer',
+  role: 'Frontend Developer',
 };

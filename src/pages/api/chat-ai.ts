@@ -6,33 +6,33 @@ const portfolioPrompt = `Write naturally like a human. Use minimal bold formatti
 You are Mohammed Abdirahman's intelligent AI assistant with comprehensive knowledge of his portfolio, skills, and experience.
 
 ABOUT MOHAMMED:
-- Full-Stack Developer with 3+ years professional experience
-- Flutter Mobile Engineer at Reon Capital (Feb 2025-Present)
-- Built ENEVA utility platform and Zuba sports apps
-- Expert in React, Next.js, Flutter, TypeScript
-- Available for remote work worldwide
+- Frontend + Mobile Engineer with 5+ years professional experience
+- Based in Nairobi, Kenya; open to remote and Kenya-based roles
+- Builds web and mobile products with React, React Native, and Flutter
+- Focused on performance, accessibility, and clean UI/UX delivery
 
 TECHNICAL SKILLS:
 Frontend: React, Next.js, TypeScript, JavaScript, HTML5, CSS3, Tailwind CSS
-Mobile: Flutter, Dart (Expert level - 3+ years production experience)
-Backend: Node.js, Python, Flask, Laravel, GraphQL, REST APIs
+Mobile: Flutter, Dart, React Native
+Backend: Node.js, Python, REST APIs
 Databases: PostgreSQL, MySQL, MongoDB, Firebase
-Cloud: Digital Ocean, Fly.io, GCP, Vercel, Netlify, Docker
+Cloud: Vercel, Netlify, GCP, Docker
 
 MAJOR PROJECTS:
-- ENEVA utility management platform (Reon Capital)
-- Zuba Botswana Premier League apps (Fan App & Steward App)
-- ENCOFLOW e-commerce (1M+ transactions monthly, 99.9% uptime)
-- OnSpace platform (15% bug reduction, performance optimization)
+- Budj merchant onboarding experience
+- Reon Capital developer hub
+- ENEVA utility manager
+- Zuba Botswana Premier League apps
+- OnSpace platform
+- Conversation Lab website
 
-ACHIEVEMENTS:
-- Published multiple apps on Google Play Store
-- 99.9% uptime on major e-commerce platforms
-- 30-40% performance improvements across projects
-- 1M+ transactions handled monthly
+HIGHLIGHTS:
+- Delivered multi-platform products across web and mobile
+- Translated Figma designs into responsive, accessible interfaces
+- Comfortable collaborating across product, design, and engineering
 
 CONTACT:
-Phone: +254-799-722-501
+Phone: +254799722501
 Website: https://www.mohagraphics.tech
 Email: abdulmoharayman@gmail.com
 
@@ -107,23 +107,24 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     let smartResponse = '';
 
     if (lowerMessage.includes('hi') || lowerMessage.includes('hello')) {
-      smartResponse = `Hi! I'm Mohammed's AI assistant. He's a Flutter engineer at Reon Capital working on apps like ENEVA and Zuba. What would you like to know about his experience?`;
+      smartResponse = `Hi! I'm Mohammed's AI assistant. He's a frontend and mobile engineer based in Nairobi with 5+ years of experience. What would you like to know about his work?`;
     } else if (lowerMessage.includes('skills') || lowerMessage.includes('tech')) {
       smartResponse = `Mohammed's main skills include:
 • React & Next.js (frontend)
-• Flutter & Dart (mobile apps)
-• Node.js & Python (backend)
+• Flutter, Dart & React Native (mobile apps)
+• Node.js & Python (supporting backend)
 
-He's published apps on Google Play and achieved 99.9% uptime on e-commerce platforms. Which technology interests you?`;
+He focuses on fast, accessible UI and clean, maintainable code. Which technology interests you?`;
     } else if (lowerMessage.includes('projects') || lowerMessage.includes('work')) {
       smartResponse = `Mohammed's recent projects:
+• Budj - merchant onboarding flow
 • ENEVA - utility management platform
-• Zuba sports apps - Botswana Premier League
-• ENCOFLOW - e-commerce handling 1M+ transactions
+• Zuba - Botswana Premier League apps
+• Reon Capital Dev Hub
 
-All built with Flutter and modern web technologies. Want details on any specific project?`;
+Built with modern web and mobile stacks. Want details on any specific project?`;
     } else {
-      smartResponse = `I can tell you about Mohammed's Flutter development experience, his work at Reon Capital, or his technical skills. He's built multiple mobile apps and web platforms. What interests you most?`;
+      smartResponse = `I can tell you about Mohammed's frontend and mobile experience, his projects, or his technical skills. What would you like to know?`;
     }
 
     return res.status(200).json({ 

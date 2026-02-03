@@ -4,14 +4,20 @@ export const content: Content = {
   title: 'Shambaboy: Brand Website',
   featuredImage: '/img/shambaboy-overview.png',
   description:
-    'Shambaboy is the official website for the Shambaboy brand, presenting its story, offerings, and ways for visitors to connect.',
-  seo: 'Shambaboy is the official website for the Shambaboy brand, featuring an overview of the business, key offerings, and contact paths.',
+    'Responsive brand website that presents the story, offerings, and clear contact paths for visitors.',
+  seo: 'Shambaboy brand website with clear content structure, offerings, and contact paths.',
   details: {
     type: 'Brand Website',
-    stack: 'HTML CSS JavaScript',
+    stack: 'HTML CSS JavaScript Responsive_Design',
     live: 'https://www.shambaboy.com/',
     code: 'Private',
   },
-  keywords: ['shambaboy', 'brand', 'website', 'marketing', 'responsive'],
+  keywords: [
+    'brand website',
+    'marketing site',
+    'responsive design',
+    'content structure',
+    'contact cta',
+  ],
   role: 'Frontend Developer',
 };

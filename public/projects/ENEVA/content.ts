@@ -1,25 +1,26 @@
 import { Content } from '@/content/projects';
 
 export const content: Content = {
-  title: 'ENEVA: Smart Utility Bills Manager',
-  description: 'Enterprise-grade Flutter mobile application for electricity and water bill management, powered by Google Cloud Platform with AI-driven OCR for accurate meter reading and advanced analytics.',
+  title: 'ENEVA: Utility Bills Manager',
+  description:
+    'Flutter mobile app for electricity and water bill management with OCR meter reading and analytics on Google Cloud.',
   keywords: [
-    'Flutter',
-    'Google Cloud Platform',
-    'Firebase',
-    'BigQuery',
-    'Cloud Functions',
-    'OCR Technology',
-    'Utility Management',
-    'Enterprise Solutions'
+    'flutter',
+    'dart',
+    'gcp',
+    'firebase',
+    'bigquery',
+    'ocr',
+    'utility bills',
+    'mobile app',
   ],
   details: {
-    type: 'Enterprise Utility Management Platform',
-    stack: 'Flutter Dart GCP Firebase BigQuery Cloud_Functions AI_ML OCR Computer_Vision Firestore Cloud_Storage Bezza_Payment Reon_Capital Provider BLoC Material_Design',
+    type: 'Utility Management Mobile App',
+    stack: 'Flutter Dart GCP Firebase BigQuery Cloud_Functions OCR Firestore',
     code: 'Private',
-    live: 'https://play.google.com/store/apps/details?id=com.eneva.app&hl=en'
+    live: 'https://play.google.com/store/apps/details?id=com.eneva.app&hl=en',
   },
   featuredImage: '/img/eneva-overview.png',
-  role: 'Full Stack Mobile Developer & AI Engineer',
-  seo: 'ENEVA Enterprise Utility Manager - AI-powered Flutter app with OCR meter reading, Google Cloud Platform, BigQuery analytics, and custom payment systems'
+  role: 'Flutter Mobile Developer',
+  seo: 'ENEVA utility bills manager with OCR meter reading and analytics built on Flutter and Google Cloud.',
 };

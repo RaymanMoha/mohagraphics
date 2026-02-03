@@ -1,25 +1,24 @@
 import { Content } from '@/content/projects';
 
 export const content: Content = {
-  title: 'QuickHost: Streamlining Web Hosting Services',
+  title: 'QuickHost: Web Hosting Website',
   featuredImage: '/img/quick-host-overview.png',
   description:
-    'QuickHost is a leading web hosting and domain registration provider in Kenya. This project focused on redesigning the website to enhance customer experience, optimize performance, and reinforce brand consistency.',
-  seo: 'QuickHost is a web hosting platform. For this project, I redesigned the website for a seamless customer journey, improved performance, and ensured consistent branding across digital channels.',
+    'Hosting provider website that clarifies domains, hosting, and cloud services with a clean CTA flow.',
+  seo: 'QuickHost web hosting website redesign focused on clear service structure and conversion-ready CTAs.',
   details: {
     type: 'Web Hosting & Domain Services',
-    stack: 'WordPress TailwindCSS Figma Google Analytics',
+    stack: 'WordPress TailwindCSS Figma Google_Analytics',
     live: 'https://quickhost.co.ke/',
     code: 'Private',
   },
   keywords: [
-    'quickhost',
     'web hosting',
     'domains',
-    'WordPress',
-    'UI/UX',
-    'SEO',
+    'wordpress',
+    'ui ux',
+    'tailwind',
+    'seo',
   ],
-  role: 'Frontend Developer & SEO Specialist',
+  role: 'Frontend Developer',
 };
-

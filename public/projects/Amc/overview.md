@@ -1,80 +1,33 @@
-![AMC GROUP AFRICA overview](/img/amc-overview.png "AMC GROUP AFRICA website overview")
+![AMC Group Africa overview](/img/amc-overview.png "AMC Group Africa website overview")
 
-# Project Purpose and Goal
+# Product Overview
 
-Amc is a work corporate training firm that helps organizations transform their cultures by enabling teams to adopt and acquire skills, certification and compliance in their domain. The goal was to create a fast website that would drive conversions from social media and search engine traffic.
+AMC Group Africa is a corporate training firm. The site presents programs and certifications with clear inquiry paths.
 
-The company had to pivot away from in-person events and quickly build an online platform that would be able to handle a growing number of uniquely built products. This posed a challenge for their Wordpress based infrastructure.
+## User Need
 
-# Web Stack and Explanation
+Prospective clients needed a clear view of training offerings and a fast way to request details.
 
-I chose a server side rendered site that would load from a CDN to achieve the fastest loading times.
+## Product Experience
 
-**I intended to keep Wordpress as a headless CMS to ensure that any changes to the content would trigger a new site build**. The data would then be fetched from WP and rendered as HTML.
+- Program and certification pages with clear calls-to-action.
+- Lead capture and contact paths for prospective clients.
+- Responsive layout and consistent branding.
 
-This project uses APIs that are commonly executed on a server but **I opted to use a serverless approach by creating Lambda functions that run on demand**. Luckily lambda functions are built into the Netlify architecture. All the sensitive data is kept safe using environment variables.
+## Role
 
-**I deployed the site to Netlify** because I am very comfortable with the tools they provide for continuous deployment and integration.
+Frontend Developer
 
-# Problems and Thought Process
+## Outcome
 
-**I was initially brought into the project to maintain the website running solely on Wordpress.** Unfortunately, there had been many iterations of the site built on top of each other without proper maintenance. **In practical terms, this meant that the plugins that were used years ago, couldn't be updated to keep compatibility with other plugins that kept the core functionalities stable.** All this resulted in a slow, insecure, hard-to-maintain site. We soon came to the conclusion that **re-building the site would be the best way to go forward.**
+- Delivered a marketing site that keeps training offerings easy to scan and compare.
 
-The client was happy with the site on Wordpress and requested it to stay there. To satisfy this, I re-organized all the content into pages and posts. Afterwards, **I mapped the data using GraphQL queries to build static pages.**
+# Tech Stack
 
-One of the biggest concerns for the client was administration costs and spam traffic. **To solve this problem, I opted to use serverless functions for the entire site**. This includes payments, emails and gated content.
+- WordPress
+- Google Analytics
+- Netlify
 
-Although the project's code is not available publicly, **here is a snippet that exemplifies how I implemented a lambda function that adds a subscriber to an email list.**
+# Links
 
-```JavaScript
-const mailchimp = require("@mailchimp/mailchimp_marketing")
-
-exports.handler = async function (event, context, callback) {
-  const { email, firstName, lastName } = JSON.parse(event.body)
-  try {
-    const callChimp = async email => {
-      const response = await mailchimp.lists.addListMember(listId, {
-        email_address: email,
-        status: "subscribed",
-        merge_fields: {
-          FNAME: firstName,
-          LNAME: lastName,
-        },
-      })
-
-      console.log(
-        `Successfully added contact as an audience member. The contact's id is ${response.id}.`
-      )
-      //return response
-      return Promise.resolve(response)
-    }
-    const chimpRes = await callChimp(email)
-    return {
-      statusCode: 200,
-      body: JSON.stringify({
-        response: `Successfully added contact as an audience member. The contact's id is ${chimpRes.id}.`,
-        chimpRes,
-      }),
-    }
-  } catch (error) {
-    const {
-      status,
-      response: { text },
-    } = error
-    return {
-      statusCode: status,
-      body: JSON.stringify({
-        response: `Something went wrong on Mailchimp's end`,
-        text,
-      }),
-    }
-  }
-}
-```
-
-**This function is created on demand whenever a new user subscribes to the mailing list.** The API keys are stored using environment variables and are as safe as if they were running on an external server.
-
-# Lessons Learned
-
-I worked with WP for sometime, before I got into modern JavaScript based frameworks. I think the technology works very well for some organizations, especially ones that have a lot of content and not many features. **This project called for a flexible solution that would scale to fit the needs of the company's growth**. Moving the whole site away from WP would've been my choice but the client's requests made me re-evaluate the solutions. In the end, I'm very satisfied with the result!
-
+- Live site: https://amcgroup.africa/

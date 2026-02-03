@@ -5,21 +5,27 @@ description: 'Shambaboy is the official website for the brand, highlighting the 
 
 ![Shambaboy website overview](/img/shambaboy-overview.png "Shambaboy website overview")
 
-# Project Overview
+# Product Overview
 
-Shambaboy is the official website for the Shambaboy brand, designed to introduce the business, communicate its story, and guide visitors toward key information.
+Shambaboy is the official brand website. The experience presents the story, services, and direct contact paths for visitors.
 
-# Experience Goals
+## User Need
 
-- Present a clear brand message with concise, scannable content.
-- Organize the main offerings into easy-to-navigate sections.
-- Provide direct paths to learn more and reach the team.
+Visitors needed a clear overview of the brand and a fast way to reach the team.
 
-# Delivery
+## Product Experience
 
-- Responsive layout that adapts across mobile and desktop screens.
-- Visual hierarchy that keeps the most important content in focus.
-- Consistent typography and spacing for a polished, readable experience.
+- Story and offerings sections with clear content hierarchy.
+- Direct calls-to-action for inquiries.
+- Responsive layout optimized for mobile and desktop.
+
+## Role
+
+Frontend Developer
+
+## Outcome
+
+- Delivered a brand site that stays readable and consistent across devices.
 
 # Links
 

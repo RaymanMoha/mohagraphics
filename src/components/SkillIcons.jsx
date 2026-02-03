@@ -37,17 +37,18 @@ const AllTags = styled(Tags)`
 `;
 
 const skills = [
-  { name: 'Typescript', type: 'frontend' },
+  { name: 'TypeScript', type: 'frontend' },
   { name: 'React', type: 'frontend' },
+  { name: 'React Native', type: 'frontend' },
   { name: 'Node.js', type: 'backend' },
   { name: 'HTML', type: 'frontend' },
   { name: 'CSS', type: 'frontend' },
   { name: 'Flutter', type: 'frontend' },
   { name: 'Next.js', type: 'frontend' },
   { name: 'PostgreSQL', type: 'db' },
-  { name: 'Mongodb', type: 'db' },
+  { name: 'MongoDB', type: 'db' },
   { name: 'Firebase', type: 'backend' },
-  { name: 'Wordpress', type: 'cms' },
+  { name: 'WordPress', type: 'cms' },
 ];
 
 export default function SkillIcons() {
@@ -65,4 +66,3 @@ export default function SkillIcons() {
     </Wrapper>
   );
 }
-

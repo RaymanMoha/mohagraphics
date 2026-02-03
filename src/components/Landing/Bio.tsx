@@ -25,7 +25,7 @@ export const BioSection = ({ bio }: Props) => {
         </h1>
         <ImageFull id="bioImage">
           <Img
-            alt="a picture of alejandro"
+            alt="Portrait of Mohammed Abdirahman"
             style={{ gridArea: 'image', maxWidth: '320px', margin: 'auto' }}
             src="/img/mohammed.jpeg"
           />
@@ -42,4 +42,3 @@ export const BioSection = ({ bio }: Props) => {
     </Bio>
   );
 };
-

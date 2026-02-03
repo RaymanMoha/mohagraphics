@@ -1,9 +1,10 @@
-import { CupContainer, Hero } from '@/styles/components';
+import { CupContainer, Hero, colors } from '@/styles/components';
 import { Email } from '.';
 import { HighlightedWords } from '../HighlightedWords';
 import { SlidingButton } from './Buttons';
 import Cup from './cup.svg';
 import Steam from './steam_1.svg';
+import styled from 'styled-components';
 
 export const ContactSection = () => {
   return (
@@ -23,9 +24,13 @@ export const ContactSection = () => {
         }}
       />
 
-      <Email href={'mailto:contact@abdulmoharayman@gmail.com'}>
+      <Email href="mailto:abdulmoharayman@gmail.com">
         abdulmoharayman@gmail.com
       </Email>
+      <ContactMeta>
+        <a href="tel:+254799722501">+254 799 722 501</a>
+        <span>Nairobi, Kenya | Remote-friendly</span>
+      </ContactMeta>
 
       <div
         style={{
@@ -43,3 +48,20 @@ export const ContactSection = () => {
   );
 };
 
+const ContactMeta = styled.div`
+  display: grid;
+  gap: 0.35rem;
+  margin-top: 0.25rem;
+  font-size: 0.95rem;
+  color: #4b4b4b;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  a:hover {
+    color: ${colors.accent};
+  }
+`;

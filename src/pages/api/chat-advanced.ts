@@ -9,50 +9,60 @@ interface AIProvider {
 // Portfolio context with comprehensive information
 const portfolioContext = {
   name: "Mohammed Abdirahman",
-  title: "Full-Stack Developer & UI/UX Designer",
+  title: "Frontend & Mobile Engineer",
   skills: {
-    frontend: ["React", "Next.js", "TypeScript", "JavaScript", "Vue.js", "Angular"],
-    backend: ["Node.js", "Python", "Express", "FastAPI", "GraphQL", "REST APIs"],
-    databases: ["MongoDB", "PostgreSQL", "MySQL", "Redis", "Firebase"],
-    cloud: ["AWS", "Vercel", "Netlify", "Digital Ocean", "Docker"],
-    design: ["Figma", "Adobe XD", "UI/UX Design", "Responsive Design"],
-    tools: ["Git", "VS Code", "Webpack", "Vite", "Jest", "Cypress"]
+    frontend: ["React", "Next.js", "TypeScript", "JavaScript", "React Native", "Flutter"],
+    backend: ["Node.js", "Python", "REST APIs"],
+    databases: ["MongoDB", "PostgreSQL", "MySQL", "Firebase"],
+    cloud: ["Vercel", "Netlify", "GCP", "Docker"],
+    design: ["Figma", "UI/UX Design", "Responsive Design"],
+    tools: ["Git", "VS Code", "Vite", "Jest"]
   },
   experience: {
-    years: "3+",
+    years: "5+",
     highlights: [
-      "Led development of 5+ production web applications",
-      "Specialized in React ecosystem and modern JavaScript",
-      "Experience with agile development and CI/CD",
+      "Built production web and mobile applications",
+      "Specialized in React ecosystem, React Native, and Flutter",
+      "Experience with agile development and cross-functional teams",
       "Strong focus on performance optimization and accessibility"
     ]
   },
   projects: [
     {
+      name: "Budj",
+      tech: ["React", "Next.js", "TypeScript"],
+      description: "Merchant onboarding experience with a guided registration flow"
+    },
+    {
+      name: "ENEVA",
+      tech: ["Flutter", "Dart", "Firebase"],
+      description: "Utility management platform"
+    },
+    {
       name: "Zuba BPL Platform",
-      tech: ["React Native", "Flutter", "Node.js", "Firebase", "MongoDB"],
-      description: "Comprehensive Botswana Premier League platform with fan engagement and steward management apps"
+      tech: ["Flutter", "React Native", "Firebase"],
+      description: "Botswana Premier League fan and steward apps"
     },
     {
-      name: "E-commerce Platform",
-      tech: ["React", "Node.js", "MongoDB", "Stripe"],
-      description: "Full-stack e-commerce solution with payment integration"
+      name: "Reon Capital Dev Hub",
+      tech: ["React", "Next.js", "TypeScript"],
+      description: "Developer portal with account creation and onboarding"
     },
     {
-      name: "Real-time Chat App",
-      tech: ["Next.js", "WebSocket", "Redis", "PostgreSQL"],
-      description: "Scalable chat application with real-time messaging"
+      name: "OnSpace",
+      tech: ["React", "TypeScript"],
+      description: "Collaborative platform with dashboards and workflows"
     },
     {
-      name: "Portfolio Websites",
-      tech: ["React", "Gatsby", "Styled Components", "GraphQL"],
-      description: "Multiple responsive portfolio sites for clients"
+      name: "Conversation Lab",
+      tech: ["Next.js", "Tailwind CSS"],
+      description: "Modern marketing site with CMS integration"
     }
   ],
   achievements: [
-    "Improved application performance by 40% through optimization",
-    "Built responsive designs that work across all devices",
-    "Implemented automated testing reducing bugs by 60%"
+    "Delivered responsive designs that work across devices",
+    "Shipped web and mobile experiences with clean UI/UX",
+    "Improved usability through performance and UI polish"
   ]
 };
 
