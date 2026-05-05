@@ -21,7 +21,7 @@ export const landingPage = {
   },
   projects: [
     {
-      body: 'Guided three-step merchant onboarding flow with business info and category selection.',
+      body: 'Cashback and loyalty platform with React Native mobile flows, Next.js merchant experiences, verified spend, M-Pesa withdrawals, and campaign dashboards.',
       image: 'budj-overview.png',
       buttonText: 'View project',
       link: '/projects/Budj/',
@@ -37,12 +37,12 @@ export const landingPage = {
       title: 'Reon Capital Dev Hub',
     },
     {
-      body: 'Responsive brand site that presents the story, offerings, and contact paths.',
-      image: 'shambaboy-overview.png',
+      body: 'AI farming app website for proof-first farm operations, GPS/photo task verification, worker accountability, offline workflows, and field dashboards.',
+      image: 'shambaboy-hero.png',
       buttonText: 'View project',
       link: '/projects/Shambaboy/',
       ...projectData.Shambaboy,
-      title: 'Shambaboy',
+      title: 'ShambaBoy',
     },
     {
       body: 'Flutter utility bills manager with OCR meter reading and analytics on GCP.',
@@ -53,6 +53,14 @@ export const landingPage = {
       title: 'ENEVA -Utility Manager',
     },
     {
+      body: 'Fuel wallet and delivery app under Reon Capital with prepaid wallet flows, fuel ordering, station discovery, truck tracking, and owner dashboard screens.',
+      image: 'sava-overview.png',
+      buttonText: 'View project',
+      link: '/projects/Sava/',
+      ...projectData.Sava,
+      title: 'Sava - Fuel Wallet & Delivery',
+    },
+    {
       body: 'Two mobile apps for Botswana Premier League: fan engagement and steward management with real-time match data.',
       image: 'zuba-overview.png',
       buttonText: 'View project',
@@ -61,8 +69,8 @@ export const landingPage = {
       title: 'Zuba - BPL Platform',
     },
     {
-      body: 'Figma-to-product build with dynamic forms, team chat, and dashboards for distributed teams.',
-      image: 'onspace-overview.png',
+      body: 'No-code operations platform for internal forms, field data collection, chat-style submissions, mobile folders, analytics, templates, and business workflow management.',
+      image: 'onspace-mobile-folders.png',
       buttonText: 'View project',
       link: '/projects/onspace/',
       ...projectData.onspace,
@@ -99,29 +107,6 @@ export const landingPage = {
       link: '/projects/QuickHost/',
       ...projectData.QuickHost,
       title: 'Quick Host',
-    },
-    {
-      body: 'Insurance site that explains plans and streamlines quote and consultation requests.',
-      image: 'blossom-overview.png',
-      buttonText: 'View project',
-      link: '/projects/blossom/',
-      ...projectData.blossom,
-      title: 'Blossom Insurance',
-    },
-    {
-      body: 'Full-stack AirBnB clone with Flask REST API and jQuery-driven dynamic UI.',
-      image: 'hbnb-overview.png',
-      buttonText: 'View project',
-      link: '/projects/Hbnb/',
-      ...projectData.Hbnb,
-      title: 'Hbnb',
-    },
-    {
-      body: 'Redesigned ISP website highlighting fiber packages and coverage across Kenya.',
-      image: 'yala-super-fiber-overview.png',
-      buttonText: 'View Site',
-      link: 'https://yalasuperfiber.co.ke/',
-      title: 'Yala Super Fiber',
     },
   ],
 

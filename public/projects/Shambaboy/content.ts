@@ -1,23 +1,29 @@
 import { Content } from '@/content/projects';
 
 export const content: Content = {
-  title: 'Shambaboy: Brand Website',
-  featuredImage: '/img/shambaboy-overview.png',
+  title: 'ShambaBoy: AI Farming App',
+  featuredImage: '/img/shambaboy-hero.png',
   description:
-    'Responsive brand website that presents the story, offerings, and clear contact paths for visitors.',
-  seo: 'Shambaboy brand website with clear content structure, offerings, and contact paths.',
+    'AI farming and farm operations platform for African agribusiness teams, with GPS-stamped task proof, photo verification, offline mobile workflows, worker accountability, and field operations dashboards.',
+  seo: 'ShambaBoy AI farming app and proof-first farm management platform for Kenya and Africa, covering GPS task tracking, photo proof, offline field operations, AI crop insights, worker accountability, and farm dashboards.',
   details: {
-    type: 'Brand Website',
-    stack: 'HTML CSS JavaScript Responsive_Design',
+    type: 'Agri-Tech Product Website',
+    stack: 'Next.js React TypeScript Responsive_Design SEO Performance Product_Marketing Agri-Tech AI_Farming',
     live: 'https://www.shambaboy.com/',
     code: 'Private',
   },
   keywords: [
-    'brand website',
-    'marketing site',
-    'responsive design',
-    'content structure',
-    'contact cta',
+    'AI farming app',
+    'farm management software',
+    'GPS farm tracking',
+    'photo verification',
+    'field operations dashboard',
+    'proof-first agriculture',
+    'worker accountability',
+    'offline farm app',
+    'agri-business platform',
+    'AI crop monitoring',
+    'kenya agriculture software',
   ],
-  role: 'Frontend Developer',
+  role: 'Frontend Developer · Product Website',
 };

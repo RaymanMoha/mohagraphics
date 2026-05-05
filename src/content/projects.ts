@@ -7,6 +7,7 @@ import * as blossom from '../../public/projects/blossom/content';
 import * as convolab from '../../public/projects/convolab/content';
 import * as Zuba from '../../public/projects/Zuba/content';
 import * as ENEVA from '../../public/projects/ENEVA/content';
+import * as Sava from '../../public/projects/Sava/content';
 import * as Budj from '../../public/projects/Budj/content';
 import * as ReonDevHub from '../../public/projects/ReonDevHub/content';
 import * as Shambaboy from '../../public/projects/Shambaboy/content';
@@ -37,6 +38,7 @@ export const content = {
   Shambaboy: { ...Shambaboy.content },
   Zuba: { ...Zuba.content },
   ENEVA: { ...ENEVA.content },
+  Sava: { ...Sava.content },
   Hbnb: { ...Hbnb.content },
   onspace: { ...onspace.content },
   Amc: { ...Amc.content },

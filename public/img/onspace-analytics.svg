@@ -1,0 +1,57 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" rx="34" fill="#FFFFFF"/>
+  <rect x="1" y="1" width="1598" height="898" rx="33" stroke="#0EA5E9" stroke-width="2"/>
+  <circle cx="44" cy="44" r="10" fill="#EF4444"/>
+  <circle cx="72" cy="44" r="10" fill="#FBBF24"/>
+  <circle cx="100" cy="44" r="10" fill="#22C55E"/>
+  <rect x="488" y="24" width="476" height="44" rx="14" fill="#F3F4F6"/>
+  <text x="726" y="53" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="22" fill="#111827">getonspace.com</text>
+  <rect x="0" y="88" width="304" height="812" fill="#FAFAFA" stroke="#E5E7EB"/>
+  <text x="28" y="132" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="800" fill="#111827">Google Marketing 📣</text>
+  <text x="28" y="154" font-family="Inter, Arial, sans-serif" font-size="15" fill="#6B7280">2 forms</text>
+  <rect x="28" y="190" width="248" height="40" rx="8" fill="white" stroke="#D1D5DB"/>
+  <text x="80" y="216" font-family="Inter, Arial, sans-serif" font-size="15" fill="#6B7280">Search...</text>
+  <text x="28" y="286" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700" fill="#6B7280">ALL FORMS</text>
+  <circle cx="52" cy="340" r="20" fill="#BAE6FD"/>
+  <text x="80" y="348" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="700" fill="#111827">Contact Us</text>
+  <text x="80" y="370" font-family="Inter, Arial, sans-serif" font-size="14" fill="#6B7280">3 members</text>
+  <rect x="0" y="392" width="304" height="64" fill="#E0F2FE"/>
+  <circle cx="52" cy="424" r="20" fill="#BAE6FD"/>
+  <text x="80" y="421" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="700" fill="#111827">Expense Management</text>
+  <text x="80" y="443" font-family="Inter, Arial, sans-serif" font-size="14" fill="#0284C7">3 members</text>
+
+  <text x="336" y="140" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800" fill="#111827">Expense Management</text>
+  <text x="336" y="170" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700" fill="#6B7280">3 members</text>
+  <circle cx="862" cy="150" r="26" fill="#0284C7"/>
+  <circle cx="916" cy="150" r="26" fill="#F3F4F6"/>
+  <circle cx="970" cy="150" r="26" fill="#F3F4F6"/>
+  <line x1="304" y1="210" x2="1600" y2="210" stroke="#E5E7EB"/>
+
+  <rect x="560" y="236" width="104" height="36" rx="18" fill="#DBF3FF"/>
+  <text x="612" y="260" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="700" fill="#0284C7">Pie Charts</text>
+  <text x="560" y="318" font-family="Inter, Arial, sans-serif" font-size="23" font-weight="800" fill="#111827">Expense Type: Where do we spend the most and least?</text>
+  <text x="560" y="358" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="600" fill="#111827">This pie chart shows where we spend the most and the least in our company expenses.</text>
+  <circle cx="936" cy="500" r="130" fill="#22A7DF"/>
+  <path d="M936 500 L890 378 A130 130 0 0 1 1066 500 Z" fill="#F7C84B"/>
+  <path d="M936 500 L1066 500 A130 130 0 0 1 882 616 Z" fill="#FF3E44"/>
+  <path d="M936 500 L882 616 A130 130 0 0 1 830 575 Z" fill="#88B96A"/>
+  <text x="970" y="448" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="800" fill="#111827">769</text>
+  <text x="970" y="468" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="800" fill="#111827">Records</text>
+  <text x="846" y="496" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="800" fill="#FFFFFF">29.89%</text>
+  <text x="846" y="514" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="800" fill="#FFFFFF">Records</text>
+  <text x="964" y="565" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="800" fill="#FFFFFF">43.11%</text>
+  <text x="970" y="583" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="800" fill="#FFFFFF">Records</text>
+  <circle cx="698" cy="678" r="7" fill="#FF3E44"/>
+  <text x="716" y="684" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="700" fill="#111827">Salary</text>
+  <circle cx="770" cy="678" r="7" fill="#F7C84B"/>
+  <text x="788" y="684" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="700" fill="#111827">Marketing &amp; Advertising</text>
+  <circle cx="946" cy="678" r="7" fill="#22A7DF"/>
+  <text x="964" y="684" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="700" fill="#111827">Software Services</text>
+  <circle cx="1114" cy="678" r="7" fill="#88B96A"/>
+  <text x="1132" y="684" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="700" fill="#111827">Meal &amp; Drinks</text>
+
+  <line x1="530" y1="738" x2="1378" y2="738" stroke="#E5E7EB"/>
+  <rect x="578" y="786" width="96" height="36" rx="18" fill="#FFEFAD"/>
+  <text x="626" y="810" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="700" fill="#8A6A00">Bar Charts</text>
+  <text x="578" y="864" font-family="Inter, Arial, sans-serif" font-size="23" font-weight="800" fill="#111827">Currency by Total Amount</text>
+</svg>

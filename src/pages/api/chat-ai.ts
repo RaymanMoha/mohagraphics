@@ -19,11 +19,11 @@ Databases: PostgreSQL, MySQL, MongoDB, Firebase
 Cloud: Vercel, Netlify, GCP, Docker
 
 MAJOR PROJECTS:
-- Budj merchant onboarding experience
+- Budj cashback and loyalty platform: React Native mobile features plus Next.js/TypeScript web experiences for offer discovery, verified payments, cashback wallets, M-Pesa withdrawals, merchant onboarding, offer management, loyalty rules, merchant insights, and campaign dashboards
 - Reon Capital developer hub
 - ENEVA utility manager
 - Zuba Botswana Premier League apps
-- OnSpace platform
+- OnSpace no-code operations platform for internal forms, field data collection, chat-style submissions, mobile folders, templates, analytics, and workflow management
 - Conversation Lab website
 
 HIGHLIGHTS:
@@ -117,7 +117,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 He focuses on fast, accessible UI and clean, maintainable code. Which technology interests you?`;
     } else if (lowerMessage.includes('projects') || lowerMessage.includes('work')) {
       smartResponse = `Mohammed's recent projects:
-• Budj - merchant onboarding flow
+• Budj - cashback and loyalty platform with React Native mobile flows, Next.js web experiences, verified spend, M-Pesa withdrawals, and merchant dashboards
 • ENEVA - utility management platform
 • Zuba - Botswana Premier League apps
 • Reon Capital Dev Hub

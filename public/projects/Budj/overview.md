@@ -1,33 +1,46 @@
 ---
-title: 'Budj: Merchant Onboarding'
-description: 'Guided three-step merchant registration flow for Budj.'
+title: 'Budj: Cashback & Loyalty Platform'
+description: 'React Native and Next.js product work for verified cashback, merchant offers, M-Pesa withdrawals, and loyalty insights.'
 ---
 
-![Budj: Merchant Onboarding overview](/img/budj-overview.png "Budj: Merchant Onboarding overview")
+![Budj cashback and loyalty platform overview](/img/budj-overview.png "Budj cashback and loyalty platform overview")
 
 # Product Overview
 
-Budj is a merchant suite. The onboarding flow registers new businesses in three steps and keeps users oriented with a clear progress indicator.
+Budj is a cashback and loyalty rewards platform for shoppers and merchants. Shoppers discover offers, claim rewards, complete verified purchases, earn cashback, and withdraw to M-Pesa. Merchants use Budj to launch performance-based offers, reward real spend, understand repeat visits, and track campaign ROI.
 
 ## User Need
 
-Merchants needed a short, confidence-building registration flow that captures core business details without unnecessary steps.
+Shoppers needed rewards they could trust instead of random promos or delayed loyalty points. Merchants needed a measurable way to bring customers back without paying for discounts that do not convert into real purchases.
 
 ## Product Experience
 
-- Three-step structure with a visible progress indicator.
-- Business info collection focused on name, category, and description.
-- Single primary call-to-action per step to reduce decision fatigue.
-- Responsive split layout that keeps the form readable on mobile and desktop.
+- Offer discovery by merchant, category, and everyday spending needs.
+- Claim-before-pay flows that connect customer intent to verified transactions.
+- Payment verification states that keep cashback honest and fraud-resistant.
+- Cashback wallet flows with reward balances and M-Pesa withdrawal support.
+- Merchant onboarding, offer creation, cashback rules, loyalty setup, and campaign controls.
+- Merchant insights for verified revenue, repeat visits, customer segments, and offer performance.
+- Responsive web experiences built for merchant dashboards, product pages, and administrative workflows.
+
+## Engineering Focus
+
+- Built React Native mobile interfaces for shopper-facing reward journeys.
+- Built Next.js and TypeScript web interfaces for merchant and product workflows.
+- Integrated API-driven screens where transaction status, wallet state, merchant data, and campaign performance needed to stay clear.
+- Translated fintech and loyalty requirements into UI states that make trust, payment status, and next actions obvious.
+- Improved product polish across responsive layouts, dashboard surfaces, and mobile-first flows.
 
 ## Role
 
-Frontend Developer
+React Native & Next.js Frontend Engineer
 
 ## Outcome
 
-- Shipped a three-step registration experience on the merchant portal.
-- Delivered a form UI that remains readable across devices.
+- Positioned Budj as a verified cashback and loyalty product rather than a generic promotions platform.
+- Supported both sides of the marketplace: shoppers earning rewards and merchants measuring revenue impact.
+- Delivered product surfaces across mobile and web for offers, rewards, wallet actions, merchant setup, and insights.
+- Strengthened Mohammed's portfolio proof for React Native, Next.js, TypeScript, fintech UI, API integration, dashboards, and mobile product development.
 
 # Links
 

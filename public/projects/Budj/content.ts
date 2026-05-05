@@ -1,23 +1,28 @@
 import { Content } from '@/content/projects';
 
 export const content: Content = {
-  title: 'Budj: Merchant Onboarding',
+  title: 'Budj: Cashback & Loyalty Platform',
   featuredImage: '/img/budj-overview.png',
   description:
-    'Merchant onboarding flow that collects business details in three clear steps with a visible progress indicator.',
-  seo: 'Budj merchant onboarding flow with step indicator, business info capture, and category selection.',
+    'Cashback and loyalty platform where shoppers earn verified rewards while merchants launch offers, track repeat visits, and measure ROI through mobile and web product flows.',
+  seo: 'Budj cashback and loyalty platform built with React Native mobile features and Next.js web experiences for verified spend, M-Pesa withdrawals, merchant offers, and performance dashboards.',
   details: {
-    type: 'Product Web App',
-    stack: 'Web_App Onboarding_Flow Form_UI Responsive_Layout',
+    type: 'Fintech Loyalty Platform',
+    stack: 'React_Native Next.js TypeScript React Tailwind_CSS REST_APIs Mobile_App Merchant_Dashboard Cashback_Wallet M-Pesa Product_UI',
     live: 'https://www.budj.app/',
     code: 'Private',
   },
   keywords: [
-    'merchant onboarding',
-    'registration flow',
-    'form ux',
-    'product onboarding',
-    'web app',
+    'React Native',
+    'Next.js',
+    'cashback platform',
+    'loyalty platform',
+    'merchant dashboard',
+    'M-Pesa withdrawals',
+    'verified payments',
+    'fintech UI',
+    'TypeScript',
+    'API integration',
   ],
-  role: 'Frontend Developer',
+  role: 'React Native & Next.js Frontend Engineer',
 };

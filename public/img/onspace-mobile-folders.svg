@@ -1,0 +1,70 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" rx="34" fill="#F8FAFC"/>
+  <rect x="1" y="1" width="1598" height="898" rx="33" stroke="#0EA5E9" stroke-width="2"/>
+  <g filter="url(#shadow)">
+    <rect x="214" y="38" width="510" height="824" rx="76" fill="#151515"/>
+    <rect x="232" y="56" width="474" height="788" rx="58" fill="white"/>
+    <rect x="390" y="80" width="128" height="48" rx="24" fill="#111827"/>
+    <text x="278" y="104" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#111827">12:28</text>
+    <text x="282" y="174" font-family="Inter, Arial, sans-serif" font-size="27" font-weight="800" fill="#111827">Acme General Operations</text>
+    <rect x="638" y="140" width="54" height="54" rx="10" fill="#F5F5F5"/>
+    <text x="665" y="177" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="35" fill="#111827">+</text>
+    <line x1="232" y1="224" x2="706" y2="224" stroke="#F1F5F9"/>
+    <rect x="284" y="288" width="374" height="64" rx="8" fill="#FFFFFF" stroke="#D6D6D6" stroke-width="2"/>
+    <text x="318" y="328" font-family="Inter, Arial, sans-serif" font-size="25" fill="#727272">Search form...</text>
+    <text x="282" y="416" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#737373">All forms</text>
+    <g font-family="Inter, Arial, sans-serif">
+      <rect x="282" y="460" width="34" height="38" rx="1" stroke="#7E7E7E" stroke-width="4"/>
+      <text x="342" y="482" font-size="25" font-weight="800" fill="#000">Field Work Tracker</text>
+      <text x="342" y="510" font-size="19" fill="#888">450 members</text>
+      <rect x="282" y="542" width="34" height="38" rx="1" stroke="#7E7E7E" stroke-width="4"/>
+      <text x="342" y="564" font-size="25" font-weight="800" fill="#000">Daily Sales Reporting</text>
+      <text x="342" y="592" font-size="19" fill="#888">654 members</text>
+      <rect x="282" y="624" width="34" height="38" rx="1" stroke="#7E7E7E" stroke-width="4"/>
+      <text x="342" y="646" font-size="25" font-weight="800" fill="#000">Stock Requisitions</text>
+      <text x="342" y="674" font-size="19" fill="#888">123 members</text>
+      <rect x="282" y="706" width="34" height="38" rx="1" stroke="#7E7E7E" stroke-width="4"/>
+      <text x="342" y="728" font-size="25" font-weight="800" fill="#000">Leads Management</text>
+      <text x="342" y="756" font-size="19" fill="#888">86 members</text>
+      <rect x="282" y="788" width="34" height="38" rx="1" stroke="#C89925" stroke-width="4"/>
+      <text x="342" y="810" font-size="25" font-weight="800" fill="#000">Customer Feedback</text>
+      <text x="342" y="838" font-size="19" fill="#888">6 members</text>
+      <rect x="598" y="796" width="84" height="32" rx="16" fill="#FFE08A"/>
+      <text x="640" y="817" text-anchor="middle" font-size="15" font-weight="700" fill="#7C5C15">Public</text>
+    </g>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="854" y="38" width="510" height="824" rx="76" fill="#111"/>
+    <rect x="872" y="56" width="474" height="788" rx="58" fill="white"/>
+    <circle cx="1110" cy="92" r="29" fill="#000"/>
+    <circle cx="1110" cy="92" r="8" fill="#0F172A"/>
+    <text x="920" y="104" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#111827">12:28</text>
+    <text x="922" y="174" font-family="Inter, Arial, sans-serif" font-size="27" font-weight="800" fill="#111827">Acme General Operations</text>
+    <rect x="1278" y="140" width="54" height="54" rx="10" fill="#F5F5F5"/>
+    <text x="1305" y="177" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="35" fill="#111827">+</text>
+    <line x1="872" y1="224" x2="1346" y2="224" stroke="#F1F5F9"/>
+    <rect x="924" y="288" width="374" height="64" rx="8" fill="#FFFFFF" stroke="#D6D6D6" stroke-width="2"/>
+    <text x="958" y="328" font-family="Inter, Arial, sans-serif" font-size="25" fill="#727272">Search form...</text>
+    <text x="922" y="416" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#737373">All forms</text>
+    <g font-family="Inter, Arial, sans-serif">
+      <rect x="922" y="460" width="34" height="38" rx="1" stroke="#7E7E7E" stroke-width="4"/>
+      <text x="982" y="482" font-size="25" font-weight="800" fill="#000">Field Work Tracker</text>
+      <text x="982" y="510" font-size="19" fill="#888">450 members</text>
+      <rect x="922" y="542" width="34" height="38" rx="1" stroke="#7E7E7E" stroke-width="4"/>
+      <text x="982" y="564" font-size="25" font-weight="800" fill="#000">Daily Sales Reporting</text>
+      <text x="982" y="592" font-size="19" fill="#888">654 members</text>
+      <rect x="922" y="624" width="34" height="38" rx="1" stroke="#7E7E7E" stroke-width="4"/>
+      <text x="982" y="646" font-size="25" font-weight="800" fill="#000">Stock Requisitions</text>
+      <text x="982" y="674" font-size="19" fill="#888">123 members</text>
+      <rect x="922" y="706" width="34" height="38" rx="1" stroke="#7E7E7E" stroke-width="4"/>
+      <text x="982" y="728" font-size="25" font-weight="800" fill="#000">Leads Management</text>
+      <text x="982" y="756" font-size="19" fill="#888">86 members</text>
+      <rect x="922" y="788" width="34" height="38" rx="1" stroke="#C89925" stroke-width="4"/>
+      <text x="982" y="810" font-size="25" font-weight="800" fill="#000">Customer Feedback</text>
+      <text x="982" y="838" font-size="19" fill="#888">6 members</text>
+      <rect x="1238" y="796" width="84" height="32" rx="16" fill="#FFE08A"/>
+      <text x="1280" y="817" text-anchor="middle" font-size="15" font-weight="700" fill="#7C5C15">Public</text>
+    </g>
+  </g>
+  <defs><filter id="shadow" x="180" y="0" width="1220" height="900" filterUnits="userSpaceOnUse"><feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#111827" flood-opacity="0.2"/></filter></defs>
+</svg>
