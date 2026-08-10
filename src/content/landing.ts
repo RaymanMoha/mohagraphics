@@ -4,7 +4,7 @@ export const landingPage = {
   title: 'Landing page title from local markdown',
   internal: true,
   mainpitch: {
-    title: 'Hi, I\'m Mohammed | **Frontend** & **Mobile** Engineer',
+    title: "Hi, I'm Mohammed | **Frontend** & **Mobile** Engineer",
     subtitle:
       'I build fast, accessible web and mobile products with React, React Native, and Flutter. I have 5+ years of experience shipping for startups and growing teams in Nairobi and remotely, with a focus on performance, clean UX, and reliable delivery.',
     buttonText: 'Book a call',
@@ -38,7 +38,7 @@ export const landingPage = {
     },
     {
       body: 'AI farming app website for proof-first farm operations, GPS/photo task verification, worker accountability, offline workflows, and field dashboards.',
-      image: 'shambaboy-hero.png',
+      image: 'shambaboy-product-overview.jpg',
       buttonText: 'View project',
       link: '/projects/Shambaboy/',
       ...projectData.Shambaboy,
@@ -59,6 +59,22 @@ export const landingPage = {
       link: '/projects/Sava/',
       ...projectData.Sava,
       title: 'Sava - Fuel Wallet & Delivery',
+    },
+    {
+      body: 'WhatsApp-first commerce for Kenyan merchants, connecting product discovery, assisted selling, combined carts, verified M-Pesa payments, orders, and receipts.',
+      image: 'appbase-overview.jpg',
+      buttonText: 'View personal project',
+      link: '/projects/AppBase/',
+      ...projectData.AppBase,
+      title: 'AppBase: WhatsApp Commerce',
+    },
+    {
+      body: 'AI-native field operations product for no-code forms, offline capture, GPS and photo evidence, insights, reports, and predictive alerts.',
+      image: 'groundbase-overview.jpg',
+      buttonText: 'View personal project',
+      link: '/projects/Groundbase/',
+      ...projectData.Groundbase,
+      title: 'Groundbase: AI Field Intelligence',
     },
     {
       body: 'Two mobile apps for Botswana Premier League: fan engagement and steward management with real-time match data.',
