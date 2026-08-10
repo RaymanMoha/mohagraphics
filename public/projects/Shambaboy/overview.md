@@ -3,7 +3,7 @@ title: 'ShambaBoy: AI Farming App'
 description: 'Product website for ShambaBoy, the proof-first AI farming app for farm task management, GPS verification, worker accountability, and field operations dashboards.'
 ---
 
-![ShambaBoy AI farming app hero](/img/shambaboy-hero.png "ShambaBoy AI farming app hero")
+![ShambaBoy verification product website](/img/shambaboy-product-overview.jpg 'ShambaBoy verification product website')
 
 # Product Overview
 
@@ -21,12 +21,6 @@ Farm owners, supervisors, and agricultural teams needed a clear product story fo
 - Feature sections show a unified field operations dashboard for farmers, workers, and community stakeholders.
 - FAQ content targets high-intent search around Kenya farm management apps, offline farm software, AI crop monitoring, GlobalGAP compliance, climate finance, and worker accountability.
 - Download and demo calls-to-action give visitors clear next steps.
-
-![Mobile-first farm operations](/img/shambaboy-mobile-operations.jpg "Mobile-first farm operations")
-
-![GPS and photo task verification](/img/shambaboy-verification.jpg "GPS and photo task verification")
-
-![Field operations dashboard](/img/shambaboy-dashboard.jpg "Field operations dashboard")
 
 ## Role
 

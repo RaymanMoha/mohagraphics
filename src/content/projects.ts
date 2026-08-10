@@ -11,6 +11,8 @@ import * as Sava from '../../public/projects/Sava/content';
 import * as Budj from '../../public/projects/Budj/content';
 import * as ReonDevHub from '../../public/projects/ReonDevHub/content';
 import * as Shambaboy from '../../public/projects/Shambaboy/content';
+import * as AppBase from '../../public/projects/AppBase/content';
+import * as Groundbase from '../../public/projects/Groundbase/content';
 
 export type Content = {
   title: string;
@@ -29,6 +31,8 @@ export type Content = {
     src: string;
     alt: string;
     caption: string;
+    width: number;
+    height: number;
   }>;
 };
 
@@ -36,6 +40,8 @@ export const content = {
   Budj: { ...Budj.content },
   ReonDevHub: { ...ReonDevHub.content },
   Shambaboy: { ...Shambaboy.content },
+  AppBase: { ...AppBase.content },
+  Groundbase: { ...Groundbase.content },
   Zuba: { ...Zuba.content },
   ENEVA: { ...ENEVA.content },
   Sava: { ...Sava.content },
