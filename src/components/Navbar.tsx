@@ -283,6 +283,9 @@ export default function Navbar({ invert = false }: { invert?: boolean }) {
           <NavLink href="/#projects" invert={invert} onClick={() => setMenuOpen(false)}>
             Projects
           </NavLink>
+          <NavLink href="/services" invert={invert} onClick={() => setMenuOpen(false)}>
+            Services
+          </NavLink>
           <NavLink href="/#contact" invert={invert} onClick={() => setMenuOpen(false)}>
             Contact
           </NavLink>
@@ -297,4 +300,3 @@ export default function Navbar({ invert = false }: { invert?: boolean }) {
     </NavbarContainer>
   );
 }
-

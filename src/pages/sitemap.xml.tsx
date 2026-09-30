@@ -14,7 +14,6 @@ export const getServerSideProps: GetServerSideProps = async ({ res }) => {
     '/about',
     '/blog',
     '/services',
-    '/test-analytics',
   ];
 
   // Project pages
@@ -27,6 +26,11 @@ export const getServerSideProps: GetServerSideProps = async ({ res }) => {
     '/projects/blossom',
     '/projects/convolab',
     '/projects/Zuba',
+    '/projects/Budj',
+    '/projects/Sava',
+    '/projects/Shambaboy',
+    '/projects/AppBase',
+    '/projects/Groundbase',
     '/projects/ReonDevHub',
   ];
 
