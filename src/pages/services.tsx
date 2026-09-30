@@ -28,6 +28,12 @@ const outcomes = [
   'Analytics events for calls, emails, bookings, and key CTAs',
 ];
 
+const metrics = [
+  { value: '5+', label: 'years shipping products' },
+  { value: '15+', label: 'web and mobile builds' },
+  { value: '24h', label: 'typical first reply' },
+];
+
 const faqs = [
   {
     q: 'Can you take over an existing project?',
@@ -77,6 +83,7 @@ const Services = () => {
         lang="en"
         thumb="/img/mohammed.jpeg"
         canonical="https://www.mohagraphics.tech/services"
+        structuredData={structuredData}
         keywords={[
           'hire frontend developer kenya',
           'react developer kenya',
@@ -90,31 +97,43 @@ const Services = () => {
           'nairobi software developer',
         ]}
       />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-      />
 
       <Page>
         <HeroSection>
-          <Eyebrow>Frontend, mobile, and product UI development</Eyebrow>
-          <h1>Launch a sharper product and turn more visitors into clients.</h1>
-          <Lead>
-            I help founders, agencies, and growing teams ship polished web and
-            mobile experiences with React, Next.js, React Native, and Flutter.
-          </Lead>
-          <Actions>
-            <PrimaryCta href="https://calendly.com/abdulmoharayman/30min">
-              Book a project call
-            </PrimaryCta>
-            <SecondaryCta href="mailto:abdulmoharayman@gmail.com">
-              Email the brief
-            </SecondaryCta>
-          </Actions>
-          <TrustLine>
-            Nairobi-based, remote-friendly, available for MVPs, redesigns, and
-            long-term product work.
-          </TrustLine>
+          <HeroCopy>
+            <h1>Launch a sharper product and turn more visitors into clients.</h1>
+            <Lead>
+              I help founders, agencies, and growing teams ship polished web and
+              mobile experiences with React, Next.js, React Native, and Flutter.
+            </Lead>
+            <Actions>
+              <PrimaryCta href="https://calendly.com/abdulmoharayman/30min">
+                Book a project call
+              </PrimaryCta>
+              <SecondaryCta href="mailto:abdulmoharayman@gmail.com">
+                Email the brief
+              </SecondaryCta>
+            </Actions>
+            <TrustLine>
+              Nairobi-based, remote-friendly, available for MVPs, redesigns, and
+              long-term product work.
+            </TrustLine>
+          </HeroCopy>
+          <HeroPanel aria-label="Service highlights">
+            <ProfileImage src="/img/mohammed.jpeg" alt="Mohammed Abdirahman" />
+            <PanelCard>
+              <strong>Frontend, mobile, and product UI development</strong>
+              <span>For startups that need the product to feel credible fast.</span>
+            </PanelCard>
+            <MetricGrid>
+              {metrics.map((metric) => (
+                <Metric key={metric.label}>
+                  <strong>{metric.value}</strong>
+                  <span>{metric.label}</span>
+                </Metric>
+              ))}
+            </MetricGrid>
+          </HeroPanel>
         </HeroSection>
 
         <Section>
@@ -123,8 +142,9 @@ const Services = () => {
             <h2>Built for teams that need momentum, not noise.</h2>
           </SectionHeader>
           <Cards>
-            {services.map((service) => (
+            {services.map((service, index) => (
               <ServiceCard key={service.title}>
+                <CardNumber>{String(index + 1).padStart(2, '0')}</CardNumber>
                 <h3>{service.title}</h3>
                 <p>{service.body}</p>
                 <small>{service.proof}</small>
@@ -155,18 +175,25 @@ const Services = () => {
             </div>
             <Steps>
               <li>
+                <StepNumber>01</StepNumber>
                 <strong>Audit or scope.</strong>
-                We define the buyer, the core flow, and what must ship first.
+                <span>We define the buyer, the core flow, and what must ship first.</span>
               </li>
               <li>
+                <StepNumber>02</StepNumber>
                 <strong>Design and build.</strong>
-                I turn the plan into responsive UI, clean components, and real
-                product screens.
+                <span>
+                  I turn the plan into responsive UI, clean components, and real
+                  product screens.
+                </span>
               </li>
               <li>
+                <StepNumber>03</StepNumber>
                 <strong>Launch and learn.</strong>
-                We connect analytics, verify performance, and improve the page
-                around actual user behavior.
+                <span>
+                  We connect analytics, verify performance, and improve the page
+                  around actual user behavior.
+                </span>
               </li>
             </Steps>
           </Split>
@@ -209,42 +236,47 @@ export default Services;
 
 const Page = styled.main`
   color: ${colors.background};
-  background: ${colors.white};
+  background:
+    linear-gradient(180deg, ${colors.background} 0, ${colors.background} 610px, #f7f4ef 610px),
+    #f7f4ef;
 `;
 
 const HeroSection = styled.section`
-  max-width: 1120px;
+  display: grid;
+  gap: 2rem;
+  max-width: 1180px;
   margin: 0 auto;
-  padding: 8rem 1.25rem 4rem;
+  padding: 8.5rem 1.25rem 4rem;
+  color: ${colors.white};
 
   h1 {
-    max-width: 850px;
-    margin: 0.5rem 0 1rem;
-    font-size: 2.4rem;
-    line-height: 1.08;
+    max-width: 790px;
+    margin: 0;
+    font-size: 2.45rem;
+    line-height: 1.04;
+    letter-spacing: 0;
   }
 
   @media (min-width: 768px) {
     padding: 10rem 2rem 5rem;
+    grid-template-columns: minmax(0, 1.15fr) minmax(320px, 0.85fr);
+    align-items: center;
 
     h1 {
-      font-size: 4.4rem;
+      font-size: 4.35rem;
     }
   }
 `;
 
-const Eyebrow = styled.p`
-  margin: 0;
-  color: ${colors.accent};
-  font-size: 0.9rem;
-  font-weight: 800;
-  text-transform: uppercase;
+const HeroCopy = styled.div`
+  display: grid;
+  gap: 1.25rem;
 `;
 
 const Lead = styled.p`
   max-width: 720px;
   margin: 0;
-  color: #3f4850;
+  color: #d7dde1;
   font-size: 1.1rem;
   line-height: 1.7;
 
@@ -257,7 +289,7 @@ const Actions = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 0.8rem;
-  margin-top: 1.5rem;
+  margin-top: 0.25rem;
 `;
 
 const PrimaryCta = styled(Link)`
@@ -265,12 +297,21 @@ const PrimaryCta = styled(Link)`
   align-items: center;
   justify-content: center;
   min-height: 48px;
-  padding: 0.85rem 1.2rem;
+  padding: 0.9rem 1.25rem;
   border-radius: 6px;
   background: ${colors.accent};
   color: ${colors.white};
   font-weight: 800;
   text-decoration: none;
+  box-shadow: 0 18px 35px rgba(255, 113, 91, 0.25);
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 22px 45px rgba(255, 113, 91, 0.32);
+  }
 `;
 
 const SecondaryCta = styled(Link)`
@@ -278,27 +319,100 @@ const SecondaryCta = styled(Link)`
   align-items: center;
   justify-content: center;
   min-height: 48px;
-  padding: 0.85rem 1.2rem;
-  border: 1px solid ${colors.background};
+  padding: 0.9rem 1.25rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 6px;
-  color: ${colors.background};
+  color: inherit;
   font-weight: 800;
   text-decoration: none;
+  background: rgba(255, 255, 255, 0.05);
+  transition:
+    border-color 180ms ease,
+    background 180ms ease;
+
+  &:hover {
+    border-color: rgba(255, 255, 255, 0.65);
+    background: rgba(255, 255, 255, 0.1);
+  }
 `;
 
 const TrustLine = styled.p`
-  margin: 1.25rem 0 0;
-  color: #59636c;
+  margin: 0;
+  color: #aeb8c0;
   font-size: 0.95rem;
 `;
 
+const HeroPanel = styled.aside`
+  position: relative;
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 10px;
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.03)),
+    rgba(255, 255, 255, 0.05);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.25);
+`;
+
+const ProfileImage = styled.img`
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 8px;
+  filter: saturate(0.95) contrast(1.05);
+`;
+
+const PanelCard = styled.div`
+  display: grid;
+  gap: 0.4rem;
+  padding: 1rem;
+  border-left: 3px solid ${colors.accent};
+  background: rgba(18, 30, 39, 0.68);
+
+  strong {
+    font-size: 1rem;
+  }
+
+  span {
+    color: #d7dde1;
+    line-height: 1.55;
+  }
+`;
+
+const MetricGrid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.6rem;
+`;
+
+const Metric = styled.div`
+  display: grid;
+  gap: 0.15rem;
+  padding: 0.8rem;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.08);
+
+  strong {
+    color: ${colors.accent};
+    font-size: 1.4rem;
+    line-height: 1;
+  }
+
+  span {
+    color: #d7dde1;
+    font-size: 0.78rem;
+    line-height: 1.35;
+  }
+`;
+
 const Section = styled.section`
-  max-width: 1120px;
+  max-width: 1180px;
   margin: 0 auto;
-  padding: 3rem 1.25rem;
+  padding: 4rem 1.25rem;
 
   @media (min-width: 768px) {
-    padding: 4rem 2rem;
+    padding: 5rem 2rem;
   }
 `;
 
@@ -316,6 +430,7 @@ const SectionHeader = styled.div`
     margin: 0.35rem 0 1.5rem;
     font-size: 1.8rem;
     line-height: 1.16;
+    letter-spacing: 0;
   }
 
   @media (min-width: 768px) {
@@ -335,33 +450,73 @@ const Cards = styled.div`
 `;
 
 const ServiceCard = styled.article`
-  border: 1px solid #d9dde1;
-  border-radius: 8px;
-  padding: 1.25rem;
+  position: relative;
+  overflow: hidden;
+  min-height: 280px;
+  border: 1px solid rgba(18, 30, 39, 0.12);
+  border-radius: 10px;
+  padding: 1.35rem;
+  background: #fffdf9;
+  box-shadow: 0 24px 55px rgba(18, 30, 39, 0.08);
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease;
+
+  &:before {
+    content: '';
+    position: absolute;
+    right: -48px;
+    top: -48px;
+    width: 112px;
+    height: 112px;
+    border-radius: 999px;
+    background: rgba(255, 113, 91, 0.12);
+  }
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 32px 70px rgba(18, 30, 39, 0.14);
+  }
 
   h3 {
-    margin: 0 0 0.75rem;
-    font-size: 1.25rem;
+    position: relative;
+    margin: 2.4rem 0 0.75rem;
+    font-size: 1.35rem;
+    line-height: 1.2;
   }
 
   p {
+    position: relative;
     color: #4f5962;
     line-height: 1.65;
   }
 
   small {
+    position: relative;
+    display: block;
+    margin-top: 1rem;
     color: ${colors.background};
     font-weight: 800;
+    line-height: 1.5;
   }
+`;
+
+const CardNumber = styled.span`
+  position: absolute;
+  left: 1.35rem;
+  top: 1.25rem;
+  color: ${colors.accent};
+  font-size: 0.85rem;
+  font-weight: 900;
 `;
 
 const Band = styled.section`
   background: ${colors.background};
   color: ${colors.white};
-  padding: 3rem 1.25rem;
+  padding: 4rem 1.25rem;
 
   > * {
-    max-width: 1120px;
+    max-width: 1180px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -371,7 +526,7 @@ const Band = styled.section`
   }
 
   @media (min-width: 768px) {
-    padding: 4rem 2rem;
+    padding: 5rem 2rem;
   }
 `;
 
@@ -382,9 +537,10 @@ const OutcomeGrid = styled.ul`
   list-style: none;
 
   li {
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
-    padding: 1rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 1.2rem 0;
     line-height: 1.6;
+    color: #d7dde1;
   }
 
   @media (min-width: 768px) {
@@ -406,11 +562,35 @@ const Steps = styled.ol`
   display: grid;
   gap: 1rem;
   margin: 0;
-  padding-left: 1.25rem;
+  padding: 0;
+  list-style: none;
 
   li {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: 0.35rem 1rem;
+    padding: 1.2rem;
+    border: 1px solid rgba(18, 30, 39, 0.12);
+    border-radius: 10px;
+    background: #fffdf9;
     line-height: 1.7;
   }
+
+  strong,
+  span {
+    grid-column: 2;
+  }
+
+  span {
+    color: #4f5962;
+  }
+`;
+
+const StepNumber = styled.span`
+  grid-row: 1 / span 2;
+  grid-column: 1;
+  color: ${colors.accent};
+  font-weight: 900;
 `;
 
 const FaqList = styled.div`
@@ -419,8 +599,8 @@ const FaqList = styled.div`
 `;
 
 const FaqItem = styled.article`
-  border-top: 1px solid #d9dde1;
-  padding-top: 1rem;
+  border-top: 1px solid rgba(18, 30, 39, 0.14);
+  padding: 1.25rem 0 0.25rem;
 
   h3 {
     margin: 0 0 0.35rem;
@@ -434,9 +614,17 @@ const FaqItem = styled.article`
 `;
 
 const FinalCta = styled.section`
-  max-width: 1120px;
+  max-width: 1180px;
   margin: 0 auto;
-  padding: 3rem 1.25rem 5rem;
+  padding: 1.25rem 1.25rem 5rem;
+
+  &:before {
+    content: '';
+    display: block;
+    height: 1px;
+    margin-bottom: 3rem;
+    background: rgba(18, 30, 39, 0.14);
+  }
 
   h2 {
     max-width: 760px;
@@ -452,7 +640,7 @@ const FinalCta = styled.section`
   }
 
   @media (min-width: 768px) {
-    padding: 4rem 2rem 6rem;
+    padding: 2rem 2rem 6rem;
 
     h2 {
       font-size: 3rem;

@@ -8,6 +8,7 @@ export type Props = {
   keywords: string[];
   /** Optional canonical URL to render as a <link rel="canonical"/> */
   canonical?: string;
+  structuredData?: Record<string, unknown>;
 };
 
 export const SEO = ({
@@ -16,6 +17,7 @@ export const SEO = ({
   thumb,
   keywords,
   canonical,
+  structuredData,
 }: Props) => {
   const siteUrl = 'https://www.mohagraphics.tech';
   const canonicalUrl = canonical || siteUrl;
@@ -105,6 +107,12 @@ export const SEO = ({
       <title>{title}</title>
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <link rel="canonical" href={canonicalUrl} />
+      {structuredData && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
+      )}
       {metaTags.map((tag, i) => {
         const key = tag.name || tag.property || `meta-${i}`;
         if (tag.name)
