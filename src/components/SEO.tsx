@@ -17,7 +17,8 @@ export const SEO = ({
   keywords,
   canonical,
 }: Props) => {
-  const siteUrl = 'https://www.mohammedabdirahman.com';
+  const siteUrl = 'https://www.mohagraphics.tech';
+  const canonicalUrl = canonical || siteUrl;
   const resolvedThumb = (thumb || 'logo.png').trim();
   const imageUrl = (() => {
     if (!resolvedThumb) return `${siteUrl}/img/logo.png`;
@@ -45,6 +46,14 @@ export const SEO = ({
       content: title,
     },
     {
+      property: `og:url`,
+      content: canonicalUrl,
+    },
+    {
+      property: `og:site_name`,
+      content: `Moha Graphics`,
+    },
+    {
       property: `og:image`,
       itemprop: 'image',
       content: imageUrl,
@@ -59,7 +68,7 @@ export const SEO = ({
     },
     {
       name: `twitter:card`,
-      content: `summary`,
+      content: `summary_large_image`,
     },
     {
       name: `twitter:image`,
@@ -93,7 +102,9 @@ export const SEO = ({
 
   return (
     <Head>
-      {canonical && <link rel="canonical" href={canonical} />}
+      <title>{title}</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link rel="canonical" href={canonicalUrl} />
       {metaTags.map((tag, i) => {
         const key = tag.name || tag.property || `meta-${i}`;
         if (tag.name)
