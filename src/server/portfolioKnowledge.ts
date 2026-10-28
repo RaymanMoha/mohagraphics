@@ -51,15 +51,18 @@ const rankEntries = (message: string) => {
 
 export function buildPortfolioPrompt(message: string, history: Array<{ content: string }> = []) {
   // Always include the complete catalogue; add detailed case studies for relevant work.
-  const catalogue = portfolioEntries.map((entry) => `${entry.title} — ${entry.url}`).join('\n');
+  const catalogue = [
+    ...portfolioEntries.filter((entry) => entry.url !== '/films').map((entry) => `${entry.title} — ${entry.url}`),
+    `Film titles (all at /films): ${films.map((film) => film.title).join('; ')}`,
+  ].join('\n');
   const current = rankEntries(message);
   const previous = rankEntries(history.slice(-2).map((item) => item.content).join(' '));
-  const selected = [...current, ...previous].filter((item, index, list) => list.findIndex((other) => other.entry === item.entry) === index).slice(0, 6);
-  const reference = selected.map(({ entry }) => `TITLE: ${entry.title}\nPAGE: ${entry.url}\n${entry.text}`).join('\n\n').slice(0, 8500);
+  const selected = [...current, ...previous].filter((item, index, list) => list.findIndex((other) => other.entry === item.entry) === index).slice(0, 4);
+  const reference = selected.map(({ entry }) => `TITLE: ${entry.title}\nPAGE: ${entry.url}\n${entry.text}`).join('\n\n').slice(0, 4500);
   return `${portfolioInstructions}\nCOMPLETE CATALOGUE:\n${catalogue}\n\nRELEVANT DETAILS:\n${reference}\n\nSERVICES AND CONTACT:\n${offers.map((offer) => `${offer.title}: ${offer.deliverables.join('; ')}. /services#${offer.id}`).join('\n')}\n${portfolioEntries.find((entry) => entry.title === 'Working together')!.text}`;
 }
 
-export function portfolioFallback(message: string) {
+export function portfolioFallback(message: string, reason?: 'rate_limit' | 'provider_error') {
   const matches = rankEntries(message).slice(0, 3);
-  return `Live AI is temporarily unavailable. Here is information from the portfolio:\n\n${matches.length ? matches.map(({ entry }) => `${entry.title}\n${entry.text.split('\n')[0]}\n${entry.url}`).join('\n\n') : 'Explore projects at /#projects, films at /films, brand campaigns at /#campaigns, and services at /services. Contact Mohammed at abdulmoharayman@gmail.com.'}`;
+  return `${reason === 'rate_limit' ? 'The AI service is busy. Please try again in a minute.' : 'Live AI is temporarily unavailable.'} Here is information from the portfolio:\n\n${matches.length ? matches.map(({ entry }) => `${entry.title}\n${entry.text.split('\n')[0]}\n${entry.url}`).join('\n\n') : 'Explore projects at /#projects, films at /films, brand campaigns at /#campaigns, and services at /services. Contact Mohammed at abdulmoharayman@gmail.com.'}`;
 }
