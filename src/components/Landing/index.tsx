@@ -11,7 +11,9 @@ export const Section = styled(S)`
   animation: 1s ${FadeIn};
 `;
 export const HeroSection = styled(Section)<{ invert: boolean }>`
-  max-width: 100vw;
+  max-width: 100%;
+  padding: 0 !important;
+  position: relative;
 `;
 
 export const Email = styled.a`

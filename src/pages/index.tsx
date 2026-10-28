@@ -71,15 +71,12 @@ const Index = ({
       />
       <ResponsiveMainContainer>
         <HeroSection invert={true}>
-          <div>
-            <HeroClouds aria-hidden="true"><MakeClouds cloudCount={30} mult={1} /></HeroClouds>
+          <HeroClouds aria-hidden="true"><MakeClouds cloudCount={30} mult={1} /></HeroClouds>
+          <HeroLayout>
             <HomeHeroContent title={title} subtitle={subtitle} />
-          </div>
+            <ResponsiveFlameGif src="/img/flame.gif" alt="Floating astronaut" />
+          </HeroLayout>
         </HeroSection>
-        <ResponsiveFlameGif
-          src="/img/flame.gif"
-          alt="Animated flame"
-        />
       </ResponsiveMainContainer>
 
       <Section id="bio">
@@ -129,53 +126,38 @@ const HeroClouds = styled.div`
   pointer-events: none;
 `;
 
-const ResponsiveFlameGif = styled.img`
-  position: absolute;
-  right: 10px;
-  width: 200px;
-  height: 200px;
+const HeroLayout = styled.div`
+  position: relative;
   z-index: 1;
-  opacity: 0.8;
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  align-items: center;
+  gap: clamp(2rem, 5vw, 5rem);
+  max-width: 1200px;
+  min-height: clamp(620px, calc(100svh - 64px), 780px);
+  margin: 0 auto;
+  padding: 64px 40px;
+
+  @media (max-width: 767px) {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
+    min-height: 0;
+    padding: 96px 24px 28px;
+  }
+`;
+
+const ResponsiveFlameGif = styled.img`
+  display: block;
+  width: 100%;
+  max-width: 460px;
+  aspect-ratio: 1;
+  object-fit: contain;
+  justify-self: center;
   pointer-events: none;
 
-  /* Mobile: Move to bottom of hero section */
-  top: auto;
-  bottom: 40px;
-  
-  @media only screen and (min-width: 480px) {
-    width: 250px;
-    height: 250px;
-    right: 20px;
-    bottom: 60px;
-  }
-  
-  @media only screen and (min-width: 768px) {
-    width: 350px;
-    height: 350px;
-    right: 50px;
-    top: 160px;
-    bottom: auto;
-    opacity: 1;
-  }
-  
-  @media only screen and (min-width: 1024px) {
-    width: 450px;
-    height: 450px;
-    right: 100px;
-    top: 200px;
-  }
-  
-  @media only screen and (min-width: 1200px) {
-    width: 500px;
-    height: 500px;
-    right: 150px;
-    top: 220px;
-  }
-  
-  @media only screen and (max-width: 320px) {
-    width: 150px;
-    height: 150px;
-    bottom: 20px;
-    opacity: 0.6;
+  @media (max-width: 767px) {
+    width: 180px;
+    justify-self: end;
+    margin-top: -20px;
   }
 `;

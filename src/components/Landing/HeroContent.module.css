@@ -1,10 +1,10 @@
-.content { position: relative; z-index: 2; max-width: 760px; padding: clamp(1.25rem, 3vw, 2.5rem) 0; }
-.content h1 { display: block; margin: 0; max-width: none; font: 400 clamp(2.9rem, 5.6vw, 5.5rem)/1.08 Muli, Arial, sans-serif; letter-spacing: -.055em; color: #fff; }
+.content { position: relative; z-index: 2; min-width: 0; width: 100%; padding: 0; }
+.content h1 { display: block; margin: 0; max-width: none; font: 400 clamp(2.8rem, 4.8vw, 4.5rem)/1.1 Muli, Arial, sans-serif; letter-spacing: -.055em; color: #fff; }
 .content h1 > span { display: block; margin: 0; }
 .content h1 > span + span { margin-top: .12em; }
 .content h1 em { font-family: Georgia, 'Times New Roman', serif; font-weight: 400; font-style: italic; color: #ff9b88; letter-spacing: -.055em; }
-.content .intro { max-width: 42ch; margin: 1.8rem 0 0; font: 300 clamp(1rem, 1.2vw, 1.1rem)/1.75 Muli, Arial, sans-serif; color: #c9d1d7; }
-.actions { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem 1.75rem; margin-top: 2rem; }
+.content .intro { max-width: 48ch; margin: 1.5rem 0 0; font: 300 clamp(1rem, 1.15vw, 1.0625rem)/1.7 Muli, Arial, sans-serif; color: #c9d1d7; }
+.actions { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem 1.5rem; margin-top: 1.75rem; }
 .content .primary, .content .secondary { display: inline-flex; align-items: center; justify-content: center; gap: 1rem; font: 600 .85rem/1.4 Muli, Arial, sans-serif; text-decoration: none; white-space: nowrap; min-height: 50px; margin: 0; }
 .content .primary { background: #ff9b88; color: #13202a; padding: .9rem 1.25rem; border: 1px solid #ff9b88; border-radius: 3px; }
 .content .secondary { color: #f8eee6; padding: .7rem 0; border-bottom: 1px solid #f8eee680; }
@@ -12,9 +12,10 @@
 .primary:hover svg { transform: translate(2px, -2px); }
 .secondary:hover svg { transform: translateY(3px); }
 .actions a:focus-visible { outline: 3px solid #ff9b88; outline-offset: 5px; }
-.social { margin-top: 2.5rem; font-size: 1.3rem; }
-.social > div { font-size: inherit; }
-.content .social a { padding: .4rem 1rem .4rem 0; }
-@media (max-width: 760px) { .content { max-width: 100%; padding: 2.5rem 0 1.5rem; } .content h1 { font-size: clamp(2.45rem, 9.8vw, 4rem); } .content .intro { font-size: .95rem !important; line-height: 1.75; max-width: 37ch; margin-top: 1.4rem; } .actions { margin-top: 1.6rem; gap: .75rem 1.25rem; } .content .primary, .content .secondary { font-size: .8rem; } .social { margin-top: 2rem; } }
-@media (max-width: 360px) { .content h1 { font-size: 2.2rem; } .actions { gap: .75rem 1rem; } .content .primary { padding: .8rem 1rem; } .content .secondary { gap: .5rem; } }
+.social { margin-top: 1.5rem; font-size: 1.2rem; }
+.social > div { font-size: inherit; align-items: center; gap: 4px; }
+.social svg { display: block; width: 20px; height: 20px; }
+.content .social a { display: inline-flex; align-items: center; min-height: 44px; padding: .4rem 1rem .4rem 0; }
+@media (max-width: 767px) { .content { max-width: 100%; padding: 0; } .content h1 { font-size: clamp(2.2rem, 9.6vw, 4rem); } .content .intro { font-size: .95rem !important; line-height: 1.75; max-width: 44ch; margin-top: 1.4rem; } .actions { margin-top: 1.6rem; gap: .75rem 1.25rem; } .content .primary, .content .secondary { font-size: .8rem; } .social { margin-top: 1.25rem; } }
+@media (max-width: 360px) { .content h1 { font-size: 2rem; } .actions { gap: .75rem 1rem; } .content .primary { padding: .8rem 1rem; } .content .secondary { gap: .5rem; } }
 @media (prefers-reduced-motion: reduce) { .actions svg { transition: none; } }
