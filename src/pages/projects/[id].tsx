@@ -46,20 +46,9 @@ const resolveImage = (id: string, raw?: string) => {
   if (!raw) return null;
   if (/^https?:\/\//.test(raw)) return raw;
 
-  const candidates = raw.startsWith('/')
-    ? [{ disk: path.join(process.cwd(), 'public', raw.slice(1)), src: raw }]
-    : [
-        {
-          disk: path.join(process.cwd(), 'public', 'img', raw),
-          src: `/img/${raw}`,
-        },
-        {
-          disk: path.join(process.cwd(), 'public', 'projects', id, raw),
-          src: `/projects/${id}/${raw}`,
-        },
-      ];
-
-  return candidates.find(({ disk }) => fs.existsSync(disk))?.src ?? null;
+  // Image URLs are declared in project metadata and served as static assets.
+  // Avoid filesystem probes here: tracing a variable public path bundles all media.
+  return raw.startsWith('/') ? raw : `/projects/${id}/${raw}`;
 };
 
 export const getStaticProps = (async ({ params }) => {
