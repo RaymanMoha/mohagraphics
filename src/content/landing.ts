@@ -4,9 +4,9 @@ export const landingPage = {
   title: 'Landing page title from local markdown',
   internal: true,
   mainpitch: {
-    title: "Hi, I'm Mohammed | **Frontend** & **Mobile** Engineer",
+    title: "Websites. Apps.\nBrands. **Motion.**",
     subtitle:
-      'I build fast, accessible web and mobile products with React, React Native, and Flutter. I have 5+ years of experience shipping for startups and growing teams in Nairobi and remotely, with a focus on performance, clean UX, and reliable delivery.',
+      'I’m Mohammed Abdirahman, a developer and designer in Nairobi. I build websites and mobile apps, shape brand campaigns, and create films for teams locally and remotely.',
     buttonText: 'Book a call',
   },
   bio: {

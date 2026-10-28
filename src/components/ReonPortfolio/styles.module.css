@@ -30,3 +30,8 @@
 
 .hubPreview { display: block; align-self: center; min-width: 0; }
 .hubPreview img { display: block; width: 100%; height: auto; margin: 0; }
+
+.brief { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 4vw; padding: 2.5rem 0 4rem; border-bottom: 1px solid #c8d1d6; }
+.brief h2 { font: 400 1.7rem Georgia, serif; margin: 0 0 1rem; letter-spacing: -.025em; }
+.brief p { font-size: .9rem; line-height: 1.8; color: #53616a; margin: 0; }
+@media (max-width: 760px) { .brief { grid-template-columns: 1fr; gap: 2rem; } }

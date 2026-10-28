@@ -145,6 +145,7 @@ export const ProjectDetail = ({
             <S.Marker />
             <S.BlockLabel>Outcome</S.BlockLabel>
             <S.Markdown dangerouslySetInnerHTML={{ __html: outcomeHtml }} />
+            <S.PrimaryAction href="/services#start-project">Discuss a similar project <FiArrowUpRight /></S.PrimaryAction>
           </S.StoryBlock>
         </S.StoryColumn>
 

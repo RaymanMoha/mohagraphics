@@ -1,10 +1,9 @@
-import { Hero, HeroP, colors } from '../styles/components';
+import { colors } from '../styles/components';
 
-import Social from '../components/Social';
+import { HomeHeroContent } from '@/components/Landing/HeroContent';
 import { FilmsSection } from '@/components/Films';
 import { CampaignsSection } from '@/components/Campaigns';
 
-import { HighlightedWords } from '@/components/HighlightedWords';
 import { HeroSection, Section } from '@/components/Landing';
 import { BioSection } from '@/components/Landing/Bio';
 import { MakeClouds } from '@/components/Landing/Clouds';
@@ -29,8 +28,8 @@ const Index = ({
   return (
     <>
       <SEO
-        title="Mohammed Abdirahman | Frontend & Mobile Engineer | React, React Native, Flutter"
-        description="Frontend and mobile engineer with 5+ years building React, React Native, and Flutter products. Based in Nairobi and available for remote or Kenya-based roles, focused on performance, accessibility, and clean UX."
+        title="Web, Mobile, Brand & Motion | Mohammed Abdirahman, Nairobi"
+        description="Websites and mobile apps, brand campaigns, and films by Mohammed Abdirahman. Explore real project work and discuss a brief in Nairobi or remotely."
         structuredData={{
           '@context': 'https://schema.org', '@type': 'Person',
           name: 'Mohammed Abdirahman', url: 'https://www.mohagraphics.tech',
@@ -73,14 +72,8 @@ const Index = ({
       <ResponsiveMainContainer>
         <HeroSection invert={true}>
           <div>
-            <MakeClouds cloudCount={30} mult={1} />
-            <HeroContent>
-              <Hero invert={true}>
-                <HighlightedWords title={title} />
-              </Hero>
-              <Social />
-              <HeroP>{subtitle}</HeroP>
-            </HeroContent>
+            <HeroClouds aria-hidden="true"><MakeClouds cloudCount={30} mult={1} /></HeroClouds>
+            <HomeHeroContent title={title} subtitle={subtitle} />
           </div>
         </HeroSection>
         <ResponsiveFlameGif
@@ -129,36 +122,11 @@ const ResponsiveMainContainer = styled.div`
   overflow: clip;
 `;
 
-const HeroContent = styled.div`
-  padding: 1.5rem 0;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  align-items: flex-start;
-
-  h1 {
-    margin: 0;
-    font-size: 1.8rem;
-    line-height: 1.2;
-  }
-
-  @media only screen and (min-width: 480px) {
-    h1 {
-      font-size: 2.2rem;
-    }
-  }
-
-  @media only screen and (min-width: 768px) {
-    h1 {
-      font-size: 3rem;
-    }
-  }
-
-  @media only screen and (min-width: 1024px) {
-    h1 {
-      font-size: 4rem;
-    }
-  }
+const HeroClouds = styled.div`
+  position: absolute;
+  inset: 0;
+  opacity: .12;
+  pointer-events: none;
 `;
 
 const ResponsiveFlameGif = styled.img`
@@ -168,6 +136,7 @@ const ResponsiveFlameGif = styled.img`
   height: 200px;
   z-index: 1;
   opacity: 0.8;
+  pointer-events: none;
 
   /* Mobile: Move to bottom of hero section */
   top: auto;

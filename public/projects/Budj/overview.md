@@ -25,22 +25,20 @@ Shoppers needed rewards they could trust instead of random promos or delayed loy
 
 ## Engineering Focus
 
-- Built React Native mobile interfaces for shopper-facing reward journeys.
-- Built Next.js and TypeScript web interfaces for merchant and product workflows.
-- Integrated API-driven screens where transaction status, wallet state, merchant data, and campaign performance needed to stay clear.
-- Translated fintech and loyalty requirements into UI states that make trust, payment status, and next actions obvious.
-- Improved product polish across responsive layouts, dashboard surfaces, and mobile-first flows.
+- Built React Native interfaces for the shopper journey: discovering offers, understanding reward states, and using wallet actions.
+- Built Next.js and TypeScript interfaces for merchant onboarding, offer configuration, and product workflows.
+- Integrated API-driven screens so payment status, wallet balances, and campaign data have clear loading, success, and error states.
+- Refined responsive layouts and translated loyalty requirements into understandable next steps across mobile and web.
 
 ## Role
 
-React Native & Next.js Frontend Engineer
+React Native & Next.js Frontend Engineer. My contribution covers product interfaces and API integration within the wider Budj platform.
 
 ## Outcome
 
-- Positioned Budj as a verified cashback and loyalty product rather than a generic promotions platform.
-- Supported both sides of the marketplace: shoppers earning rewards and merchants measuring revenue impact.
-- Delivered product surfaces across mobile and web for offers, rewards, wallet actions, merchant setup, and insights.
-- Strengthened Mohammed's portfolio proof for React Native, Next.js, TypeScript, fintech UI, API integration, dashboards, and mobile product development.
+- Delivered interface work across shopper rewards and merchant operations, connecting discovery, offers, payments, and wallet journeys.
+- The case study shows Budj product screens and links to the public product and merchant registration experience.
+- Connected shopper-facing reward journeys with the merchant interfaces used to configure and manage those offers.
 
 # Links
 

@@ -16,6 +16,11 @@ export function ReonPortfolio() {
         <a href="#Sava">Sava<FiArrowUpRight /></a>
         <a href="#ReonDevHub">Developer Hub<FiArrowUpRight /></a>
       </nav>
+      <section className={styles.brief} aria-label="Reon Capital case study">
+        <div><h2>The brief</h2><p>Build clear interfaces for different everyday tasks: buying tickets, checking venue entry, managing utilities, shopping, and accessing a developer portal.</p></div>
+        <div><h2>My contribution</h2><p>Mobile interface work across the Reon Capital app portfolio, alongside Developer Hub web work for branded sign-in and account creation. Each project below sets out its own scope.</p></div>
+        <div><h2>Delivery evidence</h2><p>Four apps have public Google Play listings. Sava is shown through project screens; Developer Hub is a web experience. These are portfolio contributions within the wider products.</p><Link className={styles.caseStudy} href="/services#start-project">Discuss a project <FiArrowUpRight /></Link></div>
+      </section>
       {reonApps.map((app) => (
         <section key={app.id} id={app.id} className={styles.app} aria-labelledby={`${app.id}-title`}>
           <div className={styles.copy}>

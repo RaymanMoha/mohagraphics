@@ -13,25 +13,22 @@ ShambaBoy is an AI-powered farming app and proof-first farm management platform 
 
 Farm owners, supervisors, and agricultural teams needed a clear product story for a field-first platform. The site had to explain the real operational problem: work happens in the field, but owners often lack trusted proof, timely reporting, and reliable visibility across farm blocks, workers, and seasons.
 
-## Product Experience
+## Engineering Focus
 
-- Hero messaging positions ShambaBoy as the #1 AI farming app in Africa.
-- Problem section explains the execution gap between farm owners and field teams.
-- Solution flow breaks the product into mobile-first operations, GPS/photo verification, worker empowerment, and revenue optimization.
-- Feature sections show a unified field operations dashboard for farmers, workers, and community stakeholders.
-- FAQ content targets high-intent search around Kenya farm management apps, offline farm software, AI crop monitoring, GlobalGAP compliance, climate finance, and worker accountability.
-- Download and demo calls-to-action give visitors clear next steps.
+- Developed the responsive product website with Next.js, React, and TypeScript.
+- Organised the story around the operational problem, field workflows, verification features, and a clear product explanation.
+- Built sections presenting mobile operations, GPS/photo evidence, and field dashboards using the product's supplied imagery.
+- Connected feature explanations, FAQs, and download/demo calls to action so visitors can find an appropriate next step.
 
 ## Role
 
-Frontend Developer · Product Website
+Frontend Developer · Product Website. This case study describes my website contribution; the farming platform's capabilities are product context.
 
 ## Outcome
 
-- Reframed ShambaBoy from a generic brand site into a specific AI agriculture product story.
-- Improved recruiter-visible proof around product marketing, responsive frontend delivery, SEO content, and high-trust industry workflows.
-- Added reliable local image assets from the live ShambaBoy site so the portfolio project no longer depends on stale or broken placeholder imagery.
-- Connected the project to real agritech themes: GPS verification, offline operations, dashboards, AI insights, crop monitoring, worker records, and export/compliance workflows.
+- Delivered a product website that explains the connection between farm tasks, field evidence, and management visibility.
+- The project gallery presents the product's mobile operations, verification, and dashboard story alongside a link to the live website.
+- The portfolio also includes ShambaBoy films exploring records, field work, and evidence. These can be watched in the [Films & Motion library](/films).
 
 # Links
 

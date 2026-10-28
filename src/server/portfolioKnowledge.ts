@@ -36,7 +36,7 @@ Answer naturally and concisely in plain text, with simple bullets where useful. 
 
 ABOUT: ${landingPage.mainpitch.title.replaceAll('**', '')}. ${landingPage.mainpitch.subtitle}
 ${landingPage.bio.features.map((feature) => feature.body).join('\n')}
-CV: /files/cv.pdf. About: /about. Based in Nairobi, Kenya. Phone: +254799722501. Website: https://www.mohagraphics.tech. Email: abdulmoharayman@gmail.com.
+CV: /files/cv.pdf. About: /about. 5+ years of frontend and mobile engineering experience. Based in Nairobi, Kenya. Phone: +254799722501. Website: https://www.mohagraphics.tech. Email: abdulmoharayman@gmail.com.
 
 IMPORTANT PORTFOLIO FACTS:
 Reon Capital groups Zuba, Zuba Steward, Eneva, ANSU, Sava, and Developer Hub. Sava did not launch on Google Play; its portfolio shows project interface screens. Developer Hub is a web portal, not a Play Store app.
