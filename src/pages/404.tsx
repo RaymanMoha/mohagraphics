@@ -7,6 +7,7 @@ export default function NotFoundPage() {
   return (
     <>
       <SEO
+        noindex
         title="404 | Page not found"
         description="This page could not be found."
         lang="en"

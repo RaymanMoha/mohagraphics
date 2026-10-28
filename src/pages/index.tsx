@@ -31,6 +31,15 @@ const Index = ({
       <SEO
         title="Mohammed Abdirahman | Frontend & Mobile Engineer | React, React Native, Flutter"
         description="Frontend and mobile engineer with 5+ years building React, React Native, and Flutter products. Based in Nairobi and available for remote or Kenya-based roles, focused on performance, accessibility, and clean UX."
+        structuredData={{
+          '@context': 'https://schema.org', '@type': 'Person',
+          name: 'Mohammed Abdirahman', url: 'https://www.mohagraphics.tech',
+          jobTitle: 'Frontend & Mobile Engineer',
+          homeLocation: { '@type': 'Place', name: 'Nairobi, Kenya' },
+          email: 'abdulmoharayman@gmail.com',
+          sameAs: ['https://github.com/RaymanMoha', 'https://ke.linkedin.com/in/mohammed-abdirahman-1a6b651bb'],
+          knowsAbout: ['React', 'Next.js', 'React Native', 'Flutter', 'Product UX', 'Brand campaigns', 'Motion graphics'],
+        }}
         lang="en"
         thumb="/img/mohammed.jpeg"
         keywords={[

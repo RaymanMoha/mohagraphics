@@ -1,72 +1,22 @@
 import { GetServerSideProps } from 'next';
+import { content } from '@/content/projects';
+import { campaigns } from '@/components/Campaigns/data';
+import { servicePages } from '@/content/services';
 
-const Sitemap = () => {
-  // This component will not render anything
-  return null;
-};
-
+export default function Sitemap() { return null; }
 export const getServerSideProps: GetServerSideProps = async ({ res }) => {
-  const baseUrl = 'https://www.mohagraphics.tech';
-
-  // Static pages
-  const staticPages = [
-    '',
-    '/about',
-    '/blog',
-    '/services',
+  const routes = [
+    '', '/about', '/blog', '/services', '/films',
+    ...Object.keys(content).map((id) => `/projects/${id}`),
+    ...campaigns.map((campaign) => `/campaigns/${campaign.slug}`),
+    ...servicePages.map((service) => `/services/${service.slug}`),
+    ...['cloud-resume', 'javascript-cheatsheet', 'react-cheatsheet', 'prof-g-map',
+      'ai-chat-website-integration', 'hire-frontend-developer-2025', 'react-native-vs-flutter-2025'].map((slug) => `/blog/${slug}`),
   ];
-
-  // Project pages
-  const projectPages = [
-    '/projects/Amc',
-    '/projects/onspace',
-    '/projects/QuickHost',
-    '/projects/Hbnb',
-    '/projects/Yala',
-    '/projects/blossom',
-    '/projects/convolab',
-    '/projects/Zuba',
-    '/projects/Budj',
-    '/projects/Sava',
-    '/projects/Shambaboy',
-    '/projects/AppBase',
-    '/projects/Groundbase',
-    '/projects/ReonDevHub',
-  ];
-
-  const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  ${staticPages
-    .map((page) => {
-      return `
-    <url>
-      <loc>${baseUrl}${page}</loc>
-      <lastmod>${new Date().toISOString()}</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>${page === '' ? '1.0' : '0.8'}</priority>
-    </url>`;
-    })
-    .join('')}
-  ${projectPages
-    .map((page) => {
-      return `
-    <url>
-      <loc>${baseUrl}${page}</loc>
-      <lastmod>${new Date().toISOString()}</lastmod>
-      <changefreq>monthly</changefreq>
-      <priority>0.9</priority>
-    </url>`;
-    })
-    .join('')}
-</urlset>`;
-
-  res.setHeader('Content-Type', 'text/xml');
-  res.write(sitemap);
-  res.end();
-
-  return {
-    props: {},
-  };
+  // Do not invent lastmod dates: a request time is not the content's update time.
+  const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${routes.map((route) => `<url><loc>https://www.mohagraphics.tech${route}</loc></url>`).join('')}</urlset>`;
+  res.setHeader('Content-Type', 'application/xml; charset=utf-8');
+  res.setHeader('Cache-Control', 'public, s-maxage=3600, stale-while-revalidate=86400');
+  res.end(xml);
+  return { props: {} };
 };
-
-export default Sitemap;

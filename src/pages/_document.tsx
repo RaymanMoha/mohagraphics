@@ -1,8 +1,25 @@
-import { Html, Head, Main, NextScript } from 'next/document';
+import Document, { DocumentContext, Html, Head, Main, NextScript } from 'next/document';
+import { ServerStyleSheet } from 'styled-components';
 
-export default function Document() {
-  return (
-    <Html>
+export default class PortfolioDocument extends Document {
+  static async getInitialProps(ctx: DocumentContext) {
+    const sheet = new ServerStyleSheet();
+    const renderPage = ctx.renderPage;
+    try {
+      ctx.renderPage = () => renderPage({
+        enhanceApp: (App) => function StyledApp(props) {
+          return sheet.collectStyles(<App {...props} />);
+        },
+      });
+      const initialProps = await Document.getInitialProps(ctx);
+      return { ...initialProps, styles: <>{initialProps.styles}{sheet.getStyleElement()}</> };
+    } finally {
+      sheet.seal();
+    }
+  }
+
+  render() { return (
+    <Html lang="en">
       <Head>
         {/* Google Analytics (GA4) */}
         <script
@@ -27,6 +44,6 @@ export default function Document() {
         <NextScript />
       </body>
     </Html>
-  );
+  ); }
 }
 

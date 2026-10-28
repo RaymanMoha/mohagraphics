@@ -68,3 +68,17 @@
 @media (max-width: 1100px) { .hero { gap: 3vw; } .hero h1 { font-size: clamp(3.5rem, 6.6vw, 6rem); } .visual { height: 500px; } .serviceRow { grid-template-columns: 24px minmax(0, 1fr) minmax(0, 1.15fr); gap: 1.5rem; } .proof { grid-column: 3; } .serviceCopy { grid-column: 3; } .serviceRow h3 { grid-row: 1 / span 2; } .proof > a:first-child { max-width: 360px; } }
 @media (max-width: 760px) { .hero { grid-template-columns: minmax(0, 1fr); padding-top: 6rem; gap: 2.5rem; } .hero h1 { font-size: clamp(3.2rem, 12.6vw, 5.5rem); } .lead { font-size: .95rem !important; } .visual { height: clamp(330px, 95vw, 480px); margin-left: 8%; } .filmVisual { bottom: 1%; } .visualCaption { font-size: .65rem !important; } .location { font-size: .75rem !important; } .sectionHeading, .process, .faq, .contact { grid-template-columns: minmax(0, 1fr); gap: 2rem; } .sectionHeading h2 { font-size: clamp(2.8rem, 11vw, 4.5rem); } .serviceRow { grid-template-columns: 24px minmax(0, 1fr); gap: 1rem; padding: 2rem 0; } .serviceRow h3 { grid-row: auto; font-size: 2.4rem; max-width: 16ch; } .serviceCopy, .proof { grid-column: 2; } .proof > a:first-child { max-width: none; } .process h2, .faq h2, .contact h2 { font-size: clamp(2.6rem, 10.5vw, 4rem); } .process p, .faq details p { font-size: .85rem !important; } .process li { grid-template-columns: 50px 1fr; gap: 1rem; } .process li > span { font-size: 2.3rem; } .contactIntro { font-size: .95rem !important; } }
 @media (prefers-reduced-motion: reduce) { .proof img { transition: none; } }
+.detailIntro { padding: 7rem 5vw 4rem; background: var(--sand); }
+.detailIntroGrid { display: grid; grid-template-columns: 1.2fr 1fr; align-items: center; gap: 6vw; margin-top: 2.5rem; }
+.detailIntro h1 { font-size: clamp(2.9rem, 5.6vw, 6rem); }
+.detailIntro h1 span { color: var(--coral); }
+.detailIntroGrid > img { display: block; width: 100%; height: auto; max-height: 560px; object-fit: contain; margin: 0; }
+.detailColumns { display: grid; grid-template-columns: 1fr 1fr; gap: 8vw; }
+.detailColumns h3 { font-size: 2rem; margin: 0 0 1.5rem; }
+.detailColumns p, .detailColumns li { font-size: .95rem; line-height: 1.8; color: #54616b; }
+.page .detailColumns ul { display: block; padding-left: 1.2rem; margin: 0 0 1.5rem; }
+.page .detailColumns li { list-style: disc; margin-bottom: .65rem; }
+.detailProject { padding-bottom: 1.5rem; }
+.detailRelated { display: flex; flex-wrap: wrap; gap: 1.5rem 3rem; padding: 3rem 5vw; }
+.detailRelated a { font-size: .85rem; color: var(--ink); text-decoration: underline; min-height: 44px; display: inline-flex; align-items: center; gap: .5rem; }
+@media (max-width: 760px) { .detailIntroGrid, .detailColumns { grid-template-columns: 1fr; } .detailIntroGrid > img { max-height: 420px; } .detailColumns { gap: 2rem; } }

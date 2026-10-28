@@ -1,3 +1,4 @@
+import { SEO } from '@/components/SEO';
 import Social from '@/components/Social';
 import { Hero, Section, sizing } from '@/styles/components';
 import fs from 'fs';
@@ -34,12 +35,9 @@ const BlogPage = ({
   }
   return (
     <>
-      {/* <SEO
-        title={title}
-        thumb={thumb}
-        keywords={tags}
-        description={description || post.excerpt}
-      /> */}
+      <SEO title={`${title} | Mohammed Abdirahman`} thumb={thumb || '/img/mohammed.jpeg'}
+        lang="en" description={description || title || 'Articles by Mohammed Abdirahman'}
+        keywords={Array.isArray(keywords) ? keywords : (keywords || '').split(',')} />
 
       <Section>
         <header>
@@ -183,7 +181,7 @@ export const getStaticPaths = (async () => {
     paths: validPosts.map((contentkey) => ({
       params: { id: contentkey },
     })),
-    fallback: true, // false or "blocking"
+    fallback: 'blocking',
   };
 }) satisfies GetStaticPaths;
 

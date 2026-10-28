@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { FiArrowRight, FiArrowUpRight, FiPlus } from 'react-icons/fi';
 import { SEO } from '@/components/SEO';
+import { servicePages } from '@/content/services';
 import { offers, steps, faqs } from '@/components/Services/content';
 import { ProjectContact } from '@/components/Services/ProjectContact';
 import styles from '@/components/Services/styles.module.css';
@@ -61,6 +62,7 @@ export default function Services() {
               <div className={styles.serviceCopy}>
                 <p>{offer.description}</p>
                 <ul>{offer.deliverables.map((item) => <li key={item}>{item}</li>)}</ul>
+                <Link className={styles.textLink} href={`/services/${servicePages.find((service) => service.offerId === offer.id)!.slug}`}>Explore this service <FiArrowRight /></Link><br />
                 <a className={styles.textLink} href="#start-project" aria-label={`Discuss ${offer.title}`} onClick={() => setSelected(offer.interest)}>Discuss this service <FiArrowRight /></a>
               </div>
               <div className={styles.proof}>

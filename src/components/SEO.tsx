@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import { useRouter } from 'next/router';
 
 export type Props = {
   description: string;
@@ -9,6 +10,7 @@ export type Props = {
   /** Optional canonical URL to render as a <link rel="canonical"/> */
   canonical?: string;
   structuredData?: Record<string, unknown>;
+  noindex?: boolean;
 };
 
 export const SEO = ({
@@ -18,9 +20,12 @@ export const SEO = ({
   keywords,
   canonical,
   structuredData,
+  noindex = false,
 }: Props) => {
   const siteUrl = 'https://www.mohagraphics.tech';
-  const canonicalUrl = canonical || siteUrl;
+  const { asPath } = useRouter();
+  const pathname = asPath.split(/[?#]/)[0].replace(/\/$/, '') || '/';
+  const canonicalUrl = canonical || `${siteUrl}${pathname === '/' ? '' : pathname}`;
   const resolvedThumb = (thumb || 'logo.png').trim();
   const imageUrl = (() => {
     if (!resolvedThumb) return `${siteUrl}/img/logo.png`;
@@ -40,7 +45,7 @@ export const SEO = ({
       content: description,
     },
     {
-      property: `keywords`,
+      name: `keywords`,
       content: keywords.join(', '),
     },
     {
@@ -107,10 +112,11 @@ export const SEO = ({
       <title>{title}</title>
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <link rel="canonical" href={canonicalUrl} />
+      {noindex && <meta name="robots" content="noindex, follow" />}
       {structuredData && (
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData).replace(/</g, '\\u003c') }}
         />
       )}
       {metaTags.map((tag, i) => {
