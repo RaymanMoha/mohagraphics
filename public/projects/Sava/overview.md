@@ -21,15 +21,10 @@ Fuel customers needed a faster way to preload funds, find nearby stations, order
 - Owner dashboard showing current balance, withdrawals, wallet access, order overview, and transaction history.
 - Truck information view with license plate, fuel type, delivery capacity, shipping code, and map context.
 
-![Sava wallet home screen](/img/sava-wallet.png "Sava wallet home screen")
 
-![Sava preload money screen](/img/sava-preload.png "Sava preload money screen")
 
-![Sava station location screen](/img/sava-locations.png "Sava station location screen")
 
-![Sava owner dashboard screen](/img/sava-owner-dashboard.png "Sava owner dashboard screen")
 
-![Sava truck information screen](/img/sava-truck.png "Sava truck information screen")
 
 ## Role
 

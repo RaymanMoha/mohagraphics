@@ -5,6 +5,7 @@ $accent: #ff715b;
 	padding-top: 3rem;
 	display: grid;
 	grid-template-rows: auto 1fr auto;
+	grid-template-columns: minmax(0, 1fr);
 
 	.line-numbers .line-numbers-rows {
 		top: 1rem;

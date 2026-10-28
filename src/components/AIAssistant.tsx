@@ -304,7 +304,7 @@ export default function AIAssistant({ isOpen: externalIsOpen, onToggle }: AIAssi
             {messages.length === 0 && (
               <WelcomeMessage>
                 👋 Hi! I'm here to help you learn about Mohammed's portfolio. 
-                Ask me about his skills, projects, or experience!
+                Ask about projects, films, brand campaigns, services, or working together.
               </WelcomeMessage>
             )}
             

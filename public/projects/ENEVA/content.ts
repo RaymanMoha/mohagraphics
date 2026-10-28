@@ -1,3 +1,4 @@
+import { storeGallery } from '@/content/reonApps';
 import { Content } from '@/content/projects';
 
 export const content: Content = {
@@ -20,7 +21,10 @@ export const content: Content = {
     code: 'Private',
     live: 'https://play.google.com/store/apps/details?id=com.eneva.app&hl=en',
   },
-  featuredImage: '/img/eneva-overview.png',
-  role: 'Flutter Mobile Developer',
+  featuredImage: '/img/eneva-playstore-overview.jpg',
+  organisation: { name: 'Reon Capital', href: '/projects/ReonCapital/' },
+  mediaTitle: 'Google Play screenshots.',
+  gallery: storeGallery('ENEVA'),
+  role: 'Flutter Mobile Developer · Reon Capital',
   seo: 'ENEVA utility bills manager with OCR meter reading and analytics built on Flutter and Google Cloud.',
 };

@@ -21,6 +21,12 @@ export const landingPage = {
   },
   projects: [
     {
+      ...projectData.ReonCapital,
+      title: 'Reon Capital', image: 'reon-capital-overview.jpg',
+      body: 'Mobile and web work across Zuba, Zuba Steward, Eneva, ANSU, Sava, and Developer Hub, spanning apps and developer experiences.',
+      buttonText: 'Explore Reon Capital', link: '/projects/ReonCapital/',
+    },
+    {
       body: 'Cashback and loyalty platform with React Native mobile flows, Next.js merchant experiences, verified spend, M-Pesa withdrawals, and campaign dashboards.',
       image: 'budj-overview.png',
       buttonText: 'View project',

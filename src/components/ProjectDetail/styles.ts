@@ -19,9 +19,9 @@ export const Page = styled.main`
 `;
 
 export const Intro = styled.section`
-  max-width: 1120px;
+  max-width: none;
   margin: 0 auto;
-  padding: clamp(5.5rem, 8vw, 7rem) clamp(1.25rem, 4vw, 2.5rem)
+  padding: clamp(5.5rem, 8vw, 7rem) 5vw
     clamp(2.5rem, 5vw, 4rem);
 `;
 
@@ -201,26 +201,26 @@ export const Fact = styled.div`
 `;
 
 export const HeroMedia = styled.figure`
-  max-width: 1120px;
+  max-width: none;
   margin: 0 auto;
-  padding: 0 clamp(1.25rem, 4vw, 2.5rem);
+  padding: 0 5vw;
   img {
     display: block;
     width: 100%;
-    aspect-ratio: 16 / 8.6;
-    object-fit: cover;
+    height: auto;
+    object-fit: contain;
     object-position: top;
-    border: 1px solid rgba(19, 32, 42, 0.32);
-    background: white;
+    border: 0;
+    background: transparent;
   }
 `;
 
 export const Story = styled.section`
   display: grid;
   gap: 2.75rem;
-  max-width: 1120px;
+  max-width: none;
   margin: 0 auto;
-  padding: clamp(3rem, 5vw, 4.5rem) clamp(1.25rem, 4vw, 2.5rem);
+  padding: clamp(3rem, 5vw, 4.5rem) 5vw;
   @media (min-width: 840px) {
     grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.68fr);
     gap: clamp(3.5rem, 7vw, 6rem);
@@ -299,9 +299,9 @@ export const SideFacts = styled(Facts)`
 `;
 
 export const Gallery = styled.section`
-  max-width: 1120px;
+  max-width: none;
   margin: 0 auto;
-  padding: 0 clamp(1.25rem, 4vw, 2.5rem) clamp(3rem, 6vw, 5rem);
+  padding: 0 5vw clamp(3rem, 6vw, 5rem);
 `;
 
 export const GalleryHeading = styled.header`
@@ -332,15 +332,15 @@ export const GalleryGrid = styled.div`
 export const GalleryItem = styled.figure`
   margin: 0;
   overflow: hidden;
-  border: 1px solid var(--line);
-  background: white;
+  border: 0;
+  background: transparent;
   img {
     display: block;
     width: 100%;
     height: auto;
   }
   figcaption {
-    padding: 0.85rem 1rem;
+    padding: 0.85rem 0;
     color: rgba(19, 32, 42, 0.68);
     font-size: 0.72rem;
     font-weight: 700;
@@ -354,9 +354,9 @@ export const GalleryItem = styled.figure`
 `;
 
 export const NextSection = styled.section`
-  max-width: 1120px;
+  max-width: none;
   margin: 0 auto;
-  padding: 0 clamp(1.25rem, 4vw, 2.5rem) clamp(3rem, 5vw, 4rem);
+  padding: 0 5vw clamp(3rem, 5vw, 4rem);
 `;
 
 export const NextLabel = styled.div`
@@ -380,9 +380,9 @@ export const NextProject = styled(Link)`
   }
   img {
     width: 100%;
-    aspect-ratio: 16 / 6.7;
-    object-fit: cover;
-    border: 1px solid var(--line);
+    height: auto;
+    object-fit: contain;
+    border: 0;
   }
   &:hover h2 {
     color: var(--coral);

@@ -63,10 +63,10 @@ const Heading = styled.header`
   gap: 1.2rem;
   margin-bottom: clamp(1.75rem, 4vw, 2.75rem);
   h2 {
-    max-width: 13ch;
+    max-width: 18ch;
     margin: 0;
     font-family: Georgia, 'Times New Roman', serif;
-    font-size: clamp(2.25rem, 4.5vw, 3.8rem);
+    font-size: clamp(2.25rem, 4.5vw, 4.5rem);
     font-weight: 400;
     line-height: 1;
     letter-spacing: -0.045em;
@@ -103,7 +103,7 @@ const Eyebrow = styled.div`
 
 const Grid = styled.div`
   display: grid;
-  gap: 1rem;
+  gap: 3vw;
   @media (min-width: 760px) {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -115,8 +115,8 @@ const Card = styled(Link)`
     grid-template-rows: auto 1fr;
     min-height: 100%;
     overflow: hidden;
-    border: 1px solid rgba(19, 32, 42, 0.2);
-    background: rgba(255, 255, 255, 0.52);
+    border: 0;
+    background: transparent;
     color: var(--ink);
   }
   &:hover img {
@@ -135,13 +135,13 @@ const Card = styled(Link)`
 const Media = styled.div`
   position: relative;
   overflow: hidden;
-  border-bottom: 1px solid rgba(19, 32, 42, 0.16);
-  background: #edf0e8;
+  border-bottom: 0;
+  background: transparent;
   img {
     display: block;
     width: 100%;
-    aspect-ratio: 16 / 9;
-    object-fit: cover;
+    height: auto;
+    object-fit: contain;
     object-position: top;
     transition: transform 320ms ease;
   }
@@ -168,7 +168,7 @@ const Copy = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: clamp(1.35rem, 3vw, 2rem);
+  padding: 1.5rem 0 0;
   h3 {
     margin: 0.4rem 0 0.75rem;
     font-family: Georgia, 'Times New Roman', serif;

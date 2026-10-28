@@ -1,6 +1,8 @@
 import { Hero, HeroP, colors } from '../styles/components';
 
 import Social from '../components/Social';
+import { FilmsSection } from '@/components/Films';
+import { CampaignsSection } from '@/components/Campaigns';
 
 import { HighlightedWords } from '@/components/HighlightedWords';
 import { HeroSection, Section } from '@/components/Landing';
@@ -90,9 +92,11 @@ const Index = ({
         <Featured />
       </Section> */}
 
-      <Section id="projects">
-        <ProjectsSection projects={projects} />
-      </Section>
+      <ProjectsSection projects={projects} />
+
+      <FilmsSection />
+
+      <CampaignsSection />
 
       <Section id="contact">
         <ContactSection />
@@ -113,7 +117,7 @@ const ResponsiveMainContainer = styled.div`
   padding: 0;
   background: ${colors.background};
   position: relative;
-  overflow-x: hidden;
+  overflow: clip;
 `;
 
 const HeroContent = styled.div`

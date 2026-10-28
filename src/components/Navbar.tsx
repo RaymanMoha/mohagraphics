@@ -56,7 +56,7 @@ const NavbarContainer = styled.nav<NavContainerProps>`
     letter-spacing: 1px;
   }
 
-  @media (min-width: 769px) {
+  @media (min-width: 1101px) {
     padding: 0.75rem 2rem;
     
     .logo {
@@ -100,7 +100,7 @@ const Menu = styled.ul<MenuProps>`
     }
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 1100px) {
     flex-direction: column;
     background: linear-gradient(135deg, rgba(18, 30, 39, 0.98) 0%, rgba(18, 30, 39, 0.95) 100%);
     backdrop-filter: blur(20px);
@@ -160,7 +160,7 @@ const Burger = styled.div<BurgerProps>`
     background: rgba(255, 113, 91, 0.1);
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 1100px) {
     display: block;
   }
 `;
@@ -184,7 +184,7 @@ const CloseButton = styled.div`
     background: rgba(255, 113, 91, 0.1);
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 1100px) {
     display: block;
   }
 `;
@@ -195,9 +195,9 @@ const NavLinks = styled.div`
   align-items: center;
   gap: 1.5rem;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1100px) {
     flex-direction: column;
-    gap: 2.5rem;
+    gap: clamp(0.6rem, 2.6vh, 1.8rem);
     width: 100%;
   }
 `;
@@ -209,7 +209,7 @@ const NavHeading = styled.h3<NavHeadingProps>`
   font-size: 1rem;
   display: none; /* Hide by default */
 
-  @media (max-width: 768px) {
+  @media (max-width: 1100px) {
     display: block;
     margin-bottom: 1rem;
     color: ${colors.white};
@@ -282,6 +282,12 @@ export default function Navbar({ invert = false }: { invert?: boolean }) {
           </NavLink>
           <NavLink href="/#projects" invert={invert} onClick={() => setMenuOpen(false)}>
             Projects
+          </NavLink>
+          <NavLink href="/#films" invert={invert} onClick={() => setMenuOpen(false)}>
+            Films &amp; Motion
+          </NavLink>
+          <NavLink href="/#campaigns" invert={invert} onClick={() => setMenuOpen(false)}>
+            Brand &amp; Campaigns
           </NavLink>
           <NavLink href="/services" invert={invert} onClick={() => setMenuOpen(false)}>
             Services

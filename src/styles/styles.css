@@ -10,6 +10,7 @@ html {
 }
 
 body {
+  font-family: Muli, Arial, sans-serif;
   color: #121e27;
   background: white;
   margin: 0;
@@ -121,7 +122,7 @@ p,
 footer,
 div,
 li {
-  font-family: Muli;
+  font-family: Muli, Arial, sans-serif;
 }
 
 p {

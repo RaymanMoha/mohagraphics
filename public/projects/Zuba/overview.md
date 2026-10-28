@@ -16,7 +16,7 @@ The league needed a modern fan experience and a separate tool for match-day oper
 ## Product Experience
 
 - Fan app with fixtures, live scores, news, and notifications.
-- Steward app for match reporting, incident tracking, and coordination.
+- Steward companion app for QR ticket scanning, season-pass checks, and gate-entry tracking.
 - Real-time data integration for fixtures and results.
 
 ## Role

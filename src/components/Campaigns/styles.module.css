@@ -1,0 +1,56 @@
+.section, .galleryPage { background: #fff; color: #13202a; width: 100%; padding: clamp(4rem, 7vw, 7rem) 5vw; scroll-margin-top: 75px; }
+.section svg, .galleryPage svg, .lightbox svg { width: 20px; height: 20px; flex-shrink: 0; }
+.heading { display: flex; align-items: center; justify-content: space-between; gap: 4vw; border-bottom: 1px solid #13202a50; padding-bottom: 2.75rem; margin-bottom: 2.25rem; }
+.heading h2 { display: block; font-family: Georgia, 'Times New Roman', serif; font-size: clamp(3.5rem, 6.1vw, 7.2rem); font-weight: 400; line-height: 1; letter-spacing: -.055em; margin: 0; }
+.heading p { max-width: 31ch; font-size: .9rem; line-height: 1.75; color: #5c6870; margin: 0; }
+.lead { display: grid; grid-template-columns: minmax(0, 1.65fr) minmax(0, .85fr); gap: 4vw; align-items: center; margin-bottom: 2rem; }
+.leadMedia { display: flex; align-items: center; justify-content: center; background: transparent; aspect-ratio: 1.5; overflow: hidden; }
+.leadMedia img { display: block; height: 100%; width: 100%; object-fit: contain; margin: 0; transition: transform .3s; }
+.leadCopy h3 { display: block; font-family: Georgia, 'Times New Roman', serif; font-size: clamp(2.7rem, 4.4vw, 5.5rem); font-weight: 400; letter-spacing: -.05em; line-height: 1.03; margin: 0 0 1.4rem; }
+.leadCopy p { font-size: 1rem; line-height: 1.8; max-width: 30ch; color: #5c6870; margin: 0 0 2rem; }
+.section .explore { display: inline-flex; align-items: center; gap: 1rem; color: #13202a; font-size: .85rem; min-height: 44px; }
+.explore svg { color: #c24b35; }
+.collections { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2rem; }
+.preview { display: flex; align-items: center; justify-content: center; aspect-ratio: 1.5; overflow: hidden; background: transparent; }
+.preview img { display: block; width: 100%; height: 100%; object-fit: contain; margin: 0; transition: transform .3s; }
+.posterPair { display: grid; grid-template-columns: 1fr 1fr; gap: 3%; padding: 0; background: transparent; }
+.posterPair img { min-height: 0; min-width: 0; }
+.leadMedia:hover img, .preview:hover img { transform: scale(1.02); }
+.collections h3 { display: block; font-family: Georgia, 'Times New Roman', serif; font-size: clamp(1.8rem, 2.5vw, 3rem); font-weight: 400; letter-spacing: -.045em; line-height: 1.15; margin: 1.2rem 0 .4rem; }
+.collectionCaption { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; }
+.collectionCaption span { color: #68727a; text-transform: uppercase; letter-spacing: .08em; font-size: .6rem; white-space: nowrap; }
+.section a:focus-visible, .galleryPage a:focus-visible, .galleryPage button:focus-visible, .lightbox button:focus-visible, .lightbox a:focus-visible { outline: 3px solid #155eef; outline-offset: 5px; }
+.galleryPage { padding-top: clamp(6rem, 10vw, 10rem); }
+.galleryPage .back { display: inline-flex; gap: .7rem; align-items: center; color: #13202a; font-size: .8rem; margin-bottom: 3rem; min-height: 44px; }
+.galleryHeading { padding-bottom: 3rem; border-bottom: 1px solid #d3d9dc; margin-bottom: 3rem; }
+.galleryHeading > span { font-size: .7rem; text-transform: uppercase; letter-spacing: .1em; color: #8c4d3e; }
+.galleryHeading h1 { display: block; font-family: Georgia, 'Times New Roman', serif; font-weight: 400; font-size: clamp(3rem, 6.8vw, 7rem); line-height: 1.05; letter-spacing: -.05em; max-width: 18ch; margin: 1rem 0 1.5rem; }
+.galleryHeading p { color: #5c6870; max-width: 55ch; font-size: 1rem; line-height: 1.8; margin: 0; }
+.gallery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 3rem 2rem; align-items: start; }
+.gallery figure { margin: 0; min-width: 0; }
+.gallery .wide { grid-column: 1 / -1; }
+.galleryImage { display: block; position: relative; width: 100%; padding: 0; background: transparent; border: 0; cursor: zoom-in; }
+.galleryImage img { display: block; width: 100%; height: auto; max-height: 80vh; object-fit: contain; margin: 0; }
+.galleryImage > span { position: absolute; bottom: 1rem; right: 1rem; display: grid; place-items: center; width: 44px; height: 44px; border-radius: 50%; background: #13202ae8; color: white; }
+.gallery figcaption h2 { display: block; font-size: 1.1rem; font-weight: 600; margin: 1rem 0 .35rem; }
+.gallery figcaption p { font-size: .8rem; color: #5c6870; line-height: 1.7; margin: 0; }
+.more { margin-top: 5rem; border-top: 1px solid #13202a; padding-top: 2rem; }
+.more h2 { display: block; font-family: Georgia, 'Times New Roman', serif; font-size: 2.5rem; font-weight: 400; margin: 0 0 1rem; }
+.galleryPage .more a { display: flex; justify-content: space-between; gap: 1rem; align-items: center; color: #13202a; border-bottom: 1px solid #d3d9dc; padding: 1.25rem 0; }
+.lightbox { position: fixed; inset: 0; width: min(94vw, 1250px); max-height: 95dvh; margin: auto; padding: 1rem; background: #13202a; color: #fff; border: 1px solid #ffffff30; border-radius: 4px; overflow-y: auto; z-index: 2000; }
+.lightbox::backdrop { background: #060a0ff0; }
+.lightboxBar { display: flex; align-items: center; justify-content: space-between; margin-bottom: .8rem; }
+.lightboxBar > span { font-size: .75rem; color: #c3cdd3; }
+.lightbox button, .lightbox a { background: transparent; border: 1px solid #ffffff60; color: white; cursor: pointer; min-height: 44px; }
+.lightboxBar button { display: grid; place-items: center; border-radius: 50%; width: 44px; padding: 0; }
+.fullImage { display: block; width: 100%; height: min(66dvh, 850px); object-fit: contain; background: #0c151c; margin: 0; }
+.lightboxCaption { display: flex; gap: 1rem; align-items: center; justify-content: space-between; padding: 1rem 0; }
+.lightboxCaption h2 { display: block; font-size: 1rem; font-family: Muli, sans-serif; font-weight: 600; margin: 0 0 .3rem; }
+.lightboxCaption p { font-size: .75rem; line-height: 1.5; color: #bcc9d1; margin: 0; }
+.lightboxCaption a { display: grid; place-items: center; width: 44px; flex-shrink: 0; }
+.lightboxNavigation { display: flex; justify-content: space-between; gap: 1rem; }
+.lightboxNavigation button { display: inline-flex; gap: .6rem; align-items: center; padding: .5rem .8rem; font: 400 .75rem Muli, sans-serif; }
+.lightbox button:disabled { opacity: .3; cursor: default; }
+@media (max-width: 1000px) { .heading { display: block; } .heading p { max-width: 52ch; margin-top: 1.5rem; } .collectionCaption { display: block; } }
+@media (max-width: 760px) { .lead, .collections, .gallery { grid-template-columns: 1fr; } .lead { gap: 1.8rem; margin-bottom: 2.5rem; } .leadMedia { aspect-ratio: 1.1; } .heading h2 { font-size: clamp(2.8rem, 10vw, 4.5rem); } .leadCopy h3 { font-size: 2.9rem; } .collections { gap: 2.5rem; } .galleryHeading h1 { font-size: clamp(2.7rem, 11vw, 4rem); } .gallery figcaption p, .lightboxCaption p { font-size: .8rem !important; } .galleryPage .back { margin-bottom: 2rem; } }
+@media (prefers-reduced-motion: reduce) { .leadMedia img, .preview img { transition: none; } }

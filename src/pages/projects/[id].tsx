@@ -1,3 +1,4 @@
+import { ReonPortfolio } from '@/components/ReonPortfolio';
 import { ProjectDetail, RelatedProject } from '@/components/ProjectDetail';
 import { SEO } from '@/components/SEO';
 import { Content, content as projectContent } from '@/content/projects';
@@ -90,9 +91,12 @@ export const getStaticProps = (async ({ params }) => {
   ]);
 
   const ids = Object.keys(projectContent);
+  const reonSequence = ['ReonCapital', 'Zuba', 'ZubaSteward', 'ENEVA', 'ANSU', 'Sava', 'ReonDevHub'];
   const featuredSequence = ['Budj', 'Shambaboy', 'Sava'];
   const personalSequence = ['AppBase', 'Groundbase', 'Budj'];
-  const sequence = featuredSequence.includes(id)
+  const sequence = reonSequence.includes(id)
+    ? reonSequence
+    : featuredSequence.includes(id)
     ? featuredSequence
     : personalSequence.includes(id)
       ? personalSequence
@@ -142,7 +146,7 @@ export default function ProjectPage(props: PageProps) {
         keywords={project.keywords}
         lang="en"
       />
-      <ProjectDetail {...props} />
+      {props.id === 'ReonCapital' ? <ReonPortfolio /> : <ProjectDetail {...props} />}
     </>
   );
 }

@@ -19,5 +19,6 @@ export const content: Content = {
     'account creation',
     'onboarding',
   ],
-  role: 'Frontend Developer',
+  organisation: { name: 'Reon Capital', href: '/projects/ReonCapital/' },
+  role: 'Frontend Developer · Reon Capital',
 };

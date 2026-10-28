@@ -1,0 +1,372 @@
+[
+  {
+    "slug": "budj-book-a-call",
+    "title": "Book a Call",
+    "brand": "Budj",
+    "category": "Motion graphics",
+    "duration": "0:08",
+    "description": "A short call-to-action brand animation.",
+    "width": 1080,
+    "height": 1920
+  },
+  {
+    "slug": "budj-create-rewards",
+    "title": "Create Rewards",
+    "brand": "Budj",
+    "category": "Motion graphics",
+    "duration": "0:24",
+    "description": "A presenter-led rewards explainer.",
+    "width": 1080,
+    "height": 1920
+  },
+  {
+    "slug": "budj-clay-city",
+    "title": "The Clay City",
+    "brand": "Budj",
+    "category": "Animation",
+    "duration": "0:31",
+    "description": "A clay-style Budj story set in the city.",
+    "width": 720,
+    "height": 1280
+  },
+  {
+    "slug": "budj-live-in-four-steps",
+    "title": "Live in Four Steps",
+    "brand": "Budj",
+    "category": "Motion graphics",
+    "duration": "0:28",
+    "description": "A four-step product explainer.",
+    "width": 1080,
+    "height": 1920
+  },
+  {
+    "slug": "budj-mtaa-reviews",
+    "title": "Mtaa Reviews",
+    "brand": "Budj",
+    "category": "Animation",
+    "duration": "0:34",
+    "description": "A character-led Mtaa Reviews cut.",
+    "width": 1080,
+    "height": 1920
+  },
+  {
+    "slug": "budj-passersby-paper",
+    "title": "The Passersby",
+    "brand": "Budj",
+    "category": "Animation",
+    "duration": "0:31",
+    "description": "A paper-style story about passing trade.",
+    "width": 1080,
+    "height": 1920
+  },
+  {
+    "slug": "budj-after-sale-trail",
+    "title": "After the Sale",
+    "brand": "Budj",
+    "category": "Brand films",
+    "duration": "0:30",
+    "description": "Following the story beyond the checkout.",
+    "width": 1080,
+    "height": 1920
+  },
+  {
+    "slug": "budj-full-stop",
+    "title": "The Full Stop",
+    "brand": "Budj",
+    "category": "Motion graphics",
+    "duration": "0:34",
+    "description": "A typographic story about the next visit.",
+    "width": 1080,
+    "height": 1920
+  },
+  {
+    "slug": "budj-goodbye",
+    "title": "When a Customer Leaves",
+    "brand": "Budj",
+    "category": "Motion graphics",
+    "duration": "0:36",
+    "description": "A merchant campaign built around repeat visits.",
+    "width": 1080,
+    "height": 1920
+  },
+  {
+    "slug": "budj-discounts-and-loyalty",
+    "title": "Discounts and Loyalty",
+    "brand": "Budj",
+    "category": "Motion graphics",
+    "duration": "0:21",
+    "description": "A graphic explainer about customer loyalty.",
+    "width": 1080,
+    "height": 1920
+  },
+  {
+    "slug": "budj-brand-introduction",
+    "title": "A Budj Introduction",
+    "brand": "Budj",
+    "category": "Brand films",
+    "duration": "0:08",
+    "description": "A presenter-led brand introduction.",
+    "width": 960,
+    "height": 960
+  },
+  {
+    "slug": "budj-cafe-counter",
+    "title": "At the Caf\u00e9 Counter",
+    "brand": "Budj",
+    "category": "Brand films",
+    "duration": "0:08",
+    "description": "A short caf\u00e9 scene from the Budj film collection.",
+    "width": 960,
+    "height": 960
+  },
+  {
+    "slug": "budj-nairobi-storefront",
+    "title": "The Storefront",
+    "brand": "Budj",
+    "category": "Brand films",
+    "duration": "0:08",
+    "description": "A short storefront scene from the Budj film collection.",
+    "width": 960,
+    "height": 960
+  },
+  {
+    "slug": "budj-celebrating-rewards",
+    "title": "Celebrating Rewards",
+    "brand": "Budj",
+    "category": "Brand films",
+    "duration": "0:08",
+    "description": "A short celebration scene around rewards.",
+    "width": 960,
+    "height": 960
+  },
+  {
+    "slug": "budj-at-the-kiosk",
+    "title": "At the Kiosk",
+    "brand": "Budj",
+    "category": "Brand films",
+    "duration": "0:08",
+    "description": "A character-led kiosk scene.",
+    "width": 960,
+    "height": 960
+  },
+  {
+    "slug": "budj-another-visit",
+    "title": "Another Visit",
+    "brand": "Budj",
+    "category": "Brand films",
+    "duration": "0:08",
+    "description": "A caf\u00e9 scene about the next visit.",
+    "width": 720,
+    "height": 1280
+  },
+  {
+    "slug": "budj-cafe-moment",
+    "title": "A Caf\u00e9 Moment",
+    "brand": "Budj",
+    "category": "Brand films",
+    "duration": "0:08",
+    "description": "A short caf\u00e9 conversation cut.",
+    "width": 720,
+    "height": 1280
+  },
+  {
+    "slug": "budj-blue-paper-fold",
+    "title": "Blue Paper Fold",
+    "brand": "Budj",
+    "category": "Animation",
+    "duration": "0:08",
+    "description": "A minimal paper-fold motion study.",
+    "width": 720,
+    "height": 1280
+  },
+  {
+    "slug": "budj-paying-with-budj",
+    "title": "Paying With Budj",
+    "brand": "Budj",
+    "category": "Brand films",
+    "duration": "0:08",
+    "description": "A checkout scene showing two payment experiences.",
+    "width": 1080,
+    "height": 1920
+  },
+  {
+    "slug": "budj-same-meal-more-value",
+    "title": "Same Meal, More Value",
+    "brand": "Budj",
+    "category": "Brand films",
+    "duration": "0:08",
+    "description": "A dining scene built around everyday rewards.",
+    "width": 1080,
+    "height": 1920
+  },
+  {
+    "slug": "budj-at-the-checkout",
+    "title": "At the Checkout",
+    "brand": "Budj",
+    "category": "Brand films",
+    "duration": "0:08",
+    "description": "A short checkout conversation.",
+    "width": 1080,
+    "height": 1920
+  },
+  {
+    "slug": "budj-everyday-shopping",
+    "title": "Everyday Shopping",
+    "brand": "Budj",
+    "category": "Brand films",
+    "duration": "0:08",
+    "description": "A retail scene from the Budj film collection.",
+    "width": 1080,
+    "height": 1920
+  },
+  {
+    "slug": "budj-app-in-focus",
+    "title": "The App in Focus",
+    "brand": "Budj",
+    "category": "Motion graphics",
+    "duration": "0:15",
+    "description": "A product-focused phone reveal.",
+    "width": 1080,
+    "height": 1920
+  },
+  {
+    "slug": "budj-dashboard-overview",
+    "title": "Merchant Dashboard \u2014 Overview",
+    "brand": "Budj",
+    "category": "Brand films",
+    "duration": "0:15",
+    "description": "A dashboard-focused merchant scene.",
+    "width": 720,
+    "height": 1280
+  },
+  {
+    "slug": "budj-dashboard-insights",
+    "title": "Merchant Dashboard \u2014 Insights",
+    "brand": "Budj",
+    "category": "Brand films",
+    "duration": "0:15",
+    "description": "A short scene introducing dashboard insights.",
+    "width": 720,
+    "height": 1280
+  },
+  {
+    "slug": "budj-close-of-day",
+    "title": "Close of the Day",
+    "brand": "Budj",
+    "category": "Brand films",
+    "duration": "0:15",
+    "description": "A merchant story at the close of the day.",
+    "width": 720,
+    "height": 1280
+  },
+  {
+    "slug": "budj-cafe-story",
+    "title": "The Caf\u00e9 Story",
+    "brand": "Budj",
+    "category": "Brand films",
+    "duration": "0:15",
+    "description": "A presenter-led caf\u00e9 campaign.",
+    "width": 720,
+    "height": 1280
+  },
+  {
+    "slug": "budj-merchant-story",
+    "title": "The Merchant Story",
+    "brand": "Budj",
+    "category": "Brand films",
+    "duration": "0:15",
+    "description": "A presenter-led merchant campaign.",
+    "width": 480,
+    "height": 854
+  },
+  {
+    "slug": "budj-counter-conversation",
+    "title": "A Counter Conversation",
+    "brand": "Budj",
+    "category": "Brand films",
+    "duration": "0:15",
+    "description": "A short merchant and customer scene.",
+    "width": 720,
+    "height": 1280
+  },
+  {
+    "slug": "budj-dashboard-at-work",
+    "title": "The Dashboard at Work",
+    "brand": "Budj",
+    "category": "Brand films",
+    "duration": "0:15",
+    "description": "A product-led merchant dashboard scene.",
+    "width": 720,
+    "height": 1280
+  },
+  {
+    "slug": "budj-merchant-conversation-cafe",
+    "title": "Merchant Conversation \u2014 Caf\u00e9",
+    "brand": "Budj",
+    "category": "Brand films",
+    "duration": "0:15",
+    "description": "A conversation-led merchant film.",
+    "width": 720,
+    "height": 1280
+  },
+  {
+    "slug": "budj-merchant-conversation-studio",
+    "title": "Merchant Conversation \u2014 Studio",
+    "brand": "Budj",
+    "category": "Brand films",
+    "duration": "0:15",
+    "description": "A studio-style merchant conversation.",
+    "width": 720,
+    "height": 1280
+  },
+  {
+    "slug": "budj-on-the-phone",
+    "title": "Budj on the Phone",
+    "brand": "Budj",
+    "category": "Brand films",
+    "duration": "0:12",
+    "description": "A short phone-led brand scene.",
+    "width": 720,
+    "height": 1280
+  },
+  {
+    "slug": "budj-earn-more-live-more",
+    "title": "Earn More. Live More.",
+    "brand": "Budj",
+    "category": "Motion graphics",
+    "duration": "0:12",
+    "description": "An animated rewards campaign.",
+    "width": 1080,
+    "height": 1920
+  },
+  {
+    "slug": "budj-first-customer",
+    "title": "The First Customer",
+    "brand": "Budj",
+    "category": "Motion graphics",
+    "duration": "0:05",
+    "description": "A short campaign about the customer journey.",
+    "width": 1080,
+    "height": 1920
+  },
+  {
+    "slug": "budj-winning-more-customers",
+    "title": "Winning More Customers",
+    "brand": "Budj",
+    "category": "Motion graphics",
+    "duration": "0:10",
+    "description": "An animated customer growth campaign.",
+    "width": 1080,
+    "height": 1920
+  },
+  {
+    "slug": "budj-know-your-customers",
+    "title": "Know Your Customers",
+    "brand": "Budj",
+    "category": "Motion graphics",
+    "duration": "0:26",
+    "description": "A short animated customer engagement explainer.",
+    "width": 1080,
+    "height": 1920
+  }
+]

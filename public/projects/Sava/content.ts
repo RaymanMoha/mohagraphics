@@ -24,5 +24,8 @@ export const content: Content = {
     'Flutter',
     'Reon Capital',
   ],
+  organisation: { name: 'Reon Capital', href: '/projects/ReonCapital/' },
+  mediaTitle: 'App interface screens.',
+  gallery: ['wallet', 'preload', 'locations', 'owner-dashboard', 'truck'].map((screen) => ({ src: `/img/sava-${screen}.png`, alt: `Sava ${screen.replaceAll('-', ' ')} interface`, caption: 'Sava · project interface image', width: 400, height: 800 })),
   role: 'Mobile Developer · Reon Capital',
 };

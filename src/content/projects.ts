@@ -1,3 +1,6 @@
+import * as ReonCapital from '../../public/projects/ReonCapital/content';
+import * as ANSU from '../../public/projects/ANSU/content';
+import * as ZubaSteward from '../../public/projects/ZubaSteward/content';
 import * as Hbnb from '../../public/projects/Hbnb/content';
 import * as onspace from '../../public/projects/onspace/content';
 import * as Amc from '../../public/projects/Amc/content';
@@ -27,6 +30,8 @@ export type Content = {
   };
   keywords: string[];
   role: string;
+  organisation?: { name: string; href: string };
+  mediaTitle?: string;
   gallery?: Array<{
     src: string;
     alt: string;
@@ -37,6 +42,9 @@ export type Content = {
 };
 
 export const content = {
+  ReonCapital: { ...ReonCapital.content },
+  ANSU: { ...ANSU.content },
+  ZubaSteward: { ...ZubaSteward.content },
   Budj: { ...Budj.content },
   ReonDevHub: { ...ReonDevHub.content },
   Shambaboy: { ...Shambaboy.content },

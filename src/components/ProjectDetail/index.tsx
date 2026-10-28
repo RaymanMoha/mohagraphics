@@ -2,6 +2,7 @@ import { FiArrowLeft, FiArrowUpRight, FiLock, FiMapPin } from 'react-icons/fi';
 
 import { Content } from '@/content/projects';
 import Image from 'next/image';
+import Link from 'next/link';
 import * as S from './styles';
 
 export type RelatedProject = {
@@ -43,6 +44,7 @@ export const ProjectDetail = ({
           <FiArrowLeft /> All projects
         </S.BackLink>
 
+        {project.organisation ? <p><Link href={project.organisation.href}>Part of {project.organisation.name} ↗</Link></p> : null}
         <S.IntroGrid>
           <S.Summary>
             <S.Title>{title}</S.Title>
@@ -57,7 +59,7 @@ export const ProjectDetail = ({
                   target="_blank"
                   rel="noreferrer"
                 >
-                  Visit live product <FiArrowUpRight />
+                  {details.live.includes('play.google.com') ? 'View on Google Play' : 'Visit live product'} <FiArrowUpRight />
                 </S.PrimaryAction>
               )}
               {isPrivate ? (
@@ -86,15 +88,15 @@ export const ProjectDetail = ({
               <dt>Type</dt>
               <dd>{details.type}</dd>
             </S.Fact>
-            <S.Fact>
+            {tools.length ? <S.Fact>
               <dt>Stack</dt>
               <dd>{tools.join(', ')}</dd>
-            </S.Fact>
+            </S.Fact> : null}
             <S.Fact>
               <dt>Live product</dt>
               <dd>
                 <a href={details.live} target="_blank" rel="noreferrer">
-                  Visit live product <FiArrowUpRight />
+                  {details.live.includes('play.google.com') ? 'View on Google Play' : 'Visit live product'} <FiArrowUpRight />
                 </a>
               </dd>
             </S.Fact>
@@ -156,10 +158,10 @@ export const ProjectDetail = ({
             <dt>Type</dt>
             <dd>{details.type}</dd>
           </S.Fact>
-          <S.Fact>
+          {tools.length ? <S.Fact>
             <dt>Stack</dt>
             <dd>{tools.slice(0, 8).join(', ')}</dd>
-          </S.Fact>
+          </S.Fact> : null}
           <S.Fact>
             <dt>Live</dt>
             <dd>
@@ -175,7 +177,7 @@ export const ProjectDetail = ({
         <S.Gallery aria-labelledby="project-media-title">
           <S.GalleryHeading>
             <S.FactsLabel>Product media</S.FactsLabel>
-            <h2 id="project-media-title">The product in the field.</h2>
+            <h2 id="project-media-title">{project.mediaTitle || 'The product in the field.'}</h2>
           </S.GalleryHeading>
           <S.GalleryGrid>
             {project.gallery.map((item) => (

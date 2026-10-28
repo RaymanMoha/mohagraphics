@@ -1,0 +1,57 @@
+export type CampaignImage = { file: string; title: string; caption: string; width: number; height: number };
+export type Campaign = { slug: string; title: string; category: string; description: string; cover: string; images: CampaignImage[] };
+export const campaigns: Campaign[] = [
+  {
+    slug: 'budj-outdoor', title: 'Budj, out in the world.', category: 'Outdoor & merchant branding',
+    description: 'Billboards, merchant signage, and partnership artwork. Budj’s message, seen beyond the screen.',
+    cover: 'wateja-warudi-installed',
+    images: [
+      { file: 'wateja-warudi-installed', title: 'Wateja Warudi', caption: 'Installed billboard · merchant cashback campaign', width: 978, height: 1071 },
+      { file: 'make-them-regulars-installed', title: 'Make Them Regulars', caption: 'Installed billboard · customer loyalty campaign', width: 576, height: 1024 },
+      { file: 'club-legend-installed', title: 'Club Legend', caption: 'Merchant partnership signage · photographed on location', width: 1280, height: 720 },
+      { file: 'balis-best-artwork', title: 'Bali’s Best — artwork', caption: 'Partnership banner · digital artwork', width: 1636, height: 654 },
+      { file: 'balis-best-installed', title: 'Bali’s Best — on location', caption: 'Partnership signage · photographed at the venue', width: 603, height: 1072 },
+    ],
+  },
+  {
+    slug: 'budj-campaigns', title: 'Campaigns that explain the product.', category: 'Brand identity & digital campaigns',
+    description: 'Everyday rewards, repeat business, and measurable marketing. Budj campaign artwork alongside the logo guidelines that support its visual identity.',
+    cover: 'the-second-sale',
+    images: [
+      {"file": "give-every-purchase-a-next-step", "title": "Give Every Purchase a Next Step", "caption": "Merchant acquisition · reward ticket campaign artwork", "width": 858, "height": 1072},
+      {"file": "reward-them-once-win-them-again", "title": "Reward Them Once. Win Them Again.", "caption": "Repeat visits · stamp-inspired campaign artwork", "width": 858, "height": 1072},
+      {"file": "more-repeat-customers", "title": "More Repeat Customers", "caption": "Customer retention · receipt campaign artwork", "width": 858, "height": 1072},
+      {"file": "keep-customers-in-your-loop", "title": "Keep Customers in Your Loop", "caption": "Nairobi merchants · campaign artwork", "width": 791, "height": 989},
+      {"file": "every-sale-can-bring-them-back", "title": "Every Sale Can Bring Them Back", "caption": "Merchant loyalty · campaign artwork", "width": 791, "height": 989},
+      {"file": "earn-more-live-more", "title": "Earn More. Live More.", "caption": "Consumer rewards · campaign artwork", "width": 714, "height": 1072},
+      {"file": "pay-with-budj-lifestyle", "title": "Pay With Budj — Lifestyle", "caption": "Everyday cashback · campaign artwork", "width": 714, "height": 1072},
+      {"file": "pay-with-budj-together", "title": "Pay With Budj — Together", "caption": "Social dining · campaign artwork", "width": 858, "height": 1072},
+      {"file": "earn-rewards-while-spending", "title": "Earn Rewards While Spending", "caption": "Everyday spending · campaign artwork", "width": 858, "height": 1072},
+      {"file": "pay-with-budj-cup", "title": "Pay With Budj — Cup Character", "caption": "Download and rewards · illustrated campaign artwork", "width": 1602, "height": 1002},
+      {"file": "pay-with-budj-phone", "title": "Pay With Budj — App Preview", "caption": "Download and rewards · campaign artwork", "width": 1094, "height": 632},
+      {"file": "pay-with-budj-cup-blue", "title": "Pay With Budj — Cup Character, Blue", "caption": "Download and rewards · alternate campaign layout", "width": 1602, "height": 1002},
+      { file: 'the-second-sale', title: 'The First Sale Gets Attention', caption: 'Repeat business · restaurant campaign artwork', width: 596, height: 800 },
+      { file: 'you-were-going-to-spend-anyway', title: 'You Were Going to Spend Anyway', caption: 'Everyday shopping · supplied campaign artwork screenshot', width: 814, height: 1072 },
+      { file: 'marketing-you-can-see', title: 'Marketing You Can Actually See', caption: 'Campaign measurement · merchant campaign artwork', width: 598, height: 803 },
+      { file: 'the-customer-who-chooses-you', title: 'The Customer Who Chooses You', caption: 'Customer choice · illustrated campaign artwork', width: 597, height: 802 },
+      { file: 'shop-smarter', title: 'Why Pay Full Price?', caption: 'Shop smarter · rewards campaign artwork', width: 586, height: 803 },
+      { file: 'make-every-shilling-count', title: 'Make Every Shilling Count', caption: 'App discovery · campaign artwork', width: 603, height: 1072 },
+      { file: 'get-budj', title: 'Get Budj', caption: 'Download and payment explainer · campaign artwork', width: 1516, height: 1072 },
+      { file: 'download-shop-earn-withdraw', title: 'Download. Shop. Earn. Withdraw.', caption: 'Rewards journey · campaign artwork', width: 791, height: 989 },
+      { file: 'customer-week', title: 'You’re More Than a Transaction', caption: 'Budj Customer Week · campaign artwork', width: 858, height: 1072 },
+      { file: 'budj-logo-guidelines', title: 'Budj Logo Guidelines', caption: 'Brand identity · logo clear space and minimum size', width: 1015, height: 498 },
+    ],
+  },
+  {
+    slug: 'budj-merchandise', title: 'Wear the brand.', category: 'Merchandise · design mockups',
+    description: 'T-shirts and hoodies built around Budj’s visual identity and the idea of customers coming back. Presented as design mockups.',
+    cover: 'merch-black-and-blue',
+    images: [
+      { file: 'merch-black-and-blue', title: 'The Sale Is Just the Start', caption: 'Black T-shirt and blue hoodie · front/back design mockups', width: 989, height: 989 },
+      { file: 'merch-collection', title: 'The Collection', caption: 'Cream, black, navy, and blue · front/back design mockups', width: 1229, height: 819 },
+      { file: 'merchant-club-hoodie', title: 'Merchant Club', caption: 'Nairobi–Kenya hoodie · front/back design mockup', width: 989, height: 989 },
+      { file: 'reward-return-grow-black', title: 'Reward. Return. Grow. — Black', caption: 'Black hoodie · front/back design mockup', width: 989, height: 989 },
+      { file: 'reward-return-grow-white', title: 'Reward. Return. Grow. — White', caption: 'White T-shirt and hoodie · front/back design mockups', width: 989, height: 989 },
+    ],
+  },
+];
