@@ -51,6 +51,7 @@ export const SEO = ({
   const graph = { '@context': 'https://schema.org', '@graph': [personSchema, websiteSchema, pageSchema, ...extraNodes] };
 
   const metaTags = [
+    { name: 'msvalidate.01', content: 'A3905E52E802278493CA69019B3680E9' },
     {
       name: `description`,
       content: description,
