@@ -16,7 +16,7 @@ export default function Icon({
 
 const Wrapper = styled.div<any>`
   svg {
-    color: #ff715b;
+    color: #f04e23;
     @keyframes example {
       from {
         transform: rotate(0deg);

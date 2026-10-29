@@ -1,4 +1,4 @@
-.launcher { position: fixed; right: 20px; bottom: 20px; width: 60px; height: 60px; border: 0; border-radius: 50%; background: #c44934; color: white; display: grid; place-items: center; cursor: pointer; z-index: 1000; }
+.launcher { position: fixed; right: 20px; bottom: 20px; width: 60px; height: 60px; border: 0; border-radius: 50%; background: #f04e23; color: #13202a; display: grid; place-items: center; cursor: pointer; z-index: 1000; }
 .launcher svg { width: 26px; height: 26px; }
 .panel { position: fixed; right: 20px; bottom: 20px; width: min(420px, calc(100vw - 40px)); height: min(640px, calc(100dvh - 40px)); display: flex; flex-direction: column; overflow: hidden; background: #fff; color: #13202a; border: 1px solid #c7cfd3; border-radius: 16px; box-shadow: 0 12px 50px #13202a33; z-index: 1100; font-family: Muli, Arial, sans-serif; }
 .header { display: flex; justify-content: space-between; align-items: center; gap: 1rem; padding: 1rem 1.25rem; background: #13202a; color: #f8eee6; flex-shrink: 0; }
@@ -11,7 +11,7 @@
 .welcome strong { color: #13202a; }
 .suggestions { display: grid; grid-template-columns: 1fr 1fr; gap: .65rem; }
 .suggestions button { background: #f8eee6; color: #13202a; border: 1px solid #e3d7cd; border-radius: 8px; min-height: 54px; padding: .7rem; cursor: pointer; text-align: left; font: 500 .8rem/1.45 Muli, Arial, sans-serif; }
-.suggestions button:hover { border-color: #c44934; }
+.suggestions button:hover { border-color: #f04e23; }
 .message { max-width: 100%; min-width: 0; }
 .message > small { display: block; font-size: .65rem; color: #66757e; margin-bottom: .4rem; }
 .user { align-self: flex-end; max-width: 90%; }
@@ -27,8 +27,8 @@
 .typing { color: #66757e; font-size: .8rem; }
 .form { padding: .85rem 1rem; border-top: 1px solid #dde2e5; display: flex; align-items: center; gap: .6rem; flex-shrink: 0; }
 .form input { min-width: 0; flex: 1; padding: .8rem .85rem; border: 1px solid #a9b7bf; border-radius: 8px; color: #13202a; font: 400 .85rem Muli, Arial, sans-serif; height: 48px; }
-.form button { flex-shrink: 0; width: 48px; height: 48px; border: 0; border-radius: 8px; background: #c44934; color: #fff; display: grid; place-items: center; cursor: pointer; }
+.form button { flex-shrink: 0; width: 48px; height: 48px; border: 0; border-radius: 8px; background: #f04e23; color: #13202a; display: grid; place-items: center; cursor: pointer; }
 .form button svg { width: 20px; height: 20px; }
 .form button:disabled { opacity: .45; cursor: default; }
-.launcher:focus-visible, .panel button:focus-visible, .panel a:focus-visible, .form input:focus-visible { outline: 3px solid #ff9b88; outline-offset: 3px; }
+.launcher:focus-visible, .panel button:focus-visible, .panel a:focus-visible, .form input:focus-visible { outline: 3px solid #f04e23; outline-offset: 3px; }
 @media (max-width: 480px) { .panel { right: 12px; bottom: 12px; width: calc(100vw - 24px); height: min(680px, calc(100dvh - 24px)); } .messages { padding: 1rem; } .header { padding: .85rem 1rem; } }

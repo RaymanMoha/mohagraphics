@@ -2,16 +2,16 @@
 .content h1 { display: block; margin: 0; max-width: none; font: 400 clamp(2.8rem, 4.8vw, 4.5rem)/1.1 Muli, Arial, sans-serif; letter-spacing: -.055em; color: #fff; }
 .content h1 > span { display: block; margin: 0; }
 .content h1 > span + span { margin-top: .12em; }
-.content h1 em { font-family: Georgia, 'Times New Roman', serif; font-weight: 400; font-style: italic; color: #ff9b88; letter-spacing: -.055em; }
+.content h1 em { font-family: Georgia, 'Times New Roman', serif; font-weight: 400; font-style: italic; color: #f04e23; letter-spacing: -.055em; }
 .content .intro { max-width: 48ch; margin: 1.5rem 0 0; font: 300 clamp(1rem, 1.15vw, 1.0625rem)/1.7 Muli, Arial, sans-serif; color: #c9d1d7; }
 .actions { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem 1.5rem; margin-top: 1.75rem; }
 .content .primary, .content .secondary { display: inline-flex; align-items: center; justify-content: center; gap: 1rem; font: 600 .85rem/1.4 Muli, Arial, sans-serif; text-decoration: none; white-space: nowrap; min-height: 50px; margin: 0; }
-.content .primary { background: #ff9b88; color: #13202a; padding: .9rem 1.25rem; border: 1px solid #ff9b88; border-radius: 3px; }
+.content .primary { background: #f04e23; color: #13202a; padding: .9rem 1.25rem; border: 1px solid #f04e23; border-radius: 3px; }
 .content .secondary { color: #f8eee6; padding: .7rem 0; border-bottom: 1px solid #f8eee680; }
 .actions svg { display: block; width: 18px; height: 18px; flex-shrink: 0; transition: transform .2s; }
 .primary:hover svg { transform: translate(2px, -2px); }
 .secondary:hover svg { transform: translateY(3px); }
-.actions a:focus-visible { outline: 3px solid #ff9b88; outline-offset: 5px; }
+.actions a:focus-visible { outline: 3px solid #f04e23; outline-offset: 5px; }
 .social { margin-top: 1.5rem; font-size: 1.2rem; }
 .social > div { font-size: inherit; align-items: center; gap: 4px; }
 .social svg { display: block; width: 20px; height: 20px; }

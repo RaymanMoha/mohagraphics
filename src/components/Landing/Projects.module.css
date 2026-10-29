@@ -1,11 +1,11 @@
-.portfolio { --sand: #f8eee6; --ink: #13202a; --coral: #f26652; --blue: #155eef; --line: #d9cbc0; width: 100%; background: var(--sand); color: var(--ink); padding: clamp(4rem, 7vw, 8rem) 5vw clamp(4rem, 6vw, 7rem); scroll-margin-top: 70px; }
+.portfolio { --sand: #f8eee6; --ink: #13202a; --coral: #f04e23; --blue: #155eef; --line: #d9cbc0; width: 100%; background: var(--sand); color: var(--ink); padding: clamp(4rem, 7vw, 8rem) 5vw clamp(4rem, 6vw, 7rem); scroll-margin-top: 70px; }
 .portfolio svg { width: 1.2em; height: 1.2em; flex-shrink: 0; }
 .heading { display: grid; grid-template-columns: minmax(0, 1.7fr) minmax(240px, .75fr); align-items: end; gap: 4vw; padding-bottom: clamp(1rem, 2vw, 2rem); }
 .headingMain { min-width: 0; }
 .eyebrow { display: flex; align-items: center; gap: .75rem; margin-bottom: 1.6rem; font: 700 .65rem/1.5 Muli, Arial, sans-serif; letter-spacing: .14em; text-transform: uppercase; color: #735f53; }
 .eyebrow::before { content: ''; width: 24px; height: 3px; background: var(--coral); }
 .heading h2 { display: block; margin: 0; font: 400 clamp(3.5rem, 6.8vw, 7rem)/1.08 Muli, Arial, sans-serif; letter-spacing: -.065em; }
-.heading h2 em { font-family: Georgia, 'Times New Roman', serif; font-weight: 400; color: #b54e3c; letter-spacing: -.055em; }
+.heading h2 em { font-family: Georgia, 'Times New Roman', serif; font-weight: 400; color: #f04e23; letter-spacing: -.055em; }
 .heading p { color: #13202ab3; margin: 0 0 .35rem; max-width: 35ch; font-size: clamp(.95rem, 1.15vw, 1.1rem); line-height: 1.7; }
 .project { display: grid; grid-template-columns: minmax(0, 1.65fr) minmax(0, .85fr); gap: 5vw; align-items: center; padding: clamp(2.5rem, 5vw, 5rem) 0; border-bottom: 1px solid var(--line); }
 .media { position: relative; display: block; min-width: 0; padding: 0; overflow: hidden; background: transparent; }
@@ -29,7 +29,7 @@
 .portfolio .indexList a { color: var(--ink); display: flex; justify-content: space-between; align-items: center; gap: 1rem; padding: 1.4rem 0; border-bottom: 1px solid var(--line); }
 .indexList small { display: block; color: #13202aa0; font-size: .6rem; text-transform: uppercase; letter-spacing: .1em; }
 .indexList strong { display: block; font-size: 1.2rem; font-weight: 400; margin-top: .25rem; }
-.indexList svg { color: #b54e3c; }
+.indexList svg { color: #f04e23; }
 @media (min-width: 1800px) { .heading { gap: 8vw; } .copy .description { font-size: 1.1rem; } }
 @media (max-width: 850px) { .heading { grid-template-columns: 1fr; gap: 1.25rem; padding-bottom: .5rem; } .heading p { max-width: 45ch; } .project, .project:nth-child(2) { grid-template-columns: 1fr; gap: 2rem; } .project:nth-child(2) .media, .project:nth-child(2) .copy { grid-column: auto; grid-row: auto; } .copy .description { max-width: 60ch; } .index { margin-bottom: .85rem; } .shipped { grid-template-columns: 1fr; gap: 1.5rem; } }
 @media (prefers-reduced-motion: reduce) { .media img { transition: none; } }

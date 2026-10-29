@@ -4,7 +4,7 @@ import styled from 'styled-components';
 export const Page = styled.main`
   --sand: #f8eee6;
   --ink: #13202a;
-  --coral: #f26652;
+  --coral: #f04e23;
   --blue: #155eef;
   --line: #d9cbc0;
   width: 100%;

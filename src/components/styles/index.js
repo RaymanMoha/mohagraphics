@@ -1,6 +1,6 @@
 export const c = {
   background: '#121e27',
-  accent: '#ff715b',
+  accent: '#f04e23',
   green: '#0dab76',
   faded: '#b7b4b9',
   white: '#ffff',

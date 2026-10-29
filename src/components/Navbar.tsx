@@ -81,7 +81,7 @@ const Menu = styled.ul<MenuProps>`
     text-transform: capitalize;
 
     &:hover {
-      color: ${colors.accent};
+      color: ${colors.accentText};
     }
 
     &:after {
@@ -180,7 +180,7 @@ const CloseButton = styled.div`
   
   &:hover {
     transform: scale(1.1) rotate(90deg);
-    color: ${colors.accent};
+    color: ${colors.accentText};
     background: rgba(255, 113, 91, 0.1);
   }
 
@@ -224,7 +224,7 @@ const NavLink = styled(Link)<NavLinkProps>`
   position: relative;
 
   &:hover {
-    color: ${colors.accent};
+    color: ${colors.accentText};
   }
 
   &:after {
