@@ -1,0 +1,21 @@
+.section { padding: 0 5vw clamp(3rem, 6vw, 6rem); color: #13202a; }
+.heading { display: flex; justify-content: space-between; align-items: end; gap: 2rem; padding-top: 1.5rem; border-top: 1px solid #13202a; }
+.label { display: block; font: 700 .65rem/1.5 Muli, Arial, sans-serif; letter-spacing: .12em; text-transform: uppercase; margin-bottom: 1rem; color: #6c5c51; }
+.heading h2 { display: block; margin: 0; font: 400 clamp(2.2rem, 4.6vw, 4.5rem)/1.05 Georgia, serif; letter-spacing: -.045em; }
+.heading h2 span { color: #f04e23; }
+.heading p { font-size: .85rem; line-height: 1.7; margin: 1.1rem 0 0; max-width: 55ch; color: #59656c; }
+.section .heading a { display: inline-flex; align-items: center; gap: .75rem; white-space: nowrap; color: #13202a; border-bottom: 1px solid currentColor; padding: .5rem 0; min-height: 44px; font-size: .8rem; }
+.section svg { display: block; width: 20px; height: 20px; }
+.controls { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin: 2rem 0 1rem; }
+.controls p { font-size: .75rem; color: #59656c; margin: 0; }
+.controls > div { display: flex; gap: .5rem; }
+.controls button { display: grid; place-items: center; border: 1px solid #13202a55; background: transparent; color: #13202a; border-radius: 50%; width: 44px; height: 44px; cursor: pointer; }
+.controls button:hover { background: #f04e23; }
+.strip { display: flex; align-items: start; gap: clamp(1rem, 2vw, 2rem); overflow-x: auto; scroll-snap-type: x mandatory; padding: 0 0 1rem; overscroll-behavior-x: contain; }
+.screen { margin: 0; flex: 0 0 auto; scroll-snap-align: start; width: clamp(220px, 24vw, 330px); }
+.screen > a { display: block; }
+.screen img { display: block; width: 100%; height: auto; margin: 0; }
+.screen figcaption { display: flex; gap: .6rem; margin-top: 1rem; color: #59656c; font-size: .75rem; line-height: 1.6; }
+.screen figcaption span { color: #b93916; font-size: .65rem; padding-top: .1rem; }
+.section a:focus-visible, .section button:focus-visible, .strip:focus-visible { outline: 3px solid #f04e23; outline-offset: 4px; }
+@media (max-width: 760px) { .heading { display: block; } .section .heading a { margin-top: 1rem; } .heading p, .controls p { font-size: .85rem !important; } .screen { width: min(72vw, 300px); } }

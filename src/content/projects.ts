@@ -32,6 +32,12 @@ export type Content = {
   role: string;
   organisation?: { name: string; href: string };
   mediaTitle?: string;
+  store?: {
+    name: string;
+    publisher: string;
+    url: string;
+    screenshots: Array<{ src: string; alt: string; caption: string; width: number; height: number }>;
+  };
   gallery?: Array<{
     src: string;
     alt: string;

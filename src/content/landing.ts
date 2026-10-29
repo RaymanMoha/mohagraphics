@@ -43,7 +43,7 @@ export const landingPage = {
       title: 'Reon Capital Dev Hub',
     },
     {
-      body: 'AI farming app website for proof-first farm operations, GPS/photo task verification, worker accountability, offline workflows, and field dashboards.',
+      body: 'Mobile app and product website for field tasks, work verification, worker records, and farm operations.',
       image: 'shambaboy-product-overview.jpg',
       buttonText: 'View project',
       link: '/projects/Shambaboy/',

@@ -4,6 +4,7 @@ import { Content } from '@/content/projects';
 import Image from 'next/image';
 import Link from 'next/link';
 import * as S from './styles';
+import { StoreScreens } from './StoreScreens';
 
 export type RelatedProject = {
   id: string;
@@ -62,6 +63,9 @@ export const ProjectDetail = ({
                   {details.live.includes('play.google.com') ? 'View on Google Play' : 'Visit live product'} <FiArrowUpRight />
                 </S.PrimaryAction>
               )}
+              {project.store ? <S.TextAction href={project.store.url} target="_blank" rel="noopener noreferrer">
+                Android app <FiArrowUpRight />
+              </S.TextAction> : null}
               {isPrivate ? (
                 <S.PrivateLabel>
                   Private code <FiLock />
@@ -128,6 +132,8 @@ export const ProjectDetail = ({
           />
         </S.HeroMedia>
       )}
+
+      {project.store ? <StoreScreens store={project.store} /> : null}
 
       <S.Story>
         <S.StoryColumn>

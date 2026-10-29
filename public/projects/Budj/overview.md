@@ -37,10 +37,12 @@ React Native & Next.js Frontend Engineer. My contribution covers product interfa
 ## Outcome
 
 - Delivered interface work across shopper rewards and merchant operations, connecting discovery, offers, payments, and wallet journeys.
-- The case study shows Budj product screens and links to the public product and merchant registration experience.
+- The Android app is published on Google Play by Fusion Labs Limited. This case study includes official store screenshots of onboarding, offer discovery, wallet, loyalty, payments, and transaction interfaces.
 - Connected shopper-facing reward journeys with the merchant interfaces used to configure and manage those offers.
 
 # Links
 
 - Live site: https://www.budj.app/
 - Merchant registration: https://merchant.budj.app/auth/register
+
+- Android app: https://play.google.com/store/apps/details?id=com.fusionlabs.budj

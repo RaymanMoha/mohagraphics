@@ -139,7 +139,11 @@ export default function ProjectPage(props: PageProps) {
           description: project.seo || project.description,
           url: `https://www.mohagraphics.tech/projects/${props.id}`,
           author: { '@id': 'https://www.mohagraphics.tech/#person' },
-          about: { '@type': 'Thing', name: project.title },
+          citation: project.store?.url,
+          about: project.store ? { '@type': 'SoftwareApplication', name: project.store.name,
+            url: project.store.url, operatingSystem: 'Android',
+            screenshot: project.store.screenshots.map((shot) => `https://www.mohagraphics.tech${shot.src}`) }
+            : { '@type': 'Thing', name: project.title },
           keywords: project.keywords.join(', '), inLanguage: 'en' }}
         lang="en"
       />

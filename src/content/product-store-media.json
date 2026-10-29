@@ -1,0 +1,226 @@
+{
+  "Shambaboy": {
+    "name": "ShambaBoy",
+    "publisher": "ShambaBoy",
+    "url": "https://play.google.com/store/apps/details?id=com.shambaboy.app&hl=en&gl=KE",
+    "retrievedAt": "2026-10-29",
+    "screenshots": [
+      {
+        "src": "/projects/Shambaboy/play-store/screenshot-01.webp",
+        "width": 1080,
+        "height": 1920,
+        "source": "https://play-lh.googleusercontent.com/kb6WSzOsTWZcmeEIEJk_kP4d06BEgK-SZEpleMp51l-eNBPlqLt-mgk_YeUQppnwzbKqtDwHSaY12nQL_LfMww",
+        "alt": "ShambaBoy Google Play screenshot: Farm overview and daily activity",
+        "caption": "Farm overview and daily activity"
+      },
+      {
+        "src": "/projects/Shambaboy/play-store/screenshot-02.webp",
+        "width": 1080,
+        "height": 1920,
+        "source": "https://play-lh.googleusercontent.com/rdTSOwHbSIgzL7IbdH-mlxnQZy3p4NoAhidxoFbyt5EOF61Nun9wGluJhGx0pYszH1Nc4qWjb3qS4gHdf9tPCxc",
+        "alt": "ShambaBoy Google Play screenshot: Task planning and field checklists",
+        "caption": "Task planning and field checklists"
+      },
+      {
+        "src": "/projects/Shambaboy/play-store/screenshot-03.webp",
+        "width": 1080,
+        "height": 1920,
+        "source": "https://play-lh.googleusercontent.com/vPStFPBqlElSKk-JxYp2gPZ8NYpmx1-2O7n3OHM12jmgEY5-YGgfYp7OooedBesGe0pr4AmSp0_B-pGp3YV0PQ",
+        "alt": "ShambaBoy Google Play screenshot: Job details and applications",
+        "caption": "Job details and applications"
+      },
+      {
+        "src": "/projects/Shambaboy/play-store/screenshot-04.webp",
+        "width": 1080,
+        "height": 1920,
+        "source": "https://play-lh.googleusercontent.com/zhLB6ol6Msw9SDTMO429tiSFJ8lWLalRmH8t3EbxzJjPQuE6zd1OpZmHi2HNJz2o8HxEC8ngqMwLqk0--7dZ",
+        "alt": "ShambaBoy Google Play screenshot: Activity history and work progress",
+        "caption": "Activity history and work progress"
+      },
+      {
+        "src": "/projects/Shambaboy/play-store/screenshot-05.webp",
+        "width": 1080,
+        "height": 1920,
+        "source": "https://play-lh.googleusercontent.com/_aI8_QFS8alphHyV0yk_H3Ku6NsjxhG-EDPbLzjb8EE-1bpG1NOGzbB3jeplF2kzl_cJQDTuQOpgx7ynecMmnlQ",
+        "alt": "ShambaBoy Google Play screenshot: Worker records and team activity",
+        "caption": "Worker records and team activity"
+      },
+      {
+        "src": "/projects/Shambaboy/play-store/screenshot-06.webp",
+        "width": 1080,
+        "height": 1920,
+        "source": "https://play-lh.googleusercontent.com/Xr5UjPAnYHaAMZao8BBpi_-HP30_7SI-6uK9lqiYWOl-MI8vp_hvKpVyCtaAMDfXAq21X825PSt4g9DBJwzovQ",
+        "alt": "ShambaBoy Google Play screenshot: Score trends and evidence summaries",
+        "caption": "Score trends and evidence summaries"
+      },
+      {
+        "src": "/projects/Shambaboy/play-store/screenshot-07.webp",
+        "width": 1080,
+        "height": 1441,
+        "source": "https://play-lh.googleusercontent.com/ImeAEWfnJlXTPO8ZxpOi6rMcdoSVDAPgnJo6EaL5YJFhII7vU0XnY3SnJhLJHTfiEsR7cO4MIUvq3CX9Eq7k",
+        "alt": "ShambaBoy Google Play screenshot: Field operations overview",
+        "caption": "Field operations overview"
+      },
+      {
+        "src": "/projects/Shambaboy/play-store/screenshot-08.webp",
+        "width": 1080,
+        "height": 1441,
+        "source": "https://play-lh.googleusercontent.com/2bj-VtLZBuTGFY77Uth8C0sf42KDZtEE4Rheb0NOxF6bsTgoltXbED496BnihlkJdWZqqyuRSvOrNPQAjGaBjss",
+        "alt": "ShambaBoy Google Play screenshot: Task verification interface",
+        "caption": "Task verification interface"
+      },
+      {
+        "src": "/projects/Shambaboy/play-store/screenshot-09.webp",
+        "width": 1080,
+        "height": 1441,
+        "source": "https://play-lh.googleusercontent.com/defEGBRuwCsRD3qjWN8nH3CdiRK1l2bepi8aVbPJT-ou9Ogo6kaNPZ8Pw5UMSqm-OdwaXSQGSsvCJmi3YVx-lvs",
+        "alt": "ShambaBoy Google Play screenshot: Farm dashboard and reporting",
+        "caption": "Farm dashboard and reporting"
+      },
+      {
+        "src": "/projects/Shambaboy/play-store/screenshot-10.webp",
+        "width": 1080,
+        "height": 1441,
+        "source": "https://play-lh.googleusercontent.com/ovsQ4HDPJdePWLnqBo3B9wXm9kqwBoYak8OSC0_6lWBcW8jyTs7eXXLrMphrVEiO_euf-RKlIxepUYJ5ywO9",
+        "alt": "ShambaBoy Google Play screenshot: Worker support and benefits",
+        "caption": "Worker support and benefits"
+      }
+    ]
+  },
+  "Budj": {
+    "name": "Budj",
+    "publisher": "Fusion Labs Limited",
+    "url": "https://play.google.com/store/apps/details?id=com.fusionlabs.budj&hl=en&gl=KE",
+    "retrievedAt": "2026-10-29",
+    "screenshots": [
+      {
+        "src": "/projects/Budj/play-store/screenshot-01.webp",
+        "width": 720,
+        "height": 1600,
+        "source": "https://play-lh.googleusercontent.com/bRd9aAnMHmeCithnHiROnWBNUqXTlup85HCYFe0TM1WjSoTl2eP3cDhMqubNEA56k359hGrNw9Vps5j6MU3u3Tc",
+        "alt": "Budj Google Play screenshot: Create an account and get started",
+        "caption": "Create an account and get started"
+      },
+      {
+        "src": "/projects/Budj/play-store/screenshot-02.webp",
+        "width": 720,
+        "height": 1600,
+        "source": "https://play-lh.googleusercontent.com/Pftwv6liy666BSKCgKi8C06PdnyF-3ZAYbT1U50Y-qWMC8slFlkJiBk6k220EXcoJUuzlU8iihBzEL1dWCJShw",
+        "alt": "Budj Google Play screenshot: Nearby offers on the map",
+        "caption": "Nearby offers on the map"
+      },
+      {
+        "src": "/projects/Budj/play-store/screenshot-03.webp",
+        "width": 720,
+        "height": 1600,
+        "source": "https://play-lh.googleusercontent.com/kPMF7GVpzNBUmJSD_xwy6FxqdTYTzcVAPrF5QWEvJNuU23YgxcVe5Z2sIj7s38KxswiiLF2yRq2IEKtiHaHaqQ",
+        "alt": "Budj Google Play screenshot: Merchant rewards and payment entry",
+        "caption": "Merchant rewards and payment entry"
+      },
+      {
+        "src": "/projects/Budj/play-store/screenshot-04.webp",
+        "width": 720,
+        "height": 1600,
+        "source": "https://play-lh.googleusercontent.com/z28daxZHoS9h9_TurY6CycxmpGXjHPqUBuTXozYGiKHVMpoA87W4AGonwYW85q8J0fGbuIXOtBTWSK-mEnc7yA",
+        "alt": "Budj Google Play screenshot: Cashback earned and reward progress",
+        "caption": "Cashback earned and reward progress"
+      },
+      {
+        "src": "/projects/Budj/play-store/screenshot-05.webp",
+        "width": 720,
+        "height": 1600,
+        "source": "https://play-lh.googleusercontent.com/ySV1AgsUeCgjgfBy4DcMtNNZRj6AnlhvWV-k2MD539aPePyKhUuowvGvfcTjFBMMDmyv3OL9WFrrl37uh--_zA",
+        "alt": "Budj Google Play screenshot: Wallet balance and transactions",
+        "caption": "Wallet balance and transactions"
+      },
+      {
+        "src": "/projects/Budj/play-store/screenshot-06.webp",
+        "width": 720,
+        "height": 1600,
+        "source": "https://play-lh.googleusercontent.com/LBWXF6ahBk1XPzTSwQrQuka8E0Db5HJNr_8wy1Up1XkE29sajz1AiF5v_3hYzUtL49COjm2POUGiuWdcHqWXQQE",
+        "alt": "Budj Google Play screenshot: Loyalty rewards and programmes",
+        "caption": "Loyalty rewards and programmes"
+      },
+      {
+        "src": "/projects/Budj/play-store/screenshot-07.webp",
+        "width": 720,
+        "height": 1600,
+        "source": "https://play-lh.googleusercontent.com/ZVz9Jv4qBXnJMbm-U1rY1C3dHwkk1Av201VLoG2b3QnAC7x0Y6qj3qTRidVS4i9myc4NZYb2t7AltJ2cFbd_KQ",
+        "alt": "Budj Google Play screenshot: Loyalty points and available rewards",
+        "caption": "Loyalty points and available rewards"
+      },
+      {
+        "src": "/projects/Budj/play-store/screenshot-08.webp",
+        "width": 720,
+        "height": 1600,
+        "source": "https://play-lh.googleusercontent.com/T4ex90WvInDpmnLXQbQpwbcmDb929wr8xe__jxdTlGQs8__1XNaqGCzPWCdj_ROm05EO_sDMCkBEZrWLSMgIsc8",
+        "alt": "Budj Google Play screenshot: Reward redemption confirmation",
+        "caption": "Reward redemption confirmation"
+      },
+      {
+        "src": "/projects/Budj/play-store/screenshot-09.webp",
+        "width": 1080,
+        "height": 1645,
+        "source": "https://play-lh.googleusercontent.com/RYDsMMfizfmbyBxohn-I-hirBydoBkSWZRMapzzsqjDNIN0yTJM6lq2YabOzck0JREgxdFSOYSsOdexjojZa",
+        "alt": "Budj Google Play screenshot: Cashback introduction",
+        "caption": "Cashback introduction"
+      },
+      {
+        "src": "/projects/Budj/play-store/screenshot-10.webp",
+        "width": 1080,
+        "height": 1645,
+        "source": "https://play-lh.googleusercontent.com/Ca8q5qoE_WIAw6ukB_lunYAxfYeJh2es-pCnWkKcK1D6ZXL4AgSBJDkEDxOR2oA7etr-MM7c1sKDFnqVUpJYzw",
+        "alt": "Budj Google Play screenshot: Loyalty rewards introduction",
+        "caption": "Loyalty rewards introduction"
+      },
+      {
+        "src": "/projects/Budj/play-store/screenshot-11.webp",
+        "width": 1080,
+        "height": 1645,
+        "source": "https://play-lh.googleusercontent.com/s9enz4amsgJ_OQ3g-Pt87U8_wGXfbL66oslNZZ01vFN4dEFlAAXfNtxJ5SdCXjW1vPrKQ0TaIbPRwO7AT0oa9w",
+        "alt": "Budj Google Play screenshot: Referral introduction",
+        "caption": "Referral introduction"
+      },
+      {
+        "src": "/projects/Budj/play-store/screenshot-12.webp",
+        "width": 1080,
+        "height": 1645,
+        "source": "https://play-lh.googleusercontent.com/DRNAJ0y_8s_CdIytI9YmR_UKf9DhTCMWzo_ikQ0NhrXWEV6jSeGtEfK8ac5wZ7E4Yu8pyNVg0oO2nRl2XY57aA",
+        "alt": "Budj Google Play screenshot: Merchant introduction",
+        "caption": "Merchant introduction"
+      },
+      {
+        "src": "/projects/Budj/play-store/screenshot-13.webp",
+        "width": 1080,
+        "height": 1645,
+        "source": "https://play-lh.googleusercontent.com/b23awr_RGNxloYSOqHimGlks_XF9N8VXnrzJReAAworQUlq3DPyARp_iV_oQRG8tMRHckBI7xHYNSYLpmk6oF2g",
+        "alt": "Budj Google Play screenshot: Account setup on a larger screen",
+        "caption": "Account setup on a larger screen"
+      },
+      {
+        "src": "/projects/Budj/play-store/screenshot-14.webp",
+        "width": 1080,
+        "height": 1645,
+        "source": "https://play-lh.googleusercontent.com/6m8O6XC1SjlATYYg8fA37yLU0TGYBQvXW4XIwIsd1vtj3_N-d0nAJVcnCPVfHXR3GC_KnMs7S75Lu4HQEvI-Iw",
+        "alt": "Budj Google Play screenshot: Payment details and amounts",
+        "caption": "Payment details and amounts"
+      },
+      {
+        "src": "/projects/Budj/play-store/screenshot-15.webp",
+        "width": 1080,
+        "height": 1645,
+        "source": "https://play-lh.googleusercontent.com/IVmFmDEQhbpSY5eMMIXXAiJ40M1H46IjUsI9U9Q3XfiTU_JmZCLgzQkoinuHez8giSnzBNFZeV23-3VJRByKhg",
+        "alt": "Budj Google Play screenshot: Payment confirmation",
+        "caption": "Payment confirmation"
+      },
+      {
+        "src": "/projects/Budj/play-store/screenshot-16.webp",
+        "width": 1080,
+        "height": 1645,
+        "source": "https://play-lh.googleusercontent.com/IR-HiHbM1lPKOQs-qzomIXYOW7EROJT_yW19SAnWb0X4cbB5CcPX9Ncv6XJlbTs9Lp6dso63Q7E2lOn7_BQG",
+        "alt": "Budj Google Play screenshot: Transactions on a larger screen",
+        "caption": "Transactions on a larger screen"
+      }
+    ]
+  }
+}

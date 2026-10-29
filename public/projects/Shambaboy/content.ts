@@ -1,20 +1,22 @@
 import { Content } from '@/content/projects';
+import storeMedia from '@/content/product-store-media.json';
 
 export const content: Content = {
-  title: 'ShambaBoy: AI Farming App',
+  title: 'ShambaBoy: Field Work Verification App',
   featuredImage: '/img/shambaboy-product-overview.jpg',
   description:
-    'AI farming and farm operations platform for African agribusiness teams, with GPS-stamped task proof, photo verification, offline mobile workflows, worker accountability, and field operations dashboards.',
-  seo: 'ShambaBoy AI farming app and proof-first farm management platform for Kenya and Africa, covering GPS task tracking, photo proof, offline field operations, AI crop insights, worker accountability, and farm dashboards.',
+    'Mobile app and product website for farm and field operations, task management, GPS/photo evidence, worker records, and offline capture.',
+  seo: 'ShambaBoy mobile app and Next.js product website development by Mohammed Abdirahman. Explore published Android screenshots for field tasks, work verification, worker records, and offline capture.',
   details: {
-    type: 'Agri-Tech Product Website',
+    type: 'Mobile App & Product Website',
     stack:
-      'Next.js React TypeScript Responsive_Design SEO Performance Product_Marketing Agri-Tech AI_Farming',
+      'Mobile_App Next.js React TypeScript Responsive_Design Product_UI Field_Operations Work_Verification',
     live: 'https://www.shambaboy.com/',
     code: 'Private',
   },
+  store: storeMedia.Shambaboy,
   keywords: [
-    'AI farming app',
+    'farm operations app',
     'farm management software',
     'GPS farm tracking',
     'photo verification',
@@ -23,9 +25,10 @@ export const content: Content = {
     'worker accountability',
     'offline farm app',
     'agri-business platform',
-    'AI crop monitoring',
+    'field work verification',
     'kenya agriculture software',
   ],
+  mediaTitle: 'Website and product visuals.',
   gallery: [
     {
       src: '/img/shambaboy-mobile-operations.jpg',
@@ -49,5 +52,5 @@ export const content: Content = {
       height: 941,
     },
   ],
-  role: 'Frontend Developer · Product Website',
+  role: 'App & Website Developer',
 };

@@ -13,7 +13,7 @@ export const servicePages = [
   },
   {
     faqs: [
-      { question: 'What React Native and Flutter work can I review before hiring you?', answer: 'My portfolio includes Budj and the Reon Capital app group. Each case study explains my interface contribution and available delivery evidence. The Reon Capital page links to published apps and distinguishes unpublished Sava work from released products.' },
+      { question: 'What React Native and Flutter work can I review before hiring you?', answer: 'My portfolio includes Budj and the Reon Capital app group. Each case study explains my interface contribution and available delivery evidence. ShambaBoy includes mobile app and website work. The Reon Capital page links to published apps and distinguishes unpublished Sava work from released products.' },
       { question: 'Can you build interfaces that connect to our existing backend?', answer: 'Yes. My frontend work includes API-driven onboarding, discovery, payments, wallet, and dashboard interfaces. We agree on API responsibilities, loading and error states, and the flows to validate before implementation.' },
     ],
     slug: 'mobile-app-development-kenya', offerId: 'products', title: 'React Native & Flutter app development in Kenya',
@@ -21,7 +21,7 @@ export const servicePages = [
     intro: 'Build a focused mobile experience around what your users need to do. I work with React Native and Flutter on new product interfaces and improvements to existing apps.',
     audience: 'For startups and product teams needing onboarding, account, payment, discovery, or dashboard experiences.',
     deliverables: ['React Native and Flutter interface development', 'Onboarding and account flows', 'Payment, wallet, discovery, and dashboard interfaces', 'Responsive layouts and key user-flow checks'],
-    projects: [{ title: 'Budj', href: '/projects/Budj/', note: 'Cashback and loyalty experiences across mobile and web.' }, { title: 'Reon Capital', href: '/projects/ReonCapital/', note: 'Mobile work across Zuba, Zuba Steward, Eneva, ANSU, and Sava, plus Developer Hub web work.' }],
+    projects: [{ title: 'Budj', href: '/projects/Budj/', note: 'Cashback and loyalty experiences across mobile and web, with published Android screenshots.' }, { title: 'ShambaBoy', href: '/projects/Shambaboy/', note: 'Mobile app and product website for field work verification, with Google Play screenshots.' }, { title: 'Reon Capital', href: '/projects/ReonCapital/', note: 'Mobile work across Zuba, Zuba Steward, Eneva, ANSU, and Sava, plus Developer Hub web work.' }],
   },
   {
     faqs: [

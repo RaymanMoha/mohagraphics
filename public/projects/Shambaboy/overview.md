@@ -1,35 +1,34 @@
 ---
-title: 'ShambaBoy: AI Farming App'
-description: 'Product website for ShambaBoy, the proof-first AI farming app for farm task management, GPS verification, worker accountability, and field operations dashboards.'
+title: 'ShambaBoy: Field Work Verification App'
+description: 'Mobile app and product website work for ShambaBoy, with published Android screenshots for farm tasks, evidence capture, and worker records.'
 ---
-
-![ShambaBoy verification product website](/img/shambaboy-product-overview.jpg 'ShambaBoy verification product website')
 
 # Product Overview
 
-ShambaBoy is an AI-powered farming app and proof-first farm management platform for agribusiness teams across Africa. The website explains how farms can manage tasks, verify field work with GPS and photo proof, support offline mobile operations, and use AI insights for crop monitoring, yield prediction, and smarter farm decisions.
+ShambaBoy supports farm and field operations through task management, work verification, evidence capture, and worker records. Its published Android listing describes offline capture and records combining time, location, and photo evidence.
 
 ## User Need
 
-Farm owners, supervisors, and agricultural teams needed a clear product story for a field-first platform. The site had to explain the real operational problem: work happens in the field, but owners often lack trusted proof, timely reporting, and reliable visibility across farm blocks, workers, and seasons.
+Workers and supervisors need a practical way to organise field activity and review completed work. Managers need clear records, while the product website needs to explain the experience to prospective teams.
 
 ## Engineering Focus
 
-- Developed the responsive product website with Next.js, React, and TypeScript.
-- Organised the story around the operational problem, field workflows, verification features, and a clear product explanation.
-- Built sections presenting mobile operations, GPS/photo evidence, and field dashboards using the product's supplied imagery.
-- Connected feature explanations, FAQs, and download/demo calls to action so visitors can find an appropriate next step.
+- Built the ShambaBoy mobile app experience, including interfaces for field tasks, activity, and worker records.
+- Worked on the mobile journeys presented in the published app, including task lists, progress views, and evidence-focused operations.
+- Developed the responsive product website with Next.js, React, and TypeScript, presenting the product's workflows and supplied imagery.
+- Connected the website's feature explanations, FAQs, and download/demo calls to action.
 
 ## Role
 
-Frontend Developer · Product Website. This case study describes my website contribution; the farming platform's capabilities are product context.
+App & Website Developer. This case study covers my mobile app and responsive website work.
 
 ## Outcome
 
-- Delivered a product website that explains the connection between farm tasks, field evidence, and management visibility.
-- The project gallery presents the product's mobile operations, verification, and dashboard story alongside a link to the live website.
-- The portfolio also includes ShambaBoy films exploring records, field work, and evidence. These can be watched in the [Films & Motion library](/films).
+- Delivered app and website work for ShambaBoy's field-operations product.
+- The Android app is published on Google Play; the mobile gallery contains official screenshots from that listing, alongside a direct store link.
+- The website visuals and [ShambaBoy films](/films) show the wider product story around field records, work, and evidence.
 
 # Links
 
-- Live site: https://www.shambaboy.com/
+- Product website: https://www.shambaboy.com/
+- Android app: https://play.google.com/store/apps/details?id=com.shambaboy.app

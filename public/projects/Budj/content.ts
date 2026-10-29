@@ -1,4 +1,5 @@
 import { Content } from '@/content/projects';
+import storeMedia from '@/content/product-store-media.json';
 
 export const content: Content = {
   title: 'Budj: Cashback & Loyalty Platform',
@@ -12,6 +13,7 @@ export const content: Content = {
     live: 'https://www.budj.app/',
     code: 'Private',
   },
+  store: storeMedia.Budj,
   keywords: [
     'React Native',
     'Next.js',
