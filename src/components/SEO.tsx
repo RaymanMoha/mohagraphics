@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import { personSchema, websiteSchema, websiteId, personId } from '@/content/identity';
 import { useRouter } from 'next/router';
 
 export type Props = {
@@ -38,6 +39,16 @@ export const SEO = ({
     if (resolvedThumb.startsWith('/')) return `${siteUrl}${resolvedThumb}`;
     return `${siteUrl}/img/${resolvedThumb}`;
   })();
+
+  const pageSchema = {
+    '@type': 'WebPage', '@id': `${canonicalUrl}#webpage`, url: canonicalUrl,
+    name: title, description, inLanguage: 'en',
+    isPartOf: { '@id': websiteId }, about: { '@id': personId },
+  };
+  const extraNodes = structuredData
+    ? (Array.isArray(structuredData['@graph']) ? structuredData['@graph'] : [structuredData])
+    : [];
+  const graph = { '@context': 'https://schema.org', '@graph': [personSchema, websiteSchema, pageSchema, ...extraNodes] };
 
   const metaTags = [
     {
@@ -83,7 +94,7 @@ export const SEO = ({
     },
     {
       name: `twitter:image:alt`,
-      content: `mohammed abdirahman logo`,
+      content: title,
     },
     //     {
     //       name: `twitter:creator`,
@@ -112,11 +123,11 @@ export const SEO = ({
       <title>{title}</title>
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <link rel="canonical" href={canonicalUrl} />
-      {noindex && <meta name="robots" content="noindex, follow" />}
-      {structuredData && (
+      <meta name="robots" content={noindex ? 'noindex, follow' : 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'} />
+      {!noindex && (
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData).replace(/</g, '\\u003c') }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(graph).replace(/</g, '\\u003c') }}
         />
       )}
       {metaTags.map((tag, i) => {

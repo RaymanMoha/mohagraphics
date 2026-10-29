@@ -28,17 +28,10 @@ const Index = ({
   return (
     <>
       <SEO
-        title="Web, Mobile, Brand & Motion | Mohammed Abdirahman, Nairobi"
-        description="Websites and mobile apps, brand campaigns, and films by Mohammed Abdirahman. Explore real project work and discuss a brief in Nairobi or remotely."
-        structuredData={{
-          '@context': 'https://schema.org', '@type': 'Person',
-          name: 'Mohammed Abdirahman', url: 'https://www.mohagraphics.tech',
-          jobTitle: 'Frontend & Mobile Engineer',
-          homeLocation: { '@type': 'Place', name: 'Nairobi, Kenya' },
-          email: 'abdulmoharayman@gmail.com',
-          sameAs: ['https://github.com/RaymanMoha', 'https://ke.linkedin.com/in/mohammed-abdirahman-1a6b651bb'],
-          knowsAbout: ['React', 'Next.js', 'React Native', 'Flutter', 'Product UX', 'Brand campaigns', 'Motion graphics'],
-        }}
+        title="Frontend & Mobile Developer in Nairobi | Mohammed Abdirahman"
+        description="Nairobi-based React, Next.js, React Native, and Flutter developer. Explore mobile and web case studies, brand campaigns, and motion work. Available locally and remotely."
+        structuredData={{ '@type': 'ProfilePage', '@id': 'https://www.mohagraphics.tech/#profile',
+          mainEntity: { '@id': 'https://www.mohagraphics.tech/#person' } }}
         lang="en"
         thumb="/img/mohammed.jpeg"
         keywords={[

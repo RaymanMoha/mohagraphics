@@ -8,12 +8,16 @@ import { ProjectContact } from '@/components/Services/ProjectContact';
 import styles from '@/components/Services/styles.module.css';
 
 const structuredData = {
-  '@context': 'https://schema.org', '@type': 'ProfessionalService',
+  '@context': 'https://schema.org', '@type': 'ProfessionalService', '@id': 'https://www.mohagraphics.tech/#studio',
   name: 'Moha Graphics', url: 'https://www.mohagraphics.tech/services',
   description: 'Web and mobile development, website and product UX, brand campaigns, and films and motion by Mohammed Abdirahman.',
   areaServed: ['Kenya', 'Africa', 'Remote'],
-  founder: { '@type': 'Person', name: 'Mohammed Abdirahman' },
-  serviceType: offers.map((offer) => offer.title),
+  founder: { '@id': 'https://www.mohagraphics.tech/#person' },
+  hasOfferCatalog: { '@type': 'OfferCatalog', name: 'Development and creative services',
+    itemListElement: servicePages.map((service) => ({ '@type': 'Offer',
+      itemOffered: { '@type': 'Service', name: service.title,
+        url: `https://www.mohagraphics.tech/services/${service.slug}`,
+        provider: { '@id': 'https://www.mohagraphics.tech/#person' } } })) },
   email: 'abdulmoharayman@gmail.com', telephone: '+254799722501',
 };
 

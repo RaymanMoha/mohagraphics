@@ -1,18 +1,14 @@
+# Public portfolio pages are available to search engines and AI search crawlers.
 User-agent: *
-Allow: /
-
-# Sitemap
-Sitemap: https://www.mohagraphics.tech/sitemap.xml
-
-# Allow all search engines to crawl the site
-Crawl-delay: 1
-
-# Block access to admin or private areas (if any)
 Disallow: /api/
 Disallow: /admin/
-
-# Allow specific important pages
 Allow: /
-Allow: /about
-Allow: /services
-Allow: /projects/
+
+# Explicit search-crawler access; private routes stay excluded in each group.
+User-agent: OAI-SearchBot
+User-agent: PerplexityBot
+Disallow: /api/
+Disallow: /admin/
+Allow: /
+
+Sitemap: https://www.mohagraphics.tech/sitemap.xml

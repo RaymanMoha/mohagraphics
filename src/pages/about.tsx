@@ -31,6 +31,8 @@ const AboutPage = ({
       <SEO
         title="About Mohammed Abdirahman | Frontend & Mobile Engineer"
         description="Frontend and mobile engineer with 5+ years of experience building React, React Native, and Flutter products. Based in Nairobi and available for remote or Kenya-based roles, focused on performance, accessibility, and clean UX."
+        structuredData={{ '@type': 'ProfilePage', '@id': 'https://www.mohagraphics.tech/about#profile',
+          mainEntity: { '@id': 'https://www.mohagraphics.tech/#person' } }}
         lang="en"
         thumb="/img/mohammed.jpeg"
         keywords={[

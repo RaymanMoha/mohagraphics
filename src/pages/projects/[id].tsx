@@ -133,6 +133,14 @@ export default function ProjectPage(props: PageProps) {
         thumb={heroImageSrc || '/img/logo.png'}
         description={project.seo || project.description}
         keywords={project.keywords}
+        structuredData={{ '@type': 'CreativeWork',
+          '@id': `https://www.mohagraphics.tech/projects/${props.id}#case-study`,
+          name: `${project.title} — portfolio case study`,
+          description: project.seo || project.description,
+          url: `https://www.mohagraphics.tech/projects/${props.id}`,
+          author: { '@id': 'https://www.mohagraphics.tech/#person' },
+          about: { '@type': 'Thing', name: project.title },
+          keywords: project.keywords.join(', '), inLanguage: 'en' }}
         lang="en"
       />
       {props.id === 'ReonCapital' ? <ReonPortfolio /> : <ProjectDetail {...props} />}

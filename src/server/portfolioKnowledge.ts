@@ -25,7 +25,7 @@ export const portfolioEntries: Entry[] = [
   ...reonApps.map((app) => ({ title: app.name, url: `/projects/${app.id}/`, text: `${app.category}. ${app.description} Features: ${app.features.join('; ')}. Google Play: ${app.url}. Published by REON Capital.` })),
   ...films.map((film) => ({ title: film.title, url: '/films', text: `${film.brand}; ${film.category}; ${film.duration}. ${film.description}` })),
   ...campaigns.map((campaign) => ({ title: campaign.title, url: `/campaigns/${campaign.slug}`, text: `${campaign.category}. ${campaign.description}\n${campaign.images.map((image) => `${image.title}: ${image.caption}`).join('\n')}` })),
-  ...servicePages.map((service) => ({ title: service.title, url: `/services/${service.slug}`, text: `${service.description} ${service.intro} ${service.deliverables.join('; ')}` })),
+  ...servicePages.map((service) => ({ title: service.title, url: `/services/${service.slug}`, text: `${service.description} ${service.intro} ${service.deliverables.join('; ')} ${service.faqs.map((faq) => `${faq.question} ${faq.answer}`).join(' ')}` })),
   ...offers.map((offer) => ({ title: offer.title, url: `/services#${offer.id}`, text: `${offer.description} Deliverables: ${offer.deliverables.join('; ')}. Related work: ${offer.href}` })),
   { title: 'Working together', url: '/services#start-project', text: `${steps.map((step) => `${step.title}: ${step.body}`).join('\n')}\n${faqs.map((faq) => `${faq.question} ${faq.answer}`).join('\n')}\nEmail: abdulmoharayman@gmail.com. Phone: +254799722501. Book a call: https://calendly.com/abdulmoharayman/30min. Pricing and delivery dates require a project brief and agreement.` },
 ];

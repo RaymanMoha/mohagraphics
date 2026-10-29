@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from 'next';
-import { FiArrowLeft, FiArrowUpRight } from 'react-icons/fi';
+import { FiArrowLeft, FiArrowUpRight, FiPlus } from 'react-icons/fi';
 import { SEO } from '@/components/SEO';
 import { ProjectContact } from '@/components/Services/ProjectContact';
 import { offers, steps } from '@/components/Services/content';
@@ -14,10 +14,15 @@ export default function ServicePage({ service }: InferGetStaticPropsType<typeof 
   return <>
     <SEO title={`${service.title} | Mohammed Abdirahman`} description={service.description} lang="en"
       thumb={offer.image} keywords={[offer.title, 'Nairobi', 'Kenya', 'Mohammed Abdirahman']}
-      structuredData={{ '@context': 'https://schema.org', '@type': 'Service', name: service.title,
-        url: `https://www.mohagraphics.tech/services/${service.slug}`, description: service.description,
-        provider: { '@type': 'Person', name: 'Mohammed Abdirahman', url: 'https://www.mohagraphics.tech' },
-        areaServed: ['Kenya', 'Remote'] }} />
+      structuredData={{ '@graph': [
+        { '@type': 'Service', '@id': `https://www.mohagraphics.tech/services/${service.slug}#service`,
+          name: service.title, url: `https://www.mohagraphics.tech/services/${service.slug}`,
+          description: service.description, provider: { '@id': 'https://www.mohagraphics.tech/#person' },
+          areaServed: ['Kenya', 'Remote'] },
+        { '@type': 'FAQPage', '@id': `https://www.mohagraphics.tech/services/${service.slug}#questions`,
+          mainEntity: service.faqs.map((faq) => ({ '@type': 'Question', name: faq.question,
+            acceptedAnswer: { '@type': 'Answer', text: faq.answer } })) },
+      ] }} />
     <main className={styles.page}>
       <section className={styles.detailIntro}>
         <Link className={styles.textLink} href="/services"><FiArrowLeft /> All services</Link>
@@ -42,6 +47,12 @@ export default function ServicePage({ service }: InferGetStaticPropsType<typeof 
       </section>
       <section className={styles.process}><h2>A clear process.<br />Room for <em>good ideas.</em></h2>
         <ol>{steps.map((step, index) => <li key={step.title}><span>0{index + 1}</span><div><h3>{step.title}</h3><p>{step.body}</p></div></li>)}</ol>
+      </section>
+      <section className={styles.faq} aria-labelledby="service-questions">
+        <h2 id="service-questions">Before we<br />get started.</h2>
+        <div>{service.faqs.map((faq) => <details key={faq.question}>
+          <summary>{faq.question}<FiPlus aria-hidden="true" /></summary><p>{faq.answer}</p>
+        </details>)}</div>
       </section>
       <ProjectContact selected={selected} onSelect={setSelected} />
       <nav className={styles.detailRelated} aria-label="Other services">{servicePages.filter((item) => item.slug !== service.slug).map((item) => <Link key={item.slug} href={`/services/${item.slug}`}>{item.title} <FiArrowUpRight /></Link>)}</nav>
