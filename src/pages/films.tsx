@@ -20,7 +20,7 @@ export default function FilmLibrary() {
   const reset = () => { setQuery(''); setBrand('All'); setCategory('All'); };
   return (
     <>
-      <SEO title="Films & Motion | Mohammed Abdirahman" description="Brand films, animation, and motion graphics for Budj and ShambaBoy." lang="en" thumb="/films/budj-clay-city.jpg" keywords={['brand films', 'motion graphics', 'animation', 'Budj', 'ShambaBoy']} canonical="https://www.mohagraphics.tech/films" />
+      <SEO title="Films & Motion | Mohammed Abdirahman" description="Brand films, product studies, animation, and visual experiments for Budj, ShambaBoy, AppBase, and more." lang="en" thumb="/films/budj-clay-city.jpg" keywords={['brand films', 'motion graphics', 'animation', 'Budj', 'ShambaBoy']} canonical="https://www.mohagraphics.tech/films" />
       <main className={`${styles.section} ${styles.library}`}>
         <Link className={styles.libraryBack} href="/#films"><FiArrowLeft /> Back to portfolio</Link>
         <header className={styles.heading}>

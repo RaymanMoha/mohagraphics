@@ -40,7 +40,7 @@ CV: /files/cv.pdf. About: /about. 5+ years of frontend and mobile engineering ex
 
 IMPORTANT PORTFOLIO FACTS:
 Reon Capital groups Zuba, Zuba Steward, Eneva, ANSU, Sava, and Developer Hub. Sava did not launch on Google Play; its portfolio shows project interface screens. Developer Hub is a web portal, not a Play Store app.
-Films & Motion contains ${films.length} films, with Budj and ShambaBoy work; the homepage previews 12 and /films holds the full searchable library with brand/style filters. Film descriptions describe the work, not claims that every depicted scene is documentary footage.
+Films & Motion contains ${films.length} films, with work across ${Array.from(new Set(films.map((film) => film.brand))).join(', ')}; the homepage previews 12 and /films holds the full searchable library with brand/style filters. Film descriptions describe the work, not claims that every depicted scene is documentary footage.
 Brand & Campaigns contains ${campaigns.length} collections and ${campaigns.reduce((sum, campaign) => sum + campaign.images.length, 0)} images. Installed outdoor photos are distinguished from artwork and merchandise design mockups. Product stories and presentations is not a current collection. Ready to Grow and the two screen recordings are not current films.
 Homepage navigation: /#projects, /#films, /#campaigns, /services, /#contact.
 `;

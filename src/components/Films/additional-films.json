@@ -111,11 +111,11 @@
   },
   {
     "slug": "budj-cafe-counter",
-    "title": "At the Caf\u00e9 Counter",
+    "title": "At the Café Counter",
     "brand": "Budj",
     "category": "Brand films",
     "duration": "0:08",
-    "description": "A short caf\u00e9 scene from the Budj film collection.",
+    "description": "A short café scene from the Budj film collection.",
     "width": 960,
     "height": 960
   },
@@ -155,17 +155,17 @@
     "brand": "Budj",
     "category": "Brand films",
     "duration": "0:08",
-    "description": "A caf\u00e9 scene about the next visit.",
+    "description": "A café scene about the next visit.",
     "width": 720,
     "height": 1280
   },
   {
     "slug": "budj-cafe-moment",
-    "title": "A Caf\u00e9 Moment",
+    "title": "A Café Moment",
     "brand": "Budj",
     "category": "Brand films",
     "duration": "0:08",
-    "description": "A short caf\u00e9 conversation cut.",
+    "description": "A short café conversation cut.",
     "width": 720,
     "height": 1280
   },
@@ -231,7 +231,7 @@
   },
   {
     "slug": "budj-dashboard-overview",
-    "title": "Merchant Dashboard \u2014 Overview",
+    "title": "Merchant Dashboard — Overview",
     "brand": "Budj",
     "category": "Brand films",
     "duration": "0:15",
@@ -241,7 +241,7 @@
   },
   {
     "slug": "budj-dashboard-insights",
-    "title": "Merchant Dashboard \u2014 Insights",
+    "title": "Merchant Dashboard — Insights",
     "brand": "Budj",
     "category": "Brand films",
     "duration": "0:15",
@@ -261,11 +261,11 @@
   },
   {
     "slug": "budj-cafe-story",
-    "title": "The Caf\u00e9 Story",
+    "title": "The Café Story",
     "brand": "Budj",
     "category": "Brand films",
     "duration": "0:15",
-    "description": "A presenter-led caf\u00e9 campaign.",
+    "description": "A presenter-led café campaign.",
     "width": 720,
     "height": 1280
   },
@@ -301,7 +301,7 @@
   },
   {
     "slug": "budj-merchant-conversation-cafe",
-    "title": "Merchant Conversation \u2014 Caf\u00e9",
+    "title": "Merchant Conversation — Café",
     "brand": "Budj",
     "category": "Brand films",
     "duration": "0:15",
@@ -311,7 +311,7 @@
   },
   {
     "slug": "budj-merchant-conversation-studio",
-    "title": "Merchant Conversation \u2014 Studio",
+    "title": "Merchant Conversation — Studio",
     "brand": "Budj",
     "category": "Brand films",
     "duration": "0:15",
@@ -368,5 +368,185 @@
     "description": "A short animated customer engagement explainer.",
     "width": 1080,
     "height": 1920
+  },
+  {
+    "slug": "a-drive-together",
+    "title": "A Drive Together",
+    "brand": "Visual experiments",
+    "category": "Visual experiments",
+    "duration": "0:14",
+    "description": "A conversation-led scene inside a car.",
+    "width": 720,
+    "height": 1280
+  },
+  {
+    "slug": "convertible-drift",
+    "title": "Convertible Drift",
+    "brand": "Visual experiments",
+    "category": "Visual experiments",
+    "duration": "0:24",
+    "description": "A moving-camera experiment around a red convertible.",
+    "width": 720,
+    "height": 1280
+  },
+  {
+    "slug": "on-the-mic",
+    "title": "On the Mic",
+    "brand": "Visual experiments",
+    "category": "Visual experiments",
+    "duration": "0:06",
+    "description": "A performance and camera-movement study in a lounge setting.",
+    "width": 672,
+    "height": 1340
+  },
+  {
+    "slug": "red-glass",
+    "title": "Red Glass",
+    "brand": "Product studies",
+    "category": "Product films",
+    "duration": "0:15",
+    "description": "Close-up lighting and camera movement around a red fragrance bottle.",
+    "width": 1440,
+    "height": 2560
+  },
+  {
+    "slug": "budj-cold-to-conversation",
+    "title": "From Cold to Conversation",
+    "brand": "Budj",
+    "category": "Brand films",
+    "duration": "0:15",
+    "description": "A frozen-coffee opening leads into a merchant conversation.",
+    "width": 720,
+    "height": 1280
+  },
+  {
+    "slug": "budj-new-customer-next-visit",
+    "title": "New Customer, Next Visit",
+    "brand": "Budj",
+    "category": "Brand films",
+    "duration": "0:15",
+    "description": "A Nairobi storefront story connects a new customer with merchant insights.",
+    "width": 720,
+    "height": 1280
+  },
+  {
+    "slug": "budj-next-bite",
+    "title": "The Next Bite",
+    "brand": "Budj",
+    "category": "Brand films",
+    "duration": "0:15",
+    "description": "A food-led opening moves into an everyday payment scene.",
+    "width": 720,
+    "height": 1280
+  },
+  {
+    "slug": "budj-high-street",
+    "title": "Walking the High Street",
+    "brand": "Budj",
+    "category": "Brand films",
+    "duration": "0:15",
+    "description": "A walk-and-talk conversation outside the shops.",
+    "width": 720,
+    "height": 1280
+  },
+  {
+    "slug": "budj-shopkeepers-question",
+    "title": "The Shopkeeper’s Question",
+    "brand": "Budj",
+    "category": "Brand films",
+    "duration": "0:15",
+    "description": "A merchant conversation at a neighbourhood shop.",
+    "width": 720,
+    "height": 1280
+  },
+  {
+    "slug": "budj-outside-the-shop",
+    "title": "Outside the Shop",
+    "brand": "Budj",
+    "category": "Brand films",
+    "duration": "0:15",
+    "description": "A short exchange between two people outside a storefront.",
+    "width": 720,
+    "height": 1280
+  },
+  {
+    "slug": "budj-across-the-counter",
+    "title": "Across the Counter",
+    "brand": "Budj",
+    "category": "Brand films",
+    "duration": "0:15",
+    "description": "A conversation-led cut around a café counter.",
+    "width": 720,
+    "height": 1280
+  },
+  {
+    "slug": "budj-cafe-regulars",
+    "title": "Café Regulars",
+    "brand": "Budj",
+    "category": "Brand films",
+    "duration": "0:15",
+    "description": "A café conversation about the customer relationship.",
+    "width": 720,
+    "height": 1280
+  },
+  {
+    "slug": "budj-at-the-bakery",
+    "title": "At the Bakery",
+    "brand": "Budj",
+    "category": "Brand films",
+    "duration": "0:15",
+    "description": "A short merchant scene set at a bakery counter.",
+    "width": 720,
+    "height": 1280
+  },
+  {
+    "slug": "appbase-in-motion",
+    "title": "AppBase in Motion",
+    "brand": "AppBase",
+    "category": "Animation",
+    "duration": "0:15",
+    "description": "A dimensional logo animation introduces AppBase.",
+    "width": 720,
+    "height": 1280
+  },
+  {
+    "slug": "appbase-at-the-desk",
+    "title": "AppBase — At the Desk",
+    "brand": "AppBase",
+    "category": "Brand films",
+    "duration": "0:15",
+    "description": "A presenter-led conversation with an AppBase dashboard reveal.",
+    "width": 720,
+    "height": 1280
+  },
+  {
+    "slug": "appbase-the-conversation",
+    "title": "AppBase — The Conversation",
+    "brand": "AppBase",
+    "category": "Brand films",
+    "duration": "0:15",
+    "description": "A studio conversation moves into a product interface reveal.",
+    "width": 720,
+    "height": 1280
+  },
+  {
+    "slug": "appbase-whatsapp-orders",
+    "title": "AppBase — WhatsApp Orders",
+    "brand": "AppBase",
+    "category": "Brand films",
+    "duration": "0:15",
+    "description": "A presenter-led AppBase film with a WhatsApp ordering interface.",
+    "width": 720,
+    "height": 1280
+  },
+  {
+    "slug": "budj-cafe-to-dashboard",
+    "title": "From Café to Dashboard",
+    "brand": "Budj",
+    "category": "Brand films",
+    "duration": "0:15",
+    "description": "An everyday café moment leads into a merchant dashboard view.",
+    "width": 720,
+    "height": 1280
   }
 ]
