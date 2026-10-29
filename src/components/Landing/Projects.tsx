@@ -19,8 +19,11 @@ export const ProjectsSection = ({ projects }: Props) => {
   return (
     <section id="projects" className={styles.portfolio} aria-labelledby="products-title">
       <header className={styles.heading}>
-        <h2 id="products-title">Products built<br />for real people.</h2>
-        <p>Selected mobile and web products across fintech, agriculture, and daily operations.</p>
+        <div className={styles.headingMain}>
+          <span className={styles.eyebrow}>Web &amp; mobile development</span>
+          <h2 id="products-title">Selected <em>work.</em></h2>
+        </div>
+        <p>Mobile apps, web platforms, and the thinking behind them. Explore what I built and how it came together.</p>
       </header>
       <div className={styles.featured}>
         {featured.map((project, index) => (
