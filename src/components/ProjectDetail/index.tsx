@@ -6,6 +6,7 @@ import Link from 'next/link';
 import * as S from './styles';
 import { StoreScreens } from './StoreScreens';
 import { CargoJourney } from './CargoJourney';
+import { ProjectSlides } from './ProjectSlides';
 
 export type RelatedProject = {
   id: string;
@@ -182,7 +183,7 @@ export const ProjectDetail = ({
         </S.SideFacts>
       </S.Story>
 
-      {id === 'SafarilineCargo' ? <CargoJourney /> : project.gallery?.length ? (
+      {id === 'SafarilineCargo' ? <CargoJourney /> : id === 'ReonDevHub' && project.gallery?.length ? <ProjectSlides images={project.gallery} title={project.mediaTitle || 'Inside the Developer Hub.'} /> : project.gallery?.length ? (
         <S.Gallery aria-labelledby="project-media-title">
           <S.GalleryHeading>
             <S.FactsLabel>Product media</S.FactsLabel>

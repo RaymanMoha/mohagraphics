@@ -15,4 +15,4 @@ Developers need to understand a platform before integrating with it: which appli
 
 ## Outcome
 
-A developer-facing web experience that connects onboarding with practical project documentation. Screenshots show the signed-in dashboard, an ENEVA architecture guide, API quick start, and the sign-in interface.
+A developer-facing web experience that connects onboarding with practical project documentation. A 37-slide gallery covers the dashboard, project documentation, API references, setup guides, code examples, resources, developer assistant, and account entry screens. Private account settings and team contact details are excluded.

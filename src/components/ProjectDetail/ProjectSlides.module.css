@@ -1,0 +1,123 @@
+.slides {
+  margin: 0 5vw;
+  padding: clamp(3rem, 6vw, 6rem) 0;
+  border-top: 1px solid #d9cbc0;
+  color: #13202a;
+}
+.label {
+  display: block;
+  color: #735f53;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin-bottom: 1rem;
+}
+.slides h2 {
+  font:
+    400 clamp(2rem, 4.5vw, 4.5rem) / 1.1 Georgia,
+    serif;
+  margin: 0 0 2rem;
+  letter-spacing: -0.04em;
+}
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.toolbar label {
+  display: grid;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  width: min(100%, 32rem);
+}
+.toolbar select {
+  width: 100%;
+  min-height: 44px;
+  padding: 0.7rem;
+  border: 1px solid #b1a49a;
+  border-radius: 0;
+  background: #fff8f3;
+  color: #13202a;
+  font: inherit;
+}
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  flex-shrink: 0;
+}
+.controls span {
+  font-size: 0.8rem;
+  min-width: 4rem;
+  text-align: center;
+}
+.controls button {
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  background: #13202a;
+  color: white;
+  cursor: pointer;
+  border: 0;
+}
+.controls button:hover {
+  background: #364550;
+}
+.controls button:active {
+  transform: translateY(1px);
+}
+.slides figure {
+  margin: 0;
+}
+.slides figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid #d9cbc0;
+  background: #eee;
+}
+.slides figcaption {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  padding-top: 1rem;
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+.slides figcaption p {
+  margin: 0;
+}
+.slides a {
+  color: #13202a;
+  display: inline-flex;
+  gap: 0.5rem;
+  align-items: center;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.slides :is(a, button, select):focus-visible {
+  outline: 3px solid #155eef;
+  outline-offset: 4px;
+}
+@media (max-width: 600px) {
+  .toolbar {
+    flex-wrap: wrap;
+  }
+  .toolbar label {
+    width: 100%;
+  }
+  .controls {
+    margin-left: auto;
+  }
+  .slides figcaption {
+    display: block;
+  }
+  .slides figcaption a {
+    margin-top: 0.8rem;
+  }
+}
