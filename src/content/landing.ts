@@ -44,7 +44,7 @@ export const landingPage = {
     },
     {
       body: 'Developer portal entry experience with focused sign-in and account creation flows.',
-      image: 'reon-dev-hub-overview.png',
+      image: '/projects/ReonDevHub/signin-desktop.png',
       buttonText: 'View project',
       link: '/projects/ReonDevHub/',
       ...projectData.ReonDevHub,
