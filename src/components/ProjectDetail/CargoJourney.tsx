@@ -1,98 +1,8 @@
-import { useState } from 'react';
-import Image from 'next/image';
-import { Content } from '@/content/projects';
 import styles from './CargoJourney.module.css';
 
-const stages = ['Dispatch desk', 'Warehouse network', 'Business records'];
-
-export function CargoJourney({
-  gallery,
-}: {
-  gallery: NonNullable<Content['gallery']>;
-}) {
-  const [active, setActive] = useState(0);
-  const item = gallery[active];
+export function CargoJourney() {
   return (
-    <section className={styles.journey} aria-labelledby="cargo-journey-title">
-      <header>
-        <span className={styles.eyebrow}>Inside the operations console</span>
-        <h2 id="cargo-journey-title">
-          Follow the cargo.
-          <br />
-          See the whole operation.
-        </h2>
-        <p>Three connected views, from the waybill to the records behind it.</p>
-      </header>
-      <div
-        className={styles.tabs}
-        role="tablist"
-        aria-label="Cargo workflow screenshots"
-      >
-        {gallery.map((shot, index) => (
-          <button
-            key={shot.src}
-            id={`cargo-tab-${index}`}
-            role="tab"
-            type="button"
-            aria-selected={active === index}
-            aria-controls={`cargo-panel-${index}`}
-            tabIndex={active === index ? 0 : -1}
-            onClick={() => setActive(index)}
-            onKeyDown={(event) => {
-              const next =
-                event.key === 'ArrowRight'
-                  ? (index + 1) % gallery.length
-                  : event.key === 'ArrowLeft'
-                    ? (index + gallery.length - 1) % gallery.length
-                    : event.key === 'Home'
-                      ? 0
-                      : event.key === 'End'
-                        ? gallery.length - 1
-                        : null;
-              if (next !== null) {
-                event.preventDefault();
-                setActive(next);
-                document.getElementById(`cargo-tab-${next}`)?.focus();
-              }
-            }}
-          >
-            <span aria-hidden="true">0{index + 1}</span>
-            {stages[index]}
-          </button>
-        ))}
-      </div>
-      {gallery.map((shot, index) => (
-        <div
-          key={shot.src}
-          role="tabpanel"
-          id={`cargo-panel-${index}`}
-          aria-labelledby={`cargo-tab-${index}`}
-          hidden={active !== index}
-          tabIndex={0}
-        >
-          {active === index && (
-            <figure className={styles.screen}>
-              <Image
-                src={shot.src}
-                alt={shot.alt}
-                width={shot.width}
-                height={shot.height}
-                sizes="90vw"
-              />
-              <figcaption>
-                <p>{item.caption}</p>
-                <a href={shot.src} target="_blank" rel="noreferrer">
-                  Open full screenshot ↗
-                </a>
-              </figcaption>
-            </figure>
-          )}
-        </div>
-      ))}
-      <p className={styles.note}>
-        Captured from the working development application. Customer identifiers
-        and account details are masked.
-      </p>
+    <div className={styles.journey}>
       <section
         className={styles.walkthrough}
         aria-labelledby="cargo-mobile-title"
@@ -188,6 +98,6 @@ export function CargoJourney({
           </figcaption>
         </figure>
       </section>
-    </section>
+    </div>
   );
 }

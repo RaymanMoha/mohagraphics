@@ -182,7 +182,7 @@ export const ProjectDetail = ({
         </S.SideFacts>
       </S.Story>
 
-      {id === 'SafarilineCargo' && project.gallery?.length ? <CargoJourney gallery={project.gallery} /> : project.gallery?.length ? (
+      {id === 'SafarilineCargo' ? <CargoJourney /> : project.gallery?.length ? (
         <S.Gallery aria-labelledby="project-media-title">
           <S.GalleryHeading>
             <S.FactsLabel>Product media</S.FactsLabel>
