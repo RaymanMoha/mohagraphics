@@ -1,4 +1,3 @@
-import { storeGallery } from '@/content/reonApps';
 import { Content } from '@/content/projects';
 
 export const content: Content = {
@@ -22,7 +21,5 @@ export const content: Content = {
     'flutter',
   ],
   organisation: { name: 'Reon Capital', href: '/projects/ReonCapital/' },
-  mediaTitle: 'Google Play screenshots.',
-  gallery: storeGallery('Zuba'),
   role: 'Mobile Developer · Reon Capital',
 };
