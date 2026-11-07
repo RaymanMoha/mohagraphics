@@ -28,29 +28,5 @@ export const content: Content = {
     'field work verification',
     'kenya agriculture software',
   ],
-  mediaTitle: 'Website and product visuals.',
-  gallery: [
-    {
-      src: '/img/shambaboy-mobile-operations.jpg',
-      alt: 'Farm supervisor using ShambaBoy to review field tasks',
-      caption: 'Mobile-first operations designed for work in the field.',
-      width: 1024,
-      height: 1536,
-    },
-    {
-      src: '/img/shambaboy-verification.jpg',
-      alt: 'Farm worker capturing photo evidence with ShambaBoy',
-      caption: 'GPS, photo, timestamp, and worker evidence for every task.',
-      width: 1023,
-      height: 1537,
-    },
-    {
-      src: '/img/shambaboy-dashboard.jpg',
-      alt: 'ShambaBoy field operations across a working farm',
-      caption: 'One verified operating record for managers and field teams.',
-      width: 1672,
-      height: 941,
-    },
-  ],
   role: 'App & Website Developer',
 };
