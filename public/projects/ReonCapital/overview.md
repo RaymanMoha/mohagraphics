@@ -10,7 +10,7 @@ Different users needed different interfaces: fans finding tickets, gate staff ch
 
 - Contributed mobile interface work across the Reon Capital app portfolio, with each app supporting a distinct user journey.
 - Worked across Zuba, Zuba Steward, Eneva, ANSU, and Sava, with project details distinguishing the scope of each product.
-- Included Developer Hub web work for branded sign-in and account creation flows.
+- Included Developer Hub web work for project documentation, architecture guides, API onboarding, and account entry.
 - Presented the apps as one portfolio while keeping each project's role, scope, and release evidence visible.
 
 ## Outcome

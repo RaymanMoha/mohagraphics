@@ -43,8 +43,8 @@ export const landingPage = {
       title: 'Budj',
     },
     {
-      body: 'Developer portal entry experience with focused sign-in and account creation flows.',
-      image: '/projects/ReonDevHub/signin-desktop.png',
+      body: 'Developer documentation portal with project dashboards, architecture guides, API quick starts, and branded onboarding.',
+      image: '/projects/ReonDevHub/dashboard.png',
       buttonText: 'View project',
       link: '/projects/ReonDevHub/',
       ...projectData.ReonDevHub,

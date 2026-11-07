@@ -18,7 +18,7 @@ export function ReonPortfolio() {
       </nav>
       <section className={styles.brief} aria-label="Reon Capital case study">
         <div><h2>The brief</h2><p>Build clear interfaces for different everyday tasks: buying tickets, checking venue entry, managing utilities, shopping, and accessing a developer portal.</p></div>
-        <div><h2>My contribution</h2><p>Mobile interface work across the Reon Capital app portfolio, alongside Developer Hub web work for branded sign-in and account creation. Each project below sets out its own scope.</p></div>
+        <div><h2>My contribution</h2><p>Mobile interface work across the Reon Capital app portfolio, alongside Developer Hub web work for project documentation, API onboarding, and account entry. Each project below sets out its own scope.</p></div>
         <div><h2>Delivery evidence</h2><p>Four apps have public Google Play listings. Sava is shown through project screens; Developer Hub is a web experience. These are portfolio contributions within the wider products.</p><Link className={styles.caseStudy} href="/services#start-project">Discuss a project <FiArrowUpRight /></Link></div>
       </section>
       {reonApps.map((app) => (
@@ -62,14 +62,14 @@ export function ReonPortfolio() {
       <section id="ReonDevHub" className={styles.app} aria-labelledby="ReonDevHub-title">
         <div className={styles.copy}>
           <p className={styles.category}>Developer portal · Web</p><h2 id="ReonDevHub-title">Developer Hub</h2>
-          <p>A branded entry point for the Reon Capital developer portal, with focused sign-in and account creation flows.</p>
+          <p>A developer documentation workspace with project dashboards, architecture guides, API quick starts, and branded sign-in.</p>
           <ul><li>Separate sign-in and account creation experiences</li><li>Clear form hierarchy and branded presentation</li><li>Responsive desktop and mobile layouts</li></ul>
           <Link className={styles.store} href="/projects/ReonDevHub/">View Developer Hub project <FiArrowUpRight /></Link>
           <a className={styles.caseStudy} href="https://dev-2cbg.vercel.app/" target="_blank" rel="noreferrer">Visit Developer Hub <FiArrowUpRight /></a>
           <small>Next.js and Tailwind CSS · project interface image.</small>
         </div>
         <Link href="/projects/ReonDevHub/" className={styles.hubPreview} aria-label="View Developer Hub case study">
-          <img src="/img/reon-dev-hub-overview.png" alt="Reon Capital Developer Hub sign-in and account creation interface" width="1600" height="900" loading="lazy" />
+          <img src="/projects/ReonDevHub/dashboard.png" alt="Reon Capital Developer Hub dashboard with platform documentation and quick start links" width="1600" height="900" loading="lazy" />
         </Link>
       </section>
     </main>

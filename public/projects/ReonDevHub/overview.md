@@ -1,35 +1,18 @@
----
-title: 'Reon Capital Developer Hub'
-description: 'Developer portal frontend with branded sign-in and account creation flows.'
----
+## Product Overview
 
-![Reon Capital Developer Hub sign-in](/projects/ReonDevHub/signin-desktop.png "Reon Capital Developer Hub sign-in screen")
-
-# Product Overview
-
-Reon Capital Developer Hub is a branded developer portal that provides a focused entry experience for sign-in and account creation.
+Reon Capital Developer Hub gives developers a shared starting point for ENEVA, ZUBA, BEZZA, and ANSU documentation. A project dashboard leads into platform overviews, architecture guides, API onboarding, and development resources.
 
 ## User Need
 
-Developers need a clear entry point that separates sign-in from account creation without confusion.
+Developers need to understand a platform before integrating with it: which applications it includes, how the components connect, and where to begin. The hub brings those questions into one navigable workspace.
 
 ## Product Experience
 
-- Two distinct entry points: sign-in and create account.
-- Focused form layout with a single primary action.
-- Inline terms and privacy agreement before account creation.
-- Branded hero panel that reinforces trust and product identity.
-- Responsive layout across desktop and mobile.
-
-## Role
-
-Frontend Developer
+- **Find the right platform.** The dashboard introduces each project and links directly to its documentation.
+- **Understand the system.** Project guides explain application roles and show how mobile apps, web dashboards, backend services, and data layers connect.
+- **Start an integration.** The quick start guide presents API key examples, SDK setup instructions, and a first request, with links to further documentation.
+- **Navigate with context.** Persistent navigation groups projects, getting started, API documentation, developer guides, examples, and resources, alongside branded sign-in and account creation flows.
 
 ## Outcome
 
-A consistent onboarding interface across desktop and mobile, with branded entry pages that keep attention on the form. The screenshots show the accessible sign-in and account creation screens.
-
-# Links
-
-- Developer hub: https://dev-2cbg.vercel.app/
-- Sign in: https://dev-2cbg.vercel.app/signin
+A developer-facing web experience that connects onboarding with practical project documentation. Screenshots show the signed-in dashboard, an ENEVA architecture guide, API quick start, and the sign-in interface.
