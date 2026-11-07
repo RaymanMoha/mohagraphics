@@ -23,7 +23,7 @@ export const landingPage = {
     {
       ...projectData.SafarilineCargo,
       title: 'Safariline Cargo',
-      body: 'From waybill to warehouse: air and sea cargo operations, branch visibility, shipment tracking, and reporting in one connected workspace.',
+      body: 'Web and mobile applications for cargo operations, connecting the operations console with arrival confirmation, dispatch, receiving, and shipment lookup on mobile.',
       image: '/projects/SafarilineCargo/overview.png',
       buttonText: 'Explore cargo operations',
       link: '/projects/SafarilineCargo/',

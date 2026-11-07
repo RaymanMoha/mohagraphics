@@ -4,11 +4,11 @@ export const content: Content = {
   title: 'Safariline Cargo',
   featuredImage: '/projects/SafarilineCargo/overview.png',
   description:
-    'Movement made visible. A cargo operations platform bringing air and sea shipments, warehouse facilities, customer accounts, and reporting into one branch-aware workspace.',
-  seo: 'Explore Safariline Cargo: a web platform for cargo operations, air and sea waybills, warehouse visibility, shipment tracking, and customer and supplier reporting.',
-  role: 'Web Application Development',
+    'Movement made visible. A web and mobile cargo operations platform bringing air and sea shipments, warehouse facilities, customer accounts, and reporting into one branch-aware workspace.',
+  seo: 'Explore Safariline Cargo: web and mobile applications for cargo operations, air and sea waybills, warehouse visibility, shipment tracking, and customer and supplier reporting.',
+  role: 'Web & Mobile Application Development',
   details: {
-    type: 'Logistics · Cargo Operations Platform',
+    type: 'Logistics · Web & Mobile Platform',
     stack: 'Next.js React',
     code: 'Private',
     live: 'https://dev.safarilinecargo.co.ke/',
@@ -16,6 +16,8 @@ export const content: Content = {
   keywords: [
     'Safariline Cargo',
     'cargo operations',
+    'mobile application development',
+    'web application development',
     'logistics platform',
     'shipment tracking',
     'warehouse management',
