@@ -1,0 +1,159 @@
+.journey {
+  margin: 0 5vw;
+  padding: clamp(3rem, 6vw, 6rem) 0;
+  color: #13202a;
+  border-top: 1px solid #d9cbc0;
+}
+.eyebrow {
+  display: block;
+  color: #735f53;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  margin-bottom: 1.2rem;
+}
+.journey h2 {
+  font:
+    400 clamp(2.2rem, 4.5vw, 4.5rem) / 1.08 Georgia,
+    serif;
+  letter-spacing: -0.04em;
+  margin: 0 0 1.3rem;
+}
+.journey header p {
+  max-width: 46ch;
+  line-height: 1.7;
+  color: #596168;
+}
+.tabs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 2.5rem;
+  border-bottom: 1px solid #d9cbc0;
+  gap: 1rem;
+}
+.tabs button {
+  text-align: left;
+  cursor: pointer;
+  background: none;
+  color: #596168;
+  padding: 1.2rem 0;
+  border: 0;
+  border-bottom: 3px solid transparent;
+  font: inherit;
+  font-weight: 700;
+}
+.tabs button span {
+  font-size: 0.7rem;
+  margin-right: 0.8rem;
+  font-weight: 400;
+}
+.tabs button[aria-selected='true'] {
+  color: #13202a;
+  border-bottom-color: #f04e23;
+}
+.tabs button:hover {
+  color: #13202a;
+}
+.tabs button:focus-visible,
+.journey a:focus-visible,
+.journey [role='tabpanel']:focus-visible {
+  outline: 3px solid #155eef;
+  outline-offset: 5px;
+}
+.tabs button:active {
+  transform: translateY(1px);
+}
+.screen {
+  margin: 2rem 0 0;
+}
+.screen img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid #d9cbc0;
+}
+.screen figcaption {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 2rem;
+  padding-top: 1rem;
+  font-size: 0.85rem;
+  line-height: 1.7;
+}
+.screen figcaption p {
+  max-width: 70ch;
+  margin: 0;
+}
+.screen a {
+  color: #13202a;
+  white-space: nowrap;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.note {
+  color: #735f53;
+  font-size: 0.75rem;
+  line-height: 1.7;
+  margin-top: 1.6rem;
+}
+@media (max-width: 600px) {
+  .tabs {
+    gap: 0.65rem;
+  }
+  .tabs button {
+    font-size: 0.8rem;
+    line-height: 1.5;
+  }
+  .tabs button span {
+    display: block;
+    margin-bottom: 0.4rem;
+  }
+  .screen figcaption {
+    display: block;
+  }
+  .screen a {
+    display: inline-block;
+    margin-top: 0.8rem;
+  }
+}
+
+.walkthrough {
+  padding-top: clamp(3rem, 6vw, 6rem);
+  margin-top: clamp(3rem, 6vw, 6rem);
+  border-top: 1px solid #d9cbc0;
+}
+.walkthroughIntro {
+  max-width: 760px;
+}
+.walkthroughIntro p {
+  max-width: 60ch;
+  color: #596168;
+  line-height: 1.7;
+}
+.videoFigure {
+  margin: 2rem 0 0;
+}
+.videoFigure video {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  background: #13202a;
+  border: 1px solid #d9cbc0;
+}
+.videoFigure figcaption {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-top: 1rem;
+  font-size: 0.85rem;
+  line-height: 1.7;
+}
+.videoFigure a {
+  color: #13202a;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}

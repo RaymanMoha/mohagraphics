@@ -12,7 +12,7 @@ const select = (projects: Project[], titles: string[]) => titles
 const titleOf = (title: string) => title.split(' - ')[0].split(':')[0];
 
 export const ProjectsSection = ({ projects }: Props) => {
-  const featured = select(projects, ['Budj', 'ShambaBoy', 'Reon Capital']);
+  const featured = select(projects, ['Budj', 'Safariline Cargo', 'ShambaBoy', 'Reon Capital']);
   const personal = select(projects, ['AppBase: WhatsApp Commerce', 'Groundbase: AI Field Intelligence']);
   const shipped = select(projects, ['Reon Capital Dev Hub', 'OnSpace: No-Code Operations Platform']);
 
@@ -29,7 +29,7 @@ export const ProjectsSection = ({ projects }: Props) => {
         {featured.map((project, index) => (
           <article key={project.link} className={styles.project}>
             <Link href={project.link} className={styles.media} aria-label={`View ${project.title} case study`}>
-              <img src={`/img/${project.image}`} alt={`${project.title} product interface`}
+              <img src={project.image.startsWith('/') ? project.image : `/img/${project.image}`} alt={`${project.title} product interface`}
                 width="1600" height="900" loading="lazy" />
               <span className={styles.imageLink} aria-hidden="true"><FiArrowUpRight /></span>
             </Link>

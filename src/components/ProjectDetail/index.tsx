@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import * as S from './styles';
 import { StoreScreens } from './StoreScreens';
+import { CargoJourney } from './CargoJourney';
 
 export type RelatedProject = {
   id: string;
@@ -27,6 +28,7 @@ type Props = {
 const cleanTool = (tool: string) => tool.replaceAll('_', ' ');
 
 export const ProjectDetail = ({
+  id,
   productHtml,
   workHtml,
   outcomeHtml,
@@ -180,7 +182,7 @@ export const ProjectDetail = ({
         </S.SideFacts>
       </S.Story>
 
-      {project.gallery?.length ? (
+      {id === 'SafarilineCargo' && project.gallery?.length ? <CargoJourney gallery={project.gallery} /> : project.gallery?.length ? (
         <S.Gallery aria-labelledby="project-media-title">
           <S.GalleryHeading>
             <S.FactsLabel>Product media</S.FactsLabel>

@@ -1,3 +1,4 @@
+import * as SafarilineCargo from '../../public/projects/SafarilineCargo/content';
 import * as ReonCapital from '../../public/projects/ReonCapital/content';
 import * as ANSU from '../../public/projects/ANSU/content';
 import * as ZubaSteward from '../../public/projects/ZubaSteward/content';
@@ -48,6 +49,7 @@ export type Content = {
 };
 
 export const content = {
+  SafarilineCargo: { ...SafarilineCargo.content },
   ReonCapital: { ...ReonCapital.content },
   ANSU: { ...ANSU.content },
   ZubaSteward: { ...ZubaSteward.content },

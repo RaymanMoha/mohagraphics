@@ -21,6 +21,14 @@ export const landingPage = {
   },
   projects: [
     {
+      ...projectData.SafarilineCargo,
+      title: 'Safariline Cargo',
+      body: 'From waybill to warehouse: air and sea cargo operations, branch visibility, shipment tracking, and reporting in one connected workspace.',
+      image: '/projects/SafarilineCargo/overview.png',
+      buttonText: 'Explore cargo operations',
+      link: '/projects/SafarilineCargo/',
+    },
+    {
       ...projectData.ReonCapital,
       title: 'Reon Capital', image: 'reon-capital-overview.jpg',
       body: 'Mobile and web work across Zuba, Zuba Steward, Eneva, ANSU, Sava, and Developer Hub, spanning apps and developer experiences.',
