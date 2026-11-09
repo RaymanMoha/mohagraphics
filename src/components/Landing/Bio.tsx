@@ -60,6 +60,18 @@ export const BioSection = ({ bio }: Props) => (
             <SkillGroup key={group.title} {...group} />
           ))}
         </div>
+        <div className={styles.creative}>
+          <div className={styles.creativeGrid}>
+            {creativeSkills.map((group) => (
+              <SkillGroup key={group.title} {...group} />
+            ))}
+          </div>
+        </div>
+        <footer className={styles.footer}>
+          <Link href="/about" className={styles.aboutLink}>
+            More about me <FiArrowUpRight aria-hidden="true" />
+          </Link>
+        </footer>
       </div>
       <section className={styles.film} aria-labelledby="skills-film-title">
         <div className={styles.filmHeading}>
@@ -92,17 +104,5 @@ export const BioSection = ({ bio }: Props) => (
         </div>
       </section>
     </div>
-    <div className={styles.creative}>
-      <div className={styles.creativeGrid}>
-        {creativeSkills.map((group) => (
-          <SkillGroup key={group.title} {...group} />
-        ))}
-      </div>
-    </div>
-    <footer className={styles.footer}>
-      <Link href="/about" className={styles.aboutLink}>
-        More about me <FiArrowUpRight aria-hidden="true" />
-      </Link>
-    </footer>
   </section>
 );

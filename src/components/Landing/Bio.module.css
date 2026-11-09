@@ -1,7 +1,7 @@
 .section {
   width: 100%;
   max-width: none;
-  padding: clamp(3.5rem, 7vw, 7rem) 5vw;
+  padding: clamp(2.5rem, 4vw, 4rem) 5vw;
   background: #fff;
   color: #13202a;
   scroll-margin-top: 80px;
@@ -11,7 +11,7 @@
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
-  margin-bottom: clamp(3rem, 5vw, 5rem);
+  margin-bottom: clamp(1.75rem, 2.5vw, 2.5rem);
 }
 .heading h2 {
   font:
@@ -54,7 +54,7 @@
 .layout {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
-  gap: clamp(3rem, 7vw, 8rem);
+  gap: clamp(2rem, 4vw, 4rem);
   align-items: start;
 }
 .skills {
@@ -62,7 +62,7 @@
 }
 .skillGroups {
   display: grid;
-  gap: 2rem;
+  gap: 1.4rem;
 }
 .skillGroup h3 {
   font:
@@ -150,21 +150,21 @@
   text-underline-offset: 4px;
 }
 .creative {
-  margin-top: clamp(3rem, 5vw, 5rem);
-  padding-top: clamp(2rem, 3vw, 3rem);
+  margin-top: 1.75rem;
+  padding-top: 1.5rem;
   border-top: 1px solid #e5e5e5;
 }
 .creativeGrid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: clamp(1.8rem, 3vw, 3rem);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
 }
 .creativeGrid .skillGroup li {
   font-size: 0.85rem;
 }
 .footer {
   display: flex;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
 }
 .aboutLink {
   display: inline-flex;
