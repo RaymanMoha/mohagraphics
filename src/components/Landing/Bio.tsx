@@ -1,6 +1,16 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { FiArrowUpRight } from 'react-icons/fi';
+import {
+  FiArrowUpRight,
+  FiCode,
+  FiSmartphone,
+  FiDatabase,
+  FiCloud,
+  FiLayout,
+  FiBarChart2,
+  FiPenTool,
+  FiCpu,
+} from 'react-icons/fi';
 import { coreSkills, creativeSkills } from '@/content/skills';
 import styles from './Bio.module.css';
 
@@ -12,16 +22,42 @@ type Props = {
   };
 };
 
-const SkillGroup = ({ title, tools }: { title: string; tools: string[] }) => (
-  <div className={styles.skillGroup}>
-    <h3>{title}</h3>
-    <ul>
-      {tools.map((tool) => (
-        <li key={tool}>{tool}</li>
-      ))}
-    </ul>
-  </div>
-);
+const groupIcons = [
+  FiCode,
+  FiSmartphone,
+  FiDatabase,
+  FiCloud,
+  FiLayout,
+  FiBarChart2,
+  FiPenTool,
+  FiCpu,
+];
+const SkillGroup = ({
+  title,
+  tools,
+  index,
+}: {
+  title: string;
+  tools: string[];
+  index: number;
+}) => {
+  const Icon = groupIcons[index];
+  return (
+    <div className={styles.skillGroup}>
+      <div className={styles.groupHeading}>
+        <span className={styles.groupIcon}>
+          <Icon aria-hidden="true" />
+        </span>
+        <h3>{title}</h3>
+      </div>
+      <ul>
+        {tools.map((tool) => (
+          <li key={tool}>{tool}</li>
+        ))}
+      </ul>
+    </div>
+  );
+};
 
 export const BioSection = ({ bio }: Props) => (
   <div className={styles.section}>
@@ -32,6 +68,9 @@ export const BioSection = ({ bio }: Props) => (
           {bio.title.replaceAll('**', '')}
           <span>.</span>
         </h2>
+        <p className={styles.intro}>
+          Engineering the product. Shaping the experience. Telling the story.
+        </p>
       </div>
       <Link
         href="/about"
@@ -53,13 +92,9 @@ export const BioSection = ({ bio }: Props) => (
     </header>
     <div className={styles.layout}>
       <div className={styles.skills}>
-        <p className={styles.intro}>
-          From web and mobile products to brand campaigns and films. The tools
-          and disciplines behind my work.
-        </p>
         <div className={styles.skillGroups}>
-          {coreSkills.map((group) => (
-            <SkillGroup key={group.title} {...group} />
+          {coreSkills.map((group, index) => (
+            <SkillGroup key={group.title} {...group} index={index} />
           ))}
         </div>
       </div>
@@ -100,8 +135,8 @@ export const BioSection = ({ bio }: Props) => (
         <h3>Design, insight & storytelling.</h3>
       </header>
       <div className={styles.creativeGrid}>
-        {creativeSkills.map((group) => (
-          <SkillGroup key={group.title} {...group} />
+        {creativeSkills.map((group, index) => (
+          <SkillGroup key={group.title} {...group} index={index + 4} />
         ))}
       </div>
     </div>
