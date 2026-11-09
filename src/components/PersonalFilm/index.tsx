@@ -52,10 +52,6 @@ export function PersonalFilm({ preview = false }: { preview?: boolean }) {
       >
         <span className={styles.eyebrow}>My story, in motion</span>
         <h2 id="personal-film-title">The Last Frontend Engineer.</h2>
-        <p id="personal-film-description">
-          A playful animated take on life as a frontend engineer in Nairobi. A
-          short film about me, the work, and the personality behind it.
-        </p>
         <figure>
           <video
             controls
@@ -65,7 +61,6 @@ export function PersonalFilm({ preview = false }: { preview?: boolean }) {
             width={1280}
             height={720}
             aria-label="The Last Frontend Engineer — a short film about Mohammed"
-            aria-describedby="personal-film-description"
           >
             <source src={video} type="video/mp4" />
             Your browser does not support embedded video.{' '}
@@ -86,10 +81,6 @@ export function PersonalFilm({ preview = false }: { preview?: boolean }) {
       >
         <span className={styles.eyebrow}>Another side of the story</span>
         <h2 id="friday-film-title">Friday, 5 PM.</h2>
-        <p id="friday-film-description">
-          Moha vs. production. A football-style animated take on a Friday
-          deployment, with AI on the bench and a last-minute VAR check.
-        </p>
         <figure>
           <video
             controls
@@ -99,7 +90,6 @@ export function PersonalFilm({ preview = false }: { preview?: boolean }) {
             width={1280}
             height={720}
             aria-label="Friday, 5 PM — Moha vs. production"
-            aria-describedby="friday-film-description"
           >
             <source src="/about/friday-5pm.mp4" type="video/mp4" />
             Your browser does not support embedded video.{' '}
