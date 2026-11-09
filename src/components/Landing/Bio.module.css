@@ -1,0 +1,133 @@
+.layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr);
+  gap: clamp(2rem, 4vw, 4rem);
+  align-items: center;
+  padding: 1rem 0;
+  color: #13202a;
+}
+.skills {
+  min-width: 0;
+}
+.heading {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin-bottom: 1.8rem;
+}
+.portrait {
+  width: 72px;
+  height: 72px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.heading h2 {
+  font-size: clamp(2rem, 3.5vw, 3rem);
+  line-height: 1.1;
+  margin: 0;
+  letter-spacing: -0.04em;
+}
+.features {
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.75;
+}
+.features h3 {
+  font-size: 1rem;
+  margin-bottom: 0.7rem;
+}
+.features p {
+  color: #596168;
+}
+.aboutLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  min-height: 44px;
+  font-size: 0.85rem;
+  color: #13202a;
+  border-bottom: 1px solid #13202a;
+}
+.layout svg {
+  width: 1em;
+  height: 1em;
+}
+.film {
+  min-width: 0;
+  background: #f8eee6;
+  border: 1px solid #d9cbc0;
+  border-top: 3px solid #f04e23;
+}
+.filmHeading {
+  padding: clamp(1.2rem, 2vw, 2rem);
+}
+.filmHeading > span {
+  display: block;
+  font-size: 0.65rem;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: #735f53;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+.filmHeading h3 {
+  font:
+    400 clamp(1.75rem, 2.7vw, 2.7rem) / 1.08 Georgia,
+    serif;
+  letter-spacing: -0.04em;
+  margin: 0;
+  max-width: 16ch;
+}
+.film video {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+  background: #13202a;
+}
+.filmFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  padding: 1rem 1.2rem;
+  font-size: 0.7rem;
+}
+.filmFooter > span {
+  color: #735f53;
+}
+.filmFooter > span span {
+  margin: 0 0.5rem;
+}
+.filmFooter a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #13202a;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  min-height: 32px;
+}
+.layout :is(a, video):focus-visible {
+  outline: 3px solid #155eef;
+  outline-offset: 5px;
+}
+@media (max-width: 850px) {
+  .layout {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  .filmHeading h3 {
+    max-width: none;
+  }
+  .heading {
+    margin-bottom: 1.5rem;
+  }
+}
+.heading h2 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.35em;
+}
