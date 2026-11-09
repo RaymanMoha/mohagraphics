@@ -1,56 +1,108 @@
-.layout {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr);
-  gap: clamp(2rem, 4vw, 4rem);
-  align-items: center;
-  padding: 1rem 0;
+.section {
   color: #13202a;
-}
-.skills {
-  min-width: 0;
+  padding: clamp(1rem, 2vw, 2rem) 0;
 }
 .heading {
   display: flex;
   align-items: center;
-  gap: 1.25rem;
-  margin-bottom: 1.8rem;
+  justify-content: space-between;
+  gap: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #d9cbc0;
+  margin-bottom: 2.5rem;
+}
+.eyebrow {
+  display: block;
+  color: #735f53;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.65rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+.heading h2 {
+  font:
+    700 clamp(2.6rem, 5vw, 4.5rem) / 1.05 Muli,
+    Arial,
+    sans-serif;
+  white-space: nowrap;
+  letter-spacing: -0.055em;
+  margin: 0;
+}
+.heading h2 > span {
+  color: #f04e23;
+}
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  font-size: 0.8rem;
+  color: #13202a;
+}
+.profile small {
+  display: block;
+  color: #596168;
+  font-size: 0.7rem;
+  margin-top: 0.3rem;
 }
 .portrait {
-  width: 72px;
-  height: 72px;
+  width: 56px;
+  height: 56px;
   object-fit: cover;
   border-radius: 50%;
 }
-.heading h2 {
-  font-size: clamp(2rem, 3.5vw, 3rem);
-  line-height: 1.1;
-  margin: 0;
-  letter-spacing: -0.04em;
+.layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+  gap: clamp(2rem, 5vw, 4.5rem);
+  align-items: start;
 }
-.features {
-  margin-top: 1.5rem;
+.skills {
+  min-width: 0;
+}
+.intro {
+  margin: 0 0 2rem;
+  max-width: 49ch;
   font-size: 1rem;
   line-height: 1.75;
-}
-.features h3 {
-  font-size: 1rem;
-  margin-bottom: 0.7rem;
-}
-.features p {
   color: #596168;
 }
-.aboutLink {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.75rem;
-  min-height: 44px;
-  font-size: 0.85rem;
-  color: #13202a;
-  border-bottom: 1px solid #13202a;
+.skillGroups {
+  display: grid;
+  gap: 1.5rem;
 }
-.layout svg {
+.skillGroup h3 {
+  font:
+    700 0.8rem/1.5 Muli,
+    Arial,
+    sans-serif;
+  margin: 0 0 0.6rem;
+  color: #13202a;
+}
+.skillGroup ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0;
+  margin: 0;
+  padding: 0;
+}
+.skillGroup li {
+  font-size: 0.82rem;
+  line-height: 1.7;
+  color: #596168;
+  padding: 0;
+  margin: 0;
+}
+.skillGroup li:not(:last-child)::after {
+  content: '/';
+  color: #b1a49a;
+  margin: 0 0.6rem;
+}
+.section svg {
   width: 1em;
   height: 1em;
+  flex-shrink: 0;
 }
 .film {
   min-width: 0;
@@ -59,7 +111,7 @@
   border-top: 3px solid #f04e23;
 }
 .filmHeading {
-  padding: clamp(1.2rem, 2vw, 2rem);
+  padding: clamp(1.2rem, 2vw, 1.8rem);
 }
 .filmHeading > span {
   display: block;
@@ -72,7 +124,7 @@
 }
 .filmHeading h3 {
   font:
-    400 clamp(1.75rem, 2.7vw, 2.7rem) / 1.08 Georgia,
+    400 clamp(1.75rem, 2.7vw, 2.7rem) / 1.1 Georgia,
     serif;
   letter-spacing: -0.04em;
   margin: 0;
@@ -109,7 +161,51 @@
   text-underline-offset: 4px;
   min-height: 32px;
 }
-.layout :is(a, video):focus-visible {
+.creative {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid #d9cbc0;
+}
+.creative > header {
+  margin-bottom: 1.8rem;
+}
+.creative > header > h3 {
+  font:
+    400 clamp(1.5rem, 2.4vw, 2rem) / 1.2 Georgia,
+    serif;
+  letter-spacing: -0.025em;
+  margin: 0;
+}
+.creativeGrid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.8rem;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 2rem;
+  margin-top: 2rem;
+  border-top: 1px solid #d9cbc0;
+}
+.footer p {
+  color: #596168;
+  font-size: 0.8rem;
+  margin: 0;
+}
+.aboutLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  min-height: 44px;
+  font-size: 0.85rem;
+  color: #13202a;
+  border-bottom: 1px solid #13202a;
+  white-space: nowrap;
+}
+.section :is(a, video):focus-visible {
   outline: 3px solid #155eef;
   outline-offset: 5px;
 }
@@ -121,13 +217,36 @@
   .filmHeading h3 {
     max-width: none;
   }
-  .heading {
-    margin-bottom: 1.5rem;
+  .creativeGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.8rem;
+  }
+  .profile > span {
+    display: none;
+  }
+  .profile {
+    gap: 0.6rem;
   }
 }
-.heading h2 {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  gap: 0.35em;
+@media (max-width: 480px) {
+  .heading {
+    gap: 0.7rem;
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .heading .eyebrow {
+    max-width: 23ch;
+    line-height: 1.6;
+  }
+  .portrait {
+    width: 44px;
+    height: 44px;
+  }
+  .creativeGrid {
+    grid-template-columns: 1fr;
+  }
+  .footer {
+    align-items: start;
+    flex-direction: column;
+  }
 }
