@@ -72,9 +72,7 @@ const Index = ({
         </HeroSection>
       </ResponsiveMainContainer>
 
-      <Section id="bio">
-        <BioSection bio={bio} />
-      </Section>
+      <BioSection bio={bio} />
 
       {/* Hiding featured section during refactor */}
       {/* <Section id="featured">

@@ -60,11 +60,11 @@ const SkillGroup = ({
 };
 
 export const BioSection = ({ bio }: Props) => (
-  <div className={styles.section}>
+  <section id="bio" className={styles.section} aria-labelledby="skills-title">
     <header className={styles.heading}>
       <div>
         <span className={styles.eyebrow}>Engineering & creative practice</span>
-        <h2>
+        <h2 id="skills-title">
           {bio.title.replaceAll('**', '')}
           <span>.</span>
         </h2>
@@ -146,5 +146,5 @@ export const BioSection = ({ bio }: Props) => (
         More about me <FiArrowUpRight aria-hidden="true" />
       </Link>
     </footer>
-  </div>
+  </section>
 );
