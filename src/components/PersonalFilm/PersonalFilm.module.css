@@ -1,0 +1,122 @@
+.preview {
+  background: #f8eee6;
+  color: #13202a;
+  padding: clamp(3rem, 6vw, 6rem) 5vw;
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+  gap: 5vw;
+  align-items: center;
+}
+.previewImage {
+  display: block;
+}
+.previewImage img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.eyebrow {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #735f53;
+  margin-bottom: 1.2rem;
+}
+.preview h2 {
+  font:
+    400 clamp(2.5rem, 4.5vw, 5rem) / 1.08 Georgia,
+    serif;
+  letter-spacing: -0.04em;
+  margin: 0 0 1.4rem;
+}
+.previewCopy p {
+  max-width: 36ch;
+  line-height: 1.7;
+  color: #596168;
+}
+.watch {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  min-height: 44px;
+  margin-top: 1rem;
+  color: #13202a;
+  border-bottom: 1px solid currentColor;
+}
+.watch span {
+  font-size: 0.75rem;
+  color: #735f53;
+}
+.preview svg,
+.film svg {
+  width: 1em;
+  height: 1em;
+}
+.preview a:focus-visible,
+.film :is(a, video):focus-visible {
+  outline: 3px solid #155eef;
+  outline-offset: 5px;
+}
+.film {
+  width: 100%;
+  max-width: 1120px;
+  padding: clamp(2rem, 5vw, 4rem) 0;
+  margin: 2rem 0;
+  border-top: 1px solid #d9cbc0;
+  border-bottom: 1px solid #d9cbc0;
+  scroll-margin-top: 90px;
+  color: #13202a;
+}
+.film h2 {
+  font:
+    400 clamp(2rem, 4vw, 4rem) / 1.1 Georgia,
+    serif;
+  letter-spacing: -0.04em;
+  margin: 0 0 1.2rem;
+}
+.film > p {
+  max-width: 64ch;
+  line-height: 1.7;
+  color: #596168;
+}
+.film figure {
+  margin: 1.8rem 0 0;
+}
+.film video {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+  background: #13202a;
+}
+.film figcaption {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-top: 1rem;
+  font-size: 0.8rem;
+  line-height: 1.7;
+}
+.film figcaption a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: #13202a;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+@media (max-width: 760px) {
+  .preview {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .preview h2 br {
+    display: none;
+  }
+  .previewCopy p {
+    max-width: 48ch;
+  }
+}

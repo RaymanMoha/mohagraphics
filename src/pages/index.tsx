@@ -1,3 +1,4 @@
+import { PersonalFilm } from '@/components/PersonalFilm';
 import { colors } from '../styles/components';
 
 import { HomeHeroContent } from '@/components/Landing/HeroContent';
@@ -85,6 +86,8 @@ const Index = ({
       </Section> */}
 
       <ProjectsSection projects={projects} />
+
+      <PersonalFilm preview />
 
       <FilmsSection />
 

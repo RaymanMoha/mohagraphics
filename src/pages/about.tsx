@@ -1,3 +1,4 @@
+import { PersonalFilm } from '@/components/PersonalFilm';
 import { SEO } from '@/components/SEO';
 import Social from '@/components/Social';
 import { Hero, Section } from '@/styles/components';
@@ -26,6 +27,9 @@ export const getStaticProps = (async () => {
 const AboutPage = ({
   mdxSource,
 }: InferGetStaticPropsType<typeof getStaticProps>) => {
+  const storyStart = mdxSource.indexOf('<p>My journey in tech started');
+  const introHtml = storyStart >= 0 ? mdxSource.slice(0, storyStart) : mdxSource;
+  const storyHtml = storyStart >= 0 ? mdxSource.slice(storyStart) : '';
   return (
     <>
       <SEO
@@ -59,7 +63,9 @@ const AboutPage = ({
       />
       <ResponsiveAboutSection>
         <Hero invert={false}>{'I have always loved tech'}</Hero>
-        <ResponsiveContent dangerouslySetInnerHTML={{ __html: mdxSource }} />
+        <ResponsiveContent dangerouslySetInnerHTML={{ __html: introHtml }} />
+        <PersonalFilm />
+        <ResponsiveContent dangerouslySetInnerHTML={{ __html: storyHtml }} />
       </ResponsiveAboutSection>
     </>
   );
