@@ -75,6 +75,35 @@ export function PersonalFilm({ preview = false }: { preview?: boolean }) {
         </figure>
       </section>
       <section
+        id="version-five"
+        className={styles.film}
+        aria-labelledby="version-five-title"
+      >
+        <span className={styles.eyebrow}>The journey so far</span>
+        <h2 id="version-five-title">Mohammed. Version Five.</h2>
+        <figure>
+          <video
+            controls
+            playsInline
+            preload="none"
+            poster="/about/mohammed-version-five-poster.jpg"
+            width={1280}
+            height={720}
+            aria-label="Mohammed. Version Five. — my development journey"
+          >
+            <source src="/about/mohammed-version-five.mp4" type="video/mp4" />
+            Your browser does not support embedded video.{' '}
+            <a href="/about/mohammed-version-five.mp4">Download the film</a>.
+          </video>
+          <figcaption>
+            <span>Animated short · 1:00 · Subtitles included in the video</span>
+            <a href="/about/mohammed-version-five.mp4" download>
+              Download film <FiArrowUpRight aria-hidden="true" />
+            </a>
+          </figcaption>
+        </figure>
+      </section>
+      <section
         id="friday-5pm"
         className={styles.film}
         aria-labelledby="friday-film-title"
